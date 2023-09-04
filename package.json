@@ -1,22 +1,18 @@
 {
+  "homepage": "jpothanc.github.io",
   "name": "jpothanc.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "jpothanc",
   "scripts": {
     "dev": "vite",
+    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -30,17 +26,5 @@
     "gh-pages": "^6.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
