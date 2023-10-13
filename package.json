@@ -1,16 +1,14 @@
 {
-  "homepage": "https://jpothanc.github.io",
   "name": "jpothanc.github.io",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "start": "react-scripts start --port 3007"
   },
   "dependencies": {
     "react": "^18.2.0",
