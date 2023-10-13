@@ -1,5 +1,13 @@
+import NavBar from "./components/NavBar";
+import Contents from "./components/Contents";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <NavBar />
+      <Contents />
+    </>
+  );
 };
 
 export default App;
