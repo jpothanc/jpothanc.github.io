@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     port: 3007,
   },
+  build: {
+    outDir: "dist", // Output directory for production build
+  },
 });
