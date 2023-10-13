@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inter;
 }
 
 a {
@@ -19,7 +20,7 @@ body {
   background-color: rgb(212, 219, 224);
   font-family: "inter", sans-serif;
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 70px;
 }
 
 /*NORMAL STYLES*/
@@ -27,22 +28,23 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  backdrop-filter: blur(6px);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
 }
 .top-bar {
   background-color: rgb(39, 44, 51);
+  border-radius: 50px; /* Use your desired value or values */
+  width: 60%;
 }
 
 .top-bar__content {
-  max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
-  height: 30px;
-  color: rgba(255, 255, 255, 0.35);
-  font-size: 12px;
+  height: 60px;
   display: flex;
   align-items: center;
-  justify-content: end;
-  column-gap: 20px;
 }
 
 .bottom-bar {
@@ -67,6 +69,10 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: fade-down 0.5s 0.4s backwards;
 }
 
 .logo__img {
@@ -89,6 +95,7 @@ body {
 .nav__list {
   display: flex;
   column-gap: 40px;
+  align-items: center;
 }
 
 /* 
@@ -113,6 +120,7 @@ alt + done to move the linw
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
+  transition: all 01s;
 }
 .btn:hover {
   background-color: #3e8fe0;
@@ -147,10 +155,7 @@ alt + done to move the linw
   .nav__link {
     font-size: 14px;
   }
-  .btn {
-    font-size: 11px;
-    padding: 7px 17px;
-  }
+
   .hamburger {
     display: block;
   }
@@ -189,52 +194,51 @@ alt + done to move the linw
   background-color: rgb(143, 182, 210);
   font-family: "inter", sans-serif;
   display: grid;
-  grid-template-columns: 360px 1fr;
-  grid-template-rows: 60px 1fr;
+  padding: 10px 60px 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 160px 1fr;
   grid-template-areas:
-    "side header"
-    "side main";
+    " header"
+    " main";
 }
 
 .sideBar {
-  background-color: green;
+  background-color: rgb(104, 106, 104);
   grid-area: side;
 }
 
 .main {
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 25px;
+  gap: 1px;
+  padding: 1px;
   grid-template-areas:
     "c1 c2 c3"
     "c4 c4 c5"
     "c4 c4 c6";
 }
 
-.headerContent {
-  background-color: blue;
-  grid-area: header;
-}
 .card {
-  background-color: yellow;
+  background-color: rgb(44, 44, 42);
   height: 20;
+  border: 0.5px solid #efe9e9;
 }
 
-div:hover > :nth-child(1) {
+div:hover > :nth-child(2) {
   background-repeat: repeat;
 }
-.card:nth-child(1) {
-  grid-area: c1;
+.card:nth-child(2) {
+  grid-area: c2;
   transition: all 0.3s;
 }
 
-.card:nth-child(1):hover {
+.card:nth-child(2):hover {
   transform: scale(110%);
 }
+
 .card:nth-child(1) {
   grid-area: c1;
 }
@@ -263,4 +267,103 @@ div:hover > :nth-child(1) {
   .card {
     grid-area: initial !important;
   }
+}
+
+/* UTILITIES */
+.u-bold {
+  font-weight: 500;
+}
+
+.u-bolder {
+  font-weight: 700;
+}
+
+.u-yellow {
+  color: #ffd600;
+}
+.headerContent {
+  background-color: rgb(30, 30, 33);
+  grid-area: header;
+  transition: all 03s;
+  border-radius: 20px;
+}
+
+.headerContent:hover {
+  background-color: #3e8fe0;
+  transform: scale(110%);
+}
+.card:nth-child(2) {
+  grid-area: c2;
+  transition: all 0.3s;
+}
+
+.card:nth-child(2):hover {
+  transform: scale(110%);
+}
+
+/* INTRO */
+.intro {
+  padding: 15px 40px;
+  animation: fade-up 0.5s;
+  color: #fff;
+}
+
+.first-heading {
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.94;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 35px;
+  margin-top: -8px;
+  margin-left: 3px;
+}
+
+.text {
+  font-size: 28px;
+  opacity: 0.9;
+  font-weight: 300;
+  margin-top: 11px;
+  line-height: 1.1;
+}
+
+.text--second {
+  display: block;
+}
+
+/* BUTTON */
+.btn {
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.5px;
+  padding: 10px 20px;
+  border-radius: 5000px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+}
+
+.btn--contact {
+  animation: fade-down 0.5s 0.4s backwards;
+}
+
+.btn--download {
+  padding: 16px 32px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 27px;
+  left: calc(50% - 96px);
+  border-radius: 5000px;
+  z-index: 100;
+  box-shadow: 0 6px 23px rgba(0, 0, 0, 0.45);
+  animation: fade-up 0.5s 0.4s backwards;
 }
