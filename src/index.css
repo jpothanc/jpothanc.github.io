@@ -11,58 +11,39 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-}
-
 /*BASE STYLES*/
 body {
-  background-color: rgb(212, 219, 224);
+  background-color: rgb(62, 62, 63);
   font-family: "inter", sans-serif;
   height: 100vh;
-  padding-top: 70px;
+  padding-top: 8ch;
 }
 
 /*NORMAL STYLES*/
 .header {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 10px;
   backdrop-filter: blur(6px);
-  opacity: 0.7;
   display: flex;
   justify-content: center;
 }
 .top-bar {
-  background-color: rgb(39, 44, 51);
+  background-color: rgb(227, 227, 227);
   border-radius: 50px; /* Use your desired value or values */
-  width: 60%;
+  width: 70%;
+  opacity: 1;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .top-bar__content {
   padding: 0 30px;
   margin: 0 auto;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-
-.bottom-bar {
-  background-color: rgb(19, 22, 26);
-}
-.bottom-bar__content {
-  max-width: 1200px;
-  padding: 0 30px;
-  margin: 0 auto;
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.icon {
-  margin-right: 3px;
-  color: rgba(255, 255, 255, 0.17);
 }
 
 .logo {
@@ -75,156 +56,72 @@ body {
   animation: fade-down 0.5s 0.4s backwards;
 }
 
-.logo__img {
-  height: 30px;
-}
-
 .logo__text {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
+  color: #0e0f0e;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: -0.5px;
 }
 
-.nav {
-  transition: all 0.3s ease-in-out;
-}
-
-.nav__item {
-}
-.nav__list {
-  display: flex;
-  column-gap: 40px;
-  align-items: center;
-}
-
-/* 
-shift + alt + down - copy
-alt + done to move the linw
-
-*/
-.nav__link {
-  color: rgba(255, 255, 255, 0.5);
-  transition: all 02s;
-}
-.nav__link:hover,
-.nav__link:focus {
-  color: rgba(255, 255, 255, 1);
-}
-
-.btn {
-  color: #fff;
-  background-color: #0071e3;
-  padding: 8px 20px;
-  border-radius: 5000px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: all 01s;
-}
-.btn:hover {
-  background-color: #3e8fe0;
-}
-.hamburger {
-  display: none;
-}
-.bar {
-  height: 2px;
-  width: 27px;
-  background-color: #fff;
-  margin: 5px 0;
-  opacity: 0.8;
-  transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 650px) {
-  .nav {
-    position: fixed;
-    top: 90px;
-    left: 0;
-    background-color: rgb(19, 22, 26);
-    width: 100%;
-    padding: 10px 0 20px;
-    transform: translateX(-100%);
-  }
-  .nav__list {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-  }
-  .nav__link {
-    font-size: 14px;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  @media (max-width: 360px) {
-    .top-bar__content {
-      font-size: 10px;
-      justify-content: center;
-    }
-  }
-
-  /*FOR JS*/
-  .nav--open {
-    position: fixed;
-    top: 90px;
-    left: 0;
-    background-color: rgb(19, 22, 26);
-    width: 100%;
-    padding: 10px 0 20px;
-    transform: translateX(0%) !important;
-  }
-
-  .hamburger--open .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .hamburger--open .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger--open .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
-}
 /*CONTENTS*/
+.content1 {
+  height: 100vh;
+  max-width: 1220px;
+  padding: auto;
+  margin: 0 auto;
+  background-color: rgb(125, 119, 119);
+  display: flex;
+}
 .content {
   height: 100vh;
-  background-color: rgb(143, 182, 210);
+  max-width: 1200px;
   font-family: "inter", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
   display: grid;
-  padding: 10px 60px 10px;
+  gap: 1px;
+  padding: 50px 160px 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 160px 1fr;
+  grid-template-rows: 170px 100px 1fr;
   grid-template-areas:
-    " header"
-    " main";
-}
-
-.sideBar {
-  background-color: rgb(104, 106, 104);
-  grid-area: side;
+    "header"
+    "career"
+    "main";
 }
 
 .main {
-  background-color: rgb(255, 255, 255);
   grid-area: main;
+  background-color: antiquewhite;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px;
   padding: 1px;
   grid-template-areas:
-    "c1 c2 c3"
-    "c4 c4 c5"
-    "c4 c4 c6";
+    "c1 c1 c2"
+    "c1 c1 c3"
+    "c4 c4 c6"
+    "c5 c5 c6";
+}
+.headerContent {
+  background-color: rgb(30, 30, 33);
+  grid-area: header;
+  transition: all 03s;
+}
+.careerContent {
+  background-color: rgb(30, 30, 33);
+  grid-area: career;
+  transition: all 03s;
+}
+
+.headerContent:hover {
+  background-color: #3e8fe0;
+  transform: scale(110%);
 }
 
 .card {
-  background-color: rgb(44, 44, 42);
+  background-color: rgb(30, 30, 33);
   height: 20;
-  border: 0.5px solid #efe9e9;
 }
 
 div:hover > :nth-child(2) {
@@ -281,17 +178,7 @@ div:hover > :nth-child(2) {
 .u-yellow {
   color: #ffd600;
 }
-.headerContent {
-  background-color: rgb(30, 30, 33);
-  grid-area: header;
-  transition: all 03s;
-  border-radius: 20px;
-}
 
-.headerContent:hover {
-  background-color: #3e8fe0;
-  transform: scale(110%);
-}
 .card:nth-child(2) {
   grid-area: c2;
   transition: all 0.3s;
@@ -309,7 +196,7 @@ div:hover > :nth-child(2) {
 }
 
 .first-heading {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 600;
   opacity: 0.94;
   display: flex;
@@ -324,10 +211,10 @@ div:hover > :nth-child(2) {
 }
 
 .text {
-  font-size: 28px;
+  font-size: 16px;
   opacity: 0.9;
   font-weight: 300;
-  margin-top: 11px;
+  margin-top: 10px;
   line-height: 1.1;
 }
 
@@ -336,6 +223,20 @@ div:hover > :nth-child(2) {
 }
 
 /* BUTTON */
+.skills--btn {
+  background-color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+.skills--btn:hover {
+  background-color: rgb(65, 205, 240);
+}
+
 .btn {
   background-color: #fff;
   font-size: 12px;
@@ -358,7 +259,7 @@ div:hover > :nth-child(2) {
 
 .btn--download {
   padding: 16px 32px;
-  font-size: 12px;
+  font-size: 1px;
   position: fixed;
   bottom: 27px;
   left: calc(50% - 96px);
@@ -366,4 +267,21 @@ div:hover > :nth-child(2) {
   z-index: 100;
   box-shadow: 0 6px 23px rgba(0, 0, 0, 0.45);
   animation: fade-up 0.5s 0.4s backwards;
+}
+
+.btn {
+  color: #fff;
+  background-color: #0071e3;
+  padding: 8px 20px;
+  border-radius: 5000px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 01s;
+}
+.btn:hover {
+  background-color: #3e8fe0;
+}
+ul {
+  list-style-image: url("custom-marker.png"); /* Use a custom image as the bullet */
 }
