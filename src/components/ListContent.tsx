@@ -10,14 +10,13 @@ import {
 
 // Add the imported icons to the library
 library.add(faCoffee, faPlus, faMinus, faPlusCircle);
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type Prop = {
   title: string;
   list: string[];
 };
 
-const ListContent = ({ title,list }: Prop) => {
+const ListContent = ({ title, list }: Prop) => {
   return (
     <>
       <motion.div

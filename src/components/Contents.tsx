@@ -1,15 +1,8 @@
-//import React from 'react'
-import { motion } from "framer-motion";
 import config from "../config.json";
 import Badges from "./Badges";
 import ListContent from "./ListContent";
 import TimeLine from "./TimeLine";
 import Intro from "./Intro";
-const variants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  exit: { opacity: 0 },
-};
 
 const Contents = () => {
   return (
