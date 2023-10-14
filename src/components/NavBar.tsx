@@ -1,25 +1,5 @@
-//import React from 'react'
-
-import { useState } from "react";
-
+import config from "../config.json";
 const NavBar = () => {
-  const [navStyle, setNavStyle] = useState("nav");
-  const [hamStyle, setHamStyle] = useState("hamburger");
-  //   const [styles, setStyles] = useState({
-  //     navStyle: "",
-  //     hamStyle: "",
-  //   });
-
-  const handleHamburger = (event: React.MouseEvent<HTMLDivElement>) => {
-    const divIdentifier = event.currentTarget.getAttribute("data-identifier");
-    console.log(divIdentifier);
-    var style = navStyle === "nav" ? "nav--open" : "nav";
-    setNavStyle(style);
-
-    style = hamStyle === "hamburger" ? "hamburger--open" : "hamburger";
-    setHamStyle(style);
-  };
-
   return (
     <>
       <header className="header">
@@ -31,12 +11,9 @@ const NavBar = () => {
                 alt="logo"
                 className="logo"
               />
-              <span className="logo__text">Jessish Pothancheri</span>
+              <span className="logo__text">{config.portfolio.name}</span>
             </a>
-            <span className="logo__text">
-              Development Lead | Equities Front Office|Order
-              Management|Investment Bank
-            </span>
+            <span className="logo__text">{config.portfolio.IntroBadge}</span>
           </div>
         </div>
       </header>
