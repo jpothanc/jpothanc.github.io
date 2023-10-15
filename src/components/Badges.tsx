@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { fmScale } from "../constants";
-import { FaStackOverflow, FaWrench, FaBullhorn } from "react-icons/fa";
+import {
+  FaStackOverflow,
+  FaWrench,
+  FaPersonChalkboard,
+  FaCity,
+  FaHands,
+} from "react-icons/fa6";
 type Props = {
   title: string;
   content: string;
@@ -49,15 +55,18 @@ const ColorArray = [
 function getIcon(
   title: string
 ): React.CElement<{}, React.Component<{}, any, any>> | undefined {
+  let size = 28;
   switch (title) {
     case "Technology":
-      return <FaStackOverflow size={32} />;
-    case "Skills":
-      return <FaWrench size={32} />;
-    case "Achievements":
-      return <FaBullhorn size={32} />;
+      return <FaStackOverflow size={size} />;
+    case "Development Practices & Testing":
+      return <FaHands size={size} />;
+    case "Skills & Achievements":
+      return <FaWrench size={size} />;
     case "Projects":
-      return <FaBullhorn size={32} />;
+      return <FaCity size={size} />;
+    case "Articles":
+      return <FaPersonChalkboard size={size} />;
 
     default:
       break;
@@ -66,10 +75,13 @@ function getIcon(
 }
 [];
 const Badges = ({ title, content, skills }: Props) => {
-  function getColor(): string {
-    const randomIndex = Math.floor(Math.random() * ColorArray.length);
-    const randomColor = ColorArray[randomIndex];
-    return randomColor;
+  function getColor(random: boolean): string {
+    if (random) {
+      const randomIndex = Math.floor(Math.random() * ColorArray.length);
+      const randomColor = ColorArray[randomIndex];
+      return randomColor;
+    }
+    return "#4FC3F7";
   }
 
   return (
@@ -81,21 +93,26 @@ const Badges = ({ title, content, skills }: Props) => {
         // whileHover="animate"
       >
         <section className="intro">
-          {getIcon(title)}
-          {title}
+          <h3 className="card-title">
+            {getIcon(title)} {title}
+          </h3>
           <p className="text">{content}</p>
           {skills.map((skill, index) => {
             return (
               <motion.button
                 className="skills--btn"
                 style={{
-                  background: getColor(),
+                  background: getColor(true),
+                  borderRadius: "400px",
                 }}
                 key={index}
                 variants={variants}
                 initial="initial"
                 whileInView="animate"
                 custom={index}
+                viewport={{
+                  once: true,
+                }}
               >
                 {skill}
               </motion.button>

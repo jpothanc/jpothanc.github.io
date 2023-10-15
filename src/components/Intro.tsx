@@ -15,16 +15,11 @@ const Intro = ({ text }: Props) => {
         whileHover="animate"
       >
         <section className="intro">
-          <h1 className="first-heading">
-            Hello <span className="emoji">👋</span>
-          </h1>
-          <p className="text">
-            <span className="u-bold">
-              I'm <span className="u-yellow">Jessish</span>
-            </span>
-            {text}
-            <span className="text--second"></span>
-          </p>
+          <span className="u-bold">
+            I'm <span className="u-yellow">Jessish, </span>
+          </span>
+          {text}
+          <span className="text--second"></span>
         </section>
       </motion.header>
     </>

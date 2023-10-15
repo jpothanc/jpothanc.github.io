@@ -18,26 +18,25 @@ const ListContent = ({ title, list }: Prop) => {
         //whileHover="animate"
       >
         <section className="intro">
-          <FaSkiing size={28} color="white" />
-          {title}
-          <p className="text">
-            <ul>
-              {list.map((l, index) => {
-                return (
-                  <motion.li
-                    key={index}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                  >
-                    {l}
-                    <br></br>
-                    <br></br>
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </p>
+          <h3 className="card-title">
+            <FaSkiing size={28} color="white" />
+            {title}
+          </h3>
+          <ul>
+            {list.map((l, index) => {
+              return (
+                <motion.li
+                  className="text"
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <p className="text">{l}</p>
+                </motion.li>
+              );
+            })}
+          </ul>
         </section>
       </motion.div>
     </>

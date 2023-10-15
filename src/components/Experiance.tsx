@@ -26,11 +26,15 @@ const Experiance = () => {
         whileTap="animate"
       >
         <section className="intro">
-          <FaCode size={48} color="red" />
+          <h3 className="card-title">
+            <FaCode size={28} color="white" />
+            Experiance
+          </h3>
+
           <motion.section
             id="experience"
             //ref={ref}
-            className="text--exp"
+            className="text"
             variants={fmAnimate1}
             whileInView="animate"
           >
@@ -42,12 +46,12 @@ const Experiance = () => {
                       background:
                         theme === "light"
                           ? "#f3f4f6"
-                          : "rgba(255, 255, 255, 0.05)",
+                          : "rgba(100, 255, 100, 0.05)",
                       boxShadow: "none",
                       border: "1px solid rgba(0, 0, 0, 0.05)",
                       textAlign: "left",
                       padding: "1.3rem 2rem",
-                      fontSize: 10,
+                      // color: "#64B5F6",
                     }}
                     contentArrowStyle={{
                       borderRight:
@@ -55,19 +59,23 @@ const Experiance = () => {
                           ? "0.4rem solid #9ca3af"
                           : "0.4rem solid rgba(255, 255, 255, 0.5)",
                     }}
-                    date={item.date}
+                    //date={item.date}
                     icon={item.icon}
                     iconStyle={{
                       background:
                         theme === "light"
                           ? "white"
-                          : "rgba(255, 255, 190, 0.15)",
+                          : "rgba(100, 255, 100, 0.1)",
                       fontSize: 10,
+                      border: "none",
                     }}
                   >
                     <h3>{item.title}</h3>
-                    <p>{item.location}</p>
+                    <h3>{item.location}</h3>
                     <p style={{ fontSize: 12 }}>{item.description}</p>
+                    <p style={{ fontSize: 12, color: "#64B5F6" }}>
+                      {item.date}
+                    </p>
                   </VerticalTimelineElement>
                 </React.Fragment>
               ))}

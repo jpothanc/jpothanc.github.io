@@ -23,9 +23,9 @@ const Contents = () => {
           ></Badges>
 
           <Badges
-            title="Skills"
+            title="Development Practices & Testing"
             content=""
-            skills={config.portfolio.skills}
+            skills={config.portfolio.DevelopmentPractices}
           ></Badges>
           <Badges
             title="Projects"
@@ -35,10 +35,10 @@ const Contents = () => {
           <Badges
             title="Articles"
             content=""
-            skills={config.portfolio.achievements}
+            skills={config.portfolio.articles}
           ></Badges>
           <Badges
-            title="Achievements"
+            title="Skills & Achievements"
             content=""
             skills={config.portfolio.achievements}
           ></Badges>
