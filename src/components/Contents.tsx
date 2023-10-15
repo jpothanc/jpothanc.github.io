@@ -3,7 +3,8 @@ import Badges from "./Badges";
 import ListContent from "./ListContent";
 import Experiance from "./Experiance";
 import Intro from "./Intro";
-
+import Links from "./Links";
+import { FaPersonChalkboard } from "react-icons/fa6";
 const Contents = () => {
   return (
     <>
@@ -19,31 +20,55 @@ const Contents = () => {
           <Badges
             title="Technology"
             content=""
-            skills={config.portfolio.technology}
+            items={config.portfolio.technology}
+            color="#1DE9B6"
           ></Badges>
 
           <Badges
             title="Development Practices & Testing"
             content=""
-            skills={config.portfolio.DevelopmentPractices}
+            items={config.portfolio.DevelopmentPractices}
+            color="#FFC107"
           ></Badges>
           <Badges
             title="Projects"
             content=""
-            skills={config.portfolio.achievements}
-          ></Badges>
-          <Badges
-            title="Articles"
-            content=""
-            skills={config.portfolio.articles}
+            items={config.portfolio.achievements}
+            color="#64B5F6"
           ></Badges>
           <Badges
             title="Skills & Achievements"
             content=""
-            skills={config.portfolio.achievements}
+            items={config.portfolio.achievements}
+            color="#4DD0E1"
           ></Badges>
+          <Links
+            title="Education"
+            content="BE, Computer Science from SEUA"
+            icon={FaPersonChalkboard}
+            links={[]}
+          ></Links>
+          <Links
+            title="Git"
+            content=""
+            icon={FaPersonChalkboard}
+            links={config.portfolio.git}
+          ></Links>
+          <Badges
+            title="Personality"
+            content=""
+            items={config.portfolio.personality}
+            color=""
+          ></Badges>
+          <Links
+            title="Articles"
+            content=""
+            icon={FaPersonChalkboard}
+            links={config.portfolio.articles}
+          ></Links>
+
+          <Experiance></Experiance>
         </main>
-        <Experiance></Experiance>
       </div>
     </>
   );

@@ -10,7 +10,8 @@ import {
 type Props = {
   title: string;
   content: string;
-  skills: string[];
+  items: string[];
+  color: string;
 };
 const variants = {
   initial: {
@@ -74,14 +75,14 @@ function getIcon(
   return undefined;
 }
 [];
-const Badges = ({ title, content, skills }: Props) => {
+const Badges = ({ title, content, items: skills, color }: Props) => {
   function getColor(random: boolean): string {
     if (random) {
       const randomIndex = Math.floor(Math.random() * ColorArray.length);
       const randomColor = ColorArray[randomIndex];
       return randomColor;
     }
-    return "#4FC3F7";
+    return color;
   }
 
   return (
@@ -102,8 +103,9 @@ const Badges = ({ title, content, skills }: Props) => {
               <motion.button
                 className="skills--btn"
                 style={{
-                  background: getColor(true),
+                  background: getColor(false),
                   borderRadius: "400px",
+                  fontWeight: 500,
                 }}
                 key={index}
                 variants={variants}

@@ -83,6 +83,8 @@
       "K6 Load Testing",
       "JMeter",
       "Specflow"
-    ]
+    ],
+    "git": ["dynamo", "AuthMe", "WebQ", "datastore"],
+    "personality": ["#pragmatic", "#selfless", "#self-driven", "#trustworthy"]
   }
 }
