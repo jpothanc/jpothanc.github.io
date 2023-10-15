@@ -1,7 +1,7 @@
 import config from "../config.json";
 import Badges from "./Badges";
 import ListContent from "./ListContent";
-import TimeLine from "./TimeLine";
+import Experiance from "./Experiance";
 import Intro from "./Intro";
 
 const Contents = () => {
@@ -9,7 +9,6 @@ const Contents = () => {
     <>
       <div className="content">
         <Intro text={config.portfolio.intro}></Intro>
-        <TimeLine></TimeLine>
 
         <main className="main">
           <ListContent
@@ -44,6 +43,7 @@ const Contents = () => {
             skills={config.portfolio.achievements}
           ></Badges>
         </main>
+        <Experiance></Experiance>
       </div>
     </>
   );

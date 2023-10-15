@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fmScale } from "../constants";
+import { FaStackOverflow, FaWrench, FaBullhorn } from "react-icons/fa";
 type Props = {
   title: string;
   content: string;
@@ -45,6 +46,25 @@ const ColorArray = [
   "#EA80FC",
 ];
 
+function getIcon(
+  title: string
+): React.CElement<{}, React.Component<{}, any, any>> | undefined {
+  switch (title) {
+    case "Technology":
+      return <FaStackOverflow size={32} />;
+    case "Skills":
+      return <FaWrench size={32} />;
+    case "Achievements":
+      return <FaBullhorn size={32} />;
+    case "Projects":
+      return <FaBullhorn size={32} />;
+
+    default:
+      break;
+  }
+  return undefined;
+}
+[];
 const Badges = ({ title, content, skills }: Props) => {
   function getColor(): string {
     const randomIndex = Math.floor(Math.random() * ColorArray.length);
@@ -58,14 +78,10 @@ const Badges = ({ title, content, skills }: Props) => {
         className="card"
         variants={fmScale}
         initial="initial"
-        whileHover="animate"
+        // whileHover="animate"
       >
         <section className="intro">
-          <img
-            src="https://images.unsplash.com/photo-1570211776091-c19f426d37af?auto=format&fit=crop&w=70&q=100"
-            alt="logo"
-            className="logo"
-          />
+          {getIcon(title)}
           {title}
           <p className="text">{content}</p>
           {skills.map((skill, index) => {

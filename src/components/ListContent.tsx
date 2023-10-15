@@ -1,15 +1,7 @@
 import { motion } from "framer-motion";
 import { fmScale } from "../constants";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faCoffee,
-  faPlus,
-  faMinus,
-  faPlusCircle,
-} from "@fortawesome/free-solid-svg-icons";
 
-// Add the imported icons to the library
-library.add(faCoffee, faPlus, faMinus, faPlusCircle);
+import { FaSkiing } from "react-icons/fa";
 
 type Prop = {
   title: string;
@@ -23,14 +15,10 @@ const ListContent = ({ title, list }: Prop) => {
         className="card"
         variants={fmScale}
         initial="initial"
-        whileHover="animate"
+        //whileHover="animate"
       >
         <section className="intro">
-          <img
-            src="https://images.unsplash.com/photo-1570211776091-c19f426d37af?auto=format&fit=crop&w=70&q=100"
-            alt="logo"
-            className="logo"
-          />
+          <FaSkiing size={28} color="white" />
           {title}
           <p className="text">
             <ul>

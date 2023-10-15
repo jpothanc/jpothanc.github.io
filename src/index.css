@@ -86,11 +86,11 @@ body {
   gap: 1px;
   padding: 50px 160px 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 170px 100px 1fr;
+  grid-template-rows: 170px 1fr;
   grid-template-areas:
     "header"
-    "career"
-    "main";
+    "main"
+    "career";
 }
 
 .main {
@@ -220,6 +220,14 @@ body {
   line-height: 1.1;
 }
 
+.text--exp {
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 300;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+
 .text--second {
   display: block;
 }
@@ -285,4 +293,8 @@ body {
 }
 ul {
   list-style-image: url("custom-marker.png"); /* Use a custom image as the bullet */
+}
+.timeline-icon {
+  font-size: 10px; /* Adjust the font size to control icon size */
+  /* Additional icon styles like color, padding, etc. */
 }
