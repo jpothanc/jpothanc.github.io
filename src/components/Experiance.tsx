@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { fmScale, experiencesData, fmAnimate1 } from "../constants";
-import config from "../config.json";
-import { FaReact } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 
 import React from "react";
@@ -11,12 +9,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 //import { useSectionInView } from "../hooks/useSectionInView";
-import { useState } from "react";
 
 const Experiance = () => {
-  //const { ref } = useSectionInView("Experience");
-  const [theme, setTheme] = useState("dark");
-
   return (
     <>
       <motion.header
@@ -43,10 +37,7 @@ const Experiance = () => {
                 <React.Fragment key={index}>
                   <VerticalTimelineElement
                     contentStyle={{
-                      background:
-                        theme === "light"
-                          ? "#f3f4f6"
-                          : "rgba(100, 255, 100, 0.05)",
+                      background: "rgba(100, 255, 100, 0.05)",
                       boxShadow: "none",
                       border: "1px solid rgba(0, 0, 0, 0.05)",
                       textAlign: "left",
@@ -54,18 +45,12 @@ const Experiance = () => {
                       // color: "#64B5F6",
                     }}
                     contentArrowStyle={{
-                      borderRight:
-                        theme === "light"
-                          ? "0.4rem solid #9ca3af"
-                          : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                      borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
                     }}
                     //date={item.date}
                     icon={item.icon}
                     iconStyle={{
-                      background:
-                        theme === "light"
-                          ? "white"
-                          : "rgba(100, 255, 100, 0.1)",
+                      background: "rgba(100, 255, 100, 0.1)",
                       fontSize: 10,
                       border: "none",
                     }}
