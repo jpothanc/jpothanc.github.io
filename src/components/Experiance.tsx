@@ -22,7 +22,7 @@ const Experiance = () => {
         >
           <section className="intro">
             <h3 className="card-title">
-              <FaCode size={28} color="white" />
+              <FaCode size={28} />
               Experiance
             </h3>
 

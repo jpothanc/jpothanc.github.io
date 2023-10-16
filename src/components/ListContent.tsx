@@ -19,7 +19,7 @@ const ListContent = ({ title, list }: Prop) => {
       >
         <section className="intro">
           <h3 className="card-title">
-            <FaSkiing size={28} color="white" />
+            <FaSkiing size={28} />
             {title}
           </h3>
           <ul>

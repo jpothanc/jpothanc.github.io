@@ -90,6 +90,7 @@ body {
   margin: 0 auto;
   display: grid;
   gap: 1px;
+  border: none;
   padding: 50px 160px 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 150px 1fr;
@@ -101,7 +102,7 @@ body {
 
 .main {
   grid-area: main;
-  background-color: rgb(100, 97, 100);
+  background-color: rgb(0, 0, 0);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -212,6 +213,7 @@ body {
 .card-title {
   font-family: "Segoe UI", Courier, monospace;
   font-weight: 500;
+  color: #81d4fa;
 }
 
 .text--exp {
@@ -233,7 +235,7 @@ body {
   font-weight: 500;
   color: #000;
   letter-spacing: 0.5px;
-  padding: 5px 10px;
+  padding: 2px 2px;
   margin-right: 3px;
   margin-bottom: 3px;
   transition: all 0.3s;

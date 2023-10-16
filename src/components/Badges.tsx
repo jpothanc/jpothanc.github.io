@@ -1,81 +1,18 @@
 import { motion } from "framer-motion";
 import { fmScale } from "../constants";
-import {
-  FaStackOverflow,
-  FaWrench,
-  FaPersonChalkboard,
-  FaCity,
-  FaHands,
-} from "react-icons/fa6";
+
+import { ColorArray, badgeVariants, getIcon } from "../lib/helper";
+import { IconType } from "react-icons";
 type Props = {
   title: string;
+  icon: IconType;
   content: string;
   items: string[];
   color: string;
 };
-const variants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-  exit: { opacity: 0 },
-};
-const ColorArray = [
-  "#F06292",
-  "#E57373",
-  "#f37735",
-  "#BA68C8",
-  "#29B6F6",
-  "#4DD0E1",
-  "#26A69A",
-  "#64FFDA",
-  "#18FFFF",
-  "#40C4FF",
-  "#DCE775",
-  "#66BB6A",
-  "#B2FF59",
-  "#C6FF00",
-  "#00E676",
-  "#FF9800",
-  "#FF6F00",
-  "#FFD600",
-  "#795548",
-  "#616161",
-  "#B3E5FC",
-  "#F44336",
-  "#EA80FC",
-];
 
-function getIcon(
-  title: string
-): React.CElement<{}, React.Component<{}, any, any>> | undefined {
-  let size = 28;
-  switch (title) {
-    case "Technology":
-      return <FaStackOverflow size={size} />;
-    case "Development Practices & Testing":
-      return <FaHands size={size} />;
-    case "Skills & Achievements":
-      return <FaWrench size={size} />;
-    case "Projects":
-      return <FaCity size={size} />;
-    case "Articles":
-      return <FaPersonChalkboard size={size} />;
-
-    default:
-      break;
-  }
-  return undefined;
-}
 [];
-const Badges = ({ title, content, items: skills, color }: Props) => {
+const Badges = ({ title, icon, content, items: skills, color }: Props) => {
   function getColor(random: boolean): string {
     if (random) {
       const randomIndex = Math.floor(Math.random() * ColorArray.length);
@@ -95,7 +32,7 @@ const Badges = ({ title, content, items: skills, color }: Props) => {
       >
         <section className="intro">
           <h3 className="card-title">
-            {getIcon(title)} {title}
+            {getIcon(icon)} {title}
           </h3>
           <p className="text">{content}</p>
           {skills.map((skill, index) => {
@@ -103,12 +40,15 @@ const Badges = ({ title, content, items: skills, color }: Props) => {
               <motion.button
                 className="skills--btn"
                 style={{
-                  background: getColor(false),
-                  borderRadius: "400px",
+                  background: "transparent",
+                  //borderRadius: "400px",
+                  border: "0px solid #FFEBEE",
                   fontWeight: 500,
+                  fontSize: "12px",
+                  color: getColor(false),
                 }}
                 key={index}
-                variants={variants}
+                variants={badgeVariants}
                 initial="initial"
                 whileInView="animate"
                 custom={index}
