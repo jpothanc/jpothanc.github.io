@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { shakeVariants, experiencesData, fmAnimate1 } from "../constants";
+import { shakeVariants, experiencesData } from "../constants";
 import { FaCode } from "react-icons/fa";
 
 import React from "react";
