@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fmScale } from "../constants";
+import { shakeVariants } from "../constants";
 
 import { FaSkiing } from "react-icons/fa";
 
@@ -11,17 +11,17 @@ type Prop = {
 const ListContent = ({ title, list }: Prop) => {
   return (
     <>
-      <motion.div
-        className="card"
-        variants={fmScale}
-        initial="initial"
-        //whileHover="animate"
-      >
+      <div className="card">
         <section className="intro">
-          <h3 className="card-title">
+          <motion.h3
+            className="card-title"
+            variants={shakeVariants}
+            initial="initial"
+            whileHover="animate"
+          >
             <FaSkiing size={28} />
             {title}
-          </h3>
+          </motion.h3>
           <ul>
             {list.map((l, index) => {
               return (
@@ -38,7 +38,7 @@ const ListContent = ({ title, list }: Prop) => {
             })}
           </ul>
         </section>
-      </motion.div>
+      </div>
     </>
   );
 };

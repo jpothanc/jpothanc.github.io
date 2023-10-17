@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fmScale } from "../constants";
+import { fmScaleText } from "../constants";
 
 type Props = {
   text: string;
@@ -8,20 +8,23 @@ type Props = {
 const Intro = ({ text }: Props) => {
   return (
     <>
-      <motion.header
-        className="headerContent"
-        variants={fmScale}
-        initial="initial"
-        whileHover="animate"
-      >
+      <header className="headerContent">
         <section className="intro">
           <span className="u-bold">
-            I'm <span className="u-yellow">Jessish, </span>
+            I'm{" "}
+            <motion.span
+              className="u-yellow"
+              variants={fmScaleText}
+              initial="initial"
+              whileHover="animate"
+            >
+              Jessish,{" "}
+            </motion.span>
           </span>
           {text}
           <span className="text--second"></span>
         </section>
-      </motion.header>
+      </header>
     </>
   );
 };

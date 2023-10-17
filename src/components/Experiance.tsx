@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fmScale, experiencesData, fmAnimate1 } from "../constants";
+import { shakeVariants, experiencesData, fmAnimate1 } from "../constants";
 import { FaCode } from "react-icons/fa";
 
 import React from "react";
@@ -14,17 +14,17 @@ const Experiance = () => {
   return (
     <>
       <div className="card">
-        <motion.header
-          className="careerContent"
-          variants={fmScale}
-          initial="initial"
-          whileTap="animate"
-        >
+        <motion.header className="careerContent">
           <section className="intro">
-            <h3 className="card-title">
+            <motion.h3
+              className="card-title"
+              variants={shakeVariants}
+              initial="initial"
+              whileHover="animate"
+            >
               <FaCode size={28} />
               Experiance
-            </h3>
+            </motion.h3>
 
             <motion.section
               id="experience"

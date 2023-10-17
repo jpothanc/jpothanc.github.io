@@ -47,7 +47,7 @@ const Contents = () => {
             title="Technology"
             content=""
             items={config.portfolio.technology}
-            color="#1DE9B6"
+            color="#CE93D8"
             icon={FaStackOverflow}
           ></Badges>
 
@@ -55,21 +55,21 @@ const Contents = () => {
             title="Development Practices & Testing"
             content=""
             items={config.portfolio.DevelopmentPractices}
-            color="#FFC107"
+            color="#FF9100"
             icon={FaHands}
           ></Badges>
           <Badges
             title="Projects"
             content=""
             items={config.portfolio.achievements}
-            color="#64B5F6"
+            color="#CE93D8"
             icon={FaCity}
           ></Badges>
           <Badges
             title="Skills & Achievements"
             content=""
             items={config.portfolio.achievements}
-            color="#4DD0E1"
+            color="#EF5350"
             icon={FaWrench}
           ></Badges>
           <Links

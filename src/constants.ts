@@ -4,10 +4,10 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const fmScale = {
-  initial: { scale: 1, border: "1px solid rgb(100, 97, 100)" },
+  initial: { scale: 1, border: "0px solid rgb(100, 97, 100)" },
   animate: {
     scale: 1.1,
-    border: "1px solid #42A5F5",
+    border: "1px solid rgba(227, 227, 227, 0.8)",
     color: "#ff0000",
     transition: { duration: 0.5, ease: "easeIn", delay: 0.1 },
   },
@@ -16,13 +16,29 @@ export const fmScale = {
   },
 };
 
-export const fmAnimate1 = {
-  initial: { opacity: 0 },
+export const shakeVariants = {
+  initial: { opacity: 1 },
   animate: {
-    opacity: 1,
-    transition: { type: "spring", duration: 0.5, ease: "easeOut", delay: 0.1 },
+    x: [-2, 2, -2, -1, -1, 0], // Define the shaking animation (x-axis)
+    opacity: [0.8, 0.7, 0.2, 0.6, 0.9, 1],
+    color: "#69F0AE",
+    transition: {
+      type: "spring",
+      stiffness: 500, // The stiffness of the spring (higher values make it stiffer)
+    },
   },
   exit: { opacity: 1 },
+};
+
+export const fmScaleText = {
+  animate: {
+    fontSize: "15px",
+    color: "#69F0AE",
+    transition: {
+      type: "spring",
+      stiffness: 600, // The stiffness of the spring (higher values make it stiffer)
+    },
+  },
 };
 
 export const links = [

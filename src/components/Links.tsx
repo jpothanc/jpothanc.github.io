@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fmScale } from "../constants";
+import { shakeVariants } from "../constants";
 import * as helper from "../lib/helper";
 import { IconType } from "react-icons";
 
@@ -13,30 +13,22 @@ type Props = {
 const Links = ({ title, content, icon, links }: Props) => {
   return (
     <>
-      <motion.div
-        className="card"
-        variants={fmScale}
-        initial="initial"
-        // whileHover="animate"
-      >
+      <div className="card">
         <section className="intro">
-          <h3 className="card-title">
+          <motion.h3
+            className="card-title"
+            variants={shakeVariants}
+            initial="initial"
+            whileHover="animate"
+          >
             {helper.getIcon(icon)}
             {title}
-          </h3>
+          </motion.h3>
           <p className="text">{content}</p>
           <ul>
             {links.map((link, index) => {
               return (
-                <motion.li
-                  key={index}
-                  initial="initial"
-                  whileInView="animate"
-                  custom={index}
-                  viewport={{
-                    once: true,
-                  }}
-                >
+                <li key={index}>
                   <a
                     href="https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
                     className="my-link"
@@ -44,12 +36,12 @@ const Links = ({ title, content, icon, links }: Props) => {
                   >
                     {link}
                   </a>
-                </motion.li>
+                </li>
               );
             })}
           </ul>
         </section>
-      </motion.div>
+      </div>
     </>
   );
 };

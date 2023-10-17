@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { fmScale } from "../constants";
-
+import { shakeVariants } from "../constants";
 import { ColorArray, badgeVariants, getIcon } from "../lib/helper";
 import { IconType } from "react-icons";
-type Props = {
+
+type badgeProps = {
   title: string;
   icon: IconType;
   content: string;
@@ -12,7 +12,7 @@ type Props = {
 };
 
 [];
-const Badges = ({ title, icon, content, items: skills, color }: Props) => {
+const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
   function getColor(random: boolean): string {
     if (random) {
       const randomIndex = Math.floor(Math.random() * ColorArray.length);
@@ -24,16 +24,16 @@ const Badges = ({ title, icon, content, items: skills, color }: Props) => {
 
   return (
     <>
-      <motion.div
-        className="card"
-        variants={fmScale}
-        initial="initial"
-        // whileHover="animate"
-      >
+      <div className="card">
         <section className="intro">
-          <h3 className="card-title">
+          <motion.h3
+            className="card-title"
+            variants={shakeVariants}
+            initial="initial"
+            whileHover="animate"
+          >
             {getIcon(icon)} {title}
-          </h3>
+          </motion.h3>
           <p className="text">{content}</p>
           {skills.map((skill, index) => {
             return (
@@ -43,7 +43,7 @@ const Badges = ({ title, icon, content, items: skills, color }: Props) => {
                   background: "transparent",
                   //borderRadius: "400px",
                   border: "0px solid #FFEBEE",
-                  fontWeight: 500,
+                  // fontWeight: 500,
                   fontSize: "12px",
                   color: getColor(false),
                 }}
@@ -61,7 +61,7 @@ const Badges = ({ title, icon, content, items: skills, color }: Props) => {
             );
           })}
         </section>
-      </motion.div>
+      </div>
     </>
   );
 };
