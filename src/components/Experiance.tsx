@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { shakeVariants, experiencesData } from "../constants";
+import { shakeVariants, experiencesData, fmOpacity } from "../constants";
 import { FaCode } from "react-icons/fa";
 
 import React from "react";
@@ -30,7 +30,7 @@ const Experiance = () => {
               id="experience"
               //ref={ref}
               className="text"
-              variants={fmAnimate1}
+              variants={fmOpacity}
               whileInView="animate"
             >
               <VerticalTimeline lineColor="red">

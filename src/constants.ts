@@ -40,6 +40,14 @@ export const fmScaleText = {
     },
   },
 };
+export const fmOpacity = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: { type: "spring", duration: 0.5, ease: "easeOut", delay: 0.1 },
+  },
+  exit: { opacity: 1 },
+};
 
 export const links = [
   {
