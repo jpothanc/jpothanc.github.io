@@ -12,7 +12,7 @@ const ListContent = ({ title, list }: Prop) => {
   return (
     <>
       <div className="card">
-        <section className="intro">
+        <section className="list-text">
           <motion.h3
             className="card-title"
             variants={shakeVariants}

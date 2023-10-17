@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import { shakeVariants } from "../constants";
-import {getIcon,link} from "../lib/helper";
+import { getIcon, projects } from "../lib/helper";
 import { IconType } from "react-icons";
 
 type Props = {
   title: string;
   icon: IconType;
   content: string;
-  links: link[];
+  items: projects[];
 };
 
-const Links = ({ title, content, icon, links }: Props) => {
+const Projects = ({ title, content, icon, items }: Props) => {
   return (
     <>
       <div className="card">
@@ -26,12 +26,12 @@ const Links = ({ title, content, icon, links }: Props) => {
           </motion.h3>
           <p className="text">{content}</p>
           <ul>
-            {links.map((link, index) => {
+            {items.map((project, index) => {
               return (
                 <li key={index}>
-                  <a href={link.url} className="my-link" target="_blank">
-                    {link.name}
-                  </a>
+                  <p>{project.name}</p>
+                  <p>{project.description}</p>
+                  <p>{project.technology}</p>
                 </li>
               );
             })}
@@ -42,4 +42,4 @@ const Links = ({ title, content, icon, links }: Props) => {
   );
 };
 
-export default Links;
+export default Projects;

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { shakeVariants, experiencesData, fmOpacity } from "../constants";
+import { shakeVariants, fmOpacity } from "../constants";
 import { FaCode } from "react-icons/fa";
+import { experiance, getIconByName } from "../lib/helper";
 
 import React from "react";
 import {
@@ -8,33 +9,37 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-//import { useSectionInView } from "../hooks/useSectionInView";
 
-const Experiance = () => {
+type timelineProps = {
+  timeline: experiance[];
+};
+
+const Experiance = ({ timeline }: timelineProps) => {
   return (
     <>
       <div className="card">
+        <motion.h3
+          className="card-title"
+          style={{
+            padding: "15px 40px",
+          }}
+          variants={shakeVariants}
+          initial="initial"
+          whileHover="animate"
+        >
+          <FaCode size={28} />
+          Experiance
+        </motion.h3>
         <motion.header className="careerContent">
           <section className="intro">
-            <motion.h3
-              className="card-title"
-              variants={shakeVariants}
-              initial="initial"
-              whileHover="animate"
-            >
-              <FaCode size={28} />
-              Experiance
-            </motion.h3>
-
             <motion.section
               id="experience"
-              //ref={ref}
               className="text"
               variants={fmOpacity}
               whileInView="animate"
             >
-              <VerticalTimeline lineColor="red">
-                {experiencesData.map((item, index) => (
+              <VerticalTimeline lineColor="#FF1744">
+                {timeline.map((item, index) => (
                   <React.Fragment key={index}>
                     <VerticalTimelineElement
                       contentStyle={{
@@ -43,21 +48,25 @@ const Experiance = () => {
                         border: "1px solid rgba(0, 0, 0, 0.05)",
                         textAlign: "left",
                         padding: "1.3rem 2rem",
+                        width: 500,
+
                         // color: "#64B5F6",
                       }}
                       contentArrowStyle={{
                         borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
                       }}
                       //date={item.date}
-                      icon={item.icon}
+                      icon={getIconByName(item.icon)}
                       iconStyle={{
                         background: "rgba(100, 255, 100, 0.1)",
                         fontSize: 10,
                         border: "none",
                       }}
                     >
-                      <h3>{item.title}</h3>
-                      <h3>{item.location}</h3>
+                      <h3 style={{ fontSize: 15, color: "#FF1744" }}>
+                        {item.title}
+                      </h3>
+                      <p style={{ fontSize: 13 }}>{item.location}</p>
                       <p style={{ fontSize: 12 }}>{item.description}</p>
                       <p style={{ fontSize: 12, color: "#64B5F6" }}>
                         {item.date}

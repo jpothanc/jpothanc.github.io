@@ -13,7 +13,7 @@ const NavBar = () => {
               />
               <span className="logo__text">{config.portfolio.name}</span>
             </a>
-            <span className="logo__text">{config.portfolio.IntroBadge}</span>
+            <span className="logo__desc">{config.portfolio.IntroBadge}</span>
           </div>
         </div>
       </header>

@@ -4,6 +4,7 @@ import ListContent from "./ListContent";
 import Experiance from "./Experiance";
 import Intro from "./Intro";
 import Links from "./Links";
+import Projects from "./Projects";
 import {
   FaStackOverflow,
   FaWrench,
@@ -16,7 +17,6 @@ import {
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-
 const Contents = () => {
   const ref = useRef<HTMLDivElement>(null);
   // const { scrollYProgress } = useScroll({
@@ -58,13 +58,12 @@ const Contents = () => {
             color="#FF9100"
             icon={FaHands}
           ></Badges>
-          <Badges
+          <Projects
             title="Projects"
             content=""
-            items={config.portfolio.achievements}
-            color="#CE93D8"
+            items={config.portfolio.projects}
             icon={FaCity}
-          ></Badges>
+          ></Projects>
           <Badges
             title="Skills & Achievements"
             content=""
@@ -98,7 +97,7 @@ const Contents = () => {
             links={config.portfolio.articles}
           ></Links>
 
-          <Experiance></Experiance>
+          <Experiance timeline={config.portfolio.experiance}></Experiance>
         </motion.main>
       </motion.div>
     </>

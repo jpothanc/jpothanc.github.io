@@ -3,38 +3,51 @@
     "name": "Jessish Pothancheri",
     "IntroBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
 
-    "intro": "Equities Front Office Solutions Technical and Delivery Lead with 20+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience",
+    "intro": "Equities Front Office Solutions Technical and Delivery Lead with 20+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
       {
-        "title": "Graduated bootcamp",
-        "location": "Miami, FL",
-        "description": "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        "icon": "React.createElement(LuGraduationCap)",
-        "date": "2019"
+        "title": "Graduated",
+        "location": "Yerevan, Armenia",
+        "description": "Completed BE in Computer Science",
+        "icon": "LuGraduationCap",
+        "date": "2000"
       },
       {
-        "title": "Front-End Developer",
-        "location": "Orlando, FL",
-        "description": "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-        "icon": "React.createElement(CgWorkAlt)",
-        "date": "2019 - 2021"
+        "title": "Software Engineer",
+        "location": "Enventure Technologies, Bangalore",
+        "description": "Provided Software services for Cadence Design Systems in Electronic Design Automation domain.",
+        "icon": "CgWorkAlt",
+        "date": "2000 - 2004"
       },
       {
-        "title": "Full-Stack Developer",
-        "location": "Houston, TX",
-        "description": "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        "icon": "React.createElement(FaReact)",
-        "date": "2021 - present"
+        "title": "Software Consultant",
+        "location": "Optimum Solutions, Singapore",
+        "description": "Worked for Credit Suisse a Software Consultant in Equities IT.",
+        "icon": "CgWorkAlt",
+        "date": "2004 - 2005"
+      },
+      {
+        "title": "Vice President",
+        "location": "Credit Suisse, Singapore",
+        "description": "Currently working as APAC Front Office Technical and Delivery lead.",
+        "icon": "CgWorkAlt",
+        "date": "2005 - 2023"
       }
     ],
     "expertise": [
-      " In-depth understanding of equities front office functions, including sales and trading, program trading and electronic trading.",
+      "In-depth understanding of equities front office functions, including sales and trading, program trading and electronic trading.",
       "Proven ability to lead cross-functional teams and foster collaboration, innovation, and a growth mindset in fast-paced trading environments.",
       "Strong collaboration skills, with a history of successfully partnering with trading desks, operations, compliance, and technology teams.",
-      "In-depth understanding of equities front office functions, including sales and trading, program trading and electronic trading.",
+      "Strong track record of delivering complex projects on time using Agile/Scrum and other project management methodologies",
       "As a proactive leader, I am dedicated to fostering a positive team culture, focused on continuous improvement, innovation, and collaboration.",
       "Strong leadership and communication skills to effectively mentor and manage a team of developers, collaborate with stakeholders, and contribute to the overall success of the organization.",
-      " Well-versed in design patterns, SOLID principles, and software architecture best practices to ensure maintainable and scalable code."
+      "Strong worth ethic with innovation and collaboration.",
+      "Exceptional production environment ownership.",
+      "Consistentantly recognised as a top performer througout the 17+ years with Credit Suisse, showcasing exceptional skills and dedication. ",
+      "Lead and successfully managed multi year equities Order Entry platform migration in APAC.",
+      "Winner of Hackathon and proven history of successfully event ideas to products that delivered tangible benefits to business.",
+      " Well-versed in design patterns, SOLID principles, and software architecture best practices to ensure maintainable and scalable code.",
+      "Track record of identifying process inefficiencies and delivering innovative solutions."
     ],
     "technology": [
       ".NET Framework",
@@ -53,14 +66,37 @@
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
       {
-        "name": "",
-        "description": ""
+        "name": "Front Office Automation",
+        "description": "",
+        "technology": ""
       },
       {
-        "name": "",
-        "description": ""
+        "name": "Japan Margin Trading",
+        "description": "",
+        "technology": ""
+      },
+      {
+        "name": "Electronic Market Making",
+        "description": "",
+        "technology": ""
+      },
+      {
+        "name": "APAC Order Equities Order Entry",
+        "description": "",
+        "technology": ""
+      },
+      {
+        "name": "APAC Order Equities Order Entry Platform Migration",
+        "description": "",
+        "technology": ""
+      },
+      {
+        "name": "APAC Front Office Applications",
+        "description": "",
+        "technology": ""
       }
     ],
+
     "DevelopmentPractices": [
       "DevOps",
       "Agile/SCRUM",
@@ -77,14 +113,68 @@
       "Consistent Top Performer",
       "Hackathon Winner"
     ],
-    "articles": [
+    "articles1": [
       "React-Inversify",
       "React-Rxjs",
       "K6 Load Testing",
       "JMeter",
       "Specflow"
     ],
-    "git": ["dynamo", "AuthMe", "WebQ", "datastore"],
-    "personality": ["#pragmatic", "#selfless", "#self-driven", "#trustworthy"]
+    "articles": [
+      {
+        "name": "React-Inversify",
+        "description": "How to use Dependency injection in react using inversify.",
+        "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
+      },
+      {
+        "name": "React-Rxjs",
+        "description": "How to use rxjs in react.",
+        "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
+      },
+      {
+        "name": "K6 Load Testing",
+        "description": "How to use rxjs in react.",
+        "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
+      },
+      {
+        "name": "Specflow",
+        "description": "How to use rxjs in react.",
+        "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
+      }
+    ],
+    "git": [
+      {
+        "name": "Dynamo",
+        "description": "How to use Dependency injection in react using inversify.",
+        "url": "https://github.com/jpothanc/dynamo"
+      },
+      {
+        "name": "AuthMe",
+        "description": "How to use rxjs in react.",
+        "url": "https://github.com/jpothanc/AuthMe"
+      },
+      {
+        "name": "WebQ",
+        "description": "How to use rxjs in react.",
+        "url": "https://github.com/jpothanc/WebQ"
+      },
+      {
+        "name": "Datastore",
+        "description": "How to use rxjs in react.",
+        "url": "https://github.com/jpothanc/datastore"
+      }
+    ],
+    "git1": ["dynamo", "AuthMe", "WebQ", "datastore"],
+    "personality": [
+      "#pragmatic",
+      "#passionate",
+      "#collborative",
+      "#selfless",
+      "#self-driven",
+      "#trustworthy",
+      "#empathetic",
+      "#respected",
+      "#adaptable"
+    ]
   }
 }

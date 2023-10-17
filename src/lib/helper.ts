@@ -1,5 +1,7 @@
 import React from "react";
 import { IconType } from "react-icons";
+import { FaGraduationCap } from "react-icons/fa6";
+import { CgWorkAlt } from "react-icons/cg";
 export const ColorArray = [
   "#F06292",
   "#E57373",
@@ -51,3 +53,38 @@ export function getIcon(icon: IconType): any | undefined {
 
   return undefined;
 }
+export function getIconByName(name: string): any | undefined {
+  switch (name) {
+    case "LuGraduationCap":
+      return getIcon(FaGraduationCap);
+      break;
+    case "CgWorkAlt":
+      return getIcon(CgWorkAlt);
+      break;
+
+    default:
+      break;
+  }
+
+  return FaGraduationCap;
+}
+
+export type experiance = {
+  title: string;
+  location: string;
+  description: string;
+  icon: string;
+  date: string;
+};
+
+export type link = {
+  name: string;
+  description: string;
+  url: string;
+};
+
+export type projects = {
+  name: string;
+  description: string;
+  technology: string;
+};

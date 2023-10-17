@@ -78,6 +78,14 @@ body {
   font-weight: 700;
   letter-spacing: -0.5px;
 }
+.logo__desc {
+  color: #0e0e0f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  word-wrap: break-word;
+  white-space: normal; /* Allow text to wrap to the next line */
+}
 
 /*CONTENTS*/
 
@@ -110,9 +118,11 @@ body {
   grid-template-areas:
     "c1 c1 c2"
     "c1 c1 c3"
-    "c4 c4 c5"
-    "c4 c4 c6"
-    "c7 c8 c9"
+    "c1 c1 c5"
+    "c1 c1 c6"
+    "c4 c4 c7"
+    "c4 c4 c8"
+    "c4 c4 c9"
     "c10 c10 c10";
 }
 .headerContent {
@@ -192,6 +202,14 @@ body {
 }
 
 /* INTRO */
+.list-text {
+  padding: 15px 40px;
+  color: #d2d5d6;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+  font-weight: 400;
+}
 .intro {
   padding: 15px 40px;
   color: #d2d5d6;
@@ -208,10 +226,15 @@ body {
 }
 
 .text {
-  font-family: "Segoe UI", Courier, monospace;
   opacity: 0.9;
-  font-weight: 200;
+  font-weight: 400;
   margin-top: 18px;
+  line-height: 1.4;
+}
+.text1 {
+  opacity: 0.9;
+  font-weight: 400;
+  margin-top: 14px;
   line-height: 1.4;
 }
 .card-title {
