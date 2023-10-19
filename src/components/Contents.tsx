@@ -108,7 +108,7 @@ const Contents = () => {
             title="Contact"
             content=""
             icon={FaPersonChalkboard}
-            links={config.portfolio.articles}
+            links={[]}
           ></Links>
           <Experiance timeline={config.portfolio.experiance}></Experiance>
         </motion.main>

@@ -91,7 +91,7 @@ export type projects = {
 };
 
 export function getThemeColor(theme: string, component: string): string {
-  if ((theme = "dark")) {
+  if (theme == "dark") {
     switch (component) {
       case "bodyBackground":
         return config.themes.dark.bodyBackground;
