@@ -1,6 +1,6 @@
 import config from "../config.json";
 import Badges from "./Badges";
-import ListContent from "./ListContent";
+import ListContent from "./Expertise";
 import Experiance from "./Experiance";
 import Intro from "./Intro";
 import Links from "./Links";
@@ -14,7 +14,9 @@ import {
   FaChildReaching,
   FaGithub,
   FaGraduationCap,
+  FaHandshakeSimple,
 } from "react-icons/fa6";
+import { FaSkiing } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 const Contents = () => {
@@ -29,7 +31,6 @@ const Contents = () => {
   return (
     <>
       <motion.div className="content">
-        <Intro text={config.portfolio.intro}></Intro>
         <motion.main
           className="main"
           ref={ref}
@@ -38,11 +39,12 @@ const Contents = () => {
           //   opacity: opacityProgress,
           // }}
         >
+          <Intro text={config.portfolio.intro}></Intro>
           <ListContent
             title="Expertise"
-            list={config.portfolio.expertise}
+            items={config.portfolio.expertise}
+            icon={FaSkiing}
           ></ListContent>
-
           <Badges
             title="Technology"
             content=""
@@ -58,12 +60,6 @@ const Contents = () => {
             color="#FF9100"
             icon={FaHands}
           ></Badges>
-          <Projects
-            title="Projects"
-            content=""
-            items={config.portfolio.projects}
-            icon={FaCity}
-          ></Projects>
           <Badges
             title="Skills & Achievements"
             content=""
@@ -77,11 +73,23 @@ const Contents = () => {
             icon={FaGraduationCap}
             links={[]}
           ></Links>
+          <ListContent
+            title="Current Responsilities"
+            items={config.portfolio.currentresponsiblities}
+            icon={FaHandshakeSimple}
+          ></ListContent>
           <Links
             title="Git"
             content=""
             icon={FaGithub}
             links={config.portfolio.git}
+          ></Links>
+
+          <Links
+            title="Articles"
+            content=""
+            icon={FaPersonChalkboard}
+            links={config.portfolio.articles}
           ></Links>
           <Badges
             title="Personality"
@@ -90,13 +98,18 @@ const Contents = () => {
             color="#E8EAF6"
             icon={FaChildReaching}
           ></Badges>
+          <Projects
+            title="Projects"
+            content=""
+            items={config.portfolio.projects}
+            icon={FaCity}
+          ></Projects>
           <Links
-            title="Articles"
+            title="Contact"
             content=""
             icon={FaPersonChalkboard}
             links={config.portfolio.articles}
           ></Links>
-
           <Experiance timeline={config.portfolio.experiance}></Experiance>
         </motion.main>
       </motion.div>

@@ -2,6 +2,7 @@ import React from "react";
 import { IconType } from "react-icons";
 import { FaGraduationCap } from "react-icons/fa6";
 import { CgWorkAlt } from "react-icons/cg";
+import config from "../config.json";
 export const ColorArray = [
   "#F06292",
   "#E57373",
@@ -88,3 +89,31 @@ export type projects = {
   description: string;
   technology: string;
 };
+
+export function getThemeColor(theme: string, component: string): string {
+  if ((theme = "dark")) {
+    switch (component) {
+      case "bodyBackground":
+        return config.themes.dark.bodyBackground;
+      case "logoBackground":
+        return config.themes.dark.logoBackground;
+      case "logoColor":
+        return config.themes.dark.logoColor;
+      case "logoDescColor":
+        return config.themes.dark.logoDescColor;
+      case "mainBackground":
+        return config.themes.dark.mainBackground;
+      case "contentBackground":
+        return config.themes.dark.contentBackground;
+      case "contentTextColor":
+        return config.themes.dark.contentTextColor;
+      case "cardTitleColor":
+        return config.themes.dark.cardTitleColor;
+      case "careerContentBackground":
+        return config.themes.dark.careerContentBackground;
+      default:
+        return "";
+    }
+  }
+  return "";
+}

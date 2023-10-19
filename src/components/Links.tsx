@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { shakeVariants } from "../constants";
-import {getIcon,link} from "../lib/helper";
+import { getIcon, getThemeColor, link } from "../lib/helper";
 import { IconType } from "react-icons";
 
 type Props = {
@@ -13,13 +13,21 @@ type Props = {
 const Links = ({ title, content, icon, links }: Props) => {
   return (
     <>
-      <div className="card">
+      <div
+        className="card"
+        style={{
+          background: getThemeColor("dark", "contentBackground"),
+        }}
+      >
         <section className="intro">
           <motion.h3
             className="card-title"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
+            style={{
+              color: getThemeColor("dark", "cardTitleColor"),
+            }}
           >
             {getIcon(icon)}
             {title}

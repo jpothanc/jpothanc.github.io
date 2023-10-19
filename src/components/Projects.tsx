@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { shakeVariants } from "../constants";
-import { getIcon, projects } from "../lib/helper";
+import { getIcon, getThemeColor, projects } from "../lib/helper";
 import { IconType } from "react-icons";
 
 type Props = {
@@ -13,29 +13,48 @@ type Props = {
 const Projects = ({ title, content, icon, items }: Props) => {
   return (
     <>
-      <div className="card">
-        <section className="intro">
+      <div
+        className="card"
+        style={{
+          background: getThemeColor("dark", "contentBackground"),
+        }}
+      >
+        <section
+          className="intro"
+          style={{
+            color: getThemeColor("dark", "contentTextColor"),
+          }}
+        >
           <motion.h3
             className="card-title"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
+            style={{
+              color: getThemeColor("dark", "cardTitleColor"),
+            }}
           >
             {getIcon(icon)}
             {title}
           </motion.h3>
           <p className="text">{content}</p>
-          <ul>
-            {items.map((project, index) => {
-              return (
-                <li key={index}>
-                  <p>{project.name}</p>
-                  <p>{project.description}</p>
-                  <p>{project.technology}</p>
-                </li>
-              );
-            })}
-          </ul>
+          {items.map((project) => {
+            return (
+              <div>
+                <h4
+                  style={{
+                    paddingTop: "5px",
+                  }}
+                >
+                  {project.name}
+                </h4>
+                <p style={{ fontSize: "12px" }}>{project.description}</p>
+                <p style={{ fontSize: "12px", color: "#64B5F6" }}>
+                  Technology:{project.technology}
+                </p>
+              </div>
+            );
+          })}
         </section>
       </div>
     </>

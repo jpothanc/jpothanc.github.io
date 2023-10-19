@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { shakeVariants } from "../constants";
-import { ColorArray, badgeVariants, getIcon } from "../lib/helper";
+import {
+  ColorArray,
+  badgeVariants,
+  getIcon,
+  getThemeColor,
+} from "../lib/helper";
 import { IconType } from "react-icons";
 
 type badgeProps = {
@@ -24,13 +29,26 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
 
   return (
     <>
-      <div className="card">
-        <section className="intro">
+      <div
+        className="card"
+        style={{
+          background: getThemeColor("dark", "contentBackground"),
+        }}
+      >
+        <section
+          className="intro"
+          style={{
+            color: getThemeColor("dark", "contentTextColor"),
+          }}
+        >
           <motion.h3
             className="card-title"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
+            style={{
+              color: getThemeColor("dark", "cardTitleColor"),
+            }}
           >
             {getIcon(icon)} {title}
           </motion.h3>

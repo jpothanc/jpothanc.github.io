@@ -1,9 +1,20 @@
 import config from "../config.json";
+import { getThemeColor } from "../lib/helper";
 const NavBar = () => {
   return (
     <>
-      <header className="header">
-        <div className="top-bar">
+      <header
+        className="header"
+        style={{
+          background: getThemeColor("dark", "bodyBackground"),
+        }}
+      >
+        <div
+          className="top-bar"
+          style={{
+            background: getThemeColor("dark", "logoBackground"),
+          }}
+        >
           <div className="top-bar__content">
             <a href="#" className="logo">
               <img
@@ -11,9 +22,23 @@ const NavBar = () => {
                 alt="logo"
                 className="logo"
               />
-              <span className="logo__text">{config.portfolio.name}</span>
+              <span
+                className="logo__text"
+                style={{
+                  color: getThemeColor("dark", "logoColor"),
+                }}
+              >
+                {config.portfolio.name}
+              </span>
             </a>
-            <span className="logo__desc">{config.portfolio.IntroBadge}</span>
+            <span
+              className="logo__desc"
+              style={{
+                color: getThemeColor("dark", "logoDescColor"),
+              }}
+            >
+              {config.portfolio.IntroBadge}
+            </span>
           </div>
         </div>
       </header>

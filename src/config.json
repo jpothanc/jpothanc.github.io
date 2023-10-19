@@ -1,4 +1,5 @@
 {
+  "theme": "dark",
   "portfolio": {
     "name": "Jessish Pothancheri",
     "IntroBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
@@ -22,7 +23,7 @@
       {
         "title": "Software Consultant",
         "location": "Optimum Solutions, Singapore",
-        "description": "Worked for Credit Suisse a Software Consultant in Equities IT.",
+        "description": "Worked for Credit Suisse as a Software Consultant in Equities IT.",
         "icon": "CgWorkAlt",
         "date": "2004 - 2005"
       },
@@ -38,16 +39,27 @@
       "In-depth understanding of equities front office functions, including sales and trading, program trading and electronic trading.",
       "Proven ability to lead cross-functional teams and foster collaboration, innovation, and a growth mindset in fast-paced trading environments.",
       "Strong collaboration skills, with a history of successfully partnering with trading desks, operations, compliance, and technology teams.",
-      "Strong track record of delivering complex projects on time using Agile/Scrum and other project management methodologies",
+      "Strong track record of delivering complex projects on time using Agile/Scrum and other project management methodologies.",
       "As a proactive leader, I am dedicated to fostering a positive team culture, focused on continuous improvement, innovation, and collaboration.",
       "Strong leadership and communication skills to effectively mentor and manage a team of developers, collaborate with stakeholders, and contribute to the overall success of the organization.",
-      "Strong worth ethic with innovation and collaboration.",
+      "Strong work ethic with innovation and collaboration.",
       "Exceptional production environment ownership.",
       "Consistentantly recognised as a top performer througout the 17+ years with Credit Suisse, showcasing exceptional skills and dedication. ",
       "Lead and successfully managed multi year equities Order Entry platform migration in APAC.",
       "Winner of Hackathon and proven history of successfully event ideas to products that delivered tangible benefits to business.",
       " Well-versed in design patterns, SOLID principles, and software architecture best practices to ensure maintainable and scalable code.",
       "Track record of identifying process inefficiencies and delivering innovative solutions."
+    ],
+    "currentresponsiblities": [
+      "Collaborate with other teams such as Support, compliance, operations, and IT to resolve system issues or incidents.",
+      "Actively contributing to software development projects by designing, developing, and testing software code.",
+      "Setting an example for the team by demonstrating best practices in software development, such as writing clean, efficient, and maintainable code.",
+      "Overseeing the development lifecycle of software applications, from design and development to testing and deployment.",
+      "Ensure that technology solutions are scalable, reliable, and comply with regulatory requirements and internal policies.",
+      "Monitor and maintain the performance and stability of software applications, identifying and resolving issues as they arise.",
+      "Mentor and coach software developers to ensure that they have the skills and knowledge to develop software applications that align with business requirements and industry standards.",
+      "Keeping up-to-date with the latest technologies and industry trends, and identifying opportunities for innovation and improvement",
+      "Communicating with senior management on project performance, risks, and opportunities."
     ],
     "technology": [
       ".NET Framework",
@@ -67,23 +79,23 @@
     "projects": [
       {
         "name": "Front Office Automation",
-        "description": "",
-        "technology": ""
+        "description": "Developing various tools for front office automation.",
+        "technology": "VC++"
       },
       {
         "name": "Japan Margin Trading",
-        "description": "",
-        "technology": ""
+        "description": "Website for Margin Trading.",
+        "technology": "Java, VC++"
       },
       {
         "name": "Electronic Market Making",
-        "description": "",
-        "technology": ""
+        "description": "Create Strategies for EMM",
+        "technology": "C#"
       },
       {
         "name": "APAC Order Equities Order Entry",
-        "description": "",
-        "technology": ""
+        "description": "Lead APAC Order Entry Application",
+        "technology": "VC++"
       },
       {
         "name": "APAC Order Equities Order Entry Platform Migration",
@@ -176,5 +188,29 @@
       "#respected",
       "#adaptable"
     ]
+  },
+  "themes": {
+    "dark1": {
+      "bodyBackground": "rgb(83, 81, 81)",
+      "logoBackground": "#212121",
+      "logoColor": "rgba(227, 227, 227, 0.8)",
+      "logoDescColor": "rgba(227, 227, 227, 0.8)",
+      "mainBackground": "grey",
+      "contentBackground": "white",
+      "contentTextColor": "black",
+      "cardTitleColor": "#1565C0",
+      "careerContentBackground": "rgba(227, 227, 227, 0.8)"
+    },
+    "dark": {
+      "bodyBackground": "rgb(40, 39, 39)",
+      "logoBackground": "rgba(227, 227, 227, 0.8)",
+      "logoColor": "#0e0f0e",
+      "logoDescColor": "#0e0e0f",
+      "mainBackground": "rgb(0, 0, 0)",
+      "contentBackground": "#212121",
+      "contentTextColor": "#d2d5d6",
+      "cardTitleColor": "#81d4fa",
+      "careerContentBackground": "rgba(100, 255, 100, 0.05)"
+    }
   }
 }

@@ -27,7 +27,7 @@ ul {
 
 /*BASE STYLES*/
 body {
-  background-color: rgb(26, 24, 24);
+  background-color: rgb(40, 39, 39);
   font-family: "Segoe UI", sans-serif;
   height: 100vh;
   padding-top: 8ch;
@@ -101,7 +101,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 150px 1fr;
   grid-template-areas:
-    "header"
     "main"
     "career";
 }
@@ -111,19 +110,21 @@ body {
   background-color: rgb(0, 0, 0);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 1px;
   padding: 1px;
   border: none;
+  margin: auto;
   grid-template-areas:
-    "c1 c1 c2"
-    "c1 c1 c3"
-    "c1 c1 c5"
-    "c1 c1 c6"
-    "c4 c4 c7"
-    "c4 c4 c8"
-    "c4 c4 c9"
-    "c10 c10 c10";
+    "c1 c1 c1"
+    "c2 c2 c3"
+    "c2 c2 c4"
+    "c2 c2 c5"
+    "c2 c2 c6"
+    "c7 c7 c7"
+    "c8 c9 c10"
+    "c11 c11 c11"
+    "c13 c13 c13"
+    "c12 c12 c12";
 }
 .headerContent {
   background-color: #212121;
@@ -174,10 +175,19 @@ body {
 .card:nth-child(10) {
   grid-area: c10;
 }
+.card:nth-child(11) {
+  grid-area: c11;
+}
+.card:nth-child(12) {
+  grid-area: c12;
+}
+.card:nth-child(13) {
+  grid-area: c13;
+}
 @media (max-width: 925px) {
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(12, 300px);
     grid-template-areas: initial;
   }
   .card {

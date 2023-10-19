@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { shakeVariants, fmOpacity } from "../constants";
 import { FaCode } from "react-icons/fa";
-import { experiance, getIconByName } from "../lib/helper";
+import { experiance, getIconByName, getThemeColor } from "../lib/helper";
 
 import React from "react";
 import {
@@ -17,11 +17,17 @@ type timelineProps = {
 const Experiance = ({ timeline }: timelineProps) => {
   return (
     <>
-      <div className="card">
+      <div
+        className="card"
+        style={{
+          background: getThemeColor("dark", "contentBackground"),
+        }}
+      >
         <motion.h3
           className="card-title"
           style={{
             padding: "15px 40px",
+            color: getThemeColor("dark", "cardTitleColor"),
           }}
           variants={shakeVariants}
           initial="initial"
@@ -31,7 +37,12 @@ const Experiance = ({ timeline }: timelineProps) => {
           Experiance
         </motion.h3>
         <motion.header className="careerContent">
-          <section className="intro">
+          <section
+            className="intro"
+            style={{
+              color: getThemeColor("dark", "contentTextColor"),
+            }}
+          >
             <motion.section
               id="experience"
               className="text"
@@ -43,7 +54,10 @@ const Experiance = ({ timeline }: timelineProps) => {
                   <React.Fragment key={index}>
                     <VerticalTimelineElement
                       contentStyle={{
-                        background: "rgba(100, 255, 100, 0.05)",
+                        background: getThemeColor(
+                          "dark",
+                          "careerContentBackground"
+                        ),
                         boxShadow: "none",
                         border: "1px solid rgba(0, 0, 0, 0.05)",
                         textAlign: "left",
