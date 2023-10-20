@@ -70,10 +70,8 @@ const Menu = ({ color, size }: Props) => {
           </Tooltip>
         </div>
         <div className="about-menu-item">
-          <Tooltip text="This site was developed using react (ts) and framer motion.">
-            <a href="mailto:kaljessy@gmail.com" target="_blank">
-              <FaDev size={size}></FaDev>
-            </a>
+          <Tooltip text="This site was developed using react(ts) and framer motion [October 2023]">
+            <FaDev size={size}></FaDev>
           </Tooltip>
         </div>
       </motion.div>
