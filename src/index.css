@@ -307,10 +307,10 @@ body {
 .about__left__caption {
   opacity: 0.9;
   margin-top: 16px;
-  padding: 10px 120px;
+  padding: 10px 50px;
   font-size: 16px;
-
   line-height: 1.4;
+  text-align: center;
 }
 .card-title {
   font-family: "Segoe UI", Courier, monospace;

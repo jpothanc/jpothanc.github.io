@@ -24,6 +24,7 @@ const About = () => {
               className="about__left__caption"
               style={{
                 color: getThemeColor("dark", "aboutSubCaptionColor"),
+                // fontStyle: "italic",
               }}
             >
               Pursuing his passion, the passionate programmer persistently
@@ -38,7 +39,20 @@ const About = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <img src="about_right.PNG" alt="logo" />
+            <motion.img
+              src="Art2.PNG"
+              alt="logo"
+              style={{
+                borderRadius: "50%",
+              }}
+              whileHover={{ rotate: 20 }}
+              initial={{ rotate: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                duration: 1,
+              }}
+            ></motion.img>
           </motion.div>
         </motion.div>
       </div>
