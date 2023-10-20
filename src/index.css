@@ -37,8 +37,8 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  top: 10px;
-  backdrop-filter: blur(6px);
+  top: 12px;
+  backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
   justify-content: center;
