@@ -3,6 +3,7 @@ import { IconType } from "react-icons";
 import { FaGraduationCap } from "react-icons/fa6";
 import { CgWorkAlt } from "react-icons/cg";
 import config from "../config.json";
+import { ThemeConstants } from "../constants";
 export const ColorArray = [
   "#F06292",
   "#E57373",
@@ -113,10 +114,8 @@ export function getThemeColor(theme: string, component: string): string {
         return config.themes.dark.careerContentBackground;
       case "careerHeader":
         return config.themes.dark.careerHeader;
-
       case "careerDate":
         return config.themes.dark.careerDate;
-
       case "aboutMenuColor":
         return config.themes.dark.aboutMenuColor;
       case "barMenuColor":
@@ -125,6 +124,16 @@ export function getThemeColor(theme: string, component: string): string {
         return config.themes.dark.aboutCaptionColor;
       case "aboutSubCaptionColor":
         return config.themes.dark.aboutSubCaptionColor;
+
+      case ThemeConstants.badgeTechColor:
+        return config.themes.dark.badgeTechColor;
+      case ThemeConstants.badgeDevPracticeColor:
+        return config.themes.dark.badgeDevPracticeColor;
+      case ThemeConstants.badgeSkillsColor:
+        return config.themes.dark.badgeSkillsColor;
+      case ThemeConstants.badgePersonalityColor:
+        return config.themes.dark.badgePersonalityColor;
+
       default:
         return "";
     }

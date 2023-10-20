@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { shakeVariants } from "../constants";
+import { ThemeConstants, shakeVariants } from "../constants";
 import { getIcon, getThemeColor, projects } from "../lib/helper";
 import { IconType } from "react-icons";
 
@@ -16,28 +16,37 @@ const Projects = ({ title, content, icon, items }: Props) => {
       <div
         className="card"
         style={{
-          background: getThemeColor("dark", "contentBackground"),
+          background: getThemeColor(
+            ThemeConstants.themeDark,
+            ThemeConstants.contentBackground
+          ),
         }}
       >
         <section
           className="intro"
           style={{
-            color: getThemeColor("dark", "contentTextColor"),
+            color: getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.contentTextColor
+            ),
           }}
         >
           <motion.h3
-            className="card-title"
+            className="card__title"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
             style={{
-              color: getThemeColor("dark", "cardTitleColor"),
+              color: getThemeColor(
+                ThemeConstants.themeDark,
+                ThemeConstants.cardTitleColor
+              ),
             }}
           >
             {getIcon(icon)}
             {title}
           </motion.h3>
-          <p className="text">{content}</p>
+          <p className="basic-text">{content}</p>
           {items.map((project) => {
             return (
               <div>

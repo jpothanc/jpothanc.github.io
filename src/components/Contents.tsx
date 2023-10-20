@@ -20,6 +20,8 @@ import { FaSkiing } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import NavBar from "./NavBar";
+import { ThemeConstants } from "../constants";
+import { getThemeColor } from "../lib/helper";
 const Contents = () => {
   const ref = useRef<HTMLDivElement>(null);
   // const { scrollYProgress } = useScroll({
@@ -52,7 +54,10 @@ const Contents = () => {
             title="Technology"
             content=""
             items={config.portfolio.technology}
-            color="#00BCD4"
+            color={getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.badgeTechColor
+            )}
             icon={FaStackOverflow}
           ></Badges>
 
@@ -60,14 +65,20 @@ const Contents = () => {
             title="Development Practices & Testing"
             content=""
             items={config.portfolio.DevelopmentPractices}
-            color="#4CAF50"
+            color={getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.badgeDevPracticeColor
+            )}
             icon={FaHands}
           ></Badges>
           <Badges
             title="Skills & Achievements"
             content=""
             items={config.portfolio.achievements}
-            color="#CE93D8"
+            color={getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.badgeSkillsColor
+            )}
             icon={FaWrench}
           ></Badges>
           <Links
@@ -98,7 +109,10 @@ const Contents = () => {
             title="Personality"
             content=""
             items={config.portfolio.personality}
-            color="#E57373"
+            color={getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.badgePersonalityColor
+            )}
             icon={FaChildReaching}
           ></Badges>
           <Projects

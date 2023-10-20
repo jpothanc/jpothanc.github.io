@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { shakeVariants } from "../constants";
+import { ThemeConstants, shakeVariants } from "../constants";
 import { IconType } from "react-icons";
 import { getIcon, getThemeColor } from "../lib/helper";
 
@@ -15,22 +15,31 @@ const ListContent = ({ title, items, icon }: Prop) => {
       <div
         className="card"
         style={{
-          background: getThemeColor("dark", "contentBackground"),
+          background: getThemeColor(
+            ThemeConstants.themeDark,
+            ThemeConstants.contentBackground
+          ),
         }}
       >
         <section
           className="list-text"
           style={{
-            color: getThemeColor("dark", "contentTextColor"),
+            color: getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.contentTextColor
+            ),
           }}
         >
           <motion.h3
-            className="card-title"
+            className="card__title"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
             style={{
-              color: getThemeColor("dark", "cardTitleColor"),
+              color: getThemeColor(
+                ThemeConstants.themeDark,
+                ThemeConstants.cardTitleColor
+              ),
             }}
           >
             {getIcon(icon)}
@@ -40,13 +49,13 @@ const ListContent = ({ title, items, icon }: Prop) => {
             {items.map((item, index) => {
               return (
                 <motion.li
-                  className="text"
+                  className="basic-text"
                   key={index}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <p className="text">{item}</p>
+                  <p className="basic-text">{item}</p>
                 </motion.li>
               );
             })}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Menu from "./Menu";
-import { fmScaleAboutText } from "../constants";
+import { ThemeConstants, fmScaleAboutText } from "../constants";
 import { getThemeColor } from "../lib/helper";
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
         <motion.div
           className="about"
           style={{
-            background: getThemeColor("dark", "bodyBackground"),
+            background: getThemeColor(ThemeConstants.themeDark, ThemeConstants.bodyBackground),
           }}
         >
           <motion.div
@@ -25,7 +25,7 @@ const About = () => {
               initial="initial"
               whileHover="animate"
               style={{
-                color: getThemeColor("dark", "aboutCaptionColor"),
+                color: getThemeColor(ThemeConstants.themeDark, ThemeConstants.aboutCaptionColor),
               }}
             >
               Jessish Pothancheri
@@ -33,7 +33,10 @@ const About = () => {
             <p
               className="about__left__sub_caption"
               style={{
-                color: getThemeColor("dark", "aboutSubCaptionColor"),
+                color: getThemeColor(
+                  ThemeConstants.themeDark,
+                  ThemeConstants.aboutSubCaptionColor
+                ),
                 // fontStyle: "italic",
               }}
             >
@@ -41,7 +44,7 @@ const About = () => {
               perfects his programming prowess, pushing past obstacles and
               pitfalls.
             </p>
-            <Menu color="aboutMenuColor" size="32px" />
+            <Menu color={ThemeConstants.aboutMenuColor} size="32px" />
           </motion.div>
           <motion.div
             className="about__right"

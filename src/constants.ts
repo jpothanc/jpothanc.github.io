@@ -1,8 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-
 export const fmScale = {
   initial: { scale: 1, border: "0px solid rgb(100, 97, 100)" },
   animate: {
@@ -70,60 +65,26 @@ export const fmOpacitySlow = {
   exit: { opacity: 1 },
 };
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-] as const;
-
-export type SectionName = (typeof links)[number]["name"];
-
-export const experiencesData = [
-  {
-    title: "Graduated",
-    location: "Armenia, Yerevan",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap, {
-      size: 16,
-    }),
-    date: " 2019 ",
-  },
-  {
-    title: "Software Developer",
-    location: "Bangalore, India",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: " 2019 - 2021 ",
-  },
-  {
-    title: "Software Developer",
-    location: "Singapore",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: " 2021 - present ",
-  },
-] as const;
+export class ThemeConstants {
+  static readonly themeDark: string = "dark";
+  static readonly themeLight: string = "light";
+  static readonly bodyBackground: string = "bodyBackground";
+  static readonly logoBackground: string = "logoBackground";
+  static readonly logoColor: string = "logoColor";
+  static readonly logoDescColor: string = "logoDescColor";
+  static readonly mainBackground: string = "mainBackground";
+  static readonly contentBackground: string = "contentBackground";
+  static readonly contentTextColor: string = "contentTextColor";
+  static readonly cardTitleColor: string = "cardTitleColor";
+  static readonly careerContentBackground: string = "careerContentBackground";
+  static readonly careerHeader: string = "careerHeader";
+  static readonly careerDate: string = "careerDate";
+  static readonly aboutMenuColor: string = "aboutMenuColor";
+  static readonly aboutCaptionColor: string = "aboutCaptionColor";
+  static readonly aboutSubCaptionColor: string = "aboutSubCaptionColor";
+  static readonly barMenuColor: string = "barMenuColor";
+  static readonly badgeTechColor: string = "badgeTechColor";
+  static readonly badgeDevPracticeColor: string = "badgeDevPracticeColor";
+  static readonly badgeSkillsColor: string = "badgeSkillsColor";
+  static readonly badgePersonalityColor: string = "badgePersonalityColor";
+}

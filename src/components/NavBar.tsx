@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import config from "../config.json";
 import Menu from "./Menu";
-import { fmScale } from "../constants";
+import { ThemeConstants, fmScale } from "../constants";
 import { getThemeColor } from "../lib/helper";
 const NavBar = () => {
   return (
@@ -10,7 +10,7 @@ const NavBar = () => {
         <div
           className="top-bar"
           style={{
-            background: getThemeColor("dark", "logoBackground"),
+            background: getThemeColor(ThemeConstants.themeDark, ThemeConstants.logoBackground),
           }}
         >
           <div className="top-bar__content">
@@ -29,7 +29,7 @@ const NavBar = () => {
         </div>
         <div className="bottom-bar">
           <div className="bottom-bar__content">
-            <Menu color="barMenuColor" size="24px" />
+            <Menu color={ThemeConstants.barMenuColor} size="24px" />
           </div>
         </div>
       </header>

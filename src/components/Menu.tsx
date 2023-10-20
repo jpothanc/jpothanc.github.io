@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fmOpacitySlow } from "../constants";
+import { ThemeConstants, fmOpacitySlow } from "../constants";
 import {
   FaGithub,
   FaLinkedin,
@@ -27,7 +27,7 @@ const Menu = ({ color, size }: Props) => {
         initial="initial"
         whileInView="animate"
         style={{
-          color: getThemeColor("dark", color),
+          color: getThemeColor(ThemeConstants.themeDark, color),
         }}
       >
         <div className="about-menu-item">

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { shakeVariants } from "../constants";
+import { ThemeConstants, shakeVariants } from "../constants";
 import {
   ColorArray,
   badgeVariants,
@@ -32,31 +32,40 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
       <div
         className="card"
         style={{
-          background: getThemeColor("dark", "contentBackground"),
+          background: getThemeColor(
+            ThemeConstants.themeDark,
+            ThemeConstants.contentBackground
+          ),
         }}
       >
         <section
           className="intro"
           style={{
-            color: getThemeColor("dark", "contentTextColor"),
+            color: getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.contentTextColor
+            ),
           }}
         >
           <motion.h3
-            className="card-title"
+            className="card__title"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
             style={{
-              color: getThemeColor("dark", "cardTitleColor"),
+              color: getThemeColor(
+                ThemeConstants.themeDark,
+                ThemeConstants.cardTitleColor
+              ),
             }}
           >
             {getIcon(icon)} {title}
           </motion.h3>
-          <p className="text">{content}</p>
+          <p className="basic-text">{content}</p>
           {skills.map((skill, index) => {
             return (
               <motion.button
-                className="skills--btn"
+                className="skills-btn"
                 style={{
                   background: "transparent",
                   //borderRadius: "400px",

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { shakeVariants, fmOpacity } from "../constants";
+import { shakeVariants, fmOpacity, ThemeConstants } from "../constants";
 import { FaCode } from "react-icons/fa";
 import { experiance, getIconByName, getThemeColor } from "../lib/helper";
 
@@ -20,14 +20,17 @@ const Experiance = ({ timeline }: timelineProps) => {
       <div
         className="card"
         style={{
-          background: getThemeColor("dark", "contentBackground"),
+          background: getThemeColor(
+            ThemeConstants.themeDark,
+            "contentBackground"
+          ),
         }}
       >
         <motion.h3
-          className="card-title"
+          className="card__title"
           style={{
             padding: "15px 40px",
-            color: getThemeColor("dark", "cardTitleColor"),
+            color: getThemeColor(ThemeConstants.themeDark, "cardTitleColor"),
           }}
           variants={shakeVariants}
           initial="initial"
@@ -40,12 +43,15 @@ const Experiance = ({ timeline }: timelineProps) => {
           <section
             className="intro"
             style={{
-              color: getThemeColor("dark", "contentTextColor"),
+              color: getThemeColor(
+                ThemeConstants.themeDark,
+                ThemeConstants.contentTextColor
+              ),
             }}
           >
             <motion.section
               id="experience"
-              className="text"
+              className="basic-text"
               variants={fmOpacity}
               whileInView="animate"
             >
@@ -55,8 +61,8 @@ const Experiance = ({ timeline }: timelineProps) => {
                     <VerticalTimelineElement
                       contentStyle={{
                         background: getThemeColor(
-                          "dark",
-                          "careerContentBackground"
+                          ThemeConstants.themeDark,
+                          ThemeConstants.careerContentBackground
                         ),
                         boxShadow: "none",
                         border: "1px solid rgba(0, 0, 0, 0.05)",
@@ -73,8 +79,8 @@ const Experiance = ({ timeline }: timelineProps) => {
                       icon={getIconByName(item.icon)}
                       iconStyle={{
                         background: getThemeColor(
-                          "dark",
-                          "careerContentBackground"
+                          ThemeConstants.themeDark,
+                          ThemeConstants.careerContentBackground
                         ),
                         fontSize: 10,
                         border: "none",
@@ -85,7 +91,10 @@ const Experiance = ({ timeline }: timelineProps) => {
                           fontSize: 16,
                           fontWeight: 500,
                           textRendering: "optimizeLegibility",
-                          color: getThemeColor("dark", "careerHeader"),
+                          color: getThemeColor(
+                            ThemeConstants.themeDark,
+                            "careerHeader"
+                          ),
                         }}
                       >
                         {item.title}
@@ -95,7 +104,10 @@ const Experiance = ({ timeline }: timelineProps) => {
                       <p
                         style={{
                           fontSize: 12,
-                          color: getThemeColor("dark", "careerDate"),
+                          color: getThemeColor(
+                            ThemeConstants.themeDark,
+                            "careerDate"
+                          ),
                         }}
                       >
                         {item.date}

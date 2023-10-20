@@ -216,7 +216,11 @@
       "aboutMenuColor": "#69F0AE",
       "aboutCaptionColor": "#FFB74D",
       "aboutSubCaptionColor": "#039BE5",
-      "barMenuColor": "rgba(227, 227, 227, 0.8)"
+      "barMenuColor": "rgba(227, 227, 227, 0.8)",
+      "badgeTechColor": "#4FC3F7",
+      "badgeDevPracticeColor": "#4CAF50",
+      "badgeSkillsColor": "#CE93D8",
+      "badgePersonalityColor": "#E57373"
     }
   }
 }

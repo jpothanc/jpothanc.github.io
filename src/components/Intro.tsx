@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fmScaleText } from "../constants";
+import { ThemeConstants, fmScaleText } from "../constants";
 import { getThemeColor } from "../lib/helper";
 
 type Props = {
@@ -12,13 +12,19 @@ const Intro = ({ text }: Props) => {
       <header
         className="card"
         style={{
-          background: getThemeColor("dark", "contentBackground"),
+          background: getThemeColor(
+            ThemeConstants.themeDark,
+            "contentBackground"
+          ),
         }}
       >
         <section
           className="intro"
           style={{
-            color: getThemeColor("dark", "contentTextColor"),
+            color: getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.contentTextColor
+            ),
           }}
         >
           <span className="u-bold">
