@@ -111,6 +111,14 @@ export function getThemeColor(theme: string, component: string): string {
         return config.themes.dark.cardTitleColor;
       case "careerContentBackground":
         return config.themes.dark.careerContentBackground;
+      case "aboutMenuColor":
+        return config.themes.dark.aboutMenuColor;
+      case "barMenuColor":
+        return config.themes.dark.barMenuColor;
+      case "aboutCaptionColor":
+        return config.themes.dark.aboutCaptionColor;
+      case "aboutSubCaptionColor":
+        return config.themes.dark.aboutSubCaptionColor;
       default:
         return "";
     }

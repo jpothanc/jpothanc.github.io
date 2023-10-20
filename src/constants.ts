@@ -6,7 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 export const fmScale = {
   initial: { scale: 1, border: "0px solid rgb(100, 97, 100)" },
   animate: {
-    scale: 1.1,
+    scale: 1.6,
     border: "1px solid rgba(227, 227, 227, 0.8)",
     color: "#ff0000",
     transition: { duration: 0.5, ease: "easeIn", delay: 0.1 },
@@ -33,10 +33,22 @@ export const shakeVariants = {
 export const fmScaleText = {
   animate: {
     fontSize: "15px",
+
     color: "#69F0AE",
     transition: {
       type: "spring",
       stiffness: 600, // The stiffness of the spring (higher values make it stiffer)
+    },
+  },
+};
+export const fmScaleAboutText = {
+  animate: {
+    fontSize: "52px",
+    color: "#69F0AE",
+    //textDecoration: "underline",
+    transition: {
+      type: "spring",
+      stiffness: 700, // The stiffness of the spring (higher values make it stiffer)
     },
   },
 };
@@ -45,6 +57,15 @@ export const fmOpacity = {
   animate: {
     opacity: 1,
     transition: { type: "spring", duration: 0.5, ease: "easeOut", delay: 0.1 },
+  },
+  exit: { opacity: 1 },
+};
+
+export const fmOpacitySlow = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: { type: "spring", duration: 1, ease: "easeOut", delay: 0.5 },
   },
   exit: { opacity: 1 },
 };

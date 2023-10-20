@@ -19,6 +19,7 @@ import {
 import { FaSkiing } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import NavBar from "./NavBar";
 const Contents = () => {
   const ref = useRef<HTMLDivElement>(null);
   // const { scrollYProgress } = useScroll({
@@ -30,6 +31,7 @@ const Contents = () => {
 
   return (
     <>
+      <NavBar />
       <motion.div className="content">
         <motion.main
           className="main"
@@ -40,6 +42,7 @@ const Contents = () => {
           // }}
         >
           <Intro text={config.portfolio.intro}></Intro>
+
           <ListContent
             title="Expertise"
             items={config.portfolio.expertise}

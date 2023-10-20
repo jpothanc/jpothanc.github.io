@@ -27,7 +27,7 @@ ul {
 
 /*BASE STYLES*/
 body {
-  background-color: rgb(40, 39, 39);
+  background-color: rgb(16, 15, 15);
   font-family: "Segoe UI", sans-serif;
   height: 100vh;
   padding-top: 8ch;
@@ -40,13 +40,15 @@ body {
   top: 10px;
   backdrop-filter: blur(6px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: fixed;
   z-index: 999;
+  border-radius: 50px;
 }
 .top-bar {
   background-color: rgba(227, 227, 227, 0.8);
-  border-radius: 50px; /* Use your desired value or values */
+  /* border-radius: 50px;  */
   width: 70%;
   opacity: 1;
   margin: 0 auto;
@@ -61,12 +63,27 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.bottom-bar {
+  background-color: rgba(227, 227, 227, 0.8);
+  margin: 0 auto;
+  display: flex;
+  opacity: 1;
+  width: 70%;
+  justify-items: end;
+  max-width: 1200px;
+  justify-content: flex-end;
+}
+
+.bottom-bar__content {
+  padding: 0 30px;
+  font-size: 14px;
+}
 
 .logo {
   display: flex;
   align-items: center;
   column-gap: 10px;
-  width: 50px;
+  width: 80px;
   border-radius: 50%;
   object-fit: cover;
   animation: fade-down 0.5s 0.4s backwards;
@@ -96,18 +113,80 @@ body {
   margin: 0 auto;
   display: grid;
   gap: 1px;
-  border: none;
-  padding: 50px 160px 10px;
+  border: "none";
+  padding: 60px 160px 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 150px 1fr;
   grid-template-areas:
     "main"
     "career";
 }
+.about1 {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgb(214, 28, 28);
+  color: white;
+  align-items: center;
+  border: 1px solid rgb(143, 137, 137);
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgb(16, 15, 15);
+  color: white;
+  padding: 100px 10px;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 20px;
+  /* border: 1px solid rgb(143, 137, 137); */
+  justify-content: end;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about__left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 48px;
+}
+
+.about-menu {
+  flex-direction: row;
+  column-gap: 10px;
+  display: flex;
+  justify-content: center;
+
+  color: rgb(26, 26, 24);
+  transition: all 0.3s;
+  &:hover {
+    color: #41a1f0;
+    filter: brightness(0.8);
+  }
+}
+
+.about-menu-item {
+  transition: all 0.3s;
+  &:hover {
+    color: #d33b41;
+    filter: brightness(0.8);
+  }
+}
+
+.about__right {
+  /* border: 2px solid rgb(143, 137, 137); */
+  text-align: center;
+}
 
 .main {
   grid-area: main;
-  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(143, 137, 137);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1px;
@@ -241,10 +320,12 @@ body {
   margin-top: 18px;
   line-height: 1.4;
 }
-.text1 {
+.about__left__caption {
   opacity: 0.9;
-  font-weight: 400;
-  margin-top: 14px;
+  margin-top: 16px;
+  padding: 10px 120px;
+  font-size: 16px;
+
   line-height: 1.4;
 }
 .card-title {

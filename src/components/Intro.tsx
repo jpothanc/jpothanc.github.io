@@ -33,7 +33,6 @@ const Intro = ({ text }: Props) => {
             </motion.span>
           </span>
           {text}
-          <span className="text--second"></span>
         </section>
       </header>
     </>

@@ -202,7 +202,7 @@
       "careerContentBackground": "rgba(227, 227, 227, 0.8)"
     },
     "dark": {
-      "bodyBackground": "rgb(40, 39, 39)",
+      "bodyBackground": "rgb(16, 15, 15)",
       "logoBackground": "rgba(227, 227, 227, 0.8)",
       "logoColor": "#0e0f0e",
       "logoDescColor": "#0e0e0f",
@@ -210,7 +210,11 @@
       "contentBackground": "#212121",
       "contentTextColor": "#d2d5d6",
       "cardTitleColor": "#81d4fa",
-      "careerContentBackground": "rgba(100, 255, 100, 0.05)"
+      "careerContentBackground": "rgba(100, 255, 100, 0.05)",
+      "aboutMenuColor": "#FFEB3B",
+      "aboutCaptionColor": "#d2d5d6",
+      "aboutSubCaptionColor": "#039BE5",
+      "barMenuColor": "black"
     }
   }
 }
