@@ -211,8 +211,8 @@
       "contentTextColor": "#d2d5d6",
       "cardTitleColor": "#81d4fa",
       "careerContentBackground": "rgba(100, 255, 100, 0.05)",
-      "aboutMenuColor": "#FFEB3B",
-      "aboutCaptionColor": "#d2d5d6",
+      "aboutMenuColor": "#69F0AE",
+      "aboutCaptionColor": "#FFB74D",
       "aboutSubCaptionColor": "#039BE5",
       "barMenuColor": "black"
     }

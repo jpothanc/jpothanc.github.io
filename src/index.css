@@ -130,8 +130,8 @@ body {
   color: white;
   padding: 100px 10px;
   align-items: center;
-  column-gap: 10px;
-  row-gap: 20px;
+  column-gap: 1px;
+  row-gap: 1px;
   /* border: 1px solid rgb(143, 137, 137); */
   justify-content: end;
   position: fixed;
@@ -186,7 +186,6 @@ body {
     "c7 c7 c7"
     "c8 c9 c10"
     "c11 c11 c11"
-    "c13 c13 c13"
     "c12 c12 c12";
 }
 .headerContent {
@@ -271,7 +270,7 @@ body {
 }
 
 .u-yellow {
-  color: #ffd600;
+  color: #ffb74d;
 }
 
 /* INTRO */
@@ -305,6 +304,13 @@ body {
   line-height: 1.4;
 }
 .about__left__caption {
+  opacity: 0.9;
+  font-weight: 400;
+  margin-top: 18px;
+  line-height: 1.4;
+  color: #ffb74d;
+}
+.about__left__sub_caption {
   opacity: 0.9;
   margin-top: 16px;
   padding: 10px 50px;
@@ -394,6 +400,7 @@ body {
 .tooltip-container {
   position: relative;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .tooltip-trigger {
@@ -404,15 +411,14 @@ body {
   position: absolute;
   background-color: #333;
   color: #fff;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 10px 10px;
+  border-radius: 5px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.3s ease-in-out;
   z-index: 999;
-  width: 200px;
-  height: 200px;
+  font-size: 14px;
 }
 
 .tooltip-trigger:hover + .tooltip-text {

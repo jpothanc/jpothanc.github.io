@@ -107,12 +107,7 @@ const Contents = () => {
             items={config.portfolio.projects}
             icon={FaCity}
           ></Projects>
-          <Links
-            title="Contact"
-            content=""
-            icon={FaPersonChalkboard}
-            links={[]}
-          ></Links>
+         
           <Experiance timeline={config.portfolio.experiance}></Experiance>
         </motion.main>
       </motion.div>

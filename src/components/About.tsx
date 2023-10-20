@@ -19,9 +19,19 @@ const About = () => {
             initial="initial"
             whileHover="animate"
           >
-            <h4 className="text">Jessish Pothancheri</h4>
-            <p
+            <motion.h4
               className="about__left__caption"
+              variants={fmScaleAboutText}
+              initial="initial"
+              whileHover="animate"
+              style={{
+                color: getThemeColor("dark", "aboutCaptionColor"),
+              }}
+            >
+              Jessish Pothancheri
+            </motion.h4>
+            <p
+              className="about__left__sub_caption"
               style={{
                 color: getThemeColor("dark", "aboutSubCaptionColor"),
                 // fontStyle: "italic",

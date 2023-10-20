@@ -5,9 +5,11 @@ import {
   FaLinkedin,
   FaPersonRunning,
   FaHouseChimneyWindow,
+  FaEnvelope,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { getThemeColor } from "../lib/helper";
+import Tooltip from "./Tooltip";
 
 type Props = {
   color: string;
@@ -28,28 +30,43 @@ const Menu = ({ color, size }: Props) => {
         }}
       >
         <div className="about-menu-item">
-          <Link className="nav__link" to="/">
-            <FaHouseChimneyWindow size={size}></FaHouseChimneyWindow>
-          </Link>
+          <Tooltip text="home page">
+            <Link className="nav__link" to="/">
+              <FaHouseChimneyWindow size={size}></FaHouseChimneyWindow>
+            </Link>
+          </Tooltip>
         </div>
         <div className="about-menu-item">
-          <Link className="nav__link" to="/contents">
-            <FaPersonRunning size={size}></FaPersonRunning>
-          </Link>
+          <Tooltip text="work experiance & details...">
+            <Link className="nav__link" to="/contents">
+              <FaPersonRunning size={size}></FaPersonRunning>
+            </Link>
+          </Tooltip>
         </div>
         <div className="about-menu-item">
-          <a href="https://github.com/jpothanc" target="_blank">
-            <FaGithub size={size}></FaGithub>
-          </a>
+          <Tooltip text="git repo">
+            <a href="https://github.com/jpothanc" target="_blank">
+              <FaGithub size={size}></FaGithub>
+            </a>
+          </Tooltip>
         </div>
 
         <div className="about-menu-item">
-          <a
-            href="https://www.linkedin.com/in/jessish-pothancheri-5985576/"
-            target="_blank"
-          >
-            <FaLinkedin size={size}></FaLinkedin>
-          </a>
+          <Tooltip text="linkedin ">
+            <a
+              href="https://www.linkedin.com/in/jessish-pothancheri-5985576/"
+              target="_blank"
+            >
+              <FaLinkedin size={size}></FaLinkedin>
+            </a>
+          </Tooltip>
+        </div>
+        <div className="about-menu-item">
+          <Tooltip text="mail to kaljessy@gmail.com">
+            <a href="mailto:kaljessy@gmail.com" target="_blank">
+              <FaEnvelope size={size}></FaEnvelope>
+            </a>
+          </Tooltip>
         </div>
       </motion.div>
     </>
