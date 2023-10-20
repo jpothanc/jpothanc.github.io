@@ -10,7 +10,7 @@ const NavBar = () => {
         <div
           className="top-bar"
           style={{
-            background: getThemeColor("dark", "cardTitleColor"),
+            background: getThemeColor("dark", "logoBackground"),
           }}
         >
           <div className="top-bar__content">

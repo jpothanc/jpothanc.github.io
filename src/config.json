@@ -203,7 +203,7 @@
     },
     "dark": {
       "bodyBackground": "rgba(20, 20, 20,1)",
-      "logoBackground": "rgba(255, 183, 20, 1)",
+      "logoBackground": "rgba(227, 227, 227, 0.8)",
       "logoColor": "#0e0f0e",
       "logoDescColor": "#0e0e0f",
       "mainBackground": "rgb(0, 0, 0)",
@@ -216,7 +216,7 @@
       "aboutMenuColor": "#69F0AE",
       "aboutCaptionColor": "#FFB74D",
       "aboutSubCaptionColor": "#039BE5",
-      "barMenuColor": "rgba(227, 227, 255, 0.8)"
+      "barMenuColor": "rgba(227, 227, 227, 0.8)"
     }
   }
 }
