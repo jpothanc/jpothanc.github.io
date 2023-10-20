@@ -203,18 +203,21 @@
     },
     "dark": {
       "bodyBackground": "rgba(20, 20, 20,1)",
-      "logoBackground": "rgba(227, 227, 227, 0.8)",
+      "logoBackground": "rgba(255, 183, 20, 1)",
       "logoColor": "#0e0f0e",
       "logoDescColor": "#0e0e0f",
       "mainBackground": "rgb(0, 0, 0)",
       "contentBackground": "#212121",
       "contentTextColor": "#d2d5d6",
-      "cardTitleColor": "#81d4fa",
-      "careerContentBackground": "rgba(100, 255, 100, 0.05)",
+      "cardTitleColor": "rgba(255, 236, 179, 0.8)",
+      "careerContentBackground": "rgba(100, 255, 400, 0.05)",
+      "careerHeader": "#F44336",
+      "careerDate": "#64B5F6",
       "aboutMenuColor": "#69F0AE",
       "aboutCaptionColor": "#FFB74D",
       "aboutSubCaptionColor": "#039BE5",
-      "barMenuColor": "black"
+      "barMenuColor": "rgba(227, 227, 255, 0.8)"
     }
   }
 }
+

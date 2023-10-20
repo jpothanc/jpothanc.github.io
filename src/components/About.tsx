@@ -55,11 +55,12 @@ const About = () => {
               style={{
                 borderRadius: "50%",
               }}
-              whileHover={{ rotate: 20 }}
+              whileHover={{ rotate: 30 }}
               initial={{ rotate: 0 }}
               transition={{
                 type: "spring",
-                stiffness: 100,
+                stiffness: 200,
+                // damping: 120,
                 duration: 1,
               }}
             ></motion.img>

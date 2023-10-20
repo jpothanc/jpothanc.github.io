@@ -2,11 +2,17 @@ import { motion } from "framer-motion";
 import config from "../config.json";
 import Menu from "./Menu";
 import { fmScale } from "../constants";
+import { getThemeColor } from "../lib/helper";
 const NavBar = () => {
   return (
     <>
       <header className="header">
-        <div className="top-bar">
+        <div
+          className="top-bar"
+          style={{
+            background: getThemeColor("dark", "cardTitleColor"),
+          }}
+        >
           <div className="top-bar__content">
             <motion.a
               href="#"

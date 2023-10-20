@@ -6,6 +6,7 @@ import {
   FaPersonRunning,
   FaHouseChimneyWindow,
   FaEnvelope,
+  FaDev,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { getThemeColor } from "../lib/helper";
@@ -65,6 +66,13 @@ const Menu = ({ color, size }: Props) => {
           <Tooltip text="mail to kaljessy@gmail.com">
             <a href="mailto:kaljessy@gmail.com" target="_blank">
               <FaEnvelope size={size}></FaEnvelope>
+            </a>
+          </Tooltip>
+        </div>
+        <div className="about-menu-item">
+          <Tooltip text="This site was developed using react (ts) and framer motion.">
+            <a href="mailto:kaljessy@gmail.com" target="_blank">
+              <FaDev size={size}></FaDev>
             </a>
           </Tooltip>
         </div>

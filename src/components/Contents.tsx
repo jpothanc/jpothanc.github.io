@@ -52,7 +52,7 @@ const Contents = () => {
             title="Technology"
             content=""
             items={config.portfolio.technology}
-            color="#CE93D8"
+            color="#00BCD4"
             icon={FaStackOverflow}
           ></Badges>
 
@@ -60,19 +60,19 @@ const Contents = () => {
             title="Development Practices & Testing"
             content=""
             items={config.portfolio.DevelopmentPractices}
-            color="#FF9100"
+            color="#4CAF50"
             icon={FaHands}
           ></Badges>
           <Badges
             title="Skills & Achievements"
             content=""
             items={config.portfolio.achievements}
-            color="#EF5350"
+            color="#CE93D8"
             icon={FaWrench}
           ></Badges>
           <Links
             title="Education"
-            content="BE, Computer Science from SEUA"
+            content="Completed BE in CS from SEUA [Armenia - Yerevan (2000)]"
             icon={FaGraduationCap}
             links={[]}
           ></Links>
@@ -98,7 +98,7 @@ const Contents = () => {
             title="Personality"
             content=""
             items={config.portfolio.personality}
-            color="#E8EAF6"
+            color="#E0E0E0"
             icon={FaChildReaching}
           ></Badges>
           <Projects
@@ -107,7 +107,7 @@ const Contents = () => {
             items={config.portfolio.projects}
             icon={FaCity}
           ></Projects>
-         
+
           <Experiance timeline={config.portfolio.experiance}></Experiance>
         </motion.main>
       </motion.div>

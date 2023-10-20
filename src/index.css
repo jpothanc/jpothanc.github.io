@@ -40,6 +40,7 @@ body {
   top: 12px;
   backdrop-filter: blur(2px);
   display: flex;
+  row-gap: 1px;
   flex-direction: column;
   justify-content: center;
   position: fixed;
@@ -64,11 +65,12 @@ body {
   justify-content: space-between;
 }
 .bottom-bar {
-  background-color: rgba(227, 227, 227, 0.8);
+  background-color: rgba(45, 45, 44, 0.8);
   margin: 0 auto;
   display: flex;
   opacity: 1;
   width: 70%;
+  padding: 2px;
   justify-items: end;
   max-width: 1200px;
   justify-content: flex-end;
@@ -270,7 +272,7 @@ body {
 }
 
 .u-yellow {
-  color: #ffb74d;
+  color: rgba(255, 236, 179, 0.8);
 }
 
 /* INTRO */
@@ -320,8 +322,7 @@ body {
 }
 .card-title {
   font-family: "Segoe UI", Courier, monospace;
-  font-weight: 500;
-  color: #81d4fa;
+  font-weight: 400;
 }
 
 .text--exp {

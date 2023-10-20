@@ -49,7 +49,7 @@ const Experiance = ({ timeline }: timelineProps) => {
               variants={fmOpacity}
               whileInView="animate"
             >
-              <VerticalTimeline lineColor="#FF1744">
+              <VerticalTimeline lineColor="#F44336">
                 {timeline.map((item, index) => (
                   <React.Fragment key={index}>
                     <VerticalTimelineElement
@@ -72,17 +72,32 @@ const Experiance = ({ timeline }: timelineProps) => {
                       //date={item.date}
                       icon={getIconByName(item.icon)}
                       iconStyle={{
-                        background: "rgba(100, 255, 100, 0.1)",
+                        background: getThemeColor(
+                          "dark",
+                          "careerContentBackground"
+                        ),
                         fontSize: 10,
                         border: "none",
                       }}
                     >
-                      <h3 style={{ fontSize: 15, color: "#FF1744" }}>
+                      <h3
+                        style={{
+                          fontSize: 16,
+                          fontWeight: 500,
+                          textRendering: "optimizeLegibility",
+                          color: getThemeColor("dark", "careerHeader"),
+                        }}
+                      >
                         {item.title}
                       </h3>
                       <p style={{ fontSize: 13 }}>{item.location}</p>
                       <p style={{ fontSize: 12 }}>{item.description}</p>
-                      <p style={{ fontSize: 12, color: "#64B5F6" }}>
+                      <p
+                        style={{
+                          fontSize: 12,
+                          color: getThemeColor("dark", "careerDate"),
+                        }}
+                      >
                         {item.date}
                       </p>
                     </VerticalTimelineElement>
