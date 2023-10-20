@@ -53,11 +53,11 @@ body {
   width: 70%;
   opacity: 1;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .top-bar__content {
-  padding: 0 30px;
+  padding: 0 10px;
   margin: 0 auto;
   height: 80px;
   display: flex;
@@ -72,12 +72,12 @@ body {
   width: 70%;
   padding: 2px;
   justify-items: end;
-  max-width: 1200px;
+  max-width: 1000px;
   justify-content: flex-end;
 }
 
 .bottom-bar__content {
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 14px;
 }
 
@@ -101,8 +101,9 @@ body {
   color: #0e0e0f;
   font-size: 14px;
   font-weight: 700;
+  width: 300px;
   letter-spacing: -0.5px;
-  word-wrap: break-word;
+  word-wrap: normal;
   white-space: normal; /* Allow text to wrap to the next line */
 }
 

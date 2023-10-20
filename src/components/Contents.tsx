@@ -98,7 +98,7 @@ const Contents = () => {
             title="Personality"
             content=""
             items={config.portfolio.personality}
-            color="#E0E0E0"
+            color="#E57373"
             icon={FaChildReaching}
           ></Badges>
           <Projects
