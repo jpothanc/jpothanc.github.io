@@ -19,7 +19,7 @@ const About = () => {
             initial="initial"
             whileHover="animate"
           >
-            <h3 className="text">Jessish Pothancheri</h3>
+            <h4 className="text">Jessish Pothancheri</h4>
             <p
               className="about__left__caption"
               style={{
