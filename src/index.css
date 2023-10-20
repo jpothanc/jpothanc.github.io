@@ -27,7 +27,7 @@ ul {
 
 /*BASE STYLES*/
 body {
-  background-color: rgb(16, 15, 15);
+  background-color: rgba(20, 20, 20, 1);
   font-family: "Segoe UI", sans-serif;
   height: 100vh;
   padding-top: 8ch;
@@ -97,7 +97,7 @@ body {
 }
 .logo__desc {
   color: #0e0e0f;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.5px;
   word-wrap: break-word;
@@ -120,16 +120,6 @@ body {
   grid-template-areas:
     "main"
     "career";
-}
-.about1 {
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  background-color: rgb(214, 28, 28);
-  color: white;
-  align-items: center;
-  border: 1px solid rgb(143, 137, 137);
-  justify-content: center;
 }
 
 .about {
@@ -162,13 +152,7 @@ body {
   column-gap: 10px;
   display: flex;
   justify-content: center;
-
   color: rgb(26, 26, 24);
-  transition: all 0.3s;
-  &:hover {
-    color: #41a1f0;
-    filter: brightness(0.8);
-  }
 }
 
 .about-menu-item {

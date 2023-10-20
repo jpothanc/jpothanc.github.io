@@ -38,11 +38,18 @@ const Menu = ({ color, size }: Props) => {
           </Link>
         </div>
         <div className="about-menu-item">
-          <FaGithub size={size}></FaGithub>
+          <a href="https://github.com/jpothanc" target="_blank">
+            <FaGithub size={size}></FaGithub>
+          </a>
         </div>
 
         <div className="about-menu-item">
-          <FaLinkedin size={size}></FaLinkedin>
+          <a
+            href="https://www.linkedin.com/in/jessish-pothancheri-5985576/"
+            target="_blank"
+          >
+            <FaLinkedin size={size}></FaLinkedin>
+          </a>
         </div>
       </motion.div>
     </>

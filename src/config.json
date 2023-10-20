@@ -202,7 +202,7 @@
       "careerContentBackground": "rgba(227, 227, 227, 0.8)"
     },
     "dark": {
-      "bodyBackground": "rgb(16, 15, 15)",
+      "bodyBackground": "rgba(20, 20, 20,1)",
       "logoBackground": "rgba(227, 227, 227, 0.8)",
       "logoColor": "#0e0f0e",
       "logoDescColor": "#0e0e0f",

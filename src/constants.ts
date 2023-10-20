@@ -33,7 +33,6 @@ export const shakeVariants = {
 export const fmScaleText = {
   animate: {
     fontSize: "15px",
-
     color: "#69F0AE",
     transition: {
       type: "spring",
