@@ -141,6 +141,7 @@
       {
         "name": "React-Rxjs",
         "description": "How to use rxjs in react.",
+        "url": "https://medium.com/@kaljessy/react-state-management-using-rxjs-58a4d523d611"
       },
       {
         "name": "K6 Load Testing",
@@ -223,4 +224,3 @@
     }
   }
 }
-
