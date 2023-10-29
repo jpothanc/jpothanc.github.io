@@ -282,12 +282,23 @@ body {
 }
 /* MOTO */
 .about__moto {
-  font-size: 18px;
+  font-size: 14px;
   align-self: center;
+  border-radius: 70px;
+  padding: 13px;
+  /* background-color: rgb(24, 23, 23);
+  box-shadow: 11px 9px 10px 0px rgb(31, 31, 30); */
   & :hover {
     filter: brightness(1.5);
     transition: all 0.5s ease;
   }
+}
+.about__logo {
+  font-size: 14px;
+  align-self: center;
+  border-radius: 50%;
+  background-color: rgb(24, 23, 23);
+  /* box-shadow: 5px 5px 8px 0px rgb(87, 86, 80);   */
 }
 .u-blue {
   color: #64b5f6;
@@ -303,7 +314,7 @@ body {
 }
 .u-white {
   color: rgb(234, 231, 229);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   display: inline-block;
   padding-top: 1px;

@@ -72,9 +72,8 @@ const About = () => {
             <motion.img
               src="Art2.PNG"
               alt="logo"
-              style={{
-                borderRadius: "50%",
-              }}
+              className="about__logo"
+              
               whileHover={{ rotate: 30 }}
               initial={{ rotate: 0 }}
               transition={{
