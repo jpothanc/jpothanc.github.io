@@ -255,6 +255,9 @@ body {
     grid-template-rows: repeat(12, 300px);
     grid-template-areas: initial;
   }
+  .about {
+    flex-direction: column;
+  }
   .card {
     grid-area: initial !important;
   }
