@@ -3,6 +3,16 @@ import Menu from "./Menu";
 import { ThemeConstants, fmScaleAboutText } from "../constants";
 import { getThemeColor } from "../lib/helper";
 
+// const motivation = () => {
+//   return
+//     "Pursuing his passion,Passionate programmer," +
+//       "Persistently perfects his programming prowess," +
+//       "Pushing past obstacles and pitfalls."
+
+// };
+
+// life.apply(motivation);
+
 const About = () => {
   return (
     <>
@@ -10,7 +20,10 @@ const About = () => {
         <motion.div
           className="about"
           style={{
-            background: getThemeColor(ThemeConstants.themeDark, ThemeConstants.bodyBackground),
+            background: getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.bodyBackground
+            ),
           }}
         >
           <motion.div
@@ -25,27 +38,31 @@ const About = () => {
               initial="initial"
               whileHover="animate"
               style={{
-                color: getThemeColor(ThemeConstants.themeDark, ThemeConstants.aboutCaptionColor),
+                color: getThemeColor(
+                  ThemeConstants.themeDark,
+                  ThemeConstants.aboutCaptionColor
+                ),
               }}
             >
               Jessish Pothancheri
             </motion.h4>
-            <p
-              className="about__left__sub_caption"
-              style={{
-                color: getThemeColor(
-                  ThemeConstants.themeDark,
-                  ThemeConstants.aboutSubCaptionColor
-                ),
-                // fontStyle: "italic",
-              }}
-            >
-              Pursuing his passion, the passionate programmer persistently
-              perfects his programming prowess, pushing past obstacles and
-              pitfalls.
-            </p>
+
+            <div className="about__moto">
+              <p className="u-white">&lt;</p>
+              <p className="u-red">&nbsp; Pursuing his passion,&nbsp;&nbsp; </p>
+              <p className="u-orange"> Passionate programmer,&nbsp;&nbsp;</p>
+              <p className="u-blue">
+                Persistently perfects his programming prowess,
+              </p>
+              <p className="u-green">
+                &nbsp;&nbsp;Pushing past obstacles and pitfalls
+              </p>
+              <p className="u-white">&nbsp;/&gt;</p>
+            </div>
+
             <Menu color={ThemeConstants.aboutMenuColor} size="32px" />
           </motion.div>
+
           <motion.div
             className="about__right"
             initial={{ opacity: 0 }}

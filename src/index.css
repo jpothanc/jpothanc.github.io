@@ -276,6 +276,38 @@ body {
   color: rgba(255, 236, 179, 0.8);
 }
 
+.u-red {
+  color: #e57373;
+  display: inline-block;
+}
+/* MOTO */
+.about__moto {
+  font-size: 18px;
+  align-self: center;
+  & :hover {
+    filter: brightness(1.5);
+    transition: all 0.5s ease;
+  }
+}
+.u-blue {
+  color: #64b5f6;
+  padding-top: 10px;
+}
+.u-green {
+  color: #ea80fc;
+  display: inline-block;
+}
+.u-orange {
+  color: #64ffda;
+  display: inline-block;
+}
+.u-white {
+  color: rgb(234, 231, 229);
+  font-size: 32px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 1px;
+}
 /* INTRO */
 .list-text {
   padding: 15px 40px;
@@ -425,4 +457,29 @@ body {
 
 .tooltip-trigger:hover + .tooltip-text {
   display: block;
+}
+
+.hexagon-button {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  background-color: #c9264f;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: none;
+  clip-path: polygon(
+    50% -20%,
+    100% 25%,
+    100% 75%,
+    50% 120%,
+    /*bottom*/ 0% 75%,
+    0% 25%
+  );
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hexagon-button:hover {
+  background-color: #e04e5e;
 }
