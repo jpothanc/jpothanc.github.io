@@ -70,10 +70,10 @@ const About = () => {
             exit={{ opacity: 0 }}
           >
             <motion.img
-              src="coder2.PNG"
+              src="coder3.PNG"
               alt="logo"
               className="about__logo"
-              whileHover={{ rotate: 30 }}
+              whileHover={{ rotate: -15 }}
               initial={{ rotate: 0 }}
               transition={{
                 type: "spring",
