@@ -188,6 +188,11 @@
         "name": "HealthCheck",
         "description": "A configurable HealthCheck Service.",
         "url": "https://github.com/jpothanc/healthcheck"
+      },
+      {
+        "name": "Nuget Packages",
+        "description": "My Nuget Packages.",
+        "url": "https://www.nuget.org/profiles/jpothanc"
       }
     ],
     "git1": ["dynamo", "AuthMe", "WebQ", "datastore"],
