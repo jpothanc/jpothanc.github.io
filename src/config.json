@@ -78,13 +78,13 @@
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
       {
-        "name": "APAC Front Office Applications",
+        "name": "Lead APAC Front Office Applications",
         "description": "In my current role as the Technical and Delivery Lead for the Front Office technology team, which encompasses Order Management, Program Trading, and IOI, I hold a pivotal position in shaping our technological landscape. My responsibilities encompass active participation in software development projects, where I take a hands-on approach in designing, developing, and rigorously testing software code. I prioritize scalability, reliability, and regulatory compliance in our technology solutions, emphasizing the importance of maintaining a production environment of exceptional quality. A significant part of my journey has been guiding our team through a transformative process. I introduced agile methodologies, which have enhanced our adaptability and responsiveness. We also adopted DevOps practices, streamlined our operations with the establishment of robust CI/CD pipelines, and harnessed the power of the bank's platform-as-a-service to efficiently develop and deploy microservices. These changes signify our commitment to technological evolution, positioning us at the forefront of innovation. The ongoing transformation journey not only reflects my professional growth but also symbolizes our collective pursuit of excellence in technology.",
         "technology": " C#, .Net 6, Redis, GraphQL, Mongo, Sybase, Oracle, PostgreSQL, BitBucket, Openshift, Grafana, SonarQube, Jenkins",
         "timeline": "2016 - Till date"
       },
       {
-        "name": "APAC Order Management Platform Migration",
+        "name": "Lead APAC Order Management Platform Migration",
         "description": "I had the privilege of spearheading the critical APAC Order Management platform migration – a multi-million-dollar project spanning several years. This endeavor marked a turning point, as we assembled a dedicated team, unified by a shared vision of transformation. Over the course of three intense years, we undertook the formidable task of transitioning from the legacy VC++ platform to a modern C#-based system. This migration presented a series of formidable challenges that tested the limits of our collective skills and determination. It was, without a doubt, the most demanding project in my career, but it was precisely this challenge that fueled our innovation and commitment.The culmination of our hard work and tenacity was a triumphant rollout of the new application, now serving over 400 users across 12 locations. This success not only represented a technological milestone but also a testament to our unwavering dedication to excellence. The project's significance resonates not just in its technical achievement but in the invaluable lessons it imparted and the bonds formed within the team. It underscored our ability to adapt, persevere, and collaborate, forging a brighter future for our organization's technological landscape.",
         "technology": " C#, Sybase, Oracle",
         "timeline": "2011 -  2014"
