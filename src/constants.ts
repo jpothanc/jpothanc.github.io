@@ -87,4 +87,5 @@ export class ThemeConstants {
   static readonly badgeDevPracticeColor: string = "badgeDevPracticeColor";
   static readonly badgeSkillsColor: string = "badgeSkillsColor";
   static readonly badgePersonalityColor: string = "badgePersonalityColor";
+  static readonly badgeLinksColor: string = "badgeLinksColor";
 }

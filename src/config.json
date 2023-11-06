@@ -4,7 +4,7 @@
     "name": "Jessish Pothancheri",
     "IntroBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
 
-    "intro": "Equities Front Office Solutions Technical and Delivery Lead with 20+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
+    "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
       {
         "title": "Graduated",
@@ -74,7 +74,6 @@
       "Postgres",
       "Redis",
       "OpenShift"
-      
     ],
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
@@ -228,9 +227,10 @@
       "aboutSubCaptionColor": "#039BE5",
       "barMenuColor": "rgba(227, 227, 227, 0.8)",
       "badgeTechColor": "#4FC3F7",
-      "badgeDevPracticeColor": "#4CAF50",
+      "badgeDevPracticeColor": "#FF7043",
       "badgeSkillsColor": "#CE93D8",
-      "badgePersonalityColor": "#E57373"
+      "badgePersonalityColor": "#E57373",
+      "badgeLinksColor": "#26a69a"
     }
   }
 }

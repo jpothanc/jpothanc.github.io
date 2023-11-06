@@ -134,6 +134,8 @@ export function getThemeColor(theme: string, component: string): string {
         return config.themes.dark.badgeSkillsColor;
       case ThemeConstants.badgePersonalityColor:
         return config.themes.dark.badgePersonalityColor;
+      case ThemeConstants.badgeLinksColor:
+        return config.themes.dark.badgeLinksColor;
 
       default:
         return "";

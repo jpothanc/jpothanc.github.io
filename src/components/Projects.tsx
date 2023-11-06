@@ -52,25 +52,38 @@ const Projects = ({ title, content, icon, items }: Props) => {
               <div>
                 <h4
                   style={{
-                    paddingTop: "10px",
+                    paddingTop: "20px",
                   }}
                 >
                   {project.name}
                 </h4>
-                <p style={{ fontSize: "12px", fontWeight: "500" }}>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: "700",
+                    color: getThemeColor(
+                      ThemeConstants.themeDark,
+                      "careerDate"
+                    ),
+                  }}
+                >
                   {project.timeline}
                 </p>
-                <p style={{ fontSize: "12px", paddingTop: "5px" }}>
+                <p style={{ fontSize: "13px", paddingTop: "10px" }}>
                   {project.description}
                 </p>
                 <p
                   style={{
                     fontSize: "12px",
-                    color: "#64B5F6",
+                    fontWeight: "700",
+                    color: getThemeColor(
+                      ThemeConstants.themeDark,
+                      ThemeConstants.badgeLinksColor
+                    ),
                     paddingTop: "10px",
                   }}
                 >
-                  Technology:{project.technology}
+                  Technologies:{project.technology}
                 </p>
               </div>
             );

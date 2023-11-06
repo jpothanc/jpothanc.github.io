@@ -43,7 +43,17 @@ const Links = ({ title, content, icon, links }: Props) => {
             {links.map((link, index) => {
               return (
                 <li key={index}>
-                  <a href={link.url} className="my-link" target="_blank">
+                  <a
+                    href={link.url}
+                    className="my-link"
+                    style={{
+                      color: getThemeColor(
+                        ThemeConstants.themeDark,
+                        ThemeConstants.badgeLinksColor
+                      ),
+                    }}
+                    target="_blank"
+                  >
                     {link.name}
                   </a>
                 </li>
