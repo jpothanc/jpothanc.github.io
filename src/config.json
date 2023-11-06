@@ -66,46 +66,53 @@
       "NET 6",
       "C#",
       "Java",
+      "Spring Boot",
       "React (TypeScript)",
       "Oracle",
       "Sybase",
       "Mongo",
       "Postgres",
       "Redis",
-      "OpenShift",
-      "GraphQL"
+      "OpenShift"
+      
     ],
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
       {
-        "name": "Front Office Automation",
-        "description": "Developing various tools for front office automation.",
-        "technology": "VC++"
+        "name": "APAC Front Office Applications",
+        "description": "As the leader of the Front Office technology team overseeing Order Management, Program Trading, and IOI, I've had the privilege of driving a remarkable transformation. We embarked on a journey towards agility, adopting cutting-edge DevOps practices, and building robust CI/CD pipelines to streamline our operations. One of our most significant achievements was the seamless integration of the bank's platform-as-a-service, a move that empowered us to swiftly develop and deploy microservices. This transformation marked a pivotal moment in our technological evolution, propelling us into a future characterized by innovation and efficiency. This process was not just a change in technology but a change in mindset, fostering a culture of adaptability and continuous improvement. Our team's dedication and hard work were instrumental in this remarkable shift, and the results have been nothing short of exceptional. In my current role, I take immense pride in leading this dynamic team, and our ongoing pursuit of technological excellence. Our relentless commitment to progress, combined with a visionary approach, has firmly set us on the path of unparalleled technological transformation.",
+        "technology": " C#, .Net 6, Redis, GraphQL, Mongo, Sybase, Oracle, BitBucket, Openshift, SonarQube, Jenkins",
+        "timeline": "2016 - Till date"
       },
       {
-        "name": "Japan Margin Trading",
-        "description": "Website for Margin Trading.",
-        "technology": "Java, VC++"
+        "name": "APAC Order Management Platform Migration",
+        "description": "I had the privilege of spearheading the monumental APAC Order Management platform migration – a multi-million-dollar project spanning several years. This endeavor marked a turning point, as we assembled a dedicated team, unified by a shared vision of transformation. Over the course of three intense years, we undertook the formidable task of transitioning from the legacy VC++ platform to a modern C#-based system. This migration presented a series of formidable challenges that tested the limits of our collective skills and determination. It was, without a doubt, the most demanding project in my career, but it was precisely this challenge that fueled our innovation and commitment.The culmination of our hard work and tenacity was a triumphant rollout of the new application, now serving over 400 users across 12 locations. This success not only represented a technological milestone but also a testament to our unwavering dedication to excellence. The project's significance resonates not just in its technical achievement but in the invaluable lessons it imparted and the bonds formed within the team. It underscored our ability to adapt, persevere, and collaborate, forging a brighter future for our organization's technological landscape.",
+        "technology": " C#, Sybase, Oracle",
+        "timeline": "2011 -  2014"
+      },
+      {
+        "name": "Lead APAC Order Management System",
+        "description": "I was given the responsibility to lead the mission-critical APAC order management system, which represented a pivotal moment in my career. This role allowed me to navigate a multitude of challenges and adapt to various changes effectively. I focused on increasing the application's capacity and throughput, achieving significant improvements. Over time, I successfully stabilized the product, ensuring its reliability and performance. This experience marked a transformative leap in my professional journey, enabling me to develop crucial leadership skills. It also instilled in me the ability to thrive in a dynamic and demanding environment. I take pride in the accomplishments of enhancing the system's efficiency and ensuring its mission-critical status. This role has been a valuable stepping stone, offering valuable insights and lessons for my career growth",
+        "technology": " VC++, Sybase, Oracle",
+        "timeline": "2006 - 2011"
       },
       {
         "name": "Electronic Market Making",
-        "description": "Create Strategies for EMM",
-        "technology": "C#"
+        "description": "I worked as a developer on an Electronic Market Making application, where my role involved designing and implementing innovative trading strategies to enhance the platform's capabilities.",
+        "technology": " C#",
+        "timeline": "2005 - 2006"
       },
       {
-        "name": "APAC Order Equities Order Entry",
-        "description": "Lead APAC Order Entry Application",
-        "technology": "VC++"
+        "name": "Japan Margin Trading",
+        "description": "Created a Equities Margin Trading System designed to facilitate trading in equities (stocks) with the use of margin, which allows traders to borrow funds to amplify their investment positions. ",
+        "technology": " Java (web ui), VC++ (back-end)",
+        "timeline": "2005 - 2006"
       },
       {
-        "name": "APAC Order Equities Order Entry Platform Migration",
-        "description": "",
-        "technology": ""
-      },
-      {
-        "name": "APAC Front Office Applications",
-        "description": "",
-        "technology": ""
+        "name": "Front Office Automation",
+        "description": "Developing various tools for front office automation. Most important being a excel macro automation tool calles Oxegen. This tool features a plugin-based architecture for parsing client order Excel files from Outlook. It offers seamless integration with Outlook, automatically extracting data from emails or attachments. The parsed data is then efficiently transferred to a Front Office System (FOS) application, streamlining the order management process. The tool's automation, pattern recognition,  data validation, and user-friendly interface contribute to improved operational efficiency and accuracy in handling client orders.This tool received praise from then APAC Head for its innovative approach and capabilities. ",
+        "technology": " VC++, VBS, Oracle",
+        "timeline": "2004-2005"
       }
     ],
 
@@ -114,9 +121,12 @@
       "Agile/SCRUM",
       "TDD/BDD",
       "CI/CD",
+      "Jenkins",
+      "Git",
       "NUnit",
       "xUnit",
-      "Specflow"
+      "Specflow",
+      "JUnit"
     ],
     "achievements": [
       "Investment Banking",
@@ -214,7 +224,7 @@
       "careerHeader": "#F44336",
       "careerDate": "#64B5F6",
       "aboutMenuColor": "#69F0AE",
-      "aboutCaptionColor": "#FFB74D",
+      "aboutCaptionColor": "white",
       "aboutSubCaptionColor": "#039BE5",
       "barMenuColor": "rgba(227, 227, 227, 0.8)",
       "badgeTechColor": "#4FC3F7",

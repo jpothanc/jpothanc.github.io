@@ -52,13 +52,24 @@ const Projects = ({ title, content, icon, items }: Props) => {
               <div>
                 <h4
                   style={{
-                    paddingTop: "5px",
+                    paddingTop: "10px",
                   }}
                 >
                   {project.name}
                 </h4>
-                <p style={{ fontSize: "12px" }}>{project.description}</p>
-                <p style={{ fontSize: "12px", color: "#64B5F6" }}>
+                <p style={{ fontSize: "12px", fontWeight: "500" }}>
+                  {project.timeline}
+                </p>
+                <p style={{ fontSize: "12px", paddingTop: "5px" }}>
+                  {project.description}
+                </p>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    color: "#64B5F6",
+                    paddingTop: "10px",
+                  }}
+                >
                   Technology:{project.technology}
                 </p>
               </div>

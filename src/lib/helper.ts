@@ -89,6 +89,7 @@ export type projects = {
   name: string;
   description: string;
   technology: string;
+  timeline: string;
 };
 
 export function getThemeColor(theme: string, component: string): string {
