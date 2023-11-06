@@ -166,23 +166,28 @@
     "git": [
       {
         "name": "Dynamo",
-        "description": "How to use Dependency injection in react using inversify.",
+        "description": "Dynamic Data Binding Application developed used React.",
         "url": "https://github.com/jpothanc/dynamo"
       },
       {
         "name": "AuthMe",
-        "description": "How to use rxjs in react.",
+        "description": "Basic Authentication in your .NET applications.",
         "url": "https://github.com/jpothanc/AuthMe"
       },
       {
         "name": "WebQ",
-        "description": "How to use rxjs in react.",
+        "description": "WebQ is a lightweight class library that provides support for HTTP queries and cache results on the local disk for resiliency.",
         "url": "https://github.com/jpothanc/WebQ"
       },
       {
         "name": "Datastore",
-        "description": "How to use rxjs in react.",
+        "description": "A configurable reference data store.",
         "url": "https://github.com/jpothanc/datastore"
+      },
+      {
+        "name": "HealthCheck",
+        "description": "A configurable HealthCheck Service.",
+        "url": "https://github.com/jpothanc/healthcheck"
       }
     ],
     "git1": ["dynamo", "AuthMe", "WebQ", "datastore"],
