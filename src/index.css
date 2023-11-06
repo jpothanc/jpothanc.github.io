@@ -299,10 +299,10 @@ body {
   font-size: 14px;
   align-self: center;
   border-radius: 50%;
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
   background-color: rgb(24, 23, 23);
-  box-shadow: 5px 5px 8px 0px rgb(83, 82, 81);
+  /* box-shadow: 5px 5px 8px 0px rgb(83, 82, 81); */
 }
 .u-blue {
   color: #64b5f6;
