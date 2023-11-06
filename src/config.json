@@ -109,7 +109,7 @@
       },
       {
         "name": "Front Office Automation",
-        "description": "Developing various tools for front office automation. Most important being a excel macro automation tool calles Oxegen. This tool features a plugin-based architecture for parsing client order Excel files from Outlook. It offers seamless integration with Outlook, automatically extracting data from emails or attachments. The parsed data is then efficiently transferred to a Front Office System (FOS) application, streamlining the order management process. The tool's automation, pattern recognition,  data validation, and user-friendly interface contribute to improved operational efficiency and accuracy in handling client orders.This tool received praise from then APAC Head for its innovative approach and capabilities. ",
+        "description": "Developing various tools for front office automation. Most important being a excel macro automation tool developed in VC++. This tool features a plugin-based architecture for parsing client order Excel files from Outlook. It offers seamless integration with Outlook, automatically extracting data from emails or attachments. The parsed data was then efficiently transferred to a Front Office System (FOS) application, streamlining the order management process. The tool's automation, pattern recognition,  data validation, and user-friendly interface contribute to improved operational efficiency and accuracy in handling client orders.This tool received praise from then APAC Head for its innovative approach and capabilities. ",
         "technology": " VC++, VBS, Oracle",
         "timeline": "2004-2005"
       }
