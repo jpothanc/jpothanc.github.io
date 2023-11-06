@@ -79,8 +79,8 @@
     "projects": [
       {
         "name": "APAC Front Office Applications",
-        "description": "As the leader of the Front Office technology team overseeing Order Management, Program Trading, and IOI, I've had the privilege of driving a remarkable transformation. We embarked on a journey towards agility, adopting cutting-edge DevOps practices, and building robust CI/CD pipelines to streamline our operations. One of our most significant achievements was the seamless integration of the bank's platform-as-a-service, a move that empowered us to swiftly develop and deploy microservices. This transformation marked a pivotal moment in our technological evolution, propelling us into a future characterized by innovation and efficiency. This process was not just a change in technology but a change in mindset, fostering a culture of adaptability and continuous improvement. Our team's dedication and hard work were instrumental in this remarkable shift, and the results have been nothing short of exceptional. In my current role, I take immense pride in leading this dynamic team, and our ongoing pursuit of technological excellence. Our relentless commitment to progress, combined with a visionary approach, has firmly set us on the path of unparalleled technological transformation.",
-        "technology": " C#, .Net 6, Redis, GraphQL, Mongo, Sybase, Oracle, BitBucket, Openshift, SonarQube, Jenkins",
+        "description": "In my current role as the Technical and Delivery Lead for the Front Office technology team, which encompasses Order Management, Program Trading, and IOI, I hold a pivotal position in shaping our technological landscape. My responsibilities encompass active participation in software development projects, where I take a hands-on approach in designing, developing, and rigorously testing software code. I prioritize scalability, reliability, and regulatory compliance in our technology solutions, emphasizing the importance of maintaining a production environment of exceptional quality. A significant part of my journey has been guiding our team through a transformative process. I introduced agile methodologies, which have enhanced our adaptability and responsiveness. We also adopted DevOps practices, streamlined our operations with the establishment of robust CI/CD pipelines, and harnessed the power of the bank's platform-as-a-service to efficiently develop and deploy microservices. These changes signify our commitment to technological evolution, positioning us at the forefront of innovation. The ongoing transformation journey not only reflects my professional growth but also symbolizes our collective pursuit of excellence in technology.",
+        "technology": " C#, .Net 6, Redis, GraphQL, Mongo, Sybase, Oracle, PostgreSQL, BitBucket, Openshift, Grafana, SonarQube, Jenkins",
         "timeline": "2016 - Till date"
       },
       {
@@ -202,6 +202,7 @@
       "#collborative",
       "#selfless",
       "#self-driven",
+      "#leader",
       "#trustworthy",
       "#empathetic",
       "#respected",
