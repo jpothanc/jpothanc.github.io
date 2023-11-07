@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ThemeConstants, shakeVariants } from "../constants";
 import { getIcon, getThemeColor, link } from "../lib/helper";
 import { IconType } from "react-icons";
+import Tooltip from "./Tooltip";
 
 type Props = {
   title: string;
@@ -43,19 +44,21 @@ const Links = ({ title, content, icon, links }: Props) => {
             {links.map((link, index) => {
               return (
                 <li key={index}>
-                  <a
-                    href={link.url}
-                    className="my-link"
-                    style={{
-                      color: getThemeColor(
-                        ThemeConstants.themeDark,
-                        ThemeConstants.badgeLinksColor
-                      ),
-                    }}
-                    target="_blank"
-                  >
-                    {link.name}
-                  </a>
+                  <Tooltip text={link.description}>
+                    <a
+                      href={link.url}
+                      className="my-link"
+                      style={{
+                        color: getThemeColor(
+                          ThemeConstants.themeDark,
+                          ThemeConstants.badgeLinksColor
+                        ),
+                      }}
+                      target="_blank"
+                    >
+                      {link.name}
+                    </a>
+                  </Tooltip>
                 </li>
               );
             })}

@@ -158,12 +158,12 @@
     "articles": [
       {
         "name": "React-Inversify",
-        "description": "How to use Dependency injection in react using inversify.",
+        "description": "Dependency injection in React using inversify.",
         "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
       },
       {
         "name": "React-Rxjs",
-        "description": "How to use rxjs in react.",
+        "description": "How to use Reactive Extensions in React.",
         "url": "https://medium.com/@kaljessy/react-state-management-using-rxjs-58a4d523d611"
       },
       {
@@ -173,14 +173,14 @@
       },
       {
         "name": "Specflow",
-        "description": "How to use rxjs in react.",
+        "description": "Using Specflow in .Net",
         "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
       }
     ],
     "git": [
       {
         "name": "Dynamo",
-        "description": "Dynamic Data Binding Application developed used React.",
+        "description": "Dynamic Data Binding application developed used React.",
         "url": "https://github.com/jpothanc/dynamo"
       },
       {
@@ -190,17 +190,17 @@
       },
       {
         "name": "WebQ",
-        "description": "WebQ is a lightweight class library that provides support for HTTP queries and cache results on the local disk for resiliency.",
+        "description": "WebQ is a lightweight .Net class library that provides support for HTTP queries and cache results on the local disk for resiliency.",
         "url": "https://github.com/jpothanc/WebQ"
       },
       {
         "name": "Datastore",
-        "description": "A configurable reference data store.",
+        "description": "A configurable reference data store in Java.",
         "url": "https://github.com/jpothanc/datastore"
       },
       {
         "name": "HealthCheck",
-        "description": "A configurable HealthCheck Service.",
+        "description": "A configurable HealthCheck Service in Java.",
         "url": "https://github.com/jpothanc/healthcheck"
       },
       {

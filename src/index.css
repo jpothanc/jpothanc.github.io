@@ -14,11 +14,10 @@ a {
   text-decoration: underline; /* Add an underline */
   color: #26a69a; /* Set the link color */
   font-weight: bold; /* Make the text bold */
-  /* Add other styles as needed */
+  font-size: 12px;
 }
 .my-link:hover {
-  color: #1de9b6; /* Change the color on hover */
-  /* Add other hover styles as needed */
+  color: #26a69a; /* Set the link color */
 }
 
 ul {
@@ -255,6 +254,10 @@ body {
     padding-top: 100px;
     white-space: normal; /* Default: Wrap text and collapse spaces */
     grid-template-areas: initial;
+    white-space: pre-wrap;
+  }
+  .basic-text {
+    font-size: 11px;
   }
 
   .intro {
@@ -345,7 +348,7 @@ body {
 }
 /* INTRO */
 .list-text {
-  padding: 15px 40px;
+  padding: 15px 20px;
   color: #d2d5d6;
   font-size: 13px;
   line-height: 1.4;
@@ -353,7 +356,7 @@ body {
   font-weight: 400;
 }
 .intro {
-  padding: 15px 40px;
+  padding: 15px 20px;
   color: #d2d5d6;
   font-size: 13px;
   line-height: 1.5;
@@ -369,9 +372,10 @@ body {
 
 .basic-text {
   opacity: 0.9;
+  font-size: 13px;
   font-weight: 400;
   margin-top: 18px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .about__left__caption {
   opacity: 0.9;
@@ -390,6 +394,7 @@ body {
 }
 .card__title {
   font-family: "Segoe UI", Courier, monospace;
+
   font-weight: 400;
 }
 
@@ -408,8 +413,8 @@ body {
 /* BUTTON */
 .skills-btn {
   background-color: #fff;
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
   color: #000;
   letter-spacing: 0.5px;
   padding: 2px 2px;
@@ -480,14 +485,14 @@ body {
   position: absolute;
   background-color: #333;
   color: #fff;
-  padding: 10px 10px;
+  padding: 5px 5px;
   border-radius: 5px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.3s ease-in-out;
   z-index: 999;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .tooltip-trigger:hover + .tooltip-text {

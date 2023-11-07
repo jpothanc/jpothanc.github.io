@@ -71,7 +71,6 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
                   //borderRadius: "400px",
                   border: "0px solid #FFEBEE",
                   // fontWeight: 500,
-                  fontSize: "12px",
                   color: getColor(false),
                 }}
                 key={index}

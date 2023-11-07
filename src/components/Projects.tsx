@@ -69,7 +69,7 @@ const Projects = ({ title, content, icon, items }: Props) => {
                 >
                   {project.timeline}
                 </p>
-                <p style={{ fontSize: "13px", paddingTop: "10px" }}>
+                <p className="basic-text" style={{ paddingTop: "5px" }}>
                   {project.description}
                 </p>
                 <p
@@ -80,11 +80,13 @@ const Projects = ({ title, content, icon, items }: Props) => {
                       ThemeConstants.themeDark,
                       ThemeConstants.badgeLinksColor
                     ),
-                    paddingTop: "10px",
+                    paddingTop: "5px",
                   }}
                 >
                   Technologies:{project.technology}
                 </p>
+                <br></br>
+                <hr></hr>
               </div>
             );
           })}
