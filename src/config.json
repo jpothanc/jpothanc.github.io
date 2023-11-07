@@ -28,11 +28,25 @@
         "date": "2004 - 2005"
       },
       {
+        "title": "ENO",
+        "location": "Credit Suisse, Singapore",
+        "description": "Equities IT Developer and Lead APAC OMS.",
+        "icon": "CgWorkAlt",
+        "date": "2005 - 2009"
+      },
+      {
+        "title": "Assistant Vice President",
+        "location": "Credit Suisse, Singapore",
+        "description": "Lead APAC OMS and OMS platform migration.",
+        "icon": "CgWorkAlt",
+        "date": "2009 - 2014"
+      },
+      {
         "title": "Vice President",
         "location": "Credit Suisse, Singapore",
-        "description": "Currently working as APAC Front Office Technical and Delivery lead.",
+        "description": "Technical and Delivery lead for APAC Front Office Systems.",
         "icon": "CgWorkAlt",
-        "date": "2005 - 2023"
+        "date": "2014 - 2023"
       }
     ],
     "expertise": [
