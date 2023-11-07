@@ -251,11 +251,28 @@ body {
 @media (max-width: 925px) {
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 300px);
+    /* grid-template-rows: repeat(12, 1500px); */
+    padding-top: 100px;
+    white-space: normal; /* Default: Wrap text and collapse spaces */
     grid-template-areas: initial;
   }
-  .about {
+
+  .intro {
+    width: auto;
+    white-space: pre-wrap;
+  }
+  .top-bar__content {
+    height: 150px;
     flex-direction: column;
+    align-items: self-start;
+  }
+  .logo__text {
+    padding-top: 10px;
+    width: 200px;
+  }
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .card {
     grid-area: initial !important;
