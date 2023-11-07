@@ -52,7 +52,7 @@ const Projects = ({ title, content, icon, items }: Props) => {
               <div>
                 <h4
                   style={{
-                    paddingTop: "20px",
+                    paddingTop: "10px",
                   }}
                 >
                   {project.name}
@@ -83,6 +83,7 @@ const Projects = ({ title, content, icon, items }: Props) => {
                     paddingTop: "5px",
                   }}
                 >
+                  <br></br>
                   Technologies:{project.technology}
                 </p>
                 <br></br>

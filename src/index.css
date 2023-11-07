@@ -523,3 +523,7 @@ body {
 .hexagon-button:hover {
   background-color: #e04e5e;
 }
+
+hr {
+  border: 1px solid rgb(57, 57, 60); /* Set the border color to blue */
+}
