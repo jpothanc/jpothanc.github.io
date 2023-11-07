@@ -277,6 +277,9 @@ body {
   .card {
     grid-area: initial !important;
   }
+  .about {
+    flex-direction: column;
+  }
   .content {
     padding: 50px 10px 10px;
   }
