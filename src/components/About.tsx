@@ -55,11 +55,11 @@ const About = () => {
             <div className="about__moto">
               <p className="u-white">&lt;</p>
               <p className="u-red">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( x =&gt; &#123;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( c =&gt; &#123;
               </p>
-              <p className="u-torquise">&nbsp; x.Code().WithPrecision();</p>
-              <p className="u-blue">x.Inspire().WithPassion();</p>
-              <p className="u-green">x.Innovate.WithPurpose(); &nbsp;&nbsp;</p>
+              <p className="u-torquise">&nbsp; c.Code().WithPrecision();</p>
+              <p className="u-blue">c.Inspire().WithPassion();</p>
+              <p className="u-green">c.Innovate.WithPurpose(); &nbsp;&nbsp;</p>
               <p className="u-bracket">&#125;)</p>
               <p className="u-white">&nbsp;/&gt;</p>
             </div>
