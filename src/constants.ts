@@ -16,7 +16,7 @@ export const shakeVariants = {
   animate: {
     x: [-2, 2, -2, -1, -1, 0], // Define the shaking animation (x-axis)
     opacity: [0.8, 0.7, 0.2, 0.6, 0.9, 1],
-    color: "#69F0AE",
+    color: "#26A69A",
     transition: {
       type: "spring",
       stiffness: 500, // The stiffness of the spring (higher values make it stiffer)
@@ -28,7 +28,7 @@ export const shakeVariants = {
 export const fmScaleText = {
   animate: {
     fontSize: "15px",
-    color: "#69F0AE",
+    color: "#26A69A",
     transition: {
       type: "spring",
       stiffness: 600, // The stiffness of the spring (higher values make it stiffer)

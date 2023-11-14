@@ -64,7 +64,7 @@ body {
   justify-content: space-between;
 }
 .bottom-bar {
-  background-color: rgba(45, 45, 44, 0.8);
+  background-color: transparent;
   margin: 0 auto;
   display: flex;
   opacity: 1;
