@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import Menu from "./Menu";
 import { ThemeConstants, fmScaleAboutText } from "../constants";
 import { getThemeColor } from "../utils/helper";
-
+import Footer from "./common/Footer";
+import config from "../config/config.json";
 // const motivation = () => {
 //   return
 //     "Pursuing his passion,Passionate programmer," +
@@ -33,7 +34,6 @@ const About = () => {
             whileHover="animate"
           >
             <motion.h4
-              className="about__left__caption"
               variants={fmScaleAboutText}
               initial="initial"
               whileHover="animate"
@@ -44,16 +44,23 @@ const About = () => {
                 ),
               }}
             >
-              Jessish Pothancheri
+              <span className="about-first-name">
+                {config.portfolio.firstname}
+              </span>
+              <span className="about-second-name">
+                {config.portfolio.secondname}
+              </span>
             </motion.h4>
 
             <div className="about__moto">
               <p className="u-white">&lt;</p>
-              <p className="u-red">&nbsp; dream with creativity,</p>
-              <p className="u-orange">&nbsp; code with precision,</p>
-              <br></br>
-              <p className="u-blue">inspire with passion,</p>
-              <p className="u-green">innovate with purpose.</p>
+              <p className="u-red">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( x =&gt; &#123;
+              </p>
+              <p className="u-torquise">&nbsp; x.Code().WithPrecision();</p>
+              <p className="u-blue">x.Inspire().WithPassion();</p>
+              <p className="u-green">x.Innovate.WithPurpose(); &nbsp;&nbsp;</p>
+              <p className="u-bracket">&#125;)</p>
               <p className="u-white">&nbsp;/&gt;</p>
             </div>
 
@@ -81,6 +88,7 @@ const About = () => {
             ></motion.img>
           </motion.div>
         </motion.div>
+        <Footer />
       </div>
     </>
   );

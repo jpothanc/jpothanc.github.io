@@ -25,9 +25,11 @@ const NavBar = () => {
               whileHover="animate"
             >
               <img src="Jessish.jpg" alt="logo" className="logo" />
-              <span className="logo__text">{config.portfolio.name}</span>
+              <span className="logo__text">
+                {config.portfolio.firstname}&nbsp;{config.portfolio.secondname}
+              </span>
             </motion.a>
-            <span className="logo__desc">{config.portfolio.IntroBadge}</span>
+            <span className="logo__desc">{config.portfolio.introBadge}</span>
           </div>
         </div>
         <div className="bottom-bar">

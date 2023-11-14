@@ -1,8 +1,9 @@
 {
   "theme": "dark",
   "portfolio": {
-    "name": "Jessish Pothancheri",
-    "IntroBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
+    "firstname": "Jessish",
+    "secondname": "Pothancheri",
+    "introBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
 
     "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
@@ -247,7 +248,7 @@
       "careerContentBackground": "rgba(200, 255, 400, 0.05)",
       "careerHeader": "#26a69a",
       "careerDate": "#64B5F6",
-      "aboutMenuColor": "#69F0AE",
+      "aboutMenuColor": "#26a69a",
       "aboutCaptionColor": "white",
       "aboutSubCaptionColor": "#039BE5",
       "barMenuColor": "rgba(227, 227, 227, 0.8)",

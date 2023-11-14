@@ -146,7 +146,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  font-size: 48px;
+  font-size: 34px;
 }
 .about__right {
   /* border: 2px solid rgb(143, 137, 137); */
@@ -167,6 +167,18 @@ body {
     color: #d33b41;
     filter: brightness(0.8);
   }
+}
+.about-first-name {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 2px 15px;
+}
+.about-second-name {
+  display: inline-block;
+  background-color: #004d40;
+  color: white;
+  padding: 2px 15px;
 }
 
 .main {
@@ -301,19 +313,16 @@ body {
   color: rgba(255, 236, 179, 0.8);
 }
 
-.u-red {
-  color: #e57373;
-  display: inline-block;
-}
 /* MOTO */
 .about__moto {
-  font-size: 14px;
+  font-size: 16px;
   align-self: center;
   padding: 10px;
+  text-align: left;
   /* background-color: rgb(24, 23, 23);
   box-shadow: 1px 1px 10px 0px rgb(31, 31, 30);  */
   & :hover {
-    filter: brightness(1.5);
+    filter: brightness(1.3);
     transition: all 0.5s ease;
   }
 }
@@ -328,22 +337,36 @@ body {
 }
 .u-blue {
   color: #64b5f6;
-  padding-top: 12px;
+  padding-top: 10px;
+  padding-left: 50px;
+  font-size: 16px;
 }
 .u-green {
   color: #ea80fc;
-  display: inline-block;
+  padding-top: 10px;
+  padding-left: 50px;
 }
-.u-orange {
+.u-torquise {
   color: #64ffda;
-  display: inline-block;
+  padding-left: 40px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.u-bracket {
+  color: #e57373;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+.u-red {
+  color: #e57373;
+  padding-left: 10px;
 }
 .u-white {
   color: rgb(234, 231, 229);
-  font-size: 28px;
   font-weight: bold;
-  display: inline-block;
-  padding-top: 1px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 2px;
 }
 /* INTRO */
 .list-text {
@@ -524,5 +547,20 @@ body {
 }
 
 hr {
-  border: 1px solid rgb(57, 57, 60); /* Set the border color to blue */
+  border: 1px solid rgb(57, 57, 60);
+}
+
+.footer {
+  color: #004d40;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-weight: 500;
+  width: 100%;
+  font-size: 11px;
+  &:hover {
+    filter: brightness(1.8);
+    transition: all 0.5s ease;
+  }
 }
