@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ThemeConstants, shakeVariants } from "../constants";
 import { IconType } from "react-icons";
-import { getIcon, getThemeColor } from "../lib/helper";
+import { getIcon, getThemeColor } from "../utils/helper";
 
 type Prop = {
   title: string;

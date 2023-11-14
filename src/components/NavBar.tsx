@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import config from "../config.json";
+import config from "../config/config.json";
 import Menu from "./Menu";
 import { ThemeConstants, fmScale } from "../constants";
-import { getThemeColor } from "../lib/helper";
+import { getThemeColor } from "../utils/helper";
 const NavBar = () => {
   return (
     <>
@@ -10,7 +10,10 @@ const NavBar = () => {
         <div
           className="top-bar"
           style={{
-            background: getThemeColor(ThemeConstants.themeDark, ThemeConstants.logoBackground),
+            background: getThemeColor(
+              ThemeConstants.themeDark,
+              ThemeConstants.logoBackground
+            ),
           }}
         >
           <div className="top-bar__content">

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ThemeConstants, shakeVariants } from "../constants";
-import { getIcon, getThemeColor, projects } from "../lib/helper";
+import { getIcon, getThemeColor, projects } from "../utils/helper";
 import { IconType } from "react-icons";
 
 type Props = {

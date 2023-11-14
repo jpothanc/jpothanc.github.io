@@ -1,12 +1,15 @@
 import { ThemeConstants } from "../constants";
-import { getThemeColor } from "../lib/helper";
+import { getThemeColor } from "../utils/helper";
 
 const Contact = () => {
   return (
     <div
       className="card"
       style={{
-        background: getThemeColor(ThemeConstants.themeDark, ThemeConstants.contentBackground),
+        background: getThemeColor(
+          ThemeConstants.themeDark,
+          ThemeConstants.contentBackground
+        ),
       }}
     >
       Contact

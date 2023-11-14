@@ -2,8 +2,9 @@ import React from "react";
 import { IconType } from "react-icons";
 import { FaGraduationCap } from "react-icons/fa6";
 import { CgWorkAlt } from "react-icons/cg";
-import config from "../config.json";
+import config from "../config/config.json";
 import { ThemeConstants } from "../constants";
+
 export const ColorArray = [
   "#F06292",
   "#E57373",
@@ -143,3 +144,5 @@ export function getThemeColor(theme: string, component: string): string {
   }
   return "";
 }
+
+

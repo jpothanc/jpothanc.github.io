@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { shakeVariants, fmOpacity, ThemeConstants } from "../constants";
 import { FaCode } from "react-icons/fa";
-import { experiance, getIconByName, getThemeColor } from "../lib/helper";
+import { experiance, getIconByName, getThemeColor } from "../utils/helper";
 
 import React from "react";
 import {
@@ -55,7 +55,7 @@ const Experiance = ({ timeline }: timelineProps) => {
               variants={fmOpacity}
               whileInView="animate"
             >
-              <VerticalTimeline lineColor="#F44336">
+              <VerticalTimeline lineColor="#26a69a">
                 {timeline.map((item, index) => (
                   <React.Fragment key={index}>
                     <VerticalTimelineElement

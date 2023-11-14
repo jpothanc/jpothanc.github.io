@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Menu from "./Menu";
 import { ThemeConstants, fmScaleAboutText } from "../constants";
-import { getThemeColor } from "../lib/helper";
+import { getThemeColor } from "../utils/helper";
 
 // const motivation = () => {
 //   return
@@ -49,14 +49,11 @@ const About = () => {
 
             <div className="about__moto">
               <p className="u-white">&lt;</p>
-              <p className="u-red">&nbsp; Pursuing his passion,&nbsp;&nbsp; </p>
-              <p className="u-orange"> Passionate programmer,&nbsp;&nbsp;</p>
-              <p className="u-blue">
-                Persistently perfects his programming prowess,
-              </p>
-              <p className="u-green">
-                &nbsp;&nbsp;Pushing past obstacles and pitfalls
-              </p>
+              <p className="u-red">&nbsp; dream with creativity,</p>
+              <p className="u-orange">&nbsp; code with precision,</p>
+              <br></br>
+              <p className="u-blue">inspire with passion,</p>
+              <p className="u-green">innovate with purpose.</p>
               <p className="u-white">&nbsp;/&gt;</p>
             </div>
 

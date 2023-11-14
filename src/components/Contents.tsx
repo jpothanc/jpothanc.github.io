@@ -1,9 +1,9 @@
-import config from "../config.json";
-import Badges from "./Badges";
+import config from "../config/config.json";
+import Badges from "./common/Badges";
 import ListContent from "./Expertise";
 import Experiance from "./Experiance";
 import Intro from "./Intro";
-import Links from "./Links";
+import Links from "./common/Links";
 import Projects from "./Projects";
 import {
   FaStackOverflow,
@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import NavBar from "./NavBar";
 import { ThemeConstants } from "../constants";
-import { getThemeColor } from "../lib/helper";
+import { getThemeColor } from "../utils/helper";
 const Contents = () => {
   const ref = useRef<HTMLDivElement>(null);
   // const { scrollYProgress } = useScroll({

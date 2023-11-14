@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ThemeConstants, shakeVariants } from "../constants";
-import { getIcon, getThemeColor, link } from "../lib/helper";
+import { ThemeConstants, shakeVariants } from "../../constants";
+import { getIcon, getThemeColor, link } from "../../utils/helper";
 import { IconType } from "react-icons";
 import Tooltip from "./Tooltip";
 

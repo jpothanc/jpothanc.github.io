@@ -309,10 +309,9 @@ body {
 .about__moto {
   font-size: 14px;
   align-self: center;
-  border-radius: 70px;
-  padding: 13px;
+  padding: 10px;
   /* background-color: rgb(24, 23, 23);
-  box-shadow: 11px 9px 10px 0px rgb(31, 31, 30); */
+  box-shadow: 1px 1px 10px 0px rgb(31, 31, 30);  */
   & :hover {
     filter: brightness(1.5);
     transition: all 0.5s ease;
@@ -329,7 +328,7 @@ body {
 }
 .u-blue {
   color: #64b5f6;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 .u-green {
   color: #ea80fc;

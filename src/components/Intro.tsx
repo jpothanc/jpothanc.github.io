@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ThemeConstants, fmScaleText } from "../constants";
-import { getThemeColor } from "../lib/helper";
+import { getThemeColor } from "../utils/helper";
 
 type Props = {
   text: string;

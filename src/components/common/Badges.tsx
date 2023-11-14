@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { ThemeConstants, shakeVariants } from "../constants";
+import { ThemeConstants, shakeVariants } from "../../constants";
 import {
   ColorArray,
   badgeVariants,
   getIcon,
   getThemeColor,
-} from "../lib/helper";
+} from "../../utils/helper";
 import { IconType } from "react-icons";
 
 type badgeProps = {

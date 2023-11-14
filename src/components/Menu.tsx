@@ -9,8 +9,8 @@ import {
   FaDev,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { getThemeColor } from "../lib/helper";
-import Tooltip from "./Tooltip";
+import { getThemeColor } from "../utils/helper";
+import Tooltip from "./common/Tooltip";
 
 type Props = {
   color: string;
