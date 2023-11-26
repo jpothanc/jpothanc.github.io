@@ -173,9 +173,9 @@
         "url": "https://dev.to/jpothanc/performance-testing-using-grafana-k6-3pg9"
       },
       {
-        "name": "Specflow",
-        "description": "Using Specflow in .Net",
-        "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
+        "name": "Publish React lib to npm",
+        "description": "Publish React library to npm.",
+        "url": "https://medium.com/@kaljessy/publish-your-react-library-to-npm-using-vite-136dc81e368d"
       }
     ],
     "git": [
