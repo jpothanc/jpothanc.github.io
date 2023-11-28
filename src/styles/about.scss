@@ -1,0 +1,106 @@
+$primary-color: #004d40;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fix the position */
+  top: 0; /* Position at the top of the viewport */
+  width: 100%; /* Occupy the full width */
+  padding: 20px;
+  .brand-logo {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .brand-logo__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .brand-logo__text {
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 7400;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    transition: all 0.3s;
+    display: flex;
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
+.about {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  background-color: rgb(16, 15, 15);
+  color: white;
+  padding: 10px 1px;
+  /* border: #1de9b6 solid 1px; */
+  align-items: center;
+  column-gap: 1px;
+  row-gap: 1px;
+  /* border: 1px solid rgb(143, 137, 137); */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.about__left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 34px;
+}
+.about__right {
+  margin: 0 auto;
+  text-align: center;
+}
+.about-menu {
+  flex-direction: row;
+  column-gap: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgb(26, 26, 24);
+  &:hover {
+    color: #d33b41;
+    filter: brightness(0.8);
+    transition: all 0.3s;
+  }
+}
+.about-menu-item {
+  &:hover {
+    color: #d33b41;
+    filter: brightness(0.8);
+  }
+}
+.about-first-name {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 2px 15px;
+}
+.about-second-name {
+  display: inline-block;
+  background-color: $primary-color;
+  color: white;
+  padding: 2px 15px;
+}
+.footer {
+  color: $primary-color;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-weight: 500;
+  width: 100%;
+  font-size: 11px;
+  &:hover {
+    filter: brightness(1.8);
+    transition: all 0.5s ease;
+  }
+}
