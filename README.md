@@ -17,9 +17,15 @@ Finally, I found time in the last few months to dive into React—and it's been 
 Join me as I continue exploring, learning, and leaving my mark in the digital realm.
 
 ## Technology
+React
 <img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React Icon" width="20" height="20">
-<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="React Icon" width="20" height="20">
-<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="React Icon" width="20" height="20">
+TypeScript
+<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" width="20" height="20">
+Framer Motion
+<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="Framer Motion" width="20" height="20">
+
+My custom library :)
+https://www.npmjs.com/package/react-jp-ui
 
 
 
