@@ -22,6 +22,17 @@ Join me as I continue exploring, learning, and leaving my mark in the digital re
 My custom npm library :)
 https://www.npmjs.com/package/react-jp-ui
 
+```csharp
+Dreams.Create( i => {
+
+  i.Code().WithPrecision();
+
+i.Inspire().WithPassion();
+
+i.Innovate.WithPurpose();   
+
+})
+```
 
 ## Get in Touch
 
