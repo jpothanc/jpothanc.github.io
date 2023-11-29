@@ -14,18 +14,14 @@ I don't claim to be a design master, but I believe I have a good sense of it. I'
 
 Finally, I found time in the last few months to dive into React—and it's been a game-changer! This inspired me to create a comprehensive portfolio, showcasing who I am and what I can do in the web tech world.
 
-Join me as I continue exploring, learning, and leaving my mark in the digital realm.
+## Moto
 
-## Technologies Used to Create this Website
- React, TypeScript and  Framer Motion
-
-My custom npm library :)
-https://www.npmjs.com/package/react-jp-ui
+Dream, Code, Inspire and Innovate
 
 ```csharp
 Dreams.Create( i => {
 
-  i.Code().WithPrecision();
+i.Code().WithPrecision();
 
 i.Inspire().WithPassion();
 
@@ -33,6 +29,12 @@ i.Innovate.WithPurpose();
 
 })
 ```
+
+## Technologies Used to Create this Website
+ React, TypeScript and  Framer Motion
+
+My custom npm library :)
+https://www.npmjs.com/package/react-jp-ui
 
 ## Get in Touch
 
