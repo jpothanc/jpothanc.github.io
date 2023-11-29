@@ -4,7 +4,7 @@ For more than two decades, I've been diving deep into the world of investment ba
 
 I'm all about crafting strategies that not only boost the bottom line but also bring out the best in teams. Whether it's streamlining trading processes, smoothing out the kinks, or amping up the client experience, I'm constantly on the lookout for ways to make tech work smarter in the equities world.
 
-## About Me
+## Motivation
 
 I'm all about finding fresh, unique ways to approach things. Whether it's crafting sleek UIs, coding software, or building HTML pages and dynamic PowerPoint presentations, I'm drawn to the art of making things stand out.
 
@@ -17,12 +17,12 @@ Finally, I found time in the last few months to dive into React—and it's been 
 Join me as I continue exploring, learning, and leaving my mark in the digital realm.
 
 ## Technology
-React
-<img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React Icon" width="20" height="20">
-TypeScript
-<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" width="20" height="20">
-Framer Motion
-<img src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67" alt="Framer Motion" width="20" height="20">
+
+<img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React Icon" width="20" height="20"> React
+
+<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" width="20" height="20"> TypeScript
+
+<img src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67" alt="Framer Motion" width="20" height="20"> Framer Motion
 
 My custom library :)
 https://www.npmjs.com/package/react-jp-ui
@@ -31,6 +31,6 @@ https://www.npmjs.com/package/react-jp-ui
 
 ## Get in Touch
 
-- 📧 Email: [kaljessy@gmail.com](kaljessy@gmail.com)
-- 🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
+-  Email: [kaljessy@gmail.com](kaljessy@gmail.com)
+-  LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
 
