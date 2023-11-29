@@ -1,8 +1,8 @@
-# Hey there, I'm Jessish! 
+# Hey there, I'm Jessish! </JP>
 
 For more than two decades, I've been diving deep into the world of investment banking, specializing in the tech side of Equities Front Office Solutions. You'll often find me brainstorming, designing, and fine-tuning tech solutions that are tailor-made to tackle the unique challenges in the equities front office scene.
 
-I'm all about crafting cool strategies that not only boost the bottom line but also bring out the best in teams. Whether it's streamlining trading processes, smoothing out the kinks, or amping up the client experience, I'm constantly on the lookout for ways to make tech work smarter in the equities world.
+I'm all about crafting strategies that not only boost the bottom line but also bring out the best in teams. Whether it's streamlining trading processes, smoothing out the kinks, or amping up the client experience, I'm constantly on the lookout for ways to make tech work smarter in the equities world.
 
 ## About Me
 
@@ -15,10 +15,12 @@ I don't claim to be a design master, but I believe I have a good sense of it. I'
 Finally, I found time in the last few months to dive into React—and it's been a game-changer! This inspired me to create a comprehensive portfolio, showcasing who I am and what I can do in the web tech world.
 
 Join me as I continue exploring, learning, and leaving my mark in the digital realm.
+![GitHub Logo](https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/rocket.svg)
+![GitHub Logo](https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png)
 
 
 ## Get in Touch
 
-- 📧 Email: [Email](kaljessy@gmail.com)
+- 📧 Email: [kaljessy@gmail.com](kaljessy@gmail.com)
 - 🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
-- 🌐 Personal Website: [jpothanc](https://jpothanc.github.io/)
+
