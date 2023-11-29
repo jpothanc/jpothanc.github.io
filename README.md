@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# Hey there, I'm Jessish! 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm passionate about web development and currently diving deeper into React to strengthen my skills and consolidate my knowledge in one place.
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌍 Located in Singapore
+- 💻 Web Developer | React Enthusiast
+- 🌱 Learning and exploring the latest in web technologies
 
-## Expanding the ESLint configuration
+## What I'm Working On
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I'm currently working on building my personal profile page using React. It's a fantastic opportunity for me to practice and showcase my skills while creating something meaningful.
 
-- Configure the top-level `parserOptions` property like this:
+## Goals
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Master React fundamentals and advanced concepts
+- Contribute to open-source projects
+- Build awesome web applications
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Get in Touch
+
+- 📧 Email: [Email](kaljessy@gmail.com)
+- 🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
+- 🌐 Personal Website: [jpothanc](https://jpothanc.github.io/)
