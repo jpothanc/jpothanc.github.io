@@ -1,25 +1,30 @@
-# Hey there, I'm Jessish! 👋
+# Hey there, I'm Jessish! </JP>
 
-I'm passionate about web development and currently diving deeper into React to strengthen my skills and consolidate my knowledge in one place.
+For more than two decades, I've been with a leading investment bank, specializing in the tech side of Equities Front Office Solutions. You'll often find me brainstorming, designing, and fine-tuning tech solutions that are tailor-made to tackle the unique challenges in the equities front office scene.
 
-## About Me
+I'm all about crafting strategies that not only boost the bottom line but also bring out the best in teams. Whether it's streamlining trading processes, smoothing out the kinks, or amping up the client experience, I'm constantly on the lookout for ways to make tech work smarter in the equities world.
 
-- 🌍 Located in Singapore
-- 💻 Web Developer | React Enthusiast
-- 🌱 Learning and exploring the latest in web technologies
+## Motivation
 
-## What I'm Working On
+I'm all about finding fresh, unique ways to approach things. Whether it's crafting sleek UIs, coding software, or building HTML pages and dynamic PowerPoint presentations, I'm drawn to the art of making things stand out.
 
-I'm currently working on building my personal profile page using React. It's a fantastic opportunity for me to practice and showcase my skills while creating something meaningful.
+While I'm not an artist who can draw, I've always had an eye for aesthetics. I remember creating a unique Flash portfolio back in 2001—it was an adventure. It was during my college days when I stumbled upon JavaScript, playing with light sources and being mesmerized by its potential.
 
-## Goals
+I don't claim to be a design master, but I believe I have a good sense of it. I've been out of the portfolio game for a while, mainly due to a packed schedule. Instead, I'd craft quick UIs using C#, often tweaking them with dark themes to suit my style. 
 
-- Master React fundamentals and advanced concepts
-- Contribute to open-source projects
-- Build awesome web applications
+Finally, I found time in the last few months to dive into React—and it's been a game-changer! This inspired me to create a comprehensive portfolio, showcasing who I am and what I can do in the web tech world.
+
+Join me as I continue exploring, learning, and leaving my mark in the digital realm.
+
+## Technologies Used to Create this Website
+ React, TypeScript and  Framer Motion
+
+My custom npm library :)
+https://www.npmjs.com/package/react-jp-ui
+
 
 ## Get in Touch
 
-- 📧 Email: [Email](kaljessy@gmail.com)
-- 🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
-- 🌐 Personal Website: [jpothanc](https://jpothanc.github.io/)
+-  Email: [kaljessy@gmail.com](kaljessy@gmail.com)
+-  LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
+
