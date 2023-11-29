@@ -28,7 +28,7 @@ const About = () => {
     const fetchReadme = async () => {
       try {
         const response = await fetch(
-          "https://api.github.com/repos/jpothanc/SimpleSkin/readme"
+          "https://api.github.com/repos/jpothanc/jpothanc.github.io/readme"
         );
         const readmeData = await response.json();
 
@@ -141,11 +141,7 @@ const About = () => {
             </motion.div>
           </div>
           <Footer />
-          <WindowMd
-            title="This is a title"
-            content={readmeContent}
-            ref={modalRef}
-          />
+          <WindowMd title="" content={readmeContent} ref={modalRef} />
         </div>
       </div>
     </>

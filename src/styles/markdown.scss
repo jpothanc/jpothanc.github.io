@@ -1,0 +1,39 @@
+$primary-color: #edf4f3;
+
+/* Style the container */
+.markdown-content {
+  /* Add any styles you want for the container itself */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Style the rendered headings within the container */
+.markdown-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.markdown-content h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.markdown-content h3 {
+  margin-bottom: 10px;
+}
+
+/* Style the rendered paragraphs within the container */
+.markdown-content p {
+  line-height: 1.6;
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+.markdown-content ul {
+  line-height: 1.6;
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+/* Style the rendered links within the container */
+.markdown-content a {
+  color: rgb(42, 120, 199);
+  text-decoration: underline;
+}
