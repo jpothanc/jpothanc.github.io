@@ -10,7 +10,7 @@ I'm all about finding fresh, unique ways to approach things. Whether it's crafti
 
 While I'm not an artist who can draw, I've always had an eye for aesthetics. I remember creating a unique Flash portfolio back in 2001—it was an adventure. It was during my college days when I stumbled upon JavaScript, playing with light sources and being mesmerized by its potential.
 
-I don't claim to be a design master, but I believe I have a good sense of it. I've been out of the portfolio game for a while, mainly due to a packed schedule. Instead, I'd craft quick UIs using C#, often tweaking them with dark themes to suit my style. 
+I don't claim to be a design master, but I believe I have a good sense of it. I always wanted to learn one of the modern web languages like React or Angular. I could not,  mainly due to packed schedules. 
 
 Finally, I found time in the last few months to dive into React—and it's been a game-changer! This inspired me to create a comprehensive portfolio, showcasing who I am and what I can do in the web tech world.
 
