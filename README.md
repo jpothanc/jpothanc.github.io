@@ -1,6 +1,8 @@
-# Hey there, I'm Jessish! 👋
+# Hey there, I'm Jessish! 
 
-I'm passionate about web development and currently diving deeper into React to strengthen my skills and consolidate my knowledge in one place.
+For more than two decades, I've been diving deep into the world of investment banking, specializing in the tech side of Equities Front Office Solutions. You'll often find me brainstorming, designing, and fine-tuning tech solutions that are tailor-made to tackle the unique challenges in the equities front office scene.
+
+I'm all about crafting cool strategies that not only boost the bottom line but also bring out the best in teams. Whether it's streamlining trading processes, smoothing out the kinks, or amping up the client experience, I'm constantly on the lookout for ways to make tech work smarter in the equities world.
 
 ## About Me
 
