@@ -141,7 +141,12 @@ const About = () => {
             </motion.div>
           </div>
           <Footer />
-          <WindowMd title="" content={readmeContent} ref={modalRef} />
+          <WindowMd
+            title=""
+            content={readmeContent}
+            bgcolor="#212121"
+            ref={modalRef}
+          />
         </div>
       </div>
     </>

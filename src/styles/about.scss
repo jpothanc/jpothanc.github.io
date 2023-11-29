@@ -106,13 +106,7 @@ $primary-color: #004d40;
 }
 
 .jp_wmd_content {
-  display: none;
   font-size: 12px;
-  width: calc(100% - 0px);
-  height: calc(100% - 20px);
-  background-color: #1f1e1e;
-
   border-radius: 10px;
-  overflow: scroll;
+  align-self: center;
 }
-
