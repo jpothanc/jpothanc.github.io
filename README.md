@@ -15,8 +15,12 @@ I don't claim to be a design master, but I believe I have a good sense of it. I'
 Finally, I found time in the last few months to dive into React—and it's been a game-changer! This inspired me to create a comprehensive portfolio, showcasing who I am and what I can do in the web tech world.
 
 Join me as I continue exploring, learning, and leaving my mark in the digital realm.
-![GitHub Logo](https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png)
-<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/rocket.svg" alt="Rocket Icon" width="20" height="20">
+
+## Technology
+<img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React Icon" width="20" height="20">
+<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="React Icon" width="20" height="20">
+<img src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="React Icon" width="20" height="20">
+
 
 
 ## Get in Touch
