@@ -28,6 +28,22 @@ My custom library :)
 <img src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png" alt="TypeScript" width="20" height="20"> 
 https://www.npmjs.com/package/react-jp-ui
 
+In Markdown, you can't directly set the size of an image using traditional HTML attributes like width and height. GitHub's markdown does not support attributes like width and height for images.
+
+However, you can use HTML <img> tags to embed the image and set the size attributes there. Unfortunately, for external images, GitHub sanitizes HTML attributes for security reasons, so the size won't be adjustable directly within the README.
+
+If you need to display an image with a specific size in your README, consider hosting the image on a platform that allows you to manipulate the image URL to adjust its size dynamically, such as Imgur or another image hosting service. Then, you could use an HTML <img> tag like this:
+
+html
+Copy code
+<img src="https://example.com/path/to/your/image.jpg" alt="Your Image" width="100" height="100">
+Replace the src attribute with the actual URL of your image, and adjust the width and height attributes to your preferred dimensions.
+
+Alternatively, if you're hosting the image on GitHub itself, you could resize the image by appending query parameters to the URL, but this might not always work within a GitHub README. For example:
+
+markdown
+Copy code
+![Your Image](https://github.com/username/repository/raw/branch/path/to/image.jpg?sanitize=true&w=100&h=100)
 
 
 ## Get in Touch
