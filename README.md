@@ -14,6 +14,7 @@ I don't claim to be a design master, but I believe I have a good sense of it. I'
 
 Finally, I found time in the last few months to dive into React—and it's been a game-changer! This inspired me to create a comprehensive portfolio, showcasing who I am and what I can do in the web tech world.
 
+
 ## Moto
 
 Dream, Code, Inspire and Innovate
@@ -27,7 +28,7 @@ i.Inspire().WithPassion();
 
 i.Innovate.WithPurpose();   
 
-})
+});
 ```
 
 ## Technologies Used to Create this Website
