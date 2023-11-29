@@ -31,35 +31,35 @@ $primary-color: #004d40;
     }
   }
 }
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use 100% of the viewport height */
+}
 .about {
   display: flex;
   width: 100%;
   max-width: 900px;
   background-color: rgb(16, 15, 15);
   color: white;
-  padding: 10px 1px;
-  /* border: #1de9b6 solid 1px; */
+  padding: 20px;
   align-items: center;
   column-gap: 1px;
   row-gap: 1px;
-  /* border: 1px solid rgb(143, 137, 137); */
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  // border: 1px solid rgb(143, 137, 137);
+  .about__left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 34px;
+  }
+  .about__right {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 
-  transform: translate(-50%, -50%);
-}
-.about__left {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  font-size: 34px;
-}
-.about__right {
-  margin: 0 auto;
-  text-align: center;
-}
 .about-menu {
   flex-direction: row;
   column-gap: 10px;
@@ -103,4 +103,15 @@ $primary-color: #004d40;
     filter: brightness(1.8);
     transition: all 0.5s ease;
   }
+}
+
+.jp_wmd_content {
+  display: none;
+  font-size: 12px;
+  width: calc(100% - 0px);
+  height: calc(100% - 20px);
+  background-color: #1f1e1e;
+
+  border-radius: 10px;
+  overflow: scroll;
 }
