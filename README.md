@@ -16,7 +16,7 @@ Finally, I found time in the last few months to dive into React—and it's been 
 
 Join me as I continue exploring, learning, and leaving my mark in the digital realm.
 
-## Technology
+## Technologies Used to Create this Website
  React, TypeScript and  Framer Motion
 
 My custom npm library :)
