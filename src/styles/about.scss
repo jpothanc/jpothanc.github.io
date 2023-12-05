@@ -110,3 +110,8 @@ $primary-color: #004d40;
   border-radius: 10px;
   align-self: center;
 }
+@media (max-width: 925px) {
+  .jp_wmd_container {
+    width: 50%;
+  }
+}
