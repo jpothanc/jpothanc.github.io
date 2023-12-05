@@ -1,6 +1,6 @@
 # Hey there, I'm Jessish! </JP>
 
-For more than two decades, I've been with a leading investment bank as a lead, specializing in the tech side of Equities Front Office Solutions. You'll often find me brainstorming, designing, and fine-tuning tech solutions that are tailor-made to tackle the unique challenges in the equities front office scene.
+For more than two decades, I've been with a leading investment bank, specializing in the tech side of Equities Front Office Solutions. You'll often find me brainstorming, designing, and fine-tuning tech solutions that are tailor-made to tackle the unique challenges in the equities front office scene.
 
 I'm all about crafting strategies that not only boost the bottom line but also bring out the best in teams. Whether it's streamlining trading processes, smoothing out the kinks, or amping up the client experience, I'm constantly on the lookout for ways to make tech work smarter in the equities world.
 
