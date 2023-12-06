@@ -93,10 +93,10 @@ const About = () => {
                     ),
                   }}
                 >
-                  <span className="about-first-name">
+                  <span className="about__left_name__first-name">
                     {config.portfolio.firstname}
                   </span>
-                  <span className="about-second-name">
+                  <span className="about_left_name__second-name">
                     {config.portfolio.secondname}
                   </span>
                 </motion.h4>
