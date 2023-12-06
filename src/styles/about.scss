@@ -45,14 +45,14 @@ $primary-color: #004d40;
   color: white;
   padding: 20px;
   align-items: center;
-  column-gap: 1px;
+  column-gap: 50px;
   row-gap: 1px;
   // border: 1px solid rgb(143, 137, 137);
   .about__left {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    font-size: 34px;
+    font-size: 30px;
   }
   .about__right {
     margin: 0 auto;
@@ -61,8 +61,8 @@ $primary-color: #004d40;
       font-size: 14px;
       align-self: center;
       border-radius: 50%;
-      height: 350px;
-      width: 350px;
+      height: 300px;
+      width: 300px;
       background-color: rgb(24, 23, 23);
       /* box-shadow: 5px 5px 8px 0px rgb(83, 82, 81); */
     }
