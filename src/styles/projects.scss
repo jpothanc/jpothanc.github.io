@@ -22,11 +22,17 @@
 .jp_sc_card {
   width: 230px;
   min-width: 230px;
-  transition: all 0.3s;
+  background-color: rgb(37, 38, 38);
+  border: 1px solid #004d40;
+  transition: all 0.4s;
   &:hover {
     transform: scale(1.1);
   }
+  //   .jp_sc_card__body {
+  //     border: 1px solid #004d40;
+  //   }
 }
+
 .jp_sc_card__body__text {
   padding: 1cap;
   height: 130px;
@@ -34,5 +40,3 @@
   color: #bcc6c4;
   display: flex;
 }
-
-
