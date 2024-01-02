@@ -129,6 +129,64 @@
         "timeline": "2004-2005"
       }
     ],
+    "personalProjects": [
+      {
+        "name": "data store",
+        "link": "https://data-store.azurewebsites.net/api/v1/data/query?catalogue=Trading&catalogueItem=Users",
+        "description": "A robust read-through caching service streamlining data retrieval. Enhance efficiency and speed by storing frequently accessed data in memory, optimizing performance seamlessly",
+        "readme": "https://api.github.com/repos/jpothanc/datastore/readme",
+        "repo": "https://github.com/jpothanc/datastore",
+        "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
+      },
+      {
+        "name": "hero",
+        "link": "https://hero-two-gilt.vercel.app/",
+        "description": "Monitoring UI for production support. Delivers real-time insights on microservices, databases. Seamlessly integrates with Java-based healthcheck service via WebSockets for instant updates.",
+        "readme": "https://api.github.com/repos/jpothanc/hero/readme",
+        "repo": "https://github.com/jpothanc/hero",
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vercel&perline=10"
+      },
+      {
+        "name": "dynamo",
+        "link": "https://dynamo-blue.vercel.app/",
+        "description": "Dynamo is a web application that allows you to configure JSON endpoints and visualize the data in a grid format for easy reading and support.",
+        "readme": "https://api.github.com/repos/jpothanc/dynamo/readme",
+        "repo": "https://github.com/jpothanc/dynamo",
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vercel&perline=10"
+      },
+      {
+        "name": "healthcheck",
+        "link": "https://healthcheck-ib.azurewebsites.net/api/v1/health/check",
+        "description": "Service which monitors microservices, databases with regular pings, ensuring ongoing health assessment. Offers real-time updates via WebSockets to subscribed clients. Also provides REST APIs for detailed health check info.",
+        "readme": "https://api.github.com/repos/jpothanc/healthcheck/readme",
+        "repo": "https://github.com/jpothanc/healthcheck",
+        "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
+      },
+      {
+        "name": "webq",
+        "link": "https://www.nuget.org/packages/WebQ/",
+        "description": "Lightweight class library aiding HTTP queries, caching results locally for resilience. Configure cached data duration, ensuring app resilience during REST endpoint downtime.",
+        "readme": "https://api.github.com/repos/jpothanc/webq/readme",
+        "repo": "https://github.com/jpothanc/webq",
+        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+      },
+      {
+        "name": "auth me",
+        "link": "",
+        "description": "This .NET Standard class library which offers HTTP Basic Authentication capabilities. Features seamless integration into .NET applications, credential validation, and compatibility across various .NET projects.",
+        "readme": "https://api.github.com/repos/jpothanc/authme/readme",
+        "repo": "https://github.com/jpothanc/authme",
+        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+      },
+      {
+        "name": "simple skin",
+        "link": "https://www.nuget.org/packages/SimpleSkin",
+        "description": "A lightweight class library enabling swift integration of custom skins into Windows Forms apps. Easily revamp your app's appearance without extensive control modification, offering a fresh, unique look effortlessly.",
+        "readme": "https://api.github.com/repos/jpothanc/simpleskin/readme",
+        "repo": "https://github.com/jpothanc/simpleskin",
+        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+      }
+    ],
 
     "DevelopmentPractices": [
       "DevOps",

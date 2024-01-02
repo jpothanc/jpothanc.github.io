@@ -93,6 +93,15 @@ export type projects = {
   timeline: string;
 };
 
+export type personalProject = {
+  name: string;
+  link: string;
+  description: string;
+  readme: string;
+  repo: string;
+  technology: string;
+};
+
 export function getThemeColor(theme: string, component: string): string {
   if (theme == "dark") {
     switch (component) {
@@ -144,6 +153,3 @@ export function getThemeColor(theme: string, component: string): string {
   }
   return "";
 }
-
-
-

@@ -10,7 +10,7 @@ type Props = {
   items: projects[];
 };
 
-const Projects = ({ title, content, icon, items }: Props) => {
+const ProjectsWork = ({ title, content, icon, items }: Props) => {
   return (
     <>
       <div
@@ -97,4 +97,4 @@ const Projects = ({ title, content, icon, items }: Props) => {
   );
 };
 
-export default Projects;
+export default ProjectsWork;

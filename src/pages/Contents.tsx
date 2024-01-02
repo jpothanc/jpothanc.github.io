@@ -4,7 +4,7 @@ import ListContent from "../components/Expertise";
 import Experiance from "../components/Experiance";
 import Intro from "../components/Intro";
 import Links from "../components/common/Links";
-import Projects from "../components/Projects";
+import ProjectsWork from "../components/ProjectsWork";
 import {
   FaStackOverflow,
   FaWrench,
@@ -115,12 +115,12 @@ const Contents = () => {
             )}
             icon={FaChildReaching}
           ></Badges>
-          <Projects
+          <ProjectsWork
             title="Projects"
             content=""
             items={config.portfolio.projects}
             icon={FaCity}
-          ></Projects>
+          ></ProjectsWork>
 
           <Experiance timeline={config.portfolio.experiance}></Experiance>
         </motion.main>
