@@ -13,7 +13,7 @@ const ProjectSummary = () => {
             body="A robust read-through caching service streamlining data retrieval. Enhance efficiency and speed by storing frequently accessed data, optimizing performance seamlessly"
             info="https://api.github.com/repos/jpothanc/datastore/readme"
             repo=""
-            tech="https://skillicons.dev/icons?i=java,azure&perline=10"
+            tech="https://skillicons.dev/icons?i=java,spring,azure&perline=10"
             height={500}
           />
           <SummaryCard
@@ -38,7 +38,7 @@ const ProjectSummary = () => {
             body="Service which monitors microservices, databases with regular pings, ensuring ongoing health assessment. Offers real-time updates via WebSockets to subscribed clients. Also provides REST APIs for detailed health check info"
             info="https://api.github.com/repos/jpothanc/healthcheck/readme"
             repo=""
-            tech="https://skillicons.dev/icons?i=java,azure&perline=10"
+            tech="https://skillicons.dev/icons?i=java,spring,azure&perline=10"
           />
           <SummaryCard
             title="webq"
