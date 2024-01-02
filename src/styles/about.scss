@@ -57,7 +57,7 @@ $primary-color: #004d40;
       display: inline-block;
       background-color: white;
       padding: 2px 15px;
-      font-size: 28px;
+      font-size: 30x;
     }
     .about__left_name__first-name {
       @extend .about__left_name;
@@ -132,7 +132,14 @@ $primary-color: #004d40;
     width: 250px;
     height: 250px;
   }
-  .about__left_name {
-    font-size: 24px;
+  // .about__left {
+  //    border: #dee4e3 1px solid;
+  // }
+  .about__left_name__first-name {
+    width: 200px;
+    text-align: center;
+    justify-content: flex-end;
+    align-self: flex-end;
+    align-items: flex-end;
   }
 }

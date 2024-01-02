@@ -1,10 +1,10 @@
 import config from "../config/config.json";
-import Badges from "./common/Badges";
-import ListContent from "./Expertise";
-import Experiance from "./Experiance";
-import Intro from "./Intro";
-import Links from "./common/Links";
-import Projects from "./Projects";
+import Badges from "../components/common/Badges";
+import ListContent from "../components/Expertise";
+import Experiance from "../components/Experiance";
+import Intro from "../components/Intro";
+import Links from "../components/common/Links";
+import Projects from "../components/Projects";
 import {
   FaStackOverflow,
   FaWrench,
@@ -19,7 +19,7 @@ import {
 import { FaSkiing } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import NavBar from "./NavBar";
+import NavBar from "../components/NavBar";
 import { ThemeConstants } from "../constants";
 import { getThemeColor } from "../utils/helper";
 const Contents = () => {
@@ -33,7 +33,7 @@ const Contents = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar pageInfo="<about/>" />
       <motion.div className="content">
         <motion.main
           className="main"

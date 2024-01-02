@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import config from "../config/config.json";
-import Menu from "./Menu";
+import Menu from "./ToolBar";
 import { ThemeConstants, fmScale } from "../constants";
 import { getThemeColor } from "../utils/helper";
-const NavBar = () => {
+type Props = { 
+  pageInfo: string;
+}; 
+const NavBar = ({ pageInfo} :Props) => {
   return (
     <>
       <header className="header">
@@ -16,6 +19,8 @@ const NavBar = () => {
             ),
           }}
         >
+          <div className="top-bar__pageInfo">{pageInfo}</div>
+
           <div className="top-bar__content">
             <motion.a
               href="#"

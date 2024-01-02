@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import Menu from "./Menu";
+import Menu from "../components/ToolBar";
 import { ThemeConstants, fmScaleAboutText } from "../constants";
 import { getThemeColor } from "../utils/helper";
-import Footer from "./common/Footer";
+import Footer from "../components/common/Footer";
 import config from "../config/config.json";
 import Avatar from "react-avatar";
 import { CiMenuKebab } from "react-icons/ci";

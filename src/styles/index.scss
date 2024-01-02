@@ -1,5 +1,6 @@
 @import "about.scss";
 @import "markdown.scss";
+@import "projects.scss";
 
 /*RESET*/
 * {
@@ -45,7 +46,6 @@ body {
   row-gap: 1px;
   flex-direction: column;
   justify-content: center;
-  z-index: 999;
   border-radius: 50px;
 }
 .top-bar {
@@ -55,6 +55,19 @@ body {
   opacity: 1;
   margin: 0 auto;
   max-width: 1000px;
+}
+.top-bar__pageInfo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px 5px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: whitesmoke;
+  background-color: #046a59;
+  transition: all 0.3s;
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
 
 .top-bar__content {
@@ -119,7 +132,7 @@ body {
   display: grid;
   gap: 1px;
   border: "none";
-  padding: 60px 160px 10px;
+  padding: 80px 160px 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 150px 1fr;
   grid-template-areas:
