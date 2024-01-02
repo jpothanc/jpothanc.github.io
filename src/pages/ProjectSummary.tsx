@@ -12,8 +12,8 @@ const ProjectSummary = () => {
             link="https://data-store.azurewebsites.net/api/v1/data/query?catalogue=Trading&catalogueItem=Users"
             body="A robust read-through caching service streamlining data retrieval. Enhance efficiency and speed by storing frequently accessed data, optimizing performance seamlessly"
             info="https://api.github.com/repos/jpothanc/datastore/readme"
-            repo=""
-            tech="https://skillicons.dev/icons?i=java,spring,azure&perline=10"
+            repo="https://github.com/jpothanc/datastore"
+            tech="https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
             height={500}
           />
           <SummaryCard
@@ -21,7 +21,7 @@ const ProjectSummary = () => {
             link="https://hero-two-gilt.vercel.app/"
             body="Monitoring UI for production experts. Delivers real-time insights on microservices, databases, processes. Seamlessly integrates with Java-based health checks via WebSockets for instant updates."
             info="https://api.github.com/repos/jpothanc/hero/readme"
-            repo=""
+            repo="https://github.com/jpothanc/hero"
             tech="https://skillicons.dev/icons?i=react,vscode,vercel&perline=10"
           />
           <SummaryCard
@@ -37,15 +37,15 @@ const ProjectSummary = () => {
             link="https://healthcheck-ib.azurewebsites.net/api/v1/health/check"
             body="Service which monitors microservices, databases with regular pings, ensuring ongoing health assessment. Offers real-time updates via WebSockets to subscribed clients. Also provides REST APIs for detailed health check info"
             info="https://api.github.com/repos/jpothanc/healthcheck/readme"
-            repo=""
-            tech="https://skillicons.dev/icons?i=java,spring,azure&perline=10"
+            repo="https://github.com/jpothanc/healthcheck"
+            tech="https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
           />
           <SummaryCard
             title="webq"
             link="https://www.nuget.org/packages/WebQ/"
             body="A lightweight class library facilitating HTTP queries while caching data locally for resilience. Configure cache duration, ensuring application reliability during REST endpoint downtime. Boost confidence in seamless operations."
             info="https://api.github.com/repos/jpothanc/webq/readme"
-            repo=""
+            repo="https://github.com/jpothanc/webq"
             tech="https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
           />
           <SummaryCard
@@ -53,7 +53,7 @@ const ProjectSummary = () => {
             link=""
             body="This .NET Standard class library offers HTTP Basic Authentication capabilities. Features seamless integration into .NET applications, credential validation, and compatibility across various .NET projects."
             info="https://api.github.com/repos/jpothanc/authme/readme"
-            repo="https://github.com/jpothanc/dynamo"
+            repo="https://github.com/jpothanc/authme"
             tech="https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
           />
           <SummaryCard

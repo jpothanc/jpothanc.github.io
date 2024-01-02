@@ -5,7 +5,7 @@
 }
 .summary_cards {
   padding: 10px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
@@ -22,19 +22,17 @@
 .jp_sc_card {
   width: 230px;
   min-width: 230px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .jp_sc_card__body__text {
   padding: 1cap;
   height: 130px;
   align-self: flex-start;
   color: #bcc6c4;
+  display: flex;
 }
 
-.jp_sc_card__footer__icon {
-  display: flex;
-  width: 10%;
-  height: calc(100% - 70px);
-  padding-left: 10px;
-  background-color: #201e1e;
-  border-radius: 1cap;
-}
+
