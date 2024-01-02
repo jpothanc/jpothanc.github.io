@@ -7,7 +7,7 @@ import {
   FaHouseChimneyWindow,
   FaEnvelope,
   FaDev,
-  FaGripVertical,
+  FaCubesStacked,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { getThemeColor } from "../utils/helper";
@@ -48,7 +48,7 @@ const Menu = ({ color, size }: Props) => {
         <div className="about-menu-item">
           <Tooltip text="projects">
             <Link className="nav__link" to="/projects">
-              <FaGripVertical size={size}></FaGripVertical>
+              <FaCubesStacked size={size}></FaCubesStacked>
             </Link>
           </Tooltip>
         </div>
