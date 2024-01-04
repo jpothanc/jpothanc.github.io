@@ -61,7 +61,7 @@
       "Exceptional production environment ownership.",
       "Consistentantly recognised as a top performer througout the 17+ years with Credit Suisse, showcasing exceptional skills and dedication. ",
       "Lead and successfully managed multi year equities Order Entry platform migration in APAC.",
-      "Winner of Hackathon and proven history of successfully event ideas to products that delivered tangible benefits to business.",
+      "Winner of Hackathon and proven history of successfully transforming event ideas to products that delivered tangible benefits to business.",
       " Well-versed in design patterns, SOLID principles, and software architecture best practices to ensure maintainable and scalable code.",
       "Track record of identifying process inefficiencies and delivering innovative solutions."
     ],
@@ -133,7 +133,7 @@
       {
         "name": "data store",
         "link": "https://data-store.azurewebsites.net/api/v1/data/query?catalogue=Trading&catalogueItem=Users",
-        "description": "A robust read-through caching service streamlining data retrieval. Enhance efficiency and speed by storing frequently accessed data in memory, optimizing performance seamlessly",
+        "description": "A robust read-through caching app designed to cache configured queries, accelerating performance by swiftly accessing frequently requested data.",
         "readme": "https://api.github.com/repos/jpothanc/datastore/readme",
         "repo": "https://github.com/jpothanc/datastore",
         "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
