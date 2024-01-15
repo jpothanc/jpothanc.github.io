@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { fetchData } from "../utils/helper";
 import useCounter from "../hooks/useCounter";
 import config from "../config/config.json";
