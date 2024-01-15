@@ -10,32 +10,11 @@
     "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
       {
-        "title": "Graduated",
-        "location": "Yerevan, Armenia",
-        "description": "Completed BE in Computer Science",
-        "icon": "LuGraduationCap",
-        "date": "2000"
-      },
-      {
-        "title": "Software Engineer",
-        "location": "Enventure Technologies, Bangalore",
-        "description": "Provided Software services for Cadence Design Systems in Electronic Design Automation domain.",
-        "icon": "CgWorkAlt",
-        "date": "2000 - 2004"
-      },
-      {
-        "title": "Software Consultant",
-        "location": "Optimum Solutions, Singapore",
-        "description": "Worked for Credit Suisse as a Software Consultant in Equities IT.",
-        "icon": "CgWorkAlt",
-        "date": "2004 - 2005"
-      },
-      {
-        "title": "ENO",
+        "title": "Vice President",
         "location": "Credit Suisse, Singapore",
-        "description": "Equities IT Developer and Lead APAC OMS.",
+        "description": "Technical and Delivery lead for APAC Front Office Systems.",
         "icon": "CgWorkAlt",
-        "date": "2005 - 2009"
+        "date": "2014 - 2023"
       },
       {
         "title": "Assistant Vice President",
@@ -45,11 +24,25 @@
         "date": "2009 - 2014"
       },
       {
-        "title": "Vice President",
+        "title": "ENO",
         "location": "Credit Suisse, Singapore",
-        "description": "Technical and Delivery lead for APAC Front Office Systems.",
+        "description": "Equities IT Developer and Lead APAC OMS.",
         "icon": "CgWorkAlt",
-        "date": "2014 - 2023"
+        "date": "2005 - 2009"
+      },
+      {
+        "title": "Software Consultant",
+        "location": "Optimum Solutions, Singapore",
+        "description": "Worked for Credit Suisse as a Software Consultant in Equities IT.",
+        "icon": "CgWorkAlt",
+        "date": "2004 - 2005"
+      },
+      {
+        "title": "Software Engineer",
+        "location": "Enventure Technologies, Bangalore",
+        "description": "Provided Software services for Cadence Design Systems in Electronic Design Automation domain.",
+        "icon": "CgWorkAlt",
+        "date": "2000 - 2004"
       }
     ],
     "expertise": [
