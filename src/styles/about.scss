@@ -71,8 +71,8 @@ $primary-color: #004d40;
       @extend .about__left_name;
       background-color: $primary-color;
       color: white;
-       display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
   }
   .about__right {
@@ -154,11 +154,4 @@ $primary-color: #004d40;
   // .about__left {
   //    border: #dee4e3 1px solid;
   // }
-  .about__left_name__first-name {
-    width: 200px;
-    text-align: center;
-    justify-content: flex-end;
-    align-self: flex-end;
-    align-items: flex-end;
-  }
 }
