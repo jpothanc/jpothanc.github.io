@@ -5,8 +5,7 @@
     "secondname": "Pothancheri",
     "introBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
     "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
-    "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=test",
-    
+    "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=jpothanc_profile",
 
     "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
@@ -69,6 +68,8 @@
       "Track record of identifying process inefficiencies and delivering innovative solutions."
     ],
     "currentresponsiblities": [
+      "Lead Order Management, Program Tradinag and IOI teams and provide guidance on technical design, development, and maintenance of applications.",
+      "Collaborate with Business stakeholders and COO's to identify and prioritize application requirements and enhancements.",
       "Collaborate with other teams such as Support, compliance, operations, and IT to resolve system issues or incidents.",
       "Actively contributing to software development projects by designing, developing, and testing software code.",
       "Setting an example for the team by demonstrating best practices in software development, such as writing clean, efficient, and maintainable code.",
@@ -77,7 +78,7 @@
       "Monitor and maintain the performance and stability of software applications, identifying and resolving issues as they arise.",
       "Mentor and coach software developers to ensure that they have the skills and knowledge to develop software applications that align with business requirements and industry standards.",
       "Keeping up-to-date with the latest technologies and industry trends, and identifying opportunities for innovation and improvement",
-      "Communicating with senior management on project performance, risks, and opportunities."
+      "Communicating with Senior management, Business stakeholders and COO's on project performance, risks, and opportunities."
     ],
     "technology": [
       ".NET Framework",
