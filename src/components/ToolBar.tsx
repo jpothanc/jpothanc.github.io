@@ -46,7 +46,7 @@ const Menu = ({ color, size }: Props) => {
           </Tooltip>
         </div>
         <div className="about-menu-item">
-          <Tooltip text="projects">
+          <Tooltip text="personal projects">
             <Link className="nav__link" to="/projects">
               <FaCubesStacked size={size}></FaCubesStacked>
             </Link>
