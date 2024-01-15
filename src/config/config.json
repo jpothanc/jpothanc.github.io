@@ -4,6 +4,9 @@
     "firstname": "Jessish",
     "secondname": "Pothancheri",
     "introBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
+    "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
+    "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=test",
+    
 
     "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [

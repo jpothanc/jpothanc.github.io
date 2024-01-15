@@ -153,3 +153,21 @@ export function getThemeColor(theme: string, component: string): string {
   }
   return "";
 }
+
+export async function fetchData(url: string, abortController : AbortController): Promise<any> {
+  const { signal } = abortController;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+    if (signal.aborted) {
+      console.log("Request was aborted.");
+      return;
+    }
+    const json = await response.json();
+    return json;
+  } catch (error) {
+    console.log(error);
+  }
+}

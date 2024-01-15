@@ -9,6 +9,8 @@ import { CiMenuKebab } from "react-icons/ci";
 
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
+
+
 // const motivation = () => {
 //   return
 //     "Pursuing his passion,Passionate programmer," +

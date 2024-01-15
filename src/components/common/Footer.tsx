@@ -1,4 +1,5 @@
 import config from "../../config/config.json";
+import Counter from "../Counter";
 const Footer = () => {
   return (
     <div className="footer">
@@ -7,6 +8,7 @@ const Footer = () => {
         {config.portfolio.secondname}. All Rights Reserved. | Dream, Code,
         Inspire and Innovate.
       </p>
+      <Counter />
     </div>
   );
 };
