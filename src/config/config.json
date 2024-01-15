@@ -85,7 +85,8 @@
       "Mongo",
       "Postgres",
       "Redis",
-      "OpenShift"
+      "OpenShift",
+      "GraphQL"
     ],
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
