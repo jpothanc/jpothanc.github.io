@@ -61,13 +61,18 @@ $primary-color: #004d40;
     }
     .about__left_name__first-name {
       @extend .about__left_name;
+      display: flex;
       background-color: white;
+      justify-content: center;
+
       color: black;
     }
     .about_left_name__second-name {
       @extend .about__left_name;
       background-color: $primary-color;
       color: white;
+       display: flex;
+        justify-content: center;
     }
   }
   .about__right {
@@ -127,8 +132,10 @@ $primary-color: #004d40;
   margin-top: 10px;
   text-align: center;
   width: 80px; /* Set the minimum height for the button */
-  background-color: #c5bfbf;
+  background-color: white;
   border: solid 1px #004d40;
+  position: fixed;
+  bottom: 0;
 }
 
 .jp_wmd_content {
