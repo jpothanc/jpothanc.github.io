@@ -1,23 +1,24 @@
 .summary_container {
-  padding: 100px;
+   padding-top: 80px;
+   width: 100%;
   align-items: center;
   justify-content: center;
 }
 .summary_cards {
-  padding: 10px;
-  width: 80%;
+  padding-top: 25px;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   column-gap: 5px;
   row-gap: 5px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
-  .summary_cards {
-    flex-direction: column;
-  }
+  // .summary_cards {
+  //   flex-direction: column;
+  // }
 }
 .jp_sc_card {
   width: 230px;
