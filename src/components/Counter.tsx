@@ -7,11 +7,7 @@ const Counter = () => {
   const { counter, setCounter } = useCounter();
 
   useEffect(() => {
-    const state = localStorage.getItem("counterState");
-    if (counter || state === "loading") return;
-
-    localStorage.setItem("counterState", "loading");
-    
+    if (counter) return;
     const abortController = new AbortController();
     fetchData(config.portfolio.webCounterUrl, abortController).then((data) => {
       setCounter(data);
