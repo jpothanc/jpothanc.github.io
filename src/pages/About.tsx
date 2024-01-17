@@ -125,6 +125,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                onClick={handleOpenModal}
               >
                 <motion.img
                   src="coder3.PNG"
