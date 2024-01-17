@@ -152,6 +152,9 @@ $primary-color: #004d40;
     width: 250px;
     height: 250px;
   }
+  .about-container {
+    height: 95vh; /* Use 100% of the viewport height */
+  }
   // .about__left {
   //    border: #dee4e3 1px solid;
   // }
