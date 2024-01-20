@@ -183,6 +183,14 @@
         "readme": "https://api.github.com/repos/jpothanc/simpleskin/readme",
         "repo": "https://github.com/jpothanc/simpleskin",
         "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+      },
+      {
+        "name": "react-jp-ui",
+        "link": "https://www.npmjs.com/package/react-jp-ui",
+        "description": "In the world of React projects, I wanted to make my life easier by reusing components. So, I took the leap to build my own library of common React components using Vite and shared it via npm.",
+        "readme": "https://api.github.com/repos/jpothanc/react-jp-ui/readme",
+        "repo": "https://github.com/jpothanc/react-jp-ui",
+        "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
       }
     ],
 
