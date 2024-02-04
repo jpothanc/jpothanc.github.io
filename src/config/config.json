@@ -191,6 +191,14 @@
         "readme": "https://api.github.com/repos/jpothanc/react-jp-ui/readme",
         "repo": "https://github.com/jpothanc/react-jp-ui",
         "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
+      },
+      {
+        "name": "pulse",
+        "link": "",
+        "description": "A simple tool for testing WebSocket connections. It provides an easy-to-use interface to send and receive WebSocket messages, making it convenient for developers and testers to validate WebSocket functionality",
+        "readme": "https://api.github.com/repos/jpothanc/pulse/readme",
+        "repo": "https://github.com/jpothanc/pulse",
+        "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
       }
     ],
 
