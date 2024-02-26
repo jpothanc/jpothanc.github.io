@@ -86,7 +86,8 @@
       "Postgres",
       "Redis",
       "OpenShift",
-      "GraphQL"
+      "GraphQL",
+      "Python"
     ],
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
@@ -248,6 +249,11 @@
         "name": "Publish React lib to npm",
         "description": "Publish React library to npm.",
         "url": "https://medium.com/@kaljessy/publish-your-react-library-to-npm-using-vite-136dc81e368d"
+      },
+      {
+        "name": "Creating and Uploading Python Libraries",
+        "description": "Creating and Uploading Python Libraries",
+        "url": "https://medium.com/@kaljessy/building-and-sharing-a-guide-to-creating-and-uploading-python-libraries-56998a001a2c"
       }
     ],
     "git": [
