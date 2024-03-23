@@ -205,7 +205,7 @@
         "name": "equity-store",
         "link": "",
         "description": "Eager to understand the essence of Python and how it contrasts with the familiar territories of .Net and Java, I embarked on a project that would not only allow me to peek into Python but also to apply it in a real-world scenario. ",
-        "readme": "https://github.com/jpothanc/equity-store/blob/main/README.md",
+        "readme": "https://api.github.com/repos/jpothanc/equity-store/readme",
         "repo": "https://github.com/jpothanc/equity-store/tree/main",
         "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
       }
