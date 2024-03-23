@@ -200,6 +200,14 @@
         "readme": "https://api.github.com/repos/jpothanc/pulse/readme",
         "repo": "https://github.com/jpothanc/pulse",
         "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
+      },
+      {
+        "name": "equity-store",
+        "link": "",
+        "description": "Eager to understand the essence of Python and how it contrasts with the familiar territories of .Net and Java, I embarked on a project that would not only allow me to peek into Python but also to apply it in a real-world scenario. ",
+        "readme": "https://github.com/jpothanc/equity-store/blob/main/README.md",
+        "repo": "https://github.com/jpothanc/equity-store/tree/main",
+        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
       }
     ],
 
@@ -254,6 +262,11 @@
         "name": "Creating and Uploading Python Libraries",
         "description": "Creating and Uploading Python Libraries",
         "url": "https://medium.com/@kaljessy/building-and-sharing-a-guide-to-creating-and-uploading-python-libraries-56998a001a2c"
+      },
+      {
+        "name": "Python Through Microservice Development",
+        "description": "Discovering Python Through Microservice Development",
+        "url": "https://medium.com/@kaljessy/discovering-python-through-microservice-development-cda7b8f97848"
       }
     ],
     "git": [
