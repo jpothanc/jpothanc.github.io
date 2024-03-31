@@ -28,10 +28,7 @@ const Menu = ({ color, size }: Props) => {
         initial="initial"
         whileInView="animate"
         style={{
-          color: getThemeColor(
-            ThemeConstants.themeDark,
-            ThemeConstants.primaryColor
-          ),
+          color: getThemeColor(ThemeConstants.themeDark, color),
         }}
       >
         <div className="about-menu-item">

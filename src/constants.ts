@@ -1,5 +1,6 @@
 export const primaryColor = "#243a65";
 export const primaryColorLight = "#4dabf5";
+export const yellow = "#ebd696";
 
 export const fmScale = {
   initial: { scale: 1, border: "0px solid rgb(100, 97, 100)" },

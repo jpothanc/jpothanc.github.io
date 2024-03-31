@@ -1,5 +1,6 @@
 $primary-color: #243a65;
-$menu-hover-color: #ffd54f;
+$primary-color-light: #4dabf5;
+$menu-hover-color: #fff176;
 
 .App {
   display: flex;
@@ -23,7 +24,7 @@ $menu-hover-color: #ffd54f;
     padding: 5px;
     font-size: 11px;
     font-weight: 7400;
-    color: rgb(255, 255, 255);
+    color: $primary-color-light;
     align-self: center;
     transition: all 0.3s;
     display: flex;
@@ -137,7 +138,7 @@ $menu-hover-color: #ffd54f;
   margin-top: 10px;
   text-align: center;
   width: 80px; /* Set the minimum height for the button */
-  background-color: white;
+  background-color: $primary-color-light;
   border: solid 1px $primary-color;
   position: fixed;
   bottom: 0;
