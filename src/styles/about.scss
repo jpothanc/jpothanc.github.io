@@ -1,4 +1,5 @@
-$primary-color: #004d40;
+$primary-color: #243a65;
+$menu-hover-color: #ffd54f;
 
 .App {
   display: flex;
@@ -29,6 +30,9 @@ $primary-color: #004d40;
     &:hover {
       filter: brightness(0.8);
     }
+  }
+  .brand-logo__avatar {
+    background-color: $primary-color;
   }
 }
 .about-container {
@@ -98,29 +102,29 @@ $primary-color: #004d40;
   justify-content: center;
   color: rgb(26, 26, 24);
   &:hover {
-    color: #d33b41;
+    color: $menu-hover-color;
     filter: brightness(0.8);
     transition: all 0.3s;
   }
 }
 .about-menu-item {
   &:hover {
-    color: #d33b41;
+    color: $menu-hover-color;
     filter: brightness(0.8);
   }
 }
 
 .footer {
-  color: $primary-color;
+  color: #ebd696;
   padding: 20px;
   text-align: center;
   position: fixed;
   bottom: 0;
-  font-weight: 500;
+  font-weight: 300;
   width: 100%;
   font-size: 11px;
   &:hover {
-    filter: brightness(1.8);
+    filter: brightness(0.7);
     transition: all 0.5s ease;
   }
 }
@@ -134,7 +138,7 @@ $primary-color: #004d40;
   text-align: center;
   width: 80px; /* Set the minimum height for the button */
   background-color: white;
-  border: solid 1px #004d40;
+  border: solid 1px $primary-color;
   position: fixed;
   bottom: 0;
 }

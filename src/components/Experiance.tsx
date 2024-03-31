@@ -55,7 +55,7 @@ const Experiance = ({ timeline }: timelineProps) => {
               variants={fmOpacity}
               whileInView="animate"
             >
-              <VerticalTimeline lineColor="#26a69a">
+              <VerticalTimeline lineColor="#4dabf5">
                 {timeline.map((item, index) => (
                   <React.Fragment key={index}>
                     <VerticalTimelineElement
@@ -73,7 +73,7 @@ const Experiance = ({ timeline }: timelineProps) => {
                         // color: "#64B5F6",
                       }}
                       contentArrowStyle={{
-                        borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
+                        borderRight: "0.4rem solid #4dabf5",
                       }}
                       //date={item.date}
                       icon={getIconByName(item.icon)}

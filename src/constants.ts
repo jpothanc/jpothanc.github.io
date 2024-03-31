@@ -1,3 +1,6 @@
+export const primaryColor = "#243a65";
+export const primaryColorLight = "#4dabf5";
+
 export const fmScale = {
   initial: { scale: 1, border: "0px solid rgb(100, 97, 100)" },
   animate: {
@@ -16,7 +19,7 @@ export const shakeVariants = {
   animate: {
     x: [-2, 2, -2, -1, -1, 0], // Define the shaking animation (x-axis)
     opacity: [0.8, 0.7, 0.2, 0.6, 0.9, 1],
-    color: "#26A69A",
+    color: primaryColorLight,
     transition: {
       type: "spring",
       stiffness: 500, // The stiffness of the spring (higher values make it stiffer)
@@ -28,7 +31,7 @@ export const shakeVariants = {
 export const fmScaleText = {
   animate: {
     fontSize: "15px",
-    color: "#26A69A",
+    color: primaryColorLight,
     transition: {
       type: "spring",
       stiffness: 600, // The stiffness of the spring (higher values make it stiffer)
@@ -68,6 +71,7 @@ export const fmOpacitySlow = {
 export class ThemeConstants {
   static readonly themeDark: string = "dark";
   static readonly themeLight: string = "light";
+  static readonly primaryColor: string = "primaryColor";
   static readonly bodyBackground: string = "bodyBackground";
   static readonly logoBackground: string = "logoBackground";
   static readonly logoColor: string = "logoColor";

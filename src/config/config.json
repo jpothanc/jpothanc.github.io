@@ -328,6 +328,7 @@
       "careerContentBackground": "rgba(227, 227, 227, 0.8)"
     },
     "dark": {
+      "primaryColor": "#4dabf5",
       "bodyBackground": "rgba(20, 20, 20,1)",
       "logoBackground": "rgba(227, 227, 227, 0.8)",
       "logoColor": "#0e0f0e",
@@ -337,17 +338,17 @@
       "contentTextColor": "#d2d5d6",
       "cardTitleColor": "rgba(255, 236, 179, 0.8)",
       "careerContentBackground": "rgba(200, 255, 400, 0.05)",
-      "careerHeader": "#26a69a",
-      "careerDate": "#64B5F6",
+      "careerHeader": "#4dabf5",
+      "careerDate": "#f57c00",
       "aboutMenuColor": "#26a69a",
       "aboutCaptionColor": "white",
       "aboutSubCaptionColor": "#039BE5",
       "barMenuColor": "#4DB6AC",
-      "badgeTechColor": "#4FC3F7",
+      "badgeTechColor": "#4caf50",
       "badgeDevPracticeColor": "#FF7043",
       "badgeSkillsColor": "#CE93D8",
       "badgePersonalityColor": "#E57373",
-      "badgeLinksColor": "#26a69a"
+      "badgeLinksColor": "#4dabf5"
     }
   }
 }

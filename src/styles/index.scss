@@ -63,7 +63,7 @@ body {
   font-size: 0.6rem;
   font-weight: 500;
   color: whitesmoke;
-  background-color: #046a59;
+  background-color: $primary-color;
   transition: all 0.3s;
   &:hover {
     filter: brightness(0.8);
@@ -88,7 +88,7 @@ body {
   justify-items: end;
   max-width: 1000px;
   justify-content: flex-end;
-  border: #004d40 solid 1px;
+  border: $primary-color solid 1px;
 }
 
 .bottom-bar__content {
@@ -149,7 +149,7 @@ body {
   padding: 1px;
   border: none;
   margin: auto;
-  border: #004d40 solid 1px;
+  border: $primary-color solid 1px;
   grid-template-areas:
     "c1 c1 c1"
     "c2 c2 c3"

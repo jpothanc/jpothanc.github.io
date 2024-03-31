@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Menu from "../components/ToolBar";
-import { ThemeConstants, fmScaleAboutText } from "../constants";
+import { ThemeConstants, fmScaleAboutText, primaryColor } from "../constants";
 import { getThemeColor } from "../utils/helper";
 import Footer from "../components/common/Footer";
 import config from "../config/config.json";
@@ -9,7 +9,6 @@ import { CiMenuKebab } from "react-icons/ci";
 
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
-
 
 // const motivation = () => {
 //   return
@@ -64,7 +63,7 @@ const About = () => {
             name=" &lt; j p / &gt;"
             size="50"
             round={true}
-            color="#004d40"
+            color={primaryColor}
           />
         </div>
         <div className="about-container">
@@ -128,7 +127,7 @@ const About = () => {
                 onClick={handleOpenModal}
               >
                 <motion.img
-                  src="coder3.PNG"
+                  src="coder3_4.PNG"
                   alt="logo"
                   className="about__logo"
                   whileHover={{ rotate: -15 }}

@@ -28,7 +28,7 @@
   width: 230px;
   min-width: 230px;
   background-color: rgb(37, 38, 38);
-  border: 1px solid #004d40;
+  border: 1px solid $primary-color;
   transition: all 0.4s;
   &:hover {
     transform: scale(1.1);

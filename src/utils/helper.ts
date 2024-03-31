@@ -105,6 +105,8 @@ export type personalProject = {
 export function getThemeColor(theme: string, component: string): string {
   if (theme == "dark") {
     switch (component) {
+      case "primaryColor":
+        return config.themes.dark.primaryColor;
       case "bodyBackground":
         return config.themes.dark.bodyBackground;
       case "logoBackground":
