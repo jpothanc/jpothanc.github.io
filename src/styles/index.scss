@@ -39,6 +39,7 @@ body {
 /*NORMAL STYLES*/
 .header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   top: 12px;
   backdrop-filter: blur(2px);
@@ -52,7 +53,6 @@ body {
   background-color: rgba(227, 227, 227, 0.8);
   /* border-radius: 50px;  */
   width: 70%;
-  opacity: 1;
   margin: 0 auto;
   max-width: 1000px;
 }

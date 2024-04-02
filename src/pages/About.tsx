@@ -127,7 +127,7 @@ const About = () => {
                 onClick={handleOpenModal}
               >
                 <motion.img
-                  src="coder3_4.PNG"
+                  src="jpothanc.PNG"
                   alt="logo"
                   className="about__logo"
                   whileHover={{ rotate: -15 }}
