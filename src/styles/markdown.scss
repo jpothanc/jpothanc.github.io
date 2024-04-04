@@ -39,4 +39,6 @@ $md-text-color: rgb(111, 140, 197);
   color: rgb(42, 120, 199);
   text-decoration: underline;
 }
-
+.overlay.visible {
+  z-index: 99;
+}
