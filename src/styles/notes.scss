@@ -1,0 +1,29 @@
+$width: 100%;
+.notes-container {
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 850px;
+  height: 100%;
+}
+
+.jp_btn_menu_container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px;
+  flex-wrap: wrap;
+  width: $width;
+  column-gap: 4px;
+  background-color: rgb(28, 26, 26);
+  border: solid 1px $primary-color;
+  
+}
+
+.jp_vmd_container {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: $width;
+  border: solid 1px $primary-color;
+}

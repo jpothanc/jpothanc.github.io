@@ -9,6 +9,7 @@ import {
   FaDev,
   FaCubesStacked,
 } from "react-icons/fa6";
+import { SiKnowledgebase } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { getThemeColor } from "../utils/helper";
 import Tooltip from "./common/Tooltip";
@@ -49,6 +50,13 @@ const Menu = ({ color, size }: Props) => {
           <Tooltip text="personal projects">
             <Link className="nav__link" to="/projects">
               <FaCubesStacked size={size}></FaCubesStacked>
+            </Link>
+          </Tooltip>
+        </div>
+        <div className="about-menu-item">
+          <Tooltip text="developer notes">
+            <Link className="nav__link" to="/notes">
+              <SiKnowledgebase size={size}></SiKnowledgebase>
             </Link>
           </Tooltip>
         </div>

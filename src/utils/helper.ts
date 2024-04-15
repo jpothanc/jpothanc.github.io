@@ -4,6 +4,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { CgWorkAlt } from "react-icons/cg";
 import config from "../config/config.json";
 import { ThemeConstants } from "../constants";
+import { buttonItem } from "react-jp-ui";
 
 export const ColorArray = [
   "#F06292",
@@ -156,7 +157,10 @@ export function getThemeColor(theme: string, component: string): string {
   return "";
 }
 
-export async function fetchData(url: string, abortController : AbortController): Promise<any> {
+export async function fetchData(
+  url: string,
+  abortController: AbortController
+): Promise<any> {
   const { signal } = abortController;
   try {
     const response = await fetch(url);
@@ -172,4 +176,28 @@ export async function fetchData(url: string, abortController : AbortController):
   } catch (error) {
     console.log(error);
   }
+}
+
+export function getSubMenu(buttonItem: buttonItem): buttonItem[] {
+  if (
+    buttonItem.name == "web" ||
+    buttonItem.name == "java" ||
+    buttonItem.name == ".net" ||
+    buttonItem.name == "python"
+  )
+    return getSubMenus(config.developerNotes[buttonItem.name], buttonItem);
+  return [];
+}
+
+function getSubMenus(
+  items: buttonItem[],
+  buttonItem: buttonItem
+): buttonItem[] {
+  return items.map((item) => {
+    return {
+      ...item,
+      bgColor: buttonItem.bgColor,
+      textColor: buttonItem.textColor,
+    };
+  });
 }

@@ -5,7 +5,7 @@
     "secondname": "Pothancheri",
     "introBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
     "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
-    "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=jpothanc_profile",
+    "webCounterUrl": "https://data-store.azurewebsites1.net/api/v1/command/incrementCounter?siteName=jpothanc_profile",
 
     "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
@@ -350,5 +350,111 @@
       "badgePersonalityColor": "#E57373",
       "badgeLinksColor": "#4dabf5"
     }
+  },
+  "developerNotes": {
+    "tags": [
+      {
+        "name": "web",
+        "bgColor": "#2962FF"
+      },
+      {
+        "name": ".net",
+        "bgColor": "#512BD4"
+      },
+      {
+        "name": "java",
+        "bgColor": "#ED4357"
+      },
+      {
+        "name": "python",
+        "bgColor": "#3776AB"
+      },
+      {
+        "name": "javascript",
+        "bgColor": "#F7DF1E",
+        "textColor": "black"
+      },
+      {
+        "name": "testing",
+        "bgColor": "#4CAF50",
+        "textColor": "black"
+      },
+      {
+        "name": "architecture"
+      }
+    ],
+    "web": [
+      {
+        "name": "containers",
+        "description": "flex,grids,etc",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_containers.md"
+      },
+      {
+        "name": "layout-hacks",
+        "description": "quick css layout hacks",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      },
+      {
+        "name": "react-hooks",
+        "description": "useState, useEffect, useMemo etc.",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      }
+    ],
+    "java": [
+      {
+        "name": "rxjava",
+        "description": "flex,grids,etc",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_containers.md"
+      },
+      {
+        "name": "graphgql",
+        "description": "quick css layout hacks",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      },
+      {
+        "name": "async-programming",
+        "description": "completable future etc",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      },
+      {
+        "name": "lamdas",
+        "description": "functional interface",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      }
+    ],
+    ".net": [
+      {
+        "name": "async-programming",
+        "description": "async await etc",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_containers.md"
+      },
+      {
+        "name": "csharp",
+        "description": "quick css layout hacks",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      },
+      {
+        "name": "linq",
+        "description": "linq queries",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      }
+    ],
+    "python": [
+      {
+        "name": "microservice",
+        "description": "async await etc",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_containers.md"
+      },
+      {
+        "name": "python",
+        "description": "quick css layout hacks",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      },
+      {
+        "name": "linq",
+        "description": "linq queries",
+        "link": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/web-styling/css/css_layout_hacks.md"
+      }
+    ]
   }
 }
