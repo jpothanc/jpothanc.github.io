@@ -4,6 +4,9 @@
     "firstname": "Jessish",
     "secondname": "Pothancheri",
     "introBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
+    "email" : "jessish.pothancheri@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/jessish-pothancheri-5985576/",
+    "github": "https://github.com/jpothanc",
     "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
     "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=jpothanc_profile",
 

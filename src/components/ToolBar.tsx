@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ThemeConstants, fmOpacitySlow } from "../constants";
+import config from "../config/config.json";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -55,7 +57,7 @@ const Menu = ({ color, size }: Props) => {
         </div>
         <div className="about-menu-item">
           <Tooltip text="git repo">
-            <a href="https://github.com/jpothanc" target="_blank">
+            <a href={config.portfolio.github} target="_blank">
               <FaGithub size={size}></FaGithub>
             </a>
           </Tooltip>
@@ -63,10 +65,7 @@ const Menu = ({ color, size }: Props) => {
 
         <div className="about-menu-item">
           <Tooltip text="linkedin ">
-            <a
-              href="https://www.linkedin.com/in/jessish-pothancheri-5985576/"
-              target="_blank"
-            >
+            <a href={config.portfolio.linkedin} target="_blank">
               <FaLinkedin size={size}></FaLinkedin>
             </a>
           </Tooltip>
@@ -79,8 +78,8 @@ const Menu = ({ color, size }: Props) => {
           </Tooltip>
         </div>
         <div className="about-menu-item">
-          <Tooltip text="mail to kaljessy@gmail.com">
-            <a href="mailto:kaljessy@gmail.com" target="_blank">
+          <Tooltip text={`mail to ${config.portfolio.email}`}>
+            <a href={`mailto:${config.portfolio.email}`} target="_blank">
               <FaEnvelope size={size}></FaEnvelope>
             </a>
           </Tooltip>
