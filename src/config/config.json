@@ -7,7 +7,7 @@
     "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
     "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=jpothanc_profile",
 
-    "intro": "Equities Front Office Solutions Technical and Delivery Lead with 22+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
+    "intro": "Equities Front Office Solutions Technical and Delivery Lead with 20+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "experiance": [
       {
         "title": "Vice President",
@@ -54,7 +54,7 @@
       "Strong leadership and communication skills to effectively mentor and manage a team of developers, collaborate with stakeholders, and contribute to the overall success of the organization.",
       "Strong work ethic with innovation and collaboration.",
       "Exceptional production environment ownership.",
-      "Consistentantly recognised as a top performer througout the 17+ years with Credit Suisse, showcasing exceptional skills and dedication. ",
+      "Consistentantly recognised as a top performer througout the 19+ years with Credit Suisse, showcasing exceptional skills and dedication. ",
       "Led and successfully oversaw the multi-year migration of an equities Order Entry platform in the APAC region.",
       "Winner of Hackathon and proven history of successfully transforming event ideas into products that delivered tangible benefits to business.",
       "Well-versed in design patterns, SOLID principles, and software architecture best practices to ensure maintainable and scalable code.",
