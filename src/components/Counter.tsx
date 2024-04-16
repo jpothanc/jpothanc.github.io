@@ -17,7 +17,7 @@ const Counter = () => {
     return () => {};
   }, []);
 
-  return <div className="counter">Visites : {counter}</div>;
+  return <div className="btn-counter">Visites : {counter}</div>;
 };
 
 export default Counter;

@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaDev,
   FaCubesStacked,
+  FaChildReaching,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { getThemeColor } from "../utils/helper";
@@ -67,6 +68,13 @@ const Menu = ({ color, size }: Props) => {
               target="_blank"
             >
               <FaLinkedin size={size}></FaLinkedin>
+            </a>
+          </Tooltip>
+        </div>
+        <div className="about-menu-item">
+          <Tooltip text="resume ">
+            <a href="jessish.pothancheri-resume.pdf" target="_blank">
+              <FaChildReaching size={size}></FaChildReaching>
             </a>
           </Tooltip>
         </div>

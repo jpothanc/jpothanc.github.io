@@ -129,20 +129,6 @@ $menu-hover-color: #fff176;
     transition: all 0.5s ease;
   }
 }
-.counter {
-  padding: 2px;
-  color: black;
-  font-size: 10px;
-  font-weight: 800;
-  margin: 0 auto;
-  margin-top: 10px;
-  text-align: center;
-  width: 80px; /* Set the minimum height for the button */
-  background-color: $primary-color-light;
-  border: solid 1px $primary-color;
-  position: fixed;
-  bottom: 0;
-}
 
 .jp_wmd_content {
   font-size: 12px;
@@ -163,4 +149,36 @@ $menu-hover-color: #fff176;
   // .about__left {
   //    border: #dee4e3 1px solid;
   // }
+}
+.btn-download {
+  padding: 5px 8px;
+  font-size: 10px;
+  font-weight: 800;
+  position: fixed;
+  bottom: 40px;
+  margin: 0 auto;
+  z-index: 100;
+  background-color: white;
+  color: $primary-color;
+  border-radius: 25px;
+   transition: all 0.3s ease;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+.btn-counter {
+  padding: 2px;
+  color: black;
+  font-size: 10px;
+  font-weight: 800;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 80px; /* Set the minimum height for the button */
+  background-color: $primary-color-light;
+  border: solid 1px $primary-color;
+  position: fixed;
+  bottom: 0;
+  border-radius: 25px;
 }

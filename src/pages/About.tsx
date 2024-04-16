@@ -142,6 +142,7 @@ const About = () => {
               </motion.div>
             </motion.div>
           </div>
+
           <Footer />
           <WindowMd
             title=""
