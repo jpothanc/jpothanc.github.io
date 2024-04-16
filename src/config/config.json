@@ -93,7 +93,7 @@
     "projects": [
       {
         "name": "Lead APAC Front Office Applications",
-        "description": "I currently hold the role of Technical and Delivery Lead for the Front Office technology team, which encompasses a dynamic range of responsibilities, including the oversight of mission-critical applications within the domains of Order Management, Program Trading, and IOI teams. In this capacity, I am entrusted with managing and steering these vital applications to ensure their optimal performance. Collaboration is at the heart of my role. I work closely with diverse teams, including support, compliance, business, and IT, to swiftly address system issues or incidents. This cooperative approach ensures that our technology ecosystem functions seamlessly, meeting both operational and regulatory requirements. I actively participate in software development projects, where I take a hands-on approach in designing, developing, and testing software code. I prioritize scalability, reliability, and regulatory compliance in our technology solutions, emphasizing the importance of maintaining a production environment of exceptional quality. A significant part of my journey has been guiding our team through a transformative process. I introduced agile methodologies, which have enhanced our adaptability and responsiveness. We also adopted DevOps practices, streamlined our operations with the establishment of robust CI/CD pipelines, and harnessed the power of the bank's platform-as-a-service (Openshift) to efficiently develop and deploy microservices.The ongoing transformation journey not only reflects my professional growth but also symbolizes our collective pursuit of excellence in technology.",
+        "description": "I currently serve as the Technical and Delivery Lead for the Front Office technology team, overseeing mission-critical applications across Order Management, Program Trading, and IOI teams. In this capacity, I am entrusted with managing and steering these vital applications to ensure their optimal performance. Collaboration is at the heart of my role. I work closely with diverse teams, including support, compliance, business, and IT, to swiftly address system issues or incidents. This cooperative approach ensures that our technology ecosystem functions seamlessly, meeting both operational and regulatory requirements. I actively participate in software development projects, where I take a hands-on approach in designing, developing, and testing software code. I prioritize scalability, reliability, and regulatory compliance in our technology solutions, emphasizing the importance of maintaining a production environment of exceptional quality. A significant part of my journey has been guiding our team through a transformative process. I introduced agile methodologies, which have enhanced our adaptability and responsiveness. We also adopted DevOps practices, streamlined our operations with the establishment of robust CI/CD pipelines, and harnessed the power of the bank's platform-as-a-service (Openshift) to efficiently develop and deploy microservices.The ongoing transformation journey not only reflects my professional growth but also symbolizes our collective pursuit of excellence in technology.",
         "technology": " C#, .Net 6, Redis, GraphQL, Mongo, Sybase, Oracle, PostgreSQL, BitBucket, Openshift, Grafana, SonarQube, Jenkins",
         "timeline": "2016 - Till date"
       },
@@ -294,6 +294,16 @@
         "name": "HealthCheck",
         "description": "A configurable HealthCheck Service in Java.",
         "url": "https://github.com/jpothanc/healthcheck"
+      },
+      {
+        "name": "Hero",
+        "description": "Support dashboard for appliaction health checks.",
+        "url": "https://github.com/jpothanc/hero"
+      },
+      {
+        "name": "Pulse",
+        "description": "A simple websocket testing tool.",
+        "url": "https://github.com/jpothanc/pulse"
       },
       {
         "name": "Nuget Packages",

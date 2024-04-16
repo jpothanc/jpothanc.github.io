@@ -13,7 +13,7 @@ While I'm not an artist who can draw, I've always had an eye for aesthetics. I r
 I don't claim to be a design master, but I believe I have a good sense of it. I always wanted to learn one of the modern web languages like React or Angular. I could not, mainly due to packed schedules.
 
 I used to be all about Microsoft technologies, working on desktop and backend services using .NET Core.
-But lately, I've been diving into Java, Spring Boot, and React, and it's been pretty amazing, I have to say.
+But lately, I've been diving into Java, Spring Boot, Python and React, and it's been pretty amazing, I have to say.
 
 I'm feeling like a true full-stack developer now, and I've got myself to thank for taking this leap.
 
