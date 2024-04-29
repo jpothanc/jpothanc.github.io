@@ -4,7 +4,7 @@
     "firstname": "Jessish",
     "secondname": "Pothancheri",
     "introBadge": "Development Lead | Equities Front Office|Order Management|Investment Bank",
-    "email" : "jessish.pothancheri@gmail.com",
+    "email": "jessish.pothancheri@gmail.com",
     "linkedin": "https://www.linkedin.com/in/jessish-pothancheri-5985576/",
     "github": "https://github.com/jpothanc",
     "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
@@ -217,6 +217,14 @@
         "readme": "https://api.github.com/repos/jpothanc/equity-store/readme",
         "repo": "https://github.com/jpothanc/equity-store/tree/main",
         "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
+      },
+      {
+        "name": "devnotes",
+        "link": "https://devnotes-blond.vercel.app/",
+        "description": "devnotes remember everything so you don’t have to. A simple notes look up app which can read you git markdown documents.",
+        "readme": "https://api.github.com/repos/jpothanc/devnotes/readme",
+        "repo": "https://github.com/jpothanc/devnotes/tree/main",
+        "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
       }
     ],
 
