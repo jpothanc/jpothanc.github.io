@@ -31,7 +31,7 @@ Dreams.Create( i => {
 
 ## Technologies Used to Create this Website
 
-React, TypeScript and Framer Motion
+React, TypeScript, Framer Motion and Azure
 
 My custom npm library :)
 https://www.npmjs.com/package/react-jp-ui

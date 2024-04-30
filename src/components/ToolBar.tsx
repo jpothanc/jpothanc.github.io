@@ -72,7 +72,7 @@ const Menu = ({ color, size }: Props) => {
         </div>
         <div className="about-menu-item">
           <Tooltip text="resume ">
-            <a href="jessish.pothancheri-resume.pdf" target="_blank">
+            <a href={config.portfolio.resumeFileName} target="_blank">
               <FaChildReaching size={size}></FaChildReaching>
             </a>
           </Tooltip>
@@ -85,10 +85,7 @@ const Menu = ({ color, size }: Props) => {
           </Tooltip>
         </div>
         <div className="about-menu-item">
-          <Tooltip
-            text="This site was developed using react(ts) and framer motion [© 2023 Jessish Pothancheri. All Rights Reserved.
-]"
-          >
+          <Tooltip text={config.portfolio.devTooltip}>
             <FaDev size={size}></FaDev>
           </Tooltip>
         </div>
