@@ -110,13 +110,13 @@ body {
 
 .logo__text {
   color: #0e0f0e;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
 .logo__desc {
   color: #0e0e0f;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   width: 300px;
   letter-spacing: -0.5px;
@@ -226,8 +226,8 @@ body {
     padding-top: 2ch;
   }
   .header {
-    position: initial;
     top: 0px;
+    position: initial;
   }
   .main {
     grid-template-columns: 1fr;
@@ -237,19 +237,26 @@ body {
     grid-template-areas: initial;
     white-space: pre-wrap;
   }
-
   .intro {
     width: auto;
     white-space: pre-wrap;
   }
   .top-bar__content {
-    height: 150px;
+    height: 130px;
     flex-direction: column;
     align-items: self-start;
   }
+  .bottom-bar__content {
+    padding: 0 5px;
+  }
   .logo__text {
-    padding-top: 10px;
+    padding-top: 5px;
+    font-size: 12px;
     width: 200px;
+  }
+  .logo__desc {
+    font-size: 12px;
+    width: 250px;
   }
   .logo {
     flex-direction: column;

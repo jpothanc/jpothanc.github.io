@@ -37,3 +37,9 @@ $width: 100%;
   width: $width;
   border: solid 1px $primary-color;
 }
+
+@media screen and (max-width: 900px) {
+  .notes-container {
+    margin-top: 8px;
+  }
+}
