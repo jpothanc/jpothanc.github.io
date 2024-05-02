@@ -56,13 +56,13 @@ const Menu = ({ color, size }: Props) => {
             </Link>
           </Tooltip>
         </div>
-        <div className="about-menu-item">
+        {/* <div className="about-menu-item">
           <Tooltip text="my developer notes">
-            <Link className="nav__link" to="/devnotes">
+            <Link className="nav__link" to="/dev-notes">
               <FaRegNoteSticky size={size}></FaRegNoteSticky>
             </Link>
           </Tooltip>
-        </div>
+        </div> */}
         <div className="about-menu-item">
           <Tooltip text="git repo">
             <a href={config.portfolio.github} target="_blank">
