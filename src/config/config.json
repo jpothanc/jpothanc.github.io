@@ -378,5 +378,16 @@
       "badgePersonalityColor": "#E57373",
       "badgeLinksColor": "#4dabf5"
     }
+  },
+  "notes": {
+    "developerName": "Jessish Pothancheri",
+    "appName": "devnotes",
+    "readme": "https://raw.githubusercontent.com/jpothanc/devnotes/main/README.md",
+    "contentBaseUrl": "https://raw.githubusercontent.com/jpothanc/developer-notes/main/",
+    "indexFile": "index/index.json",
+    "defaultSelection": {
+      "menu": "web",
+      "submenu": "web-styling/css/css_containers.md"
+    }
   }
 }

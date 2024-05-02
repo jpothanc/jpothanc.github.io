@@ -3,6 +3,8 @@ import Contents from "./pages/Contents";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectPersonalSummary from "./pages/ProjectPersonalSummary";
 import { CounterProvider } from "./contexts/CounterProvider";
+
+import DevNotesPage from "./pages/DevNotesPage";
 const App = () => {
   return (
     <>
@@ -11,6 +13,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<About />}></Route>
             <Route path="/contents" element={<Contents />}></Route>
+            <Route path="/devnotes" element={<DevNotesPage />}></Route>
             <Route
               path="/projects"
               element={<ProjectPersonalSummary />}

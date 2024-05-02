@@ -1,6 +1,7 @@
 @import "about.scss";
 @import "markdown.scss";
 @import "projects.scss";
+@import "notes.scss";
 
 /*RESET*/
 * {
@@ -41,7 +42,7 @@ body {
   position: fixed;
   z-index: 1;
   width: 100%;
-  top: 12px;
+  top: 2px;
   backdrop-filter: blur(2px);
   display: flex;
   row-gap: 1px;
@@ -61,6 +62,7 @@ body {
   justify-content: flex-end;
   padding: 2px 5px;
   font-size: 0.6rem;
+  font-size: 11px;
   font-weight: 500;
   color: whitesmoke;
   background-color: $primary-color;
@@ -73,7 +75,7 @@ body {
 .top-bar__content {
   padding: 0 10px;
   margin: 0 auto;
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,7 +102,7 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
-  width: 80px;
+  width: 70px;
   border-radius: 50%;
   object-fit: cover;
   animation: fade-down 0.5s 0.4s backwards;

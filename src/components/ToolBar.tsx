@@ -11,6 +11,7 @@ import {
   FaDev,
   FaCubesStacked,
   FaChildReaching,
+  FaRegNoteSticky,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { getThemeColor } from "../utils/helper";
@@ -52,6 +53,13 @@ const Menu = ({ color, size }: Props) => {
           <Tooltip text="personal projects">
             <Link className="nav__link" to="/projects">
               <FaCubesStacked size={size}></FaCubesStacked>
+            </Link>
+          </Tooltip>
+        </div>
+        <div className="about-menu-item">
+          <Tooltip text="my developer notes">
+            <Link className="nav__link" to="/devnotes">
+              <FaRegNoteSticky size={size}></FaRegNoteSticky>
             </Link>
           </Tooltip>
         </div>
