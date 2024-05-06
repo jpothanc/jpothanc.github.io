@@ -1,9 +1,7 @@
 $md-text-header-color: rgb(188, 185, 180);
 $md-text-color: rgb(111, 140, 197);
-
-/* Style the container */
+// override the styles from react-jp-ui
 .markdown-content {
-  /* Add any styles you want for the container itself */
   font-family: Arial, sans-serif;
   padding: 20px;
 }
@@ -41,4 +39,25 @@ $md-text-color: rgb(111, 140, 197);
 }
 .overlay.visible {
   z-index: 99;
+}
+
+//style the model markdown content
+.jp_wmd_content {
+  font-size: 12px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+//mobile view
+@media (max-width: 925px) {
+  .jp_wmd_container {
+    width: 70%;
+  }
+  .about__logo {
+    width: 250px;
+    height: 250px;
+  }
+  .about-container {
+    height: 100vh; /* Use 100% of the viewport height */
+  }
 }

@@ -1,3 +1,5 @@
+$summary-card-text-color: #bcc6c4;
+// override the styles from react-jp-ui
 .summary_container {
   padding-top: 80px;
   width: 100%;
@@ -15,15 +17,6 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
-  .summary_container {
-    padding-top: 10px;
-  }
-  .summary_cards {
-    //   flex-direction: column;
-    padding-top: 10px;
-  }
-}
 .jp_sc_card {
   width: 230px;
   min-width: 230px;
@@ -42,11 +35,21 @@
   padding: 1cap;
   height: 130px;
   align-self: flex-start;
-  color: #bcc6c4;
+  color: $summary-card-text-color;
   display: flex;
 }
 .jp_sc_card__title__logo {
   align-self: center;
   padding-left: 2px;
   margin-bottom: 10px;
+}
+
+//mobile view
+@media screen and (max-width: 900px) {
+  .summary_container {
+    padding-top: 10px;
+  }
+  .summary_cards {
+    padding-top: 10px;
+  }
 }

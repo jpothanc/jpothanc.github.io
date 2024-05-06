@@ -2,12 +2,13 @@ $primary-color: #37474f;
 $primary-color-light: #4dabf5;
 $menu-hover-color: #fff176;
 $width: 100%;
+
 .notes-container {
   flex-direction: column;
   display: flex;
   margin: 0 auto;
   margin-top: 55px;
-  max-width: 96%;
+  max-width: 70%;
   height: 100%;
   .notes__about {
     display: flex;
@@ -16,6 +17,7 @@ $width: 100%;
   }
 }
 
+// override the styles from react-jp-ui
 .jp_btn_menu_container {
   display: flex;
   margin: 0 auto;
@@ -38,6 +40,7 @@ $width: 100%;
   border: solid 1px $primary-color;
 }
 
+// mobile view
 @media screen and (max-width: 900px) {
   .notes-container {
     margin-top: 8px;

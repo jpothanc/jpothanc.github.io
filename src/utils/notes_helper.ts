@@ -43,7 +43,8 @@ export async function getSubMenu(
     buttonItem.name == "architecture" ||
     buttonItem.name == "javascript" ||
     buttonItem.name == "testing" ||
-    buttonItem.name == "design patterns"
+    buttonItem.name == "design patterns" ||
+    buttonItem.name == "others"
   )
     return getSubMenus(jsonData.developerNotes[buttonItem.name], buttonItem);
   return [];

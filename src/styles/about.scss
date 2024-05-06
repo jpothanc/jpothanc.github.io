@@ -130,26 +130,7 @@ $menu-hover-color: #fff176;
   }
 }
 
-.jp_wmd_content {
-  font-size: 12px;
-  border-radius: 10px;
-  align-self: center;
-}
-@media (max-width: 925px) {
-  .jp_wmd_container {
-    width: 70%;
-  }
-  .about__logo {
-    width: 250px;
-    height: 250px;
-  }
-  .about-container {
-    height: 100vh; /* Use 100% of the viewport height */
-  }
-  // .about__left {
-  //    border: #dee4e3 1px solid;
-  // }
-}
+
 .btn-download {
   padding: 5px 8px;
   font-size: 10px;
