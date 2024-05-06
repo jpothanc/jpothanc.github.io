@@ -38,5 +38,5 @@ https://www.npmjs.com/package/react-jp-ui
 
 ## Get in Touch
 
-- Email: [kaljessy@gmail.com](kaljessy@gmail.com)
+- Email: [jessish.pothancheri@gmail.com](jessish.pothancheri@gmail.com)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jessish-pothancheri-5985576/)
