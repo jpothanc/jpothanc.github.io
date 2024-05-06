@@ -33,7 +33,6 @@ export async function getSubMenu(
   let jsonData = await fetchJsonData(getIndexFile());
   if (!jsonData) return [];
   console.log(jsonData);
-
   if (
     buttonItem.name == "web" ||
     buttonItem.name == "java" ||
