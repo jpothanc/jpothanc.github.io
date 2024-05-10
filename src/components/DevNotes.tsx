@@ -28,23 +28,43 @@ const DevNotes = () => {
   const [menu, setMenu] = useState<buttonItem[]>([]);
 
   useEffect(() => {
-    getMenu().then((data) => {
-      setMenu(data);
-    });
-    getSubMenu({ name: "web" }).then((data) => {
-      setSubMenu(data);
-    });
-    fetch(config.notes.readme)
-      .then((response) => response.text())
-      .then((text) => setAbout(text));
+    const controller = new AbortController();
+    const { signal } = controller;
+    try {
+      getMenu().then((data) => {
+        setMenu(data);
+      });
+      getSubMenu({ name: "web" }).then((data) => {
+        setSubMenu(data);
+      });
+      fetch(config.notes.readme, { signal })
+        .then((response) => response.text())
+        .then((text) => setAbout(text));
+    } catch (error) {
+      console.error("Error fetching README:", error);
+    }
+    // Cleanup function to abort the request
+    return () => {
+      controller.abort();
+    };
   }, []);
 
   useEffect(() => {
     if (mdContent.url == undefined) return;
+    const controller = new AbortController();
+    const { signal } = controller;
 
-    fetch(mdContent.url)
+    fetch(mdContent.url, { signal })
       .then((response) => response.text())
-      .then((text) => setMdContent({ ...mdContent, content: text }));
+      .then((text) => setMdContent({ ...mdContent, content: text }))
+      .catch((error) => {
+        console.error("Error fetching README:", error);
+      });
+
+    // Cleanup function to abort the request
+    return () => {
+      controller.abort();
+    };
   }, [mdContent.url]);
   return (
     <>
