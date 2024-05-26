@@ -226,6 +226,14 @@
         "readme": "https://api.github.com/repos/jpothanc/devnotes/readme",
         "repo": "https://github.com/jpothanc/devnotes/tree/main",
         "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
+      },
+      {
+        "name": "omnijp",
+        "link": "",
+        "description": "OmniJP is a Python library that provides tools for common tasks in software development.It now supports features for caching database results to disk and making HTTP requests with caching support.",
+        "readme": "https://api.github.com/repos/jpothanc/omnijp/readme",
+        "repo": "https://github.com/jpothanc/omnijp/tree/main",
+        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
       }
     ],
 
