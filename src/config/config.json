@@ -293,6 +293,16 @@
         "name": "Python Through Microservice Development",
         "description": "Discovering Python Through Microservice Development",
         "url": "https://medium.com/@kaljessy/discovering-python-through-microservice-development-cda7b8f97848"
+      },
+      {
+        "name": "Build Web Desktop Apps using Tauri",
+        "description": "Build Web Desktop Apps using Tauri.",
+        "url": "https://medium.com/@kaljessy/build-web-desktop-apps-using-tauri-6fe12586016a"
+      },
+      {
+        "name": "Build Web Desktop Apps using Electron",
+        "description": "Build Web Desktop Apps using Electron.",
+        "url": "https://medium.com/@kaljessy/build-web-desktop-apps-using-electron-a4c6e226290c"
       }
     ],
     "git": [
