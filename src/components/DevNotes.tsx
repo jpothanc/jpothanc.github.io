@@ -15,7 +15,7 @@ type mdContent = {
 };
 
 const DevNotes = () => {
-  const [about, setAbout] = useState<string>("test");
+  const [about, setAbout] = useState<string>("");
   const modalRef = useRef<WindowMdRef | null>(null);
   const handleOpenModal = () => {
     modalRef.current?.open();
@@ -34,23 +34,28 @@ const DevNotes = () => {
       getMenu().then((data) => {
         setMenu(data);
       });
-      getSubMenu({ name: "web" }).then((data) => {
+
+      getSubMenu({
+        name: config.notes.defaultSelection.menu,
+        bgColor: config.notes.defaultSelection.bgcolor,
+      }).then((data) => {
         setSubMenu(data);
       });
+
       fetch(config.notes.readme, { signal })
         .then((response) => response.text())
         .then((text) => setAbout(text));
     } catch (error) {
       console.error("Error fetching README:", error);
     }
-    // Cleanup function to abort the request
     return () => {
-      controller.abort();
+      // controller.abort();
     };
   }, []);
 
   useEffect(() => {
     if (mdContent.url == undefined) return;
+
     const controller = new AbortController();
     const { signal } = controller;
 
@@ -61,9 +66,8 @@ const DevNotes = () => {
         console.error("Error fetching README:", error);
       });
 
-    // Cleanup function to abort the request
     return () => {
-      controller.abort();
+      // controller.abort();
     };
   }, [mdContent.url]);
   return (

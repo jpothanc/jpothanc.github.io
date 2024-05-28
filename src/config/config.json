@@ -405,6 +405,7 @@
     "indexFile": "index/index.json",
     "defaultSelection": {
       "menu": "web",
+      "bgcolor": "#00897B",
       "submenu": "web-styling/css/css_containers.md"
     }
   }
