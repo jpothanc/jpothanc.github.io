@@ -303,6 +303,16 @@
         "name": "Desktop Apps using Electron",
         "description": "Build Web Desktop Apps using Electron.",
         "url": "https://medium.com/@kaljessy/build-web-desktop-apps-using-electron-a4c6e226290c"
+      },
+      {
+        "name": "Chating with OpenAI",
+        "description": "Chating with OpenAI using Python.",
+        "url": "https://medium.com/@kaljessy/chating-with-openai-using-python-3ae5a14b4501"
+      },
+      {
+        "name": "AI Assitant using RAG",
+        "description": "Personal AI Assitant using RAG and ChromaDB.",
+        "url": "https://medium.com/@kaljessy/personal-ai-assitant-using-rag-and-chromadb-6fd5c259da41"
       }
     ],
     "git": [
