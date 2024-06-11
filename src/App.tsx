@@ -1,6 +1,6 @@
 import About from "./pages/About";
 import Contents from "./pages/Contents";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectPersonalSummary from "./pages/ProjectPersonalSummary";
 import { CounterProvider } from "./contexts/CounterProvider";
 
