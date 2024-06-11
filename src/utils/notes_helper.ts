@@ -1,4 +1,16 @@
 import config from "../config/config.json";
+const topics = [
+  "web",
+  "java",
+  ".net",
+  "python",
+  "azure",
+  "architecture",
+  "javascript",
+  "testing",
+  "design patterns",
+  "others",
+];
 export async function fetchJsonData(
   url: string,
   signal?: AbortSignal
@@ -37,20 +49,9 @@ export async function getSubMenu(
   let jsonData = await fetchJsonData(getIndexFile(), signal);
   if (!jsonData) return [];
   console.log(jsonData);
-  if (
-    buttonItem.name == "web" ||
-    buttonItem.name == "java" ||
-    buttonItem.name == ".net" ||
-    buttonItem.name == "python" ||
-    buttonItem.name == "azure" ||
-    buttonItem.name == "architecture" ||
-    buttonItem.name == "javascript" ||
-    buttonItem.name == "testing" ||
-    buttonItem.name == "design patterns" ||
-    buttonItem.name == "others"
-  )
-    console.log(buttonItem);
-  return getSubMenus(jsonData.developerNotes[buttonItem.name], buttonItem);
+  if (topics.includes(buttonItem.name.toLowerCase())) {
+    return getSubMenus(jsonData.developerNotes[buttonItem.name], buttonItem);
+  }
   return [];
 }
 

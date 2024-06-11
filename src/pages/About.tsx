@@ -10,16 +10,6 @@ import { CiMenuKebab } from "react-icons/ci";
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
 
-// const motivation = () => {
-//   return
-//     "Pursuing his passion,Passionate programmer," +
-//       "Persistently perfects his programming prowess," +
-//       "Pushing past obstacles and pitfalls."
-
-// };
-
-// life.apply(motivation);
-
 const About = () => {
   const [readmeContent, setReadmeContent] = useState("");
   const modalRef = useRef<WindowMdRef | null>(null);
@@ -28,9 +18,7 @@ const About = () => {
     console.log("useEffect");
     const fetchReadme = async () => {
       try {
-        const response = await fetch(
-          "https://api.github.com/repos/jpothanc/jpothanc.github.io/readme"
-        );
+        const response = await fetch(config.portfolio.readmeUrl);
         const readmeData = await response.json();
 
         // Fetch raw content of README.md using download_url
