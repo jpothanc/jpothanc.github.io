@@ -9,6 +9,7 @@ const topics = [
   "javascript",
   "testing",
   "design patterns",
+  "ai",
   "others",
 ];
 export async function fetchJsonData(
