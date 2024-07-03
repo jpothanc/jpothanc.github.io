@@ -1,4 +1,10 @@
 import config from "../config/config.json";
+
+export type mdContent = {
+  url: string | undefined;
+  content: string;
+};
+
 const topics = [
   "web",
   "java",
@@ -77,4 +83,29 @@ export function getUrl(url: string | any): string {
 
 export function getIndexFile(): string {
   return config.notes.contentBaseUrl + config.notes.indexFile;
+}
+
+export async function getContentUrl(
+  topic: string,
+  subTopic: string | null
+): Promise<string> {
+  let jsonData = await fetchJsonData(getIndexFile());
+  if (!jsonData) return "";
+
+  if (subTopic == null || subTopic == "") {
+    const filteredItems: buttonItem[] = jsonData.developerNotes.tags.filter(
+      (x: buttonItem) => x.name == topic
+    );
+    const item =
+      filteredItems.length > 0 ? filteredItems[0] : { name: "", link: "" };
+    return getUrl(item.link);
+  }
+
+  const selectedMenu = getSubMenuItem(jsonData.developerNotes[topic], subTopic);
+  return getUrl(selectedMenu.link);
+}
+
+function getSubMenuItem(items: buttonItem[], submenu: string): buttonItem {
+  var filteredItems = items.filter((item) => item.name == submenu);
+  return filteredItems.length > 0 ? filteredItems[0] : { name: "", link: "" };
 }

@@ -7,12 +7,8 @@ import {
   buttonItem,
 } from "react-jp-ui";
 import config from "../config/config.json";
-import { getMenu, getSubMenu, getUrl } from "../utils/notes_helper";
+import { mdContent, getMenu, getSubMenu, getUrl } from "../utils/notes_helper";
 import { FaRegCommentDots } from "react-icons/fa6";
-type mdContent = {
-  url: string | undefined;
-  content: string;
-};
 
 const DevNotes = () => {
   const [about, setAbout] = useState<string>("");
