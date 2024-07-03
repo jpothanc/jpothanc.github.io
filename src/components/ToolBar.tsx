@@ -58,7 +58,7 @@ const Menu = ({ color, size }: Props) => {
         </div>
         <div className="about-menu-item">
           <Tooltip text="my developer notes">
-            <Link className="nav__link" to="/dev-notes">
+            <Link className="nav__link" to="/devnotes">
               <FaRegNoteSticky size={size}></FaRegNoteSticky>
             </Link>
           </Tooltip>
