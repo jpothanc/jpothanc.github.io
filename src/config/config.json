@@ -314,6 +314,11 @@
         "name": "AI Assitant using RAG",
         "description": "Personal AI Assitant using RAG and ChromaDB.",
         "url": "https://medium.com/@kaljessy/personal-ai-assitant-using-rag-and-chromadb-6fd5c259da41"
+      },
+      {
+        "name": "Svelt, Felt Better?",
+        "description": "A attempt to promote Svelte, a modern web framework.",
+        "url": "https://medium.com/@kaljessy/svelt-felt-better-ff7ce0f81977"
       }
     ],
     "git": [
