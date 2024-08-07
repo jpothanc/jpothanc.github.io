@@ -85,6 +85,8 @@
       "Java",
       "Spring Boot",
       "React (TypeScript)",
+      "Svelte",
+      "Tailwind CSS",
       "Oracle",
       "Sybase",
       "Mongo",
@@ -248,7 +250,8 @@
       "NUnit",
       "xUnit",
       "Specflow",
-      "JUnit"
+      "JUnit",
+      "Cucumber"
     ],
     "achievements": [
       "Investment Banking",
@@ -401,7 +404,7 @@
       "cardTitleColor": "rgba(255, 236, 179, 0.8)",
       "careerContentBackground": "rgba(200, 255, 400, 0.05)",
       "careerHeader": "#4dabf5",
-      "careerDate": "#FF80AB",
+      "careerDate": "#64FFDA",
       "aboutMenuColor": "#4dabf5",
       "barMenuColor": "#4dabf5",
       "aboutCaptionColor": "white",
