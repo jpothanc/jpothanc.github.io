@@ -143,6 +143,14 @@
     ],
     "personalProjects": [
       {
+        "name": "portfolio using svelte",
+        "link": "https://jpothanc.vercel.app/",
+        "description": "Lately, I've found myself enchanted by the sleek and powerful capabilities of Svelte and Tailwind CSS. This newfound inspiration has propelled me to create a  portfolio using these cutting-edge technologies.",
+        "readme": "https://api.github.com/repos/jpothanc/portfolio-go/readme",
+        "repo": "https://github.com/jpothanc/portfolio-go",
+        "technology": "https://skillicons.dev/icons?i=svelte,tailwind&perline=5"
+      },
+      {
         "name": "data store",
         "link": "https://data-store.azurewebsites.net/api/v1/data/query?catalogue=Trading&catalogueItem=Users",
         "description": "A robust read-through caching app designed to cache configured queries, accelerating performance by swiftly accessing frequently requested data.",
