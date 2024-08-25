@@ -32,7 +32,7 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
           }}
         >
           <motion.h3
-            className="card__title"
+            className="flex flex-col gap-1 font-semibold"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"

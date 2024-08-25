@@ -27,7 +27,7 @@ const Experiance = ({ timeline }: timelineProps) => {
         }}
       >
         <motion.h3
-          className="card__title"
+          className="flex flex-col gap-1 font-semibold"
           style={{
             padding: "15px 40px",
             color: getThemeColor(ThemeConstants.themeDark, "cardTitleColor"),
