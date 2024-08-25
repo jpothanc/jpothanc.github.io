@@ -82,10 +82,13 @@ const About = () => {
                     ),
                   }}
                 >
-                  <span className="flex justify-center  bg-white/80 text-black text-[30px]">
+                  <span
+                    className="flex justify-center bg-white/80 text-black
+                  text-2xl md:text-3xl p-1"
+                  >
                     {config.portfolio.firstname}
                   </span>
-                  <span className="flex justify-center bg-theme-dark-primary ">
+                  <span className="flex justify-center bg-theme-dark-primary text-2xl md:text-3xl p-1">
                     {config.portfolio.secondname}
                   </span>
                 </motion.div>
