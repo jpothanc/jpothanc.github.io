@@ -54,10 +54,10 @@ const About = () => {
             color={primaryColor}
           />
         </div>
-        <div className="about-container">
+        <div className="flex justify-center items-center  mt-1 md:h-[85vh]">
           <div>
             <motion.div
-              className="about"
+              className="flex flex-col gap-1 md:gap-5 md:flex-row"
               style={{
                 background: getThemeColor(
                   ThemeConstants.themeDark,
@@ -66,12 +66,12 @@ const About = () => {
               }}
             >
               <motion.div
-                className="about__left"
+                className="flex flex-col"
                 variants={fmScaleAboutText}
                 initial="initial"
                 whileHover="animate"
               >
-                <motion.h4
+                <motion.div
                   variants={fmScaleAboutText}
                   initial="initial"
                   whileHover="animate"
@@ -82,13 +82,17 @@ const About = () => {
                     ),
                   }}
                 >
-                  <span className="about__left_name__first-name">
+                  <p
+                    className="flex  justify-center items-center 
+                    bg-white/80 text-black
+                    "
+                  >
                     {config.portfolio.firstname}
-                  </span>
-                  <span className="about_left_name__second-name">
+                  </p>
+                  <span className="flex justify-center bg-theme-dark-primary text-3xl ">
                     {config.portfolio.secondname}
                   </span>
-                </motion.h4>
+                </motion.div>
 
                 <div className="about__moto">
                   <p className="u-white">&lt;</p>
@@ -108,7 +112,7 @@ const About = () => {
               </motion.div>
 
               <motion.div
-                className="about__right"
+                className="flex justify-center items-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -117,7 +121,7 @@ const About = () => {
                 <motion.img
                   src="jpothanc.PNG"
                   alt="logo"
-                  className="about__logo"
+                  className="h-[300px] w-[300px] rounded-full"
                   whileHover={{ rotate: -15 }}
                   initial={{ rotate: 0 }}
                   transition={{

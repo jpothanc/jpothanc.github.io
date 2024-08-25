@@ -34,7 +34,10 @@ const Contents = () => {
   return (
     <>
       <NavBar pageInfo="<about/>" />
-      <motion.div className="content">
+      <motion.div
+        className="flex justify-start md:justify-center w-full md:w-[70%] mx-auto mt-5
+       "
+      >
         <motion.main
           className="main"
           ref={ref}
@@ -50,6 +53,7 @@ const Contents = () => {
             items={config.portfolio.expertise}
             icon={FaSkiing}
           ></ListContent>
+
           <Badges
             title="Technology"
             content=""

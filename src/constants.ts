@@ -42,7 +42,7 @@ export const fmScaleText = {
 export const fmScaleAboutText = {
   animate: {
     fontSize: "32px",
-    filter: "saturate(200%)",
+    filter: "saturate(150%)",
 
     //textDecoration: "underline",
     transition: {

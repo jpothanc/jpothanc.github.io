@@ -6,7 +6,17 @@ import { CounterProvider } from "./contexts/CounterProvider";
 
 import DevNotesPage from "./pages/DevNotesPage";
 import ShareNotes from "./components/ShareNotes";
+import { useEffect, useState } from "react";
 const App = () => {
+  const [darkMode, setDarkMode] = useState(true);
+  useEffect(() => {
+    const html = document.documentElement;
+    if (darkMode) {
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+    }
+  }, [darkMode]);
   return (
     <>
       <Router>

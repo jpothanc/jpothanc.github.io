@@ -2,6 +2,7 @@
 @import "markdown.scss";
 @import "projects.scss";
 @import "notes.scss";
+@import "tailwind.scss";
 
 /*RESET*/
 * {
@@ -33,8 +34,6 @@ ul {
 body {
   background-color: rgba(20, 20, 20, 1);
   font-family: "Segoe UI", sans-serif;
-  height: 100vh;
-  padding-top: 8ch;
 }
 
 /*NORMAL STYLES*/
@@ -230,7 +229,7 @@ body {
     position: initial;
   }
   .main {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     /* grid-template-rows: repeat(12, 1500px); */
     padding-top: 1px;
     white-space: normal; /* Default: Wrap text and collapse spaces */

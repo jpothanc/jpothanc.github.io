@@ -1,7 +1,7 @@
 $summary-card-text-color: #bcc6c4;
 // override the styles from react-jp-ui
 .summary_container {
-  padding-top: 80px;
+  margin-top: 5px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,8 @@ $summary-card-text-color: #bcc6c4;
 .jp_sc_card {
   width: 230px;
   min-width: 230px;
+  min-height: 300px;
+  font-size: smaller;
   background-color: rgb(37, 38, 38);
   border: 1px solid $primary-color;
   transition: all 0.4s;
@@ -33,7 +35,7 @@ $summary-card-text-color: #bcc6c4;
 
 .jp_sc_card__body__text {
   padding: 1cap;
-  height: 130px;
+  height: 150px;
   align-self: flex-start;
   color: $summary-card-text-color;
   display: flex;
@@ -42,6 +44,16 @@ $summary-card-text-color: #bcc6c4;
   align-self: center;
   padding-left: 2px;
   margin-bottom: 10px;
+}
+.jp_sc_card__footer .jp_sc_card__footer__icon {
+}
+
+.jp_sc_card__footer .jp_sc_card__footer__icon img {
+  width: auto !important;
+  height: auto !important;
+  // border: #bcc6c4 solid 1px;
+  padding: 1px;
+  max-width: 100% !important;
 }
 
 //mobile view

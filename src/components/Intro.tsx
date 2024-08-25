@@ -38,7 +38,9 @@ const Intro = ({ text }: Props) => {
               Jessish,{" "}
             </motion.span>
           </span>
+          <span className="basic_text">
           {text}
+          </span>
         </section>
       </header>
     </>

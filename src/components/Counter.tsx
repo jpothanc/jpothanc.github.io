@@ -17,7 +17,7 @@ const Counter = () => {
     return () => {};
   }, []);
 
-  return <div className="btn-counter">Visites : {counter}</div>;
+  return <div className="btn-counter hover:brightness-75 transition-all duration-300">Visites : {counter}</div>;
 };
 
 export default Counter;

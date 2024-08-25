@@ -6,7 +6,7 @@ const ProjectPersonalSummary = () => {
   return (
     <>
       <NavBar pageInfo="<projects/>" />
-      <div className="summary_container">
+      <div className="mx-auto mt-5">
         <ProjectsPersonal personalProject={config.portfolio.personalProjects} />
       </div>
     </>

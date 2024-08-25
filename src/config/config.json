@@ -9,7 +9,7 @@
     "github": "https://github.com/jpothanc",
     "webCounterUrl-local": "http://localhost:8007/api/v1/command/incrementCounter?siteName=test",
     "webCounterUrl": "https://data-store.azurewebsites.net/api/v1/command/incrementCounter?siteName=jpothanc_profile",
-    "devTooltip": "This site was developed using React(TS), Framer motion and Azure [© 2023 Jessish Pothancheri. All Rights Reserved.",
+    "devTooltip": "This site was developed using React(TS), Tailwind, Framer motion and Azure [© 2023 Jessish Pothancheri. All Rights Reserved.",
     "resumeFileName": "jessish.pothancheri-resume.pdf",
     "intro": "Equities Front Office Solutions Technical and Delivery Lead with 20+ years of experience in designing, implementing and optimizing technology solutions for an investment bank. My expertise lies in understanding the unique challenges of the equities front office environment and delivering innovative solutions that drive revenue generation, lead high-performing teams, optimise trading processes, reduce operational risk, and improve the overall client experience.",
     "readmeUrl": "https://api.github.com/repos/jpothanc/jpothanc.github.io/readme",
@@ -143,12 +143,12 @@
     ],
     "personalProjects": [
       {
-        "name": "portfolio using svelte",
+        "name": "portfolio",
         "link": "https://jpothanc.vercel.app/",
         "description": "Lately, I've found myself enchanted by the sleek and powerful capabilities of Svelte and Tailwind CSS. This newfound inspiration has propelled me to create a  portfolio using these cutting-edge technologies.",
         "readme": "https://api.github.com/repos/jpothanc/portfolio-go/readme",
         "repo": "https://github.com/jpothanc/portfolio-go",
-        "technology": "https://skillicons.dev/icons?i=svelte,tailwind&perline=5"
+        "technology": "https://skillicons.dev/icons?i=svelte,tailwind,vscode,vite,vercel&perline=5"
       },
       {
         "name": "data store",
@@ -164,7 +164,7 @@
         "description": "Monitoring UI for production support. Delivers real-time insights on microservices, databases. Seamlessly integrates with Java-based healthcheck service via WebSockets for instant updates.",
         "readme": "https://api.github.com/repos/jpothanc/hero/readme",
         "repo": "https://github.com/jpothanc/hero",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vercel&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10"
       },
       {
         "name": "dynamo",
@@ -172,7 +172,7 @@
         "description": "Dynamo is a web application that allows you to configure JSON endpoints and visualize the data in a grid format for easy reading and support.",
         "readme": "https://api.github.com/repos/jpothanc/dynamo/readme",
         "repo": "https://github.com/jpothanc/dynamo",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vercel&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10"
       },
       {
         "name": "healthcheck",
@@ -181,6 +181,47 @@
         "readme": "https://api.github.com/repos/jpothanc/healthcheck/readme",
         "repo": "https://github.com/jpothanc/healthcheck",
         "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
+      },
+
+      {
+        "name": "react-jp-ui",
+        "link": "https://www.npmjs.com/package/react-jp-ui",
+        "description": "In the world of React projects, I wanted to make my life easier by reusing components. So, I took the leap to build my own library of common React components using Vite and shared it via npm.",
+        "readme": "https://api.github.com/repos/jpothanc/react-jp-ui/readme",
+        "repo": "https://github.com/jpothanc/react-jp-ui",
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite&perline=10"
+      },
+      {
+        "name": "pulse",
+        "link": "",
+        "description": "A simple tool for testing WebSocket connections. It provides an easy-to-use interface to send and receive WebSocket messages, making it convenient for developers and testers to validate WebSocket functionality",
+        "readme": "https://api.github.com/repos/jpothanc/pulse/readme",
+        "repo": "https://github.com/jpothanc/pulse",
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite&perline=10"
+      },
+      {
+        "name": "equity-store",
+        "link": "",
+        "description": "Eager to understand the essence of Python and how it contrasts with the familiar territories of .Net and Java, I embarked on a project that would not only allow me to peek into Python but also to apply it in a real-world scenario. ",
+        "readme": "https://api.github.com/repos/jpothanc/equity-store/readme",
+        "repo": "https://github.com/jpothanc/equity-store/tree/main",
+        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
+      },
+      {
+        "name": "devnotes",
+        "link": "https://devnotes-blond.vercel.app/",
+        "description": "devnotes remember everything so you don’t have to. A simple notes look up app which can read you git markdown documents.",
+        "readme": "https://api.github.com/repos/jpothanc/devnotes/readme",
+        "repo": "https://github.com/jpothanc/devnotes/tree/main",
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10"
+      },
+      {
+        "name": "omnijp",
+        "link": "",
+        "description": "OmniJP is a Python library that provides tools for common tasks in software development.It now supports features for caching database results to disk and making HTTP requests with caching support.",
+        "readme": "https://api.github.com/repos/jpothanc/omnijp/readme",
+        "repo": "https://github.com/jpothanc/omnijp/tree/main",
+        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
       },
       {
         "name": "webq",
@@ -205,46 +246,6 @@
         "readme": "https://api.github.com/repos/jpothanc/simpleskin/readme",
         "repo": "https://github.com/jpothanc/simpleskin",
         "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
-      },
-      {
-        "name": "react-jp-ui",
-        "link": "https://www.npmjs.com/package/react-jp-ui",
-        "description": "In the world of React projects, I wanted to make my life easier by reusing components. So, I took the leap to build my own library of common React components using Vite and shared it via npm.",
-        "readme": "https://api.github.com/repos/jpothanc/react-jp-ui/readme",
-        "repo": "https://github.com/jpothanc/react-jp-ui",
-        "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
-      },
-      {
-        "name": "pulse",
-        "link": "",
-        "description": "A simple tool for testing WebSocket connections. It provides an easy-to-use interface to send and receive WebSocket messages, making it convenient for developers and testers to validate WebSocket functionality",
-        "readme": "https://api.github.com/repos/jpothanc/pulse/readme",
-        "repo": "https://github.com/jpothanc/pulse",
-        "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
-      },
-      {
-        "name": "equity-store",
-        "link": "",
-        "description": "Eager to understand the essence of Python and how it contrasts with the familiar territories of .Net and Java, I embarked on a project that would not only allow me to peek into Python but also to apply it in a real-world scenario. ",
-        "readme": "https://api.github.com/repos/jpothanc/equity-store/readme",
-        "repo": "https://github.com/jpothanc/equity-store/tree/main",
-        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
-      },
-      {
-        "name": "devnotes",
-        "link": "https://devnotes-blond.vercel.app/",
-        "description": "devnotes remember everything so you don’t have to. A simple notes look up app which can read you git markdown documents.",
-        "readme": "https://api.github.com/repos/jpothanc/devnotes/readme",
-        "repo": "https://github.com/jpothanc/devnotes/tree/main",
-        "technology": "https://skillicons.dev/icons?i=react,vscode&perline=10"
-      },
-      {
-        "name": "omnijp",
-        "link": "",
-        "description": "OmniJP is a Python library that provides tools for common tasks in software development.It now supports features for caching database results to disk and making HTTP requests with caching support.",
-        "readme": "https://api.github.com/repos/jpothanc/omnijp/readme",
-        "repo": "https://github.com/jpothanc/omnijp/tree/main",
-        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
       }
     ],
 
