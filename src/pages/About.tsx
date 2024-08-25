@@ -54,10 +54,10 @@ const About = () => {
             color={primaryColor}
           />
         </div>
-        <div className="flex justify-center items-center  mt-1 md:h-[85vh]">
+        <div className="flex justify-center items-center mt-3 md:mt-1 md:h-[85vh]">
           <div>
             <motion.div
-              className="flex flex-col gap-1 md:gap-5 md:flex-row"
+              className="flex flex-col gap-6 md:gap-5 md:flex-row"
               style={{
                 background: getThemeColor(
                   ThemeConstants.themeDark,
@@ -93,7 +93,7 @@ const About = () => {
                   </span>
                 </motion.div>
 
-                <div className="about__moto text-xs md:text-lg">
+                <div className="about__moto text-xs md:text-lg mb-5 md:mb-2">
                   <p className="u-white">&lt;</p>
                   <p className="u-red">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( i =&gt; &#123;
@@ -120,7 +120,7 @@ const About = () => {
                 <motion.img
                   src="jpothanc.PNG"
                   alt="logo"
-                  className="h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full"
+                  className="h-[220px] w-[220px] md:h-[300px] md:w-[300px] rounded-full"
                   whileHover={{ rotate: -15 }}
                   initial={{ rotate: 0 }}
                   transition={{
