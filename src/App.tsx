@@ -11,6 +11,8 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
     const html = document.documentElement;
+    //fix the git build error. theme changes are not working
+    setDarkMode(true);
     if (darkMode) {
       html.classList.add("dark");
     } else {
