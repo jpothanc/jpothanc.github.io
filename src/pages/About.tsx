@@ -43,7 +43,10 @@ const About = () => {
   return (
     <>
       <div className="App">
-        <div className="brand-logo hover:brightness-90 transition-all duration-300" onClick={handleOpenModal}>
+        <div
+          className="brand-logo hover:brightness-90 transition-all duration-300"
+          onClick={handleOpenModal}
+        >
           <div className="brand-logo__text">
             <CiMenuKebab size="24" />
           </div>
@@ -83,12 +86,17 @@ const About = () => {
                   }}
                 >
                   <span
-                    className="flex justify-center bg-white/80 text-black
-                  text-2xl md:text-3xl p-1"
+                    className="flex justify-center
+                    bg-gradient-to-b from-white/80 to-slate-300
+                    text-black text-2xl md:text-3xl p-1"
                   >
                     {config.portfolio.firstname}
                   </span>
-                  <span className="flex justify-center bg-theme-dark-primary text-2xl md:text-3xl p-1">
+                  <span
+                    className="flex justify-center 
+                    bg-gradient-to-t from-theme-dark-primary to-slate-800
+                    text-2xl md:text-3xl p-1"
+                  >
                     {config.portfolio.secondname}
                   </span>
                 </motion.div>
