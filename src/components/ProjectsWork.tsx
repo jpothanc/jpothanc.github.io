@@ -51,16 +51,14 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
             return (
               <div>
                 <h4
-                  style={{
-                    paddingTop: "10px",
-                  }}
+                  className="mt-5 mb-2 font-bold  text-white/80 
+                hover:text-amber-500 transition-all duration-300"
                 >
                   {project.name}
                 </h4>
                 <p
+                  className="font-semibold"
                   style={{
-                    fontSize: "12px",
-                    fontWeight: "700",
                     color: getThemeColor(
                       ThemeConstants.themeDark,
                       "careerDate"
@@ -69,9 +67,7 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
                 >
                   {project.timeline}
                 </p>
-                <p className="basic-text" style={{ paddingTop: "5px" }}>
-                  {project.description}
-                </p>
+                <p className="basic-text pt-5">{project.description}</p>
                 <p
                   style={{
                     fontSize: "12px",

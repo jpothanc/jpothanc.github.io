@@ -43,7 +43,7 @@ const About = () => {
   return (
     <>
       <div className="App">
-        <div className="brand-logo" onClick={handleOpenModal}>
+        <div className="brand-logo hover:brightness-90 transition-all duration-300" onClick={handleOpenModal}>
           <div className="brand-logo__text">
             <CiMenuKebab size="24" />
           </div>

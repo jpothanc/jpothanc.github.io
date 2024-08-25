@@ -5,7 +5,7 @@ import config from "../config/config.json";
 const ProjectPersonalSummary = () => {
   return (
     <>
-      <NavBar pageInfo="<projects/>" />
+      <NavBar/>
       <div className="mx-auto mt-5">
         <ProjectsPersonal personalProject={config.portfolio.personalProjects} />
       </div>

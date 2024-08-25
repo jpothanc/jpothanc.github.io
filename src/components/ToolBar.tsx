@@ -27,7 +27,7 @@ const Menu = ({ color, size }: Props) => {
     <>
       {" "}
       <motion.div
-        className="about-menu"
+        className="flex gap-2 z-51"
         variants={fmOpacitySlow}
         initial="initial"
         whileInView="animate"

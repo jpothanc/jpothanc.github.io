@@ -2,27 +2,15 @@ import { motion } from "framer-motion";
 import config from "../config/config.json";
 import Menu from "./ToolBar";
 import { ThemeConstants, fmScale } from "../constants";
-import { getThemeColor } from "../utils/helper";
 
-type Props = {
-  pageInfo: string;
-};
-const NavBar = ({ pageInfo }: Props) => {
+
+
+const NavBar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 initial border-spacing-4 ">
-        <div
-          className="w-full md:w-[70%] mx-auto"
-          style={{
-            background: getThemeColor(
-              ThemeConstants.themeDark,
-              ThemeConstants.logoBackground
-            ),
-          }}
-        >
-          <div className="flex justify-end text-xs hover:brightness-90 transition-all ease-in-out duration-100 bg-slate-700 text-white">
-            {pageInfo}
-          </div>
+        <div className="w-full md:w-[70%] mx-auto opacity-90 bg-slate-100 hover:bg-white/80 transition-all duration-300">
+        
 
           <div className="flex justify-center gap-2 md:justify-between items-center flex-col md:flex-row ">
             <motion.a
@@ -42,14 +30,14 @@ const NavBar = ({ pageInfo }: Props) => {
               </span>
             </motion.a>
             <span
-              className="text-center md:text-start self-center px-2 py-2 text-black 
+              className="text-center md:text-start self-center px-2 py-2  
             font-semibold text-xs md:text-sm md:w-[400px]"
             >
               {config.portfolio.introBadge}
             </span>
           </div>
         </div>
-        <div className="flex justify-center md:justify-end w-full z-9 md:w-[70%] border border-blue-400 mx-auto">
+        <div className="flex justify-center md:justify-end w-full z-9 md:w-[70%] border border-theme-dark-primary mx-auto">
           <div className="flex justify-end items-center px-1 pt-1">
             <Menu color={ThemeConstants.barMenuColor} size="24px" />
           </div>

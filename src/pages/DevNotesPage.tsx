@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 const Main = () => {
   return (
     <>
-      <NavBar pageInfo="<devnotes/>" />
+      <NavBar />
       <DevNotes />
     </>
   );

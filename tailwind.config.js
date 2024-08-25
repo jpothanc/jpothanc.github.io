@@ -9,6 +9,7 @@ export default {
           dark: {
             primary: "#243a65",
             content: "#212121",
+            hover: "text-amber-500",
             background: "rgba(20, 20, 20, 1)",
           },
         },

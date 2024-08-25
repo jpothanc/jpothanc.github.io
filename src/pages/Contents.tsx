@@ -33,7 +33,7 @@ const Contents = () => {
 
   return (
     <>
-      <NavBar pageInfo="<about/>" />
+      <NavBar />
       <motion.div
         className="flex justify-start md:justify-center w-full md:w-[70%] mx-auto mt-5
        "
@@ -120,7 +120,7 @@ const Contents = () => {
             icon={FaChildReaching}
           ></Badges>
           <ProjectsWork
-            title="Projects"
+            title="Roles & Projects"
             content=""
             items={config.portfolio.projects}
             icon={FaCity}
