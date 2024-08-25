@@ -5,8 +5,7 @@ export const yellow = "#ebd696";
 export const fmScale = {
   initial: { scale: 1, border: "0px solid rgb(100, 97, 100)" },
   animate: {
-    scale: 1.6,
-    border: "1px solid rgba(227, 227, 227, 0.8)",
+    scale: 1.5,
     color: "#ff0000",
     transition: { duration: 0.5, ease: "easeIn", delay: 0.1 },
   },

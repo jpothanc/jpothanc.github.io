@@ -18,7 +18,7 @@ const Experiance = ({ timeline }: timelineProps) => {
   return (
     <>
       <div
-        className="card"
+        className="card flex flex-col md:flex-row"
         style={{
           background: getThemeColor(
             ThemeConstants.themeDark,
@@ -68,7 +68,7 @@ const Experiance = ({ timeline }: timelineProps) => {
                         border: "1px solid rgba(0, 0, 0, 0.05)",
                         textAlign: "left",
                         padding: "1.3rem 2rem",
-                        width: 300,
+                        width: 350,
 
                         // color: "#64B5F6",
                       }}

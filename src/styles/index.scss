@@ -172,8 +172,9 @@ body {
 .careerContent {
   background-color: #212121;
   grid-area: career;
-  transition: all 03s;
   width: 100%;
+  flex-direction: column;
+  transition: all 03s;
   
 }
 
@@ -238,6 +239,7 @@ body {
     grid-template-areas: initial;
     white-space: pre-wrap;
   }
+
   .intro {
     width: auto;
     white-space: pre-wrap;

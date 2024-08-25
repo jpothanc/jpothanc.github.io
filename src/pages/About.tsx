@@ -93,7 +93,7 @@ const About = () => {
                   </span>
                 </motion.div>
 
-                <div className="about__moto">
+                <div className="about__moto text-xs md:text-lg">
                   <p className="u-white">&lt;</p>
                   <p className="u-red">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( i =&gt; &#123;
@@ -120,7 +120,7 @@ const About = () => {
                 <motion.img
                   src="jpothanc.PNG"
                   alt="logo"
-                  className="h-[300px] w-[300px] rounded-full"
+                  className="h-[200px] w-[200px] md:h-[300px] md:w-[300px] rounded-full"
                   whileHover={{ rotate: -15 }}
                   initial={{ rotate: 0 }}
                   transition={{
