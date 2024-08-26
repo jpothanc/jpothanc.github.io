@@ -8,8 +8,8 @@ import { ThemeConstants, fmScale } from "../constants";
 const NavBar = () => {
   return (
     <>
-      <nav className="sticky top-0 z-50 initial border-spacing-4 ">
-        <div className="w-full md:w-[70%] mx-auto opacity-90 bg-slate-100 hover:bg-white/80 transition-all duration-300">
+      <nav className="sticky top-0 z-50 initial border-spacing-4">
+        <div className="w-full md:w-[70%] p-2 mx-auto opacity-95 bg-slate-100 hover:bg-white/80 transition-all duration-300">
         
 
           <div className="flex justify-center gap-2 md:justify-between items-center flex-col md:flex-row ">
@@ -37,7 +37,7 @@ const NavBar = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center md:justify-end w-full z-9 md:w-[70%] border border-theme-dark-primary mx-auto">
+        <div className="flex justify-center md:justify-end w-full md:w-[70%] bg-black border border-theme-dark-primary mx-auto ">
           <div className="flex justify-end items-center px-1 pt-1">
             <Menu color={ThemeConstants.barMenuColor} size="24px" />
           </div>
