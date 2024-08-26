@@ -9,10 +9,10 @@ const NavBar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 initial border-spacing-4">
-        <div className="w-full md:w-[70%] p-2 mx-auto opacity-95 bg-slate-100 hover:bg-white/80 transition-all duration-300">
+        <div className="w-full md:w-[70%] p-1 mx-auto opacity-95 bg-slate-100 hover:bg-white/80 transition-all duration-300">
         
 
-          <div className="flex justify-center gap-2 md:justify-between items-center flex-col md:flex-row ">
+          <div className="flex justify-center gap-1 md:justify-between items-center flex-col md:flex-row ">
             <motion.a
               href="#"
               className="flex w-[70px] gap-1 items-center flex-col md:flex-row rounded-full border-transparent"
@@ -30,7 +30,7 @@ const NavBar = () => {
               </span>
             </motion.a>
             <span
-              className="text-center md:text-start self-center px-2 py-2  
+              className="text-center md:text-start self-center px-1 py-1  
             font-semibold text-xs md:text-sm md:w-[400px]"
             >
               {config.portfolio.introBadge}
