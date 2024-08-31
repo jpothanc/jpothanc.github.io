@@ -283,6 +283,11 @@
         "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
       },
       {
+        "name": "TailwindCSS",
+        "description": "TailwindCSS: A Love story",
+        "url": "https://medium.com/@kaljessy/react-state-management-using-rxjs-58a4d523d611"
+      },
+      {
         "name": "React-Rxjs",
         "description": "How to use Reactive Extensions in React.",
         "url": "https://medium.com/@kaljessy/react-state-management-using-rxjs-58a4d523d611"
