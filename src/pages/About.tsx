@@ -57,7 +57,7 @@ const About = () => {
             color={primaryColor}
           />
         </div>
-        <div className="flex justify-center items-center mt-3 md:mt-1 md:h-[100vh]">
+        <div className="flex justify-center items-center mt-3 xl:mt-1 h-[85vh]">
           <div>
             <motion.div
               className="flex flex-col gap-6 md:gap-5 md:flex-row xl:gap-x-16"
@@ -101,7 +101,7 @@ const About = () => {
                   </span>
                 </motion.div>
 
-                <div className="about__moto text-xs md:text-lg xl:text-xl mb-5 md:mb-2">
+                <div className="about__moto text-xs md:text-lg xl:text-lg mb-5 md:mb-2">
                   <p className="u-white">&lt;</p>
                   <p className="u-red">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( i =&gt; &#123;

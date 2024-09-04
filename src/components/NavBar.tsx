@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 initial border-spacing-4">
-        <div className="w-full md:w-[90%] xl:w-[40%] xl:min-w-[1200px]  p-1 mx-auto opacity-95 bg-slate-100 hover:bg-white/80 transition-all duration-300">
+        <div className="w-full md:w-[90%] xl:w-[40%] xl:min-w-[1200px]  p-1 mx-auto opacity-95 bg-slate-100 hover:bg-blue-100 transition-all duration-300">
           <div className="flex justify-center gap-1 md:justify-between items-center flex-col md:flex-row ">
             <motion.a
               href="#"
@@ -21,21 +21,25 @@ const NavBar = () => {
                 alt="logo"
                 className="bg-cover rounded-full"
               />
-              <span className="text-black font-semibold text-sm self-center xl:text-xl">
+              <span className="text-black font-semibold text-sm self-center xl:text-lg">
                 {config.portfolio.firstname}&nbsp;{config.portfolio.secondname}
               </span>
             </motion.a>
+
             <span
-              className="text-center md:text-start self-center px-1 py-1  
-            font-semibold text-xs md:text-sm md:w-[400px] lg:text-sm xl:text-lg"
+              className="flex flex-col gap-1 text-center md:text-start self-center px-2 py-1  
+            font-semibold text-xs md:text-sm lg:text-sm xl:text-md
+            hover:underline transition-all duration-300 justify-end
+            "
             >
-              {config.portfolio.introBadge}
+              <p>{config.portfolio.navBarTitle1}</p>
+              <p>{config.portfolio.navBarTitle2}</p>
             </span>
           </div>
         </div>
         <div className="flex justify-center md:justify-end w-full md:w-[90%] xl:w-[40%] xl:min-w-[1200px] bg-black border border-theme-dark-primary mx-auto ">
           <div className="flex justify-end items-center px-1 pt-1">
-            <Menu color={ThemeConstants.barMenuColor} size="28px" />
+            <Menu color={ThemeConstants.barMenuColor} size="30px" />
           </div>
         </div>
       </nav>

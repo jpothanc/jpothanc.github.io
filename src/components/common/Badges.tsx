@@ -39,7 +39,7 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
         }}
       >
         <section
-          className="intro  xl:text-xl"
+          className="intro  xl:text-lg"
           style={{
             color: getThemeColor(
               ThemeConstants.themeDark,

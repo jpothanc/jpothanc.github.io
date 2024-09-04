@@ -23,7 +23,7 @@ const ListContent = ({ title, items, icon }: Prop) => {
       >
         <section
           className="list-text
-          xl:text-xl
+          xl:text-lg
           "
           style={{
             color: getThemeColor(

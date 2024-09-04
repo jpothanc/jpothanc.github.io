@@ -23,7 +23,7 @@ const Links = ({ title, content, icon, links }: Props) => {
           ),
         }}
       >
-        <section className="intro xl:text-xl">
+        <section className="intro xl:text-md">
           <motion.h3
             className="flex flex-col gap-1 font-semibold"
             variants={shakeVariants}
