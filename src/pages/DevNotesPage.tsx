@@ -4,7 +4,12 @@ const Main = () => {
   return (
     <>
       <NavBar />
-      <DevNotes />
+      <div
+        className=" container mx-auto  xl:w-[40%] xl:min-w-[1200px]
+        md:w-[90%] xl-texl-lg"
+      >
+        <DevNotes />
+      </div>
     </>
   );
 };

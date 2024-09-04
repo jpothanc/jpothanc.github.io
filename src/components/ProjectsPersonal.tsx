@@ -8,7 +8,10 @@ type personalProjectsProps = {
 const ProjectsPersonal = ({ personalProject }: personalProjectsProps) => {
   return (
     <>
-      <div className="flex flex-wrap gap-2 justify-center w-full md:w-[70%] mx-auto ">
+      <div
+        className="flex flex-wrap gap-2 justify-center w-full  xl:w-[40%] xl:min-w-[1200px]
+        md:w-[90%] mx-auto "
+      >
         {personalProject.map((project) => {
           return (
             <SummaryCard
