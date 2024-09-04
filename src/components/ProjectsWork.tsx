@@ -32,7 +32,7 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
           }}
         >
           <motion.h3
-            className="flex flex-col gap-1 font-semibold"
+            className="flex flex-col gap-1 font-semibold xl:text-xl"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
@@ -52,12 +52,12 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
               <div>
                 <h4
                   className="mt-5 mb-2 font-bold  text-white/80 
-                hover:text-amber-500 transition-all duration-300"
+                hover:text-amber-500 transition-all duration-300 xl:text-lg"
                 >
                   {project.name}
                 </h4>
                 <p
-                  className="font-semibold"
+                  className="font-semibold  xl:text-lg"
                   style={{
                     color: getThemeColor(
                       ThemeConstants.themeDark,
@@ -67,10 +67,12 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
                 >
                   {project.timeline}
                 </p>
-                <p className="basic-text pt-5">{project.description}</p>
+                <p className="basic-text pt-5  xl:text-md">
+                  {project.description}
+                </p>
                 <p
+                  className="xl:text-md"
                   style={{
-                    fontSize: "12px",
                     fontWeight: "700",
                     color: getThemeColor(
                       ThemeConstants.themeDark,

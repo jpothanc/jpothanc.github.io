@@ -19,7 +19,7 @@ const Intro = ({ text }: Props) => {
         }}
       >
         <section
-          className="intro"
+          className="basic-text px-4 xl:text-md"
           style={{
             color: getThemeColor(
               ThemeConstants.themeDark,

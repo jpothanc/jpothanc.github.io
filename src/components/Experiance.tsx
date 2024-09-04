@@ -27,7 +27,7 @@ const Experiance = ({ timeline }: timelineProps) => {
         }}
       >
         <motion.h3
-          className="flex flex-col gap-1 font-semibold"
+          className="flex flex-col gap-1 font-semibold xl:text-xl"
           style={{
             padding: "15px 40px",
             color: getThemeColor(ThemeConstants.themeDark, "cardTitleColor"),
@@ -51,7 +51,7 @@ const Experiance = ({ timeline }: timelineProps) => {
           >
             <motion.section
               id="experience"
-              className="basic-text"
+              className="basic-text xl:text-md"
               variants={fmOpacity}
               whileInView="animate"
             >

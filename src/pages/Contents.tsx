@@ -35,7 +35,12 @@ const Contents = () => {
     <>
       <NavBar />
       <motion.div
-        className="flex justify-start md:justify-center w-full md:w-[70%] mx-auto mt-5
+        className="flex justify-start md:justify-center w-full 
+        mx-auto mt-5 
+        xl:w-[40%] xl:min-w-[1200px]
+        md:w-[90%]
+        // lg:border-1 lg:border-blue-500 lg:w-[90%]
+        // md:border-1 md:border-green-500 md:w-[80%] 
        "
       >
         <motion.main

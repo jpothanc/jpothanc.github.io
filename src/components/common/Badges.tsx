@@ -30,7 +30,7 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
   return (
     <>
       <div
-        className="card"
+        className="card "
         style={{
           background: getThemeColor(
             ThemeConstants.themeDark,
@@ -39,7 +39,7 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
         }}
       >
         <section
-          className="intro"
+          className="intro  xl:text-xl"
           style={{
             color: getThemeColor(
               ThemeConstants.themeDark,
@@ -61,11 +61,11 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
           >
             {getIcon(icon)} {title}
           </motion.h3>
-          <p className="basic-text">{content}</p>
+          <p className="basic-text ">{content}</p>
           {skills.map((skill, index) => {
             return (
               <motion.button
-                className="skills-btn"
+                className="skills-btn xl:text-md"
                 style={{
                   background: "transparent",
                   //borderRadius: "400px",

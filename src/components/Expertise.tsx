@@ -22,7 +22,9 @@ const ListContent = ({ title, items, icon }: Prop) => {
         }}
       >
         <section
-          className="list-text"
+          className="list-text
+          xl:text-xl
+          "
           style={{
             color: getThemeColor(
               ThemeConstants.themeDark,
@@ -49,13 +51,14 @@ const ListContent = ({ title, items, icon }: Prop) => {
             {items.map((item, index) => {
               return (
                 <motion.li
-                  className="basic-text"
+                  className="basic-text
+                  "
                   key={index}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <p className="basic-text">{item}</p>
+                  <p className="basic-text xl:text-md">{item}</p>
                 </motion.li>
               );
             })}

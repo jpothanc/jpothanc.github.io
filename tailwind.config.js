@@ -4,6 +4,9 @@ export default {
   darkMode: "class", // or 'media' for OS-level preferences
   theme: {
     extend: {
+      fontSize: {
+        md: "16px",
+      },
       colors: {
         theme: {
           dark: {

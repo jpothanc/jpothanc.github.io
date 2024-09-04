@@ -23,7 +23,7 @@ const Links = ({ title, content, icon, links }: Props) => {
           ),
         }}
       >
-        <section className="intro">
+        <section className="intro xl:text-xl">
           <motion.h3
             className="flex flex-col gap-1 font-semibold"
             variants={shakeVariants}
@@ -47,7 +47,7 @@ const Links = ({ title, content, icon, links }: Props) => {
                   <Tooltip text={link.description}>
                     <a
                       href={link.url}
-                      className="my-link"
+                      className="my-link xl:text-md"
                       style={{
                         color: getThemeColor(
                           ThemeConstants.themeDark,
