@@ -35,7 +35,7 @@ const NavBar = () => {
         </div>
         <div className="flex justify-center md:justify-end w-full md:w-[90%] xl:w-[40%] xl:min-w-[1200px] bg-black border border-theme-dark-primary mx-auto ">
           <div className="flex justify-end items-center px-1 pt-1">
-            <Menu color={ThemeConstants.barMenuColor} size="24px" />
+            <Menu color={ThemeConstants.barMenuColor} size="28px" />
           </div>
         </div>
       </nav>

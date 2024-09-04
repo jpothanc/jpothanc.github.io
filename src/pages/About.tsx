@@ -60,7 +60,7 @@ const About = () => {
         <div className="flex justify-center items-center mt-3 md:mt-1 md:h-[85vh]">
           <div>
             <motion.div
-              className="flex flex-col gap-6 md:gap-5 md:flex-row"
+              className="flex flex-col gap-6 md:gap-5 md:flex-row xl:gap-x-16"
               style={{
                 background: getThemeColor(
                   ThemeConstants.themeDark,
@@ -88,7 +88,7 @@ const About = () => {
                   <span
                     className="flex justify-center
                     bg-gradient-to-b from-white/80 to-slate-300
-                    text-black text-2xl md:text-3xl p-1"
+                    text-black text-2xl md:text-3xl  xl:text-4xl p-1"
                   >
                     {config.portfolio.firstname}
                   </span>
@@ -101,7 +101,7 @@ const About = () => {
                   </span>
                 </motion.div>
 
-                <div className="about__moto text-xs md:text-lg mb-5 md:mb-2">
+                <div className="about__moto text-xs md:text-lg xl:text-xl mb-5 md:mb-2">
                   <p className="u-white">&lt;</p>
                   <p className="u-red">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( i =&gt; &#123;
