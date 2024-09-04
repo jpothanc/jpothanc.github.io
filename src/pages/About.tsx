@@ -57,7 +57,7 @@ const About = () => {
             color={primaryColor}
           />
         </div>
-        <div className="flex justify-center items-center mt-3 md:mt-1 md:h-[85vh]">
+        <div className="flex justify-center items-center mt-3 md:mt-1 md:h-[100vh]">
           <div>
             <motion.div
               className="flex flex-col gap-6 md:gap-5 md:flex-row xl:gap-x-16"
