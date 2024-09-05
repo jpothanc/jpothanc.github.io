@@ -61,15 +61,17 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
           >
             {getIcon(icon)} {title}
           </motion.h3>
-          <p className="basic-text ">{content}</p>
+          <p className="basic-text">{content}</p>
           {skills.map((skill, index) => {
             return (
               <motion.button
-                className="skills-btn xl:text-md"
+                className="skills-btn xl:text-md rounded-md m-1 p-1
+                shadow-md hover:shadow-lg hover:shadow-theme-dark-primary transition-all duration-300
+                hover:underline
+                 "
                 style={{
-                  background: "transparent",
                   //borderRadius: "400px",
-                  border: "0px solid #FFEBEE",
+                
                   // fontWeight: 500,
                   color: getColor(false),
                 }}

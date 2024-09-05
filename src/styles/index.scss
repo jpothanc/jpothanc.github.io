@@ -175,7 +175,6 @@ body {
   width: 100%;
   flex-direction: column;
   transition: all 03s;
-  
 }
 
 .card {
@@ -366,7 +365,6 @@ body {
   font-weight: 400;
   margin-top: 18px;
   line-height: 1.5;
-  
 }
 .about__left__caption {
   opacity: 0.9;
@@ -402,18 +400,16 @@ body {
 
 /* BUTTON */
 .skills-btn {
-  background-color: #fff;
   font-size: 12px;
   font-weight: 400;
   color: #000;
   letter-spacing: 0.5px;
-  padding: 2px 2px;
   margin-right: 3px;
   margin-bottom: 3px;
-  transition: all 0.3s;
-  &:hover {
-    filter: brightness(0.8);
-  }
+  // transition: all 0.3s;
+  // &:hover {
+  //   filter: brightness(0.8);
+  // }
 }
 
 .btn {
