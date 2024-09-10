@@ -7,8 +7,10 @@ const NavBar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 initial border-spacing-4">
-        <div className=" hidden lg:block w-full md:w-[90%] xl:w-[40%] xl:min-w-[1200px]  p-1 mx-auto opacity-95
-         bg-slate-100 hover:bg-blue-100 transition-all duration-300">
+        <div
+          className="w-full md:w-[90%] xl:w-[40%] xl:min-w-[1200px]  p-1 mx-auto opacity-95
+         bg-slate-100 hover:bg-blue-100 transition-all duration-300"
+        >
           <div className="flex justify-center gap-1 md:justify-between items-center flex-col md:flex-row ">
             <motion.a
               href="#"
