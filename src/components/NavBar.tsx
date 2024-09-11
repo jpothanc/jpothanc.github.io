@@ -18,9 +18,9 @@ const NavBar = () => {
               alt="logo"
               className="bg-cover rounded-full  w-[50px]"
             />
-            <span className="font-semibold text-xs text-white">
+            {/* <span className="font-semibold text-xs text-white">
               {config.portfolio.firstname}&nbsp;{config.portfolio.secondname}
-            </span>
+            </span> */}
           </div>
 
           <div className="justify-self-end   px-1 pt-1 ">
