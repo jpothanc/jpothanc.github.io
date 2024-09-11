@@ -23,15 +23,19 @@ $summary-card-text-color: #bcc6c4;
   min-width: 300px;
   min-height: 300px;
   font-size: smaller;
-  background-color: rgb(37, 38, 38);
-  border: 1px solid $primary-color;
+  background-color: $primary-back-color;
   transition: all 0.4s;
+
   &:hover {
     transform: scale(1.1);
   }
-  //   .jp_sc_card__body {
-  //     border: 1px solid #004d40;
-  //   }
+  .jp_sc_card__body {
+    border: 0.2px solid $primary-color;
+    transition: all 0.4s;
+    &:hover {
+      border: 0.2px solid $menu-hover-color;
+    }
+  }
 }
 
 .jp_sc_card__body__text {
@@ -54,6 +58,7 @@ $summary-card-text-color: #bcc6c4;
 .jp_sc_card__footer .jp_sc_card__footer__icon img {
   width: auto !important;
   height: auto !important;
+
   // border: #bcc6c4 solid 1px;
   padding: 1px;
   max-width: 90% !important;

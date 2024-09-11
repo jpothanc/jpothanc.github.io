@@ -9,17 +9,9 @@ type Props = {
 const Intro = ({ text }: Props) => {
   return (
     <>
-      <header
-        className="card"
-        style={{
-          background: getThemeColor(
-            ThemeConstants.themeDark,
-            "contentBackground"
-          ),
-        }}
-      >
+      <header className="card dark:bg-theme-dark-contentbg">
         <section
-          className="basic-text px-4 xl:text-md"
+          className="basic-text leading-relaxed  px-4 xl:text-md"
           style={{
             color: getThemeColor(
               ThemeConstants.themeDark,
@@ -38,9 +30,7 @@ const Intro = ({ text }: Props) => {
               Jessish,{" "}
             </motion.span>
           </span>
-          <span className="basic_text">
-          {text}
-          </span>
+          <span className="basic_text">{text}</span>
         </section>
       </header>
     </>

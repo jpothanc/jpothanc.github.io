@@ -12,28 +12,14 @@ type Prop = {
 const ListContent = ({ title, items, icon }: Prop) => {
   return (
     <>
-      <div
-        className="card"
-        style={{
-          background: getThemeColor(
-            ThemeConstants.themeDark,
-            ThemeConstants.contentBackground
-          ),
-        }}
-      >
+      <div className="card dark:bg-theme-dark-contentbg">
         <section
           className="list-text
-          xl:text-lg
+          xl:text-md
           "
-          style={{
-            color: getThemeColor(
-              ThemeConstants.themeDark,
-              ThemeConstants.contentTextColor
-            ),
-          }}
         >
           <motion.h3
-            className="flex flex-col gap-1 font-semibold"
+            className="flex flex-col gap-1"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"

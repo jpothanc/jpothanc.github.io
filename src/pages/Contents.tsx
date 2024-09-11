@@ -39,6 +39,7 @@ const Contents = () => {
         mx-auto mt-5 
         xl:w-[40%] xl:min-w-[1200px]
         md:w-[90%]
+        bg-theme-dark-primary/25
        "
       >
         <motion.main

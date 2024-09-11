@@ -32,7 +32,7 @@ ul {
 
 /*BASE STYLES*/
 body {
-  background-color: rgba(20, 20, 20, 1);
+  background-color: $primary-back-color;
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -143,14 +143,14 @@ body {
 
 .main {
   grid-area: main;
-  border: 1px solid rgb(143, 137, 137);
+  //border: 1px solid rgb(143, 137, 137);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1px;
   padding: 1px;
   border: none;
   margin: auto;
-  border: $primary-color solid 1px;
+ // border: $primary-color solid 1px;
   grid-template-areas:
     "c1 c1 c1"
     "c2 c2 c3"
@@ -364,7 +364,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   margin-top: 18px;
-  line-height: 1.5;
 }
 .about__left__caption {
   opacity: 0.9;

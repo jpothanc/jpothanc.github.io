@@ -17,17 +17,9 @@ type timelineProps = {
 const Experiance = ({ timeline }: timelineProps) => {
   return (
     <>
-      <div
-        className="card flex flex-col md:flex-row"
-        style={{
-          background: getThemeColor(
-            ThemeConstants.themeDark,
-            "contentBackground"
-          ),
-        }}
-      >
+      <div className="card flex flex-col md:flex-row dark:bg-theme-dark-contentbg">
         <motion.h3
-          className="flex flex-col gap-1 font-semibold xl:text-lg"
+          className="flex flex-col gap-1 font-semibold xl:text-md"
           style={{
             padding: "15px 40px",
             color: getThemeColor(ThemeConstants.themeDark, "cardTitleColor"),
@@ -39,16 +31,8 @@ const Experiance = ({ timeline }: timelineProps) => {
           <FaCode size={28} />
           Experiance
         </motion.h3>
-        <motion.header className="careerContent">
-          <section
-            className="intro"
-            style={{
-              color: getThemeColor(
-                ThemeConstants.themeDark,
-                ThemeConstants.contentTextColor
-              ),
-            }}
-          >
+        <motion.header className="careerContent dark:bg-theme-dark-contentbg">
+          <section className="intro">
             <motion.section
               id="experience"
               className="basic-text xl:text-md"

@@ -14,18 +14,10 @@ type Props = {
 const Links = ({ title, content, icon, links }: Props) => {
   return (
     <>
-      <div
-        className="card"
-        style={{
-          background: getThemeColor(
-            ThemeConstants.themeDark,
-            "contentBackground"
-          ),
-        }}
-      >
+      <div className="card dark:bg-theme-dark-contentbg">
         <section className="intro xl:text-md">
           <motion.h3
-            className="flex flex-col gap-1 font-semibold"
+            className="flex flex-col gap-1 "
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"

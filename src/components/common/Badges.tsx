@@ -29,17 +29,9 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
 
   return (
     <>
-      <div
-        className="card "
-        style={{
-          background: getThemeColor(
-            ThemeConstants.themeDark,
-            ThemeConstants.contentBackground
-          ),
-        }}
-      >
+      <div className="card dark:bg-theme-dark-contentbg">
         <section
-          className="intro  xl:text-lg"
+          className="intro  xl:text-md"
           style={{
             color: getThemeColor(
               ThemeConstants.themeDark,
@@ -48,7 +40,7 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
           }}
         >
           <motion.h3
-            className="flex flex-col gap-1 font-semibold"
+            className="flex flex-col gap-1 "
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"
@@ -67,11 +59,10 @@ const Badges = ({ title, icon, content, items: skills, color }: badgeProps) => {
               <motion.button
                 className="skills-btn xl:text-md rounded-md m-1 p-1
                 shadow-md hover:shadow-lg hover:shadow-theme-dark-primary transition-all duration-300
-                hover:underline
                  "
                 style={{
                   //borderRadius: "400px",
-                
+
                   // fontWeight: 500,
                   color: getColor(false),
                 }}

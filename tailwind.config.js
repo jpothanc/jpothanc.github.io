@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        md: "16px",
+        md: "14px",
       },
       colors: {
         theme: {
@@ -13,7 +13,12 @@ export default {
             primary: "#243a65",
             content: "#212121",
             hover: "text-amber-500",
-            background: "rgba(20, 20, 20, 1)",
+            background: "#09090b",
+            contentbg: "#0a0a0a",
+          },
+          backgroundImage: {
+            "dark-content-gradient":
+              "linear-gradient(180deg, #212121 0%, #0a0a0a 100%)",
           },
         },
       },

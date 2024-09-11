@@ -13,15 +13,7 @@ type Props = {
 const ProjectsWork = ({ title, content, icon, items }: Props) => {
   return (
     <>
-      <div
-        className="card"
-        style={{
-          background: getThemeColor(
-            ThemeConstants.themeDark,
-            ThemeConstants.contentBackground
-          ),
-        }}
-      >
+      <div className="card dark:bg-theme-dark-contentbg">
         <section
           className="intro"
           style={{
@@ -32,7 +24,7 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
           }}
         >
           <motion.h3
-            className="flex flex-col gap-1 font-semibold xl:text-lg"
+            className="flex flex-col gap-1 xl:text-md"
             variants={shakeVariants}
             initial="initial"
             whileHover="animate"

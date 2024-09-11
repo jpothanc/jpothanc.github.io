@@ -42,9 +42,9 @@ const About = () => {
 
   return (
     <>
-      <div className="App">
+      <div className="App ">
         <div
-          className="brand-logo hover:brightness-90 transition-all duration-300"
+          className="brand-logo hover:brightness-90 transition-all duration-300 "
           onClick={handleOpenModal}
         >
           <div className="brand-logo__text">
@@ -59,22 +59,16 @@ const About = () => {
         </div>
         <div className="flex justify-center items-center mt-3 xl:mt-1 h-[85vh]">
           <div>
-            <motion.div
-              className="flex flex-col gap-6 md:gap-5 md:flex-row xl:gap-x-16"
-              style={{
-                background: getThemeColor(
-                  ThemeConstants.themeDark,
-                  ThemeConstants.bodyBackground
-                ),
-              }}
-            >
+            <motion.div className="flex flex-col gap-6 md:gap-5 md:flex-row xl:gap-x-32">
               <motion.div
-                className="flex flex-col"
+                className="flex flex-col rounded-lg"
                 variants={fmScaleAboutText}
                 initial="initial"
                 whileHover="animate"
               >
                 <motion.div
+                  className="flex flex-col gap-2 bg-gradient-to-r from-theme-dark-primary to-sky-950
+                  rounded-lg p-2 md:p-3 xl:p-4 "
                   variants={fmScaleAboutText}
                   initial="initial"
                   whileHover="animate"
@@ -87,15 +81,16 @@ const About = () => {
                 >
                   <span
                     className="flex justify-center
-                    bg-gradient-to-b from-white/80 to-slate-300
-                    text-black text-2xl md:text-3xl  xl:text-4xl p-1"
+                     text-2xl md:text-3xl xl:text-4xl
+                     text-white/80"
                   >
+                    {}
                     {config.portfolio.firstname}
                   </span>
                   <span
                     className="flex justify-center 
-                    bg-gradient-to-t from-theme-dark-primary to-slate-800
-                    text-2xl md:text-3xl p-1"
+                    text-xl md:text-2xl xl:text-3xl
+                    text-white/80"
                   >
                     {config.portfolio.secondname}
                   </span>
