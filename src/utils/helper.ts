@@ -1,6 +1,6 @@
 import React from "react";
 import { IconType } from "react-icons";
-import { FaGraduationCap } from "react-icons/fa6";
+import { FaGraduationCap, FaJava } from "react-icons/fa6";
 import { CgWorkAlt } from "react-icons/cg";
 import config from "../config/config.json";
 import { ThemeConstants } from "../constants";
@@ -64,6 +64,9 @@ export function getIconByName(name: string): any | undefined {
     case "CgWorkAlt":
       return getIcon(CgWorkAlt);
       break;
+    case "FaJava ":
+      return getIcon(FaJava);
+      break;
 
     default:
       break;
@@ -100,6 +103,11 @@ export type personalProject = {
   readme: string;
   repo: string;
   technology: string;
+};
+
+export type iconBadge = {
+  name: string;
+  icon: string;
 };
 
 export function getThemeColor(theme: string, component: string): string {
@@ -156,7 +164,10 @@ export function getThemeColor(theme: string, component: string): string {
   return "";
 }
 
-export async function fetchData(url: string, abortController : AbortController): Promise<any> {
+export async function fetchData(
+  url: string,
+  abortController: AbortController
+): Promise<any> {
   const { signal } = abortController;
   try {
     const response = await fetch(url);

@@ -97,6 +97,85 @@
       "GraphQL",
       "Python"
     ],
+
+    "techSkills": [
+      {
+        "icon": "logos:c-sharp",
+        "name": "C#"
+      },
+      {
+        "icon": "skill-icons:dotnet",
+        "name": ".NET 6.0"
+      },
+      {
+        "icon": "devicon:java",
+        "name": "Java"
+      },
+      {
+        "icon": "logos:spring-icon",
+        "name": "SpringBoot"
+      },
+      {
+        "icon": "skill-icons:javascript",
+        "name": "JavaScript"
+      },
+      {
+        "icon": "vscode-icons:file-type-typescript",
+        "name": "TypeScript"
+      },
+      {
+        "icon": "vscode-icons:file-type-python",
+        "name": "Python"
+      },
+      {
+        "icon": "skill-icons:react-light",
+        "name": "React"
+      },
+      {
+        "icon": "teenyicons:nextjs-outline",
+        "name": "NextJs"
+      },
+      {
+        "icon": "vscode-icons:file-type-svelte",
+        "name": "Svelte"
+      },
+      {
+        "icon": "skill-icons:reactivex-light",
+        "name": "Reactive Programming"
+      },
+      {
+        "icon": "devicon:tailwindcss",
+        "name": "Tailwind CSS"
+      },
+      {
+        "icon": "vscode-icons:file-type-graphql",
+        "name": "GraphQL"
+      },
+      {
+        "icon": "logos:cucumber",
+        "name": "Cucumber"
+      },
+      {
+        "icon": "devicon:oracle",
+        "name": "Oracle"
+      },
+      {
+        "icon": "devicon:postgresql",
+        "name": "PostgreSQL"
+      },
+      {
+        "icon": "bi:database-add",
+        "name": "Sybase"
+      },
+      {
+        "icon": "devicon:mongodb",
+        "name": "MongoDB"
+      },
+      {
+        "icon": "devicon:redis",
+        "name": "Redis"
+      }
+    ],
     "skills": ["Investment Banking", "Equities", "Order Management"],
     "projects": [
       {
@@ -251,24 +330,72 @@
     ],
 
     "DevelopmentPractices": [
-      "DevOps",
-      "Agile/SCRUM",
-      "TDD/BDD",
-      "CI/CD",
-      "Jenkins",
-      "Git",
-      "NUnit",
-      "xUnit",
-      "Specflow",
-      "JUnit",
-      "Cucumber"
+      {
+        "name": "DevOps",
+        "icon": "devicon:azuredevops"
+      },
+      {
+        "name": "Agile/SCRUM",
+        "icon": "carbon:development"
+      },
+      {
+        "name": "TDD/BDD",
+        "icon": "arcticons:deep-testing"
+      },
+      {
+        "name": "CI/CD",
+        "icon": "grommet-icons:deploy"
+      },
+      {
+        "name": "Jenkins",
+        "icon": "devicon:jenkins"
+      },
+      {
+        "name": "Git",
+        "icon": "devicon:git"
+      },
+      {
+        "name": "NUnit",
+        "icon": "devicon:nunit"
+      },
+      {
+        "name": "xUnit",
+        "icon": "guidance:remove-x-cross"
+      },
+      {
+        "name": "Specflow",
+        "icon": "tabler:brand-cucumber"
+      },
+      {
+        "name": "JUnit",
+        "icon": "devicon:junit"
+      },
+      {
+        "name": "Cucumber",
+        "icon": "vscode-icons:file-type-cucumber"
+      }
     ],
     "achievements": [
-      "Investment Banking",
-      "Equities",
-      "Order Management",
-      "Consistent Top Performer",
-      "Hackathon Winner"
+      {
+        "name": "Investment Banking",
+        "icon": "streamline:investment-selection"
+      },
+      {
+        "name": "Equities",
+        "icon": "streamline:stock-solid"
+      },
+      {
+        "name": "Front Office Systems",
+        "icon": "streamline:screen-2-solid"
+      },
+      {
+        "name": "Consistent Top Performer",
+        "icon": "eos-icons:performance"
+      },
+      {
+        "name": "Hackathon Winner",
+        "icon": "mdi:human-greeting-variant"
+      }
     ],
     "articles1": [
       "React-Inversify",

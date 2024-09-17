@@ -22,6 +22,7 @@ import { useRef } from "react";
 import NavBar from "../components/NavBar";
 import { ThemeConstants } from "../constants";
 import { getThemeColor } from "../utils/helper";
+import IconBadges from "../components/common/IconBadges";
 const Contents = () => {
   const ref = useRef<HTMLDivElement>(null);
   // const { scrollYProgress } = useScroll({
@@ -58,37 +59,29 @@ const Contents = () => {
             icon={FaSkiing}
           ></ListContent>
 
-          <Badges
+          <IconBadges
             title="Technology"
             content=""
-            items={config.portfolio.technology}
-            color={getThemeColor(
-              ThemeConstants.themeDark,
-              ThemeConstants.badgeTechColor
-            )}
+            badges={config.portfolio.techSkills}
             icon={FaStackOverflow}
-          ></Badges>
+          ></IconBadges>
 
-          <Badges
+          <IconBadges
             title="Development Practices & Testing"
             content=""
-            items={config.portfolio.DevelopmentPractices}
-            color={getThemeColor(
-              ThemeConstants.themeDark,
-              ThemeConstants.badgeDevPracticeColor
-            )}
+            badges={config.portfolio.DevelopmentPractices}
             icon={FaHands}
-          ></Badges>
-          <Badges
+          ></IconBadges>
+          <IconBadges
             title="Skills & Achievements"
             content=""
-            items={config.portfolio.achievements}
-            color={getThemeColor(
-              ThemeConstants.themeDark,
-              ThemeConstants.badgeSkillsColor
-            )}
+            badges={config.portfolio.achievements}
+            // color={getThemeColor(
+            //   ThemeConstants.themeDark,
+            //   ThemeConstants.badgeSkillsColor
+            // )}
             icon={FaWrench}
-          ></Badges>
+          ></IconBadges>
           <Links
             title="Education"
             content="Completed BE in CS from SEUA [Armenia - Yerevan (2000)]"
