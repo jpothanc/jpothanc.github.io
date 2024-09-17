@@ -74,7 +74,7 @@ const About = () => {
                 >
                   <div
                     className="flex flex-row bg-white/5 min-h-4 w-full justify-between items-center pr-1
-                  text-white/70 border border-white/10 min-w-[450px] "
+                  text-white/70 border border-white/10  "
                   >
                     <span className="pl-1">
                       <Icon
