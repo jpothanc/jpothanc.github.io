@@ -68,12 +68,12 @@ const About = () => {
                 whileHover="animate"
               >
                 <div
-                  className="md:text-lg xl:text-xl mb-5
+                  className="mb-5
                 border border-white/10  "
                 >
                   <div
                     className="flex flex-row bg-white/5 min-h-4 w-full justify-between items-center pr-1
-                  text-white/80 border border-white/10"
+                  text-white/80 border border-white/10 min-w-[450px] "
                   >
                     <span className="pl-1">
                       <Icon
@@ -86,9 +86,10 @@ const About = () => {
                     text-xs md:text-sm text-white/35 w-[50%]
                     hover:bg-white/60 hover:text-black  transition-all duration-300
                     flex flex-row gap-2 items-center justify-center
+                    
                     "
                     >
-                      <span className="pl-1">
+                      <span className="pX-1">
                         <Icon
                           icon="quill:search"
                           style={{ fontSize: "1.1rem" }}
@@ -106,25 +107,45 @@ const About = () => {
                     <Menu color={ThemeConstants.aboutMenuColor} size="22px" />
                   </div>
                   <div className="py-5 md:py-10 px-8">
-                    <div className="pl-2 mb-2">
-                      <span className="text-blue-700 font-bold">var</span>
-                      <span className="text-blue-500 py-2 font-semibold">
+                    <div className="mb-2">
+                      <span className="text-blue-700 text-xs md:text-md font-bold">
+                        var
+                      </span>
+                      <span className="text-blue-500 text-xs md:text-md py-2">
                         {" "}
                         jessishPothancheri
                       </span>
                       <span className="text-white"> = </span>
                     </div>
 
-                    <p className="u-red">Dreams.Create( i =&gt; &#123;</p>
-                    <p className="u-torquise">
-                      &nbsp; i.Code().WithPrecision();
+                    <p className="text-center text-red-400 text-xs md:text-md ">
+                      Dreams.Create( i =&gt; &#123;
                     </p>
-                    <p className="u-blue">i.Inspire().WithPassion();</p>
-                    <p className="u-green">
-                      i.Innovate.WithPurpose(); &nbsp;&nbsp;
+                    <p className="text-center text-teal-400 text-xs md:text-md pt-2 pl-8 ">
+                      i.Code().WithPrecision();
                     </p>
-                    <span className="u-bracket">&#125;)</span>
+                    <p className="text-center text-blue-400 text-xs md:text-md pt-2 pl-8">
+                      i.Inspire().WithPassion();
+                    </p>
+                    <p className="text-center text-orange-300 text-xs md:text-md pt-2 pl-8">
+                      i.Innovate.WithPurpose();
+                    </p>
+                    <span className="text-center text-red-400 text-xs md:text-md">
+                      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &#125;)
+                    </span>
                     <span className="text-white ">;</span>
+                  </div>
+                  <div
+                    className="flex justify-center items-center text-[10px]
+                  text-zinc-400  border border-white/10 p-1
+                 hover:bg-white/60 hover:text-black  transition-all duration-300"
+                  >
+                    <p>
+                      &copy; 2023 {config.portfolio.firstname}&nbsp;
+                      {config.portfolio.secondname}. All Rights Reserved. |
+                      Dream, Code, Inspire and Innovate.
+                    </p>
                   </div>
                 </div>
               </motion.div>
