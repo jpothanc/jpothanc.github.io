@@ -10,6 +10,7 @@ import { CiMenuKebab } from "react-icons/ci";
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Counter from "../components/Counter";
 
 const About = () => {
   const [readmeContent, setReadmeContent] = useState("");
@@ -73,7 +74,7 @@ const About = () => {
                 >
                   <div
                     className="flex flex-row bg-white/5 min-h-4 w-full justify-between items-center pr-1
-                  text-white/80 border border-white/10 min-w-[450px] "
+                  text-white/70 border border-white/10 min-w-[450px] "
                   >
                     <span className="pl-1">
                       <Icon
@@ -135,11 +136,15 @@ const About = () => {
                       &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &#125;)
                     </span>
                     <span className="text-white ">;</span>
+
+                    <div className="flex justify-end items-center mt-5">
+                      <Counter />
+                    </div>
                   </div>
                   <div
                     className="flex justify-center items-center text-[10px]
-                  text-zinc-400  border border-white/10 p-1
-                 hover:bg-white/60 hover:text-black  transition-all duration-300"
+                  text-zinc-400  border border-white/10 p-1 
+                 hover:bg-white/70 hover:text-black hover-font-bold transition-all duration-300"
                   >
                     <p>
                       &copy; 2023 {config.portfolio.firstname}&nbsp;
@@ -174,7 +179,6 @@ const About = () => {
             </motion.div>
           </div>
 
-          <Footer />
           <WindowMd
             title=""
             content={readmeContent}

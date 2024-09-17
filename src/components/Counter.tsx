@@ -17,7 +17,14 @@ const Counter = () => {
     return () => {};
   }, []);
 
-  return <div className="btn-counter hover:brightness-75 transition-all duration-300">Visites : {counter}</div>;
+  return (
+    <div
+      className="text-black font-bold text-xs border border-black bg-white/70
+   pt-1 pl-2 pr-2 pb-1  hover:brightness-75 transition-all duration-300 rounded-lg"
+    >
+      Visites : {counter}
+    </div>
+  );
 };
 
 export default Counter;
