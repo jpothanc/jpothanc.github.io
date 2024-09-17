@@ -49,14 +49,14 @@ const Links = ({ title, content, icon, links }: Props) => {
                 >
                   <div className="flex flex-row gap-1">
                     {link.icon ? (
-                      <Icon icon={link?.icon} style={{ fontSize: "1.5rem" }} />
+                      <Icon icon={link?.icon} style={{ fontSize: "1.4rem" }} />
                     ) : (
-                      <Avatar name={link.name} size="1.5rem" round={true} />
+                      <Avatar name={link.name} size="1.4rem" round={true} />
                     )}
                     <Tooltip text={link.description}>
                       <a
                         href={link.url}
-                        className="my-link text-sm xl:text-md"
+                        className="underline text-sm xl:text-md"
                         style={{
                           color: getThemeColor(
                             ThemeConstants.themeDark,
