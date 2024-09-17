@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import Counter from "../Counter";
-import { primaryColor, shakeVariants, ThemeConstants } from "../../constants";
+import { shakeVariants, ThemeConstants } from "../../constants";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Menu from "../ToolBar";
-import Avatar from "react-avatar";
 import AboutIconMenu from "./AboutIconMenu";
 
 type AboutCodeEditorProps = {
