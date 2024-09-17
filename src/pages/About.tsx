@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import Menu from "../components/ToolBar";
-import {
-  ThemeConstants,
-  primaryColor,
-  shakeVariants,
-} from "../constants";
+import { ThemeConstants, primaryColor, shakeVariants } from "../constants";
 
 import Footer from "../components/common/Footer";
 import config from "../config/config.json";
@@ -85,6 +81,15 @@ const About = () => {
                         style={{ fontSize: "1.1rem" }}
                       />
                     </span>
+                    <div
+                      className="border border-white/10 bg-white/10 m-1 rounded-md 
+                    text-center
+                    text-xs md:text-sm text-white/35 w-[50%]
+                    hover:bg-white/60 hover:text-black  transition-all duration-300
+                    "
+                    >
+                      portfolio
+                    </div>
 
                     <span className="text-white/50 hover:text-white">x</span>
                   </div>
