@@ -20,7 +20,7 @@ const Counter = () => {
   return (
     <div
       className="text-black font-bold text-xs border border-black bg-white/70
-   pt-1 pl-2 pr-2 pb-1  hover:brightness-75 transition-all duration-300 rounded-lg"
+   pt-1 pl-2 pr-2 pb-1  hover:bg-teal-500  transition-all duration-300 rounded-lg"
     >
       Visites : {counter}
     </div>
