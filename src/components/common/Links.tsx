@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { ThemeConstants, shakeVariants } from "../../constants";
-import { getIcon, getThemeColor, link } from "../../utils/helper";
+import { badgeVariants, getIcon, getThemeColor, link } from "../../utils/helper";
 import { IconType } from "react-icons";
 import Tooltip from "./Tooltip";
+import Avatar from "react-avatar";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 type Props = {
   title: string;
@@ -32,26 +34,42 @@ const Links = ({ title, content, icon, links }: Props) => {
             {title}
           </motion.h3>
           <p className="basic-text">{content}</p>
-          <ul>
+          <ul className="flex flex-col gap-2"
+          >
             {links.map((link, index) => {
               return (
-                <li key={index}>
-                  <Tooltip text={link.description}>
-                    <a
-                      href={link.url}
-                      className="my-link xl:text-md"
-                      style={{
-                        color: getThemeColor(
-                          ThemeConstants.themeDark,
-                          ThemeConstants.badgeLinksColor
-                        ),
-                      }}
-                      target="_blank"
-                    >
-                      {link.name}
-                    </a>
-                  </Tooltip>
-                </li>
+                <motion.li key={index}
+                  variants={badgeVariants}
+                initial="initial"
+                whileInView="animate"
+                custom={index}
+                viewport={{
+                  once: true,
+                }}
+                >
+                  <div className="flex flex-row gap-1">
+                    {link.icon ? (
+                      <Icon icon={link?.icon} style={{ fontSize: "1.5rem" }} />
+                    ) : (
+                      <Avatar name={link.name} size="1.5rem" round={true} />
+                    )}
+                    <Tooltip text={link.description}>
+                      <a
+                        href={link.url}
+                        className="my-link text-sm xl:text-md"
+                        style={{
+                          color: getThemeColor(
+                            ThemeConstants.themeDark,
+                            ThemeConstants.badgeLinksColor
+                          ),
+                        }}
+                        target="_blank"
+                      >
+                        {link.name}
+                      </a>
+                    </Tooltip>
+                  </div>
+                </motion.li>
               );
             })}
           </ul>

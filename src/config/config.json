@@ -408,61 +408,73 @@
       {
         "name": "React-Inversify",
         "description": "Dependency injection in React using inversify.",
+        "icon": "devicon:react",
         "url": "https://medium.com/@kaljessy/react-dependency-injection-using-inversify-b4e1d63abc72"
       },
       {
         "name": "TailwindCSS",
         "description": "TailwindCSS: A Love story",
+        "icon": "devicon:tailwindcss",
         "url": "https://medium.com/p/22681317ee84"
       },
       {
         "name": "React-Rxjs",
         "description": "How to use Reactive Extensions in React.",
+        "icon": "devicon:react",
         "url": "https://medium.com/@kaljessy/react-state-management-using-rxjs-58a4d523d611"
       },
       {
         "name": "K6 Load Testing",
         "description": "Performance Testing using Grafana k6",
+        "icon": "devicon:k6",
         "url": "https://dev.to/jpothanc/performance-testing-using-grafana-k6-3pg9"
       },
       {
         "name": "Publish React lib to npm",
         "description": "Publish React library to npm.",
+        "icon": "devicon:react",
         "url": "https://medium.com/@kaljessy/publish-your-react-library-to-npm-using-vite-136dc81e368d"
       },
       {
         "name": "Creating and Uploading Python Libraries",
         "description": "Creating and Uploading Python Libraries",
+        "icon": "devicon:python",
         "url": "https://medium.com/@kaljessy/building-and-sharing-a-guide-to-creating-and-uploading-python-libraries-56998a001a2c"
       },
       {
         "name": "Microservice in Python",
         "description": "Discovering Python Through Microservice Development",
+        "icon": "devicon:python",
         "url": "https://medium.com/@kaljessy/discovering-python-through-microservice-development-cda7b8f97848"
       },
       {
         "name": "Desktop Apps using Tauri",
         "description": "Build Web Desktop Apps using Tauri.",
+        "icon": "mdi:language-rust",
         "url": "https://medium.com/@kaljessy/build-web-desktop-apps-using-tauri-6fe12586016a"
       },
       {
         "name": "Desktop Apps using Electron",
         "description": "Build Web Desktop Apps using Electron.",
+        "icon": "devicon:electron",
         "url": "https://medium.com/@kaljessy/build-web-desktop-apps-using-electron-a4c6e226290c"
       },
       {
         "name": "Chating with OpenAI",
         "description": "Chating with OpenAI using Python.",
+        "icon": "devicon:python",
         "url": "https://medium.com/@kaljessy/chating-with-openai-using-python-3ae5a14b4501"
       },
       {
         "name": "AI Assitant using RAG",
         "description": "Personal AI Assitant using RAG and ChromaDB.",
+        "icon": "devicon:python",
         "url": "https://medium.com/@kaljessy/personal-ai-assitant-using-rag-and-chromadb-6fd5c259da41"
       },
       {
         "name": "Easier and Faster Web Applications Using Svelte",
         "description": "A attempt to promote Svelte, a modern web framework.",
+        "icon": "devicon:svelte",
         "url": "https://medium.com/@kaljessy/svelt-felt-better-ff7ce0f81977"
       }
     ],

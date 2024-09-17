@@ -85,6 +85,7 @@ export type experiance = {
 
 export type link = {
   name: string;
+  icon?: string;
   description: string;
   url: string;
 };
