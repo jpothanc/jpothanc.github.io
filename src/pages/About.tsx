@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Menu from "../components/ToolBar";
 import { ThemeConstants, primaryColor, shakeVariants } from "../constants";
 
-
 import config from "../config/config.json";
 import Avatar from "react-avatar";
 import { CiMenuKebab } from "react-icons/ci";
@@ -44,7 +43,7 @@ const About = () => {
 
   return (
     <>
-      <div className="App ">
+      <div className="App">
         <div
           className="brand-logo hover:brightness-90 transition-all duration-300 "
           onClick={handleOpenModal}
@@ -142,7 +141,7 @@ const About = () => {
                     </div>
                   </div>
                   <div
-                    className="flex justify-center items-center text-[10px]
+                    className="flex justify-center items-center text-[9px] md:text-[10px]
                   text-zinc-400  border border-white/10 p-1 
                  hover:bg-white/70 hover:text-black hover-font-bold transition-all duration-300"
                   >
