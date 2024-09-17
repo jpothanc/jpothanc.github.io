@@ -73,7 +73,7 @@ const About = () => {
                 >
                   <div
                     className="flex flex-row bg-white/5 min-h-4 w-full justify-between items-center pr-1
-                  text-white/70 border border-white/10  "
+                  text-white/70 border border-white/10 min-w-[400px] md:min-w-[500px] "
                   >
                     <span className="pl-1">
                       <Icon
@@ -146,9 +146,8 @@ const About = () => {
                  hover:bg-white/70 hover:text-black hover-font-bold transition-all duration-300"
                   >
                     <p>
-                      &copy; 2023 {config.portfolio.firstname}&nbsp;
-                      {config.portfolio.secondname}. All Rights Reserved. |
-                      Dream, Code, Inspire and Innovate.
+                      &copy; 2023. All Rights Reserved. | Dream, Code, Inspire
+                      and Innovate.
                     </p>
                   </div>
                 </div>
