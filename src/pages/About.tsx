@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import Menu from "../components/ToolBar";
-import { ThemeConstants, fmScaleAboutText, primaryColor } from "../constants";
+import {
+  ThemeConstants,
+  fmScaleAboutText,
+  primaryColor,
+  shakeVariants,
+} from "../constants";
 import { getThemeColor } from "../utils/helper";
 import Footer from "../components/common/Footer";
 import config from "../config/config.json";
@@ -9,6 +14,7 @@ import { CiMenuKebab } from "react-icons/ci";
 
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const About = () => {
   const [readmeContent, setReadmeContent] = useState("");
@@ -59,58 +65,58 @@ const About = () => {
         </div>
         <div className="flex justify-center items-center mt-3 xl:mt-1 h-[85vh]">
           <div>
-            <motion.div className="flex flex-col gap-6 md:gap-5 md:flex-row xl:gap-x-32">
+            <motion.div className="flex flex-col gap-2 md:gap-4 md:flex-row xl:gap-x-20">
               <motion.div
                 className="flex flex-col rounded-lg"
-                variants={fmScaleAboutText}
+                variants={shakeVariants}
                 initial="initial"
                 whileHover="animate"
               >
-                <motion.div
-                  className="flex flex-col gap-2 bg-gradient-to-r from-theme-dark-primary to-sky-950
-                  rounded-lg p-2 md:p-3 xl:p-4 "
-                  variants={fmScaleAboutText}
-                  initial="initial"
-                  whileHover="animate"
-                  style={{
-                    color: getThemeColor(
-                      ThemeConstants.themeDark,
-                      ThemeConstants.aboutCaptionColor
-                    ),
-                  }}
+                <div
+                  className="md:text-lg xl:text-xl mb-5
+                border border-white/10  "
                 >
-                  <span
-                    className="flex justify-center
-                     text-2xl md:text-3xl xl:text-4xl
-                     text-white/80"
+                  <div
+                    className="flex flex-row bg-white/10 min-h-4 w-full justify-between items-center pr-1
+                  text-white/80 border border-white/10"
                   >
-                    {}
-                    {config.portfolio.firstname}
-                  </span>
-                  <span
-                    className="flex justify-center 
-                    text-xl md:text-2xl xl:text-3xl
-                    text-white/80"
-                  >
-                    {config.portfolio.secondname}
-                  </span>
-                </motion.div>
+                    <span className="pl-1">
+                      <Icon
+                        icon="vscode-icons:file-type-vscode"
+                        style={{ fontSize: "1.4rem" }}
+                      />
+                    </span>
 
-                <div className="about__moto text-xs md:text-lg xl:text-lg mb-5 md:mb-2">
-                  <p className="u-white">&lt;</p>
-                  <p className="u-red">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dreams.Create( i =&gt; &#123;
-                  </p>
-                  <p className="u-torquise">&nbsp; i.Code().WithPrecision();</p>
-                  <p className="u-blue">i.Inspire().WithPassion();</p>
-                  <p className="u-green">
-                    i.Innovate.WithPurpose(); &nbsp;&nbsp;
-                  </p>
-                  <p className="u-bracket">&#125;)</p>
-                  <p className="u-white">&nbsp;/&gt;</p>
+                    <span className="text-white/50 hover:text-white">x</span>
+                  </div>
+                  <div
+                    className="flex justify-center items-center p-1 border border-white/10
+                  bg-stone-950 pt-2"
+                  >
+                    <Menu color={ThemeConstants.aboutMenuColor} size="26px" />
+                  </div>
+                  <div className="py-5 md:py-10 px-8">
+                    <div className="pl-2 mb-2">
+                      <span className="text-blue-700 font-bold">var</span>
+                      <span className="text-blue-500 py-2 font-semibold">
+                        {" "}
+                        jessishPothancheri
+                      </span>
+                      <span className="text-white"> = </span>
+                    </div>
+
+                    <p className="u-red">Dreams.Create( i =&gt; &#123;</p>
+                    <p className="u-torquise">
+                      &nbsp; i.Code().WithPrecision();
+                    </p>
+                    <p className="u-blue">i.Inspire().WithPassion();</p>
+                    <p className="u-green">
+                      i.Innovate.WithPurpose(); &nbsp;&nbsp;
+                    </p>
+                    <span className="u-bracket">&#125;)</span>
+                    <span className="text-white ">;</span>
+                  </div>
                 </div>
-
-                <Menu color={ThemeConstants.aboutMenuColor} size="32px" />
               </motion.div>
 
               <motion.div
@@ -123,7 +129,7 @@ const About = () => {
                 <motion.img
                   src="jpothanc.PNG"
                   alt="logo"
-                  className="h-[220px] w-[220px] md:h-[300px] md:w-[300px] rounded-full"
+                  className="h-[240px] w-[240px] md:h-[300px] md:w-[300px] rounded-full"
                   whileHover={{ rotate: -15 }}
                   initial={{ rotate: 0 }}
                   transition={{
