@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Menu from "../components/ToolBar";
 import { ThemeConstants, primaryColor, shakeVariants } from "../constants";
 
-import Footer from "../components/common/Footer";
+
 import config from "../config/config.json";
 import Avatar from "react-avatar";
 import { CiMenuKebab } from "react-icons/ci";
