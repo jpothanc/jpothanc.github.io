@@ -22,7 +22,7 @@ const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
           <div className="mb-5 border border-white/10">
             <div
               className="flex flex-row bg-white/5 min-h-4 w-full  items-center pr-1
-                  text-white/70 border border-white/10 w-[400px] lg:w-[600px] "
+                  text-white/70 border border-white/10 w-[470px] lg:w-[600px] "
             >
               <div className="flex flex-row gap-1 items-center  justify-start ">
                 <div className="p-1">
@@ -85,7 +85,7 @@ const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
               <p className="text-center text-purple-400 text-xs md:text-lg pt-2 pl-8">
                 i.Inspire().WithPassion();
               </p>
-              <p className="text-center text-lime-400 text-xs md:text-lg pt-2 pl-9">
+              <p className="text-center text-zinc-400 text-xs md:text-lg pt-2 pl-9">
                 i.Innovate.WithPurpose();
               </p>
               <span className="text-center text-red-400 text-xs md:text-lg">
@@ -99,7 +99,7 @@ const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
               </div>
             </div>
             <div
-              className="flex justify-center items-center text-[9px] md:text-[12px]
+              className="flex justify-center items-center text-[10px] md:text-[12px]
                   text-zinc-400  border border-white/10 p-1 
                  hover:bg-white/70 hover:text-black hover-font-bold transition-all duration-300"
             >

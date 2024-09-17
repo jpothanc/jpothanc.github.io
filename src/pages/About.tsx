@@ -41,7 +41,7 @@ const About = () => {
     <>
       <div className="App">
         <div className="flex justify-center items-center mt-3 xl:mt-1 h-[85vh]">
-          <motion.div className="flex flex-col gap-2 md:gap-4 md:flex-row xl:gap-x-20 ">
+          <motion.div className="flex flex-col gap-2 md:gap-4 md:flex-row xl:gap-x-20 w-full justify-center items-center">
             <AboutCodeEditor onClick={handleOpenModal} />
             <AboutImage onClick={handleOpenModal} />
           </motion.div>
