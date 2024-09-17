@@ -22,7 +22,7 @@ const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
           <div className="mb-5 border border-white/10">
             <div
               className="flex flex-row bg-white/5 min-h-4 w-full  items-center pr-1
-                  text-white/70 border border-white/10 w-[470px] lg:w-[600px] "
+                  text-white/70 border border-white/10 w-[480px] lg:w-[600px] "
             >
               <div className="flex flex-row gap-1 items-center  justify-start ">
                 <div className="p-1">
