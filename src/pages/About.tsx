@@ -77,17 +77,23 @@ const About = () => {
                   >
                     <span className="pl-1">
                       <Icon
-                        icon="material-symbols:fiber-manual-record-outline"
-                        style={{ fontSize: "1.1rem" }}
+                        icon="material-symbols-light:terminal-sharp"
+                        style={{ fontSize: "1.4rem" }}
                       />
                     </span>
                     <div
                       className="border border-white/10 bg-white/10 m-1 rounded-md 
-                    text-center
                     text-xs md:text-sm text-white/35 w-[50%]
                     hover:bg-white/60 hover:text-black  transition-all duration-300
+                    flex flex-row gap-2 items-center justify-center
                     "
                     >
+                      <span className="pl-1">
+                        <Icon
+                          icon="quill:search"
+                          style={{ fontSize: "1.1rem" }}
+                        />
+                      </span>
                       portfolio
                     </div>
 
@@ -97,7 +103,7 @@ const About = () => {
                     className="flex justify-center items-center  border border-white/10
                  bg-white/5 pt-2"
                   >
-                    <Menu color={ThemeConstants.aboutMenuColor} size="24px" />
+                    <Menu color={ThemeConstants.aboutMenuColor} size="22px" />
                   </div>
                   <div className="py-5 md:py-10 px-8">
                     <div className="pl-2 mb-2">
