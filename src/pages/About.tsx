@@ -76,23 +76,23 @@ const About = () => {
                 border border-white/10  "
                 >
                   <div
-                    className="flex flex-row bg-white/10 min-h-4 w-full justify-between items-center pr-1
+                    className="flex flex-row bg-white/5 min-h-4 w-full justify-between items-center pr-1
                   text-white/80 border border-white/10"
                   >
                     <span className="pl-1">
                       <Icon
-                        icon="vscode-icons:file-type-vscode"
-                        style={{ fontSize: "1.4rem" }}
+                        icon="material-symbols:fiber-manual-record-outline"
+                        style={{ fontSize: "1.1rem" }}
                       />
                     </span>
 
                     <span className="text-white/50 hover:text-white">x</span>
                   </div>
                   <div
-                    className="flex justify-center items-center p-1 border border-white/10
-                  bg-stone-950 pt-2"
+                    className="flex justify-center items-center  border border-white/10
+                 bg-white/5 pt-2"
                   >
-                    <Menu color={ThemeConstants.aboutMenuColor} size="26px" />
+                    <Menu color={ThemeConstants.aboutMenuColor} size="24px" />
                   </div>
                   <div className="py-5 md:py-10 px-8">
                     <div className="pl-2 mb-2">
