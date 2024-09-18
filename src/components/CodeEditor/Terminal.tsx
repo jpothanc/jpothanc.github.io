@@ -67,7 +67,7 @@ const Terminal = () => {
                 <Counter />
               </p>
               <p className="text-zinc-400 text-sm md:text-md pt-2">
-                Thanks for visiting my profile.
+                Thanks for visiting my profile. <Cursor />
               </p>
             </>
           )}
