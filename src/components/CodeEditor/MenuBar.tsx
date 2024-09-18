@@ -2,10 +2,25 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { ThemeConstants } from "../../constants";
 import Menu from "../ToolBar";
 import AboutIconMenu from "../About/AboutIconMenu";
+import { motion } from "framer-motion";
 
 type MenuBarProps = {
   onClick: () => void;
 };
+const toolBarItems = [
+  {
+    name: "minimize",
+    icon: "mdi:minimize",
+  },
+  {
+    name: "maximize",
+    icon: "mdi:maximize",
+  },
+  {
+    name: "close",
+    icon: "mdi:close",
+  },
+];
 
 const MenuBar = ({ onClick }: MenuBarProps) => {
   return (
@@ -38,7 +53,7 @@ const MenuBar = ({ onClick }: MenuBarProps) => {
           className="border border-white/10 bg-white/10  rounded-md 
                     text-xs md:text-sm text-white/35 w-[60%]
                     hover:bg-white/60 hover:text-black  transition-all duration-300
-                    flex flex-row gap-1 items-center justify-center align-middle ml-10 "
+                    flex flex-r2ow gap-1 items-center justify-center align-middle ml-10 animate-pulse"
         >
           <span className="px-1">
             <Icon icon="quill:search" style={{ fontSize: "1.1rem" }} />
@@ -46,15 +61,17 @@ const MenuBar = ({ onClick }: MenuBarProps) => {
           portfolio
         </div>
         <div className="pr-2 ml-auto flex ">
-          <span className="text-zinc-300 text-sm hover:bg-white/20 p-2">
-            <Icon icon="mdi:minimize" style={{ fontSize: "1.1rem" }} />
-          </span>
-          <span className="text-zinc-300 text-sm hover:bg-white/20 p-2">
-            <Icon icon="mdi:maximize" style={{ fontSize: "1.1rem" }} />
-          </span>
-          <span className="text-zinc-300 text-sm hover:bg-red-800 p-2">
-            <Icon icon="mdi:close" style={{ fontSize: "1.1rem" }} />
-          </span>
+          {toolBarItems.map((item, index) => (
+            <motion.span
+              key={index}
+              whileTap={{ scale: 1.5 }}
+              className={`text-zinc-300 text-sm  p-2 ${
+                item.name === "close" ? "hover:bg-red-600" : "hover:bg-white/20"
+              }`}
+            >
+              <Icon icon={item.icon} style={{ fontSize: "1.1rem" }} />
+            </motion.span>
+          ))}
         </div>
       </div>
       <div
