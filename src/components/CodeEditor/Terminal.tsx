@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import Counter from "../Counter";
 import { useState } from "react";
 import Cursor from "./Cursor";
-const menuItems = ["OUTPUT", "TERMINAL", "COMMENTS", "DEBUG CONSOLE"];
+const menuItems = ["OUTPUT", "TERMINAL", "COMMENTS", "DEBUG"];
 
 const toolBarItems = [
   {
@@ -33,7 +33,7 @@ const Terminal = () => {
             {menuItems.map((item, index) => (
               <span
                 key={index}
-                className="text-zinc-400 text-[12px] md:text-[11px] hover:text-white p-1 cursor-pointer"
+                className="text-zinc-400 text-[10px] md:text-[12px] hover:text-white p-1 cursor-pointer"
                 onClick={() => setActiveMenu(item)}
               >
                 {activeMenu === item ? (
@@ -44,7 +44,7 @@ const Terminal = () => {
               </span>
             ))}
           </div>
-          <div className="flex justify-end items-center gap-2 pr-2">
+          <div className="flex justify-end items-center gap-1 pr-2">
             {toolBarItems.map((item, index) => (
               <span
                 key={index}
@@ -56,7 +56,7 @@ const Terminal = () => {
           </div>
         </header>
         {/* terminal content */}
-        <div className=" h-fullbg-black/50 text-white text-xs md:text-md text-zinc-400 pt-1">
+        <div className=" h-fullbg-black/50 text-white text-xs md:text-md text-zinc-400 pt-2">
           {activeMenu === "TERMINAL" && (
             <>
               <p>
@@ -66,14 +66,14 @@ const Terminal = () => {
               <p className="mt-2">
                 <Counter />
               </p>
-              <p className="text-zinc-400 text-sm md:text-md pt-2">
+              <p className="text-zinc-400 text-[12px] md:text-[14px] pt-2">
                 Thanks for visiting my profile. <Cursor />
               </p>
             </>
           )}
           {activeMenu === "COMMENTS" && (
             <>
-              <div className="text-sm md:text-md">
+              <div className="text-[12px] md:text-[14px]">
                 <p className="text-green-500">
                   // This site was developed using React(TS), Tailwind, Framer
                   motion and Azure.
@@ -95,7 +95,7 @@ const Terminal = () => {
           )}
           {activeMenu === "OUTPUT" && (
             <>
-              <div className="text-sm md:text-md">
+              <div className="text-[12px] md:text-[14px] ">
                 <p className="text-yellow-400">[INFO] Building project...</p>
                 <p className="text-blue-400">[LOG] Optimizing assets</p>
                 <p className="text-green-400">
@@ -112,7 +112,7 @@ const Terminal = () => {
           )}
           {activeMenu === "DEBUG CONSOLE" && (
             <>
-              <div className="text-sm md:text-md">
+              <div className="text-[12px] md:text-[14px]">
                 <p className="text-yellow-400">
                   [DEBUG] Initializing debug mode...
                 </p>
