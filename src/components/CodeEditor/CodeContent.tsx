@@ -13,12 +13,12 @@ const codeContent = [
   },
   {
     text: "i.Inspire().WithPassion();",
-    color: "text-purple-500",
+    color: "text-white/80",
     padding: "pl-8",
   },
   {
     text: "i.Innovate.WithPurpose();",
-    color: "text-stone-400",
+    color: "text-purple-400",
     padding: "pl-9",
   },
 ];

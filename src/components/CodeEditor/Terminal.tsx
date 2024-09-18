@@ -61,8 +61,8 @@ const Terminal = () => {
             <>
               <div className="text-[12px] md:text-[14px]">
                 <p>
-                  PS c:\projects\passion\jpothanc &gt;{" "}
-                  <span className="text-yellow-400">vistor --count</span>
+                  PS c:\projects\jpothanc &gt;{" "}
+                  <span className="text-yellow-400">visitor --count</span>
                 </p>
                 <p className="mt-2">
                   <Counter />
