@@ -2,22 +2,24 @@ import Cursor from "./Cursor";
 
 const codeContent = [
   {
-    id: 1,
     text: "Dreams.Create( i => {",
     color: "text-red-400",
     padding: "",
   },
   {
-    id: 2,
     text: "i.Code().WithPrecision();",
     color: "text-teal-600",
     padding: "pl-8",
   },
   {
-    id: 3,
     text: "i.Inspire().WithPassion();",
     color: "text-purple-500",
     padding: "pl-8",
+  },
+  {
+    text: "i.Innovate.WithPurpose();",
+    color: "text-stone-400",
+    padding: "pl-9",
   },
 ];
 const CodeContent = () => {
