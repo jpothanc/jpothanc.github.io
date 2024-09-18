@@ -47,7 +47,7 @@ const CodeContent = () => {
               {item.text}
             </p>
           ))}
-          <div className="self-start pl-40 xl:pl-60">
+          <div className="self-start pl-28 md:pl-32 lg:pl-40 xl:pl-60">
             <span className="text-center text-red-400 text-xs md:text-lg">
               &#125;)
             </span>
