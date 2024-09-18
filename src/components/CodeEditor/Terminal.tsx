@@ -59,16 +59,18 @@ const Terminal = () => {
         <div className=" h-fullbg-black/50 text-white text-xs md:text-md text-zinc-400 pt-2">
           {activeMenu === "TERMINAL" && (
             <>
-              <p>
-                PS c:\projects\passion\jpothanc &gt;{" "}
-                <span className="text-yellow-400">vistor --count</span>
-              </p>
-              <p className="mt-2">
-                <Counter />
-              </p>
-              <p className="text-zinc-400 text-[12px] md:text-[14px] pt-2">
-                Thanks for visiting my profile. <Cursor />
-              </p>
+              <div className="text-[12px] md:text-[14px]">
+                <p>
+                  PS c:\projects\passion\jpothanc &gt;{" "}
+                  <span className="text-yellow-400">vistor --count</span>
+                </p>
+                <p className="mt-2">
+                  <Counter />
+                </p>
+                <p className="text-zinc-400  pt-2">
+                  Thanks for visiting my profile. <Cursor />
+                </p>
+              </div>
             </>
           )}
           {activeMenu === "COMMENTS" && (
@@ -110,7 +112,7 @@ const Terminal = () => {
               </div>
             </>
           )}
-          {activeMenu === "DEBUG CONSOLE" && (
+          {activeMenu === "DEBUG" && (
             <>
               <div className="text-[12px] md:text-[14px]">
                 <p className="text-yellow-400">
