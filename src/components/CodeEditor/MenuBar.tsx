@@ -61,7 +61,7 @@ const MenuBar = ({ onClick }: MenuBarProps) => {
         className="flex justify-center items-center  border border-white/10
                  bg-white/5 pt-2"
       >
-        <Menu color={ThemeConstants.aboutMenuColor} size="22px" />
+        <Menu color={ThemeConstants.aboutMenuColor} size="24px" />
       </div>
     </>
   );
