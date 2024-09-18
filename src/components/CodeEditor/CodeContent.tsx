@@ -40,7 +40,6 @@ const CodeContent = () => {
         <div className=" border-white/10 flex justify-center items-center flex-col gap-2">
           {codeContent.map((item) => (
             <p
-              key={item.id}
               className={`text-center ${item.color} ${item.padding} text-xs md:text-lg
               hover:scale-105 transition-all duration-300
               `}
