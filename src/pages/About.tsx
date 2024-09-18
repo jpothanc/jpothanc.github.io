@@ -4,7 +4,7 @@ import config from "../config/config.json";
 
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
-import AboutCodeEditor from "../components/About/AboutCodeEditor";
+import AboutCodeEditor from "../components/CodeEditor/CodeEditor";
 import AboutImage from "../components/About/AboutImage";
 
 const About = () => {
@@ -39,11 +39,15 @@ const About = () => {
 
   return (
     <>
-      <div className="App">
+      <div className="Appl">
         <div className="flex justify-center items-center mt-3 xl:mt-1 h-[85vh]">
-          <motion.div className="flex flex-col gap-2 md:gap-4 md:flex-row xl:gap-x-20 w-full justify-center items-center">
-            <AboutCodeEditor onClick={handleOpenModal} />
-            <AboutImage onClick={handleOpenModal} />
+          <motion.div
+            className="flex flex-col gap-2 md:gap-4 md:flex-row xl:gap-x-20 
+           justify-center items-center w-full h-full mx-auto"
+          >
+            <div className="w-full md:w-[600px] lg:w-[700px] xl:w-[800px]">
+              <AboutCodeEditor onClick={handleOpenModal} />
+            </div>
           </motion.div>
           <WindowMd
             title=""

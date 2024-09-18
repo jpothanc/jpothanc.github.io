@@ -19,10 +19,10 @@ const Counter = () => {
 
   return (
     <div
-      className="text-black  text-xs text-zinc-400 pt-1 pl-2 pr-2 pb-1 border border-white/10 p-1 
-  hover:bg-white/70 hover:text-black hover-font-bold transition-all duration-300 rounded-lg"
+      className="text-black text-xs md:text-md text-teal-400 
+     hover:brightness-75 transition-all duration-300"
     >
-      Visitors : {counter}
+      <p>Number of visitors : {counter}</p>
     </div>
   );
 };
