@@ -88,7 +88,7 @@ const Terminal = () => {
                   you live.
                 </p>
                 <p className="animate-pulse text-teal-400">
-                  // Loading more witty comments... <Cursor />
+                  // Loading more comments... <Cursor />
                 </p>
               </div>
             </>
