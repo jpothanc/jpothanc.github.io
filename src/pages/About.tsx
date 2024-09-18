@@ -5,7 +5,6 @@ import config from "../config/config.json";
 import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
 import AboutCodeEditor from "../components/CodeEditor/CodeEditor";
-import AboutImage from "../components/About/AboutImage";
 
 const About = () => {
   const [readmeContent, setReadmeContent] = useState("");
