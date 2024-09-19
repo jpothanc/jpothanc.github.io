@@ -18,78 +18,44 @@ export const renderTerminalContent = () => (
 
 export const renderCommentsContent = () => (
   <div className="text-[12px] md:text-[14px] leading-5">
-    {[
-      {
-        color: "green",
-        text: "This site was developed using React(TS), Tailwind, Framer motion and Azure.",
-      },
-      {
-        color: "blue",
-        text: "Remember: Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.",
-      },
-      { color: "purple", text: "Loading more comments...", animate: true },
-    ].map((item, index) => (
-      <p
-        key={index}
-        className={`text-${item.color}-400 ${
-          item.animate ? "animate-pulse" : ""
-        }`}
-      >
-        {item.text}
-      </p>
-    ))}
+    <p className="text-green-400">
+      This site was developed using React(TS), Tailwind, Framer motion and
+      Azure.
+    </p>
+    <p className="text-blue-400">
+      Remember: Always code as if the person who ends up maintaining your code
+      is a violent psychopath who knows where you live.
+    </p>
+    <p className="text-purple-400 animate-pulse">Loading more comments...</p>
   </div>
 );
 
 export const renderOutputContent = () => (
   <div className="text-[12px] md:text-[14px] leading-5">
-    {[
-      { color: "yellow", text: "[INFO] Building project..." },
-      { color: "blue", text: "[LOG] Optimizing assets" },
-      { color: "green", text: "[SUCCESS] Build completed in 3.14159 seconds" },
-      { color: "purple", text: "[FUN] Taking a coffee break..." },
-      {
-        color: "cyan",
-        text: "[STATUS] System ready for awesome ideas",
-        animate: true,
-      },
-    ].map((item, index) => (
-      <p
-        key={index}
-        className={`text-${item.color}-400 ${
-          item.animate ? "animate-pulse" : ""
-        }`}
-      >
-        {item.text}
-      </p>
-    ))}
+    <p className="text-yellow-400">[INFO] Building project...</p>
+    <p className="text-blue-400">[LOG] Optimizing assets</p>
+    <p className="text-green-400">
+      [SUCCESS] Build completed in 3.14159 seconds
+    </p>
+    <p className="text-purple-400">[FUN] Taking a coffee break...</p>
+    <p className="text-cyan-400 animate-pulse">
+      [STATUS] System ready for awesome ideas
+    </p>
   </div>
 );
 
 export const renderDebugContent = () => (
   <div className="text-[12px] md:text-[14px] leading-5">
-    {[
-      { color: "yellow", text: "[DEBUG] Initializing debug mode..." },
-      { color: "purple", text: "[WARN] Detected infinite loop of great ideas" },
-      {
-        color: "red",
-        text: "[ERROR] Exception caught: TooMuchAwesomenessError",
-      },
-      { color: "orange", text: "[ASSERT] User's mind = blown" },
-      {
-        color: "green",
-        text: "[STATUS] Debugging complete. Ready to code!",
-        animate: true,
-      },
-    ].map((item, index) => (
-      <p
-        key={index}
-        className={`text-${item.color}-400 ${
-          item.animate ? "animate-pulse" : ""
-        }`}
-      >
-        {item.text}
-      </p>
-    ))}
+    <p className="text-yellow-400">[DEBUG] Initializing debug mode...</p>
+    <p className="text-purple-400">
+      [WARN] Detected infinite loop of great ideas
+    </p>
+    <p className="text-red-400">
+      [ERROR] Exception caught: TooMuchAwesomenessError
+    </p>
+    <p className="text-orange-400">[ASSERT] User's mind = blown</p>
+    <p className="text-green-400 animate-pulse">
+      [STATUS] Debugging complete. Ready to code!
+    </p>
   </div>
 );
