@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import { WindowMd, WindowMdRef } from "react-jp-ui";
 import CodeEditor from "../components/CodeEditor/CodeEditor";
 
-
 const About = () => {
   const [readmeContent, setReadmeContent] = useState("");
   const modalRef = useRef<WindowMdRef | null>(null);
@@ -47,7 +46,7 @@ const About = () => {
 
   const editorSizeClass = isMaximized
     ? "w-full md:w-[700px] lg:w-[800px] xl:w-[900px]"
-    : "w-full md:w-[600px] lg:w-[700px] xl:w-[800px]";
+    : "w-[90%] md:w-[600px] lg:w-[700px] xl:w-[800px]";
 
   return (
     <>
@@ -60,10 +59,7 @@ const About = () => {
             <div
               className={`transition-all duration-300 ease-in-out ${editorSizeClass}`}
             >
-              <CodeEditor 
-                onClick={handleOpenModal} 
-                onResize={handleResize}
-              />
+              <CodeEditor onClick={handleOpenModal} onResize={handleResize} />
             </div>
           </motion.div>
           <WindowMd
