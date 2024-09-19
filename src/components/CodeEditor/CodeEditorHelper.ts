@@ -58,3 +58,19 @@ export const debugToolBarItems = [
     icon: "mdi:close",
   },
 ];
+
+
+export const toolBarItems = [
+  {
+    name: "minimize",
+    icon: "mdi:minimize",
+  },
+  {
+    name: "maximize",
+    icon: "mdi:maximize",
+  },
+  {
+    name: "close",
+    icon: "mdi:close",
+  },
+];

@@ -2,14 +2,15 @@ import { motion } from "framer-motion";
 import { shakeVariants } from "../../constants";
 import Terminal from "./Terminal";
 import CodeContent from "./CodeContent";
-import MenuBar from "./MenuBar";
+import Header from "./Header";
 import StatusBar from "./StatusBar";
 
 type AboutCodeEditorProps = {
   onClick: () => void;
+  onResize: (type: string) => void;
 };
 
-const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
+const CodeEditor = ({ onClick, onResize }: AboutCodeEditorProps) => {
   return (
     <>
       {/* code editor */}
@@ -19,7 +20,7 @@ const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
         initial="initial"
         whileHover="animate"
       >
-        <MenuBar onClick={onClick} />
+        <Header onClick={onClick} onResize={onResize} />
         {/* code editor content */}
         <CodeContent />
         {/* terminal */}
@@ -31,4 +32,4 @@ const AboutCodeEditor = ({ onClick }: AboutCodeEditorProps) => {
   );
 };
 
-export default AboutCodeEditor;
+export default CodeEditor;

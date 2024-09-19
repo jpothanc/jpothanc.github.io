@@ -3,31 +3,19 @@ import { ThemeConstants } from "../../constants";
 import Menu from "../ToolBar";
 import AboutIconMenu from "../About/AboutIconMenu";
 import { motion } from "framer-motion";
+import { toolBarItems } from "./CodeEditorHelper";
 
 type MenuBarProps = {
   onClick: () => void;
+  onResize: (type: string) => void;
 };
-const toolBarItems = [
-  {
-    name: "minimize",
-    icon: "mdi:minimize",
-  },
-  {
-    name: "maximize",
-    icon: "mdi:maximize",
-  },
-  {
-    name: "close",
-    icon: "mdi:close",
-  },
-];
 
-const MenuBar = ({ onClick }: MenuBarProps) => {
+const Header = ({ onClick, onResize }: MenuBarProps) => {
   return (
     <>
       <div
         className="flex flex-row bg-white/5 min-h-4 w-full  items-center pr-1
-                  text-white/70 border border-white/10 "
+                  text-white/70 border border-white/10"
       >
         {/* menu bar */}
         <div className="flex flex-row gap-1 items-center justify-start">
@@ -68,6 +56,7 @@ const MenuBar = ({ onClick }: MenuBarProps) => {
               className={`text-zinc-300 text-sm  p-2 ${
                 item.name === "close" ? "hover:bg-red-600" : "hover:bg-white/20"
               }`}
+              onClick={() => onResize(item.name)}
             >
               <Icon icon={item.icon} style={{ fontSize: "1.1rem" }} />
             </motion.span>
@@ -84,4 +73,4 @@ const MenuBar = ({ onClick }: MenuBarProps) => {
   );
 };
 
-export default MenuBar;
+export default Header;

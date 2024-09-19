@@ -46,9 +46,7 @@ const renderOutputContent = () => (
     <p className="text-green-400">
       [SUCCESS] Build completed in 3.14159 seconds
     </p>
-    <p className="text-purple-400">
-      [FUN] Taking a coffee break...
-    </p>
+    <p className="text-purple-400">[FUN] Taking a coffee break...</p>
     <p className="animate-pulse text-cyan-400">
       [STATUS] System ready for awesome ideas
     </p>
@@ -89,7 +87,7 @@ const Terminal = () => {
   return (
     <>
       <div className="w-full border-t border-white/10 h-[140px]">
-        <header className="flex h-[25px] justify-between">
+        <header className="flex h-[30px] justify-between">
           <div className="flex justify-start gap-1 items-center ">
             {menuItems.map((item, index) => (
               <span
@@ -109,15 +107,15 @@ const Terminal = () => {
           </div>
 
           {/* tool bar items */}
-          <div className="flex justify-end items-center gap-1 pr-1">
+          <div className="flex justify-end items-center gap-1 pr-1 ">
             {(activeMenu === "COMMENTS" || activeMenu === "DEBUG") && (
               <input
                 type="text"
                 placeholder={filterInputs[activeMenu]}
-                className="hidden md:block bg-white/10 h-[80%] rounded-sm pl-2 text-white text-[10px] 
-              md:text-[12px] focus:outline-none focus:ring-1 focus:ring-blue-500
-              placeholder-zinc-100
-              font-thin
+                className="hidden md:block bg-white/10 h-[80%] rounded-sm pl-2 text-white text-[12px] 
+               w-52 pr-2 focus:outline-none focus:ring-1 focus:ring-blue-500
+              placeholder-zinc-400
+             font-extralight
               "
               />
             )}
