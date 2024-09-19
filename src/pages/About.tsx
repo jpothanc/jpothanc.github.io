@@ -46,7 +46,7 @@ const About = () => {
 
   const editorSizeClass = isMaximized
     ? "w-full md:w-[700px] lg:w-[800px] xl:w-[900px]"
-    : "w-[90%] md:w-[600px] lg:w-[700px] xl:w-[800px]";
+    : "w-[95%] md:w-[600px] lg:w-[700px] xl:w-[800px]";
 
   return (
     <>

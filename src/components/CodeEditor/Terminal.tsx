@@ -87,7 +87,7 @@ const Terminal = () => {
   return (
     <>
       <div className="w-full border-t border-white/10 h-[140px]">
-        <header className="flex h-[30px] justify-between">
+        <header className="flex h-[30px] justify-between flex-wrap gap-1 md:gap-0">
           <div className="flex justify-start gap-1 items-center ">
             {menuItems.map((item, index) => (
               <span
@@ -107,7 +107,7 @@ const Terminal = () => {
           </div>
 
           {/* tool bar items */}
-          <div className="flex justify-end items-center gap-1 pr-1 ">
+          <div className="flex justify-end items-center gap-1 pr-1">
             {(activeMenu === "COMMENTS" || activeMenu === "DEBUG") && (
               <input
                 type="text"
@@ -130,7 +130,7 @@ const Terminal = () => {
           </div>
         </header>
         {/* terminal content */}
-        <div className="h-full bg-black/50 text-white text-xs md:text-md text-zinc-400 pt-2 font-light">
+        <div className="h-full bg-black/50 text-white text-xs md:text-md text-zinc-400 pt-3 md:pt-2 font-light">
           {activeMenu === "TERMINAL" && renderTerminalContent()}
           {activeMenu === "COMMENTS" && renderCommentsContent()}
           {activeMenu === "OUTPUT" && renderOutputContent()}
