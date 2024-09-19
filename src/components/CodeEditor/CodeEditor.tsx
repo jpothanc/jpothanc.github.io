@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { shakeVariants } from "../../constants";
-import Terminal from "./Terminal";
+import ConsolePanel from "./ConsolePanel";
 import CodeContent from "./CodeContent";
-import Header from "./Header";
+import EditorToolBar from "./EditorToolBar";
 import StatusBar from "./StatusBar";
 
 type AboutCodeEditorProps = {
@@ -13,19 +13,15 @@ type AboutCodeEditorProps = {
 const CodeEditor = ({ onClick, onResize }: AboutCodeEditorProps) => {
   return (
     <>
-      {/* code editor */}
       <motion.div
         className="mb-5 border border-white/10 m-1"
         variants={shakeVariants}
         initial="initial"
         whileHover="animate"
       >
-        <Header onClick={onClick} onResize={onResize} />
-        {/* code editor content */}
+        <EditorToolBar onClick={onClick} onResize={onResize} />
         <CodeContent />
-        {/* terminal */}
-        <Terminal />
-        {/* copyright */}
+        <ConsolePanel />
         <StatusBar />
       </motion.div>
     </>

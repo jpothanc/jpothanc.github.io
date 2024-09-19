@@ -10,7 +10,7 @@ type MenuBarProps = {
   onResize: (type: string) => void;
 };
 
-const Header = ({ onClick, onResize }: MenuBarProps) => {
+const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
   return (
     <>
       <div
@@ -19,7 +19,7 @@ const Header = ({ onClick, onResize }: MenuBarProps) => {
       >
         {/* menu bar */}
         <div className="flex flex-row gap-1 items-center justify-start">
-          <div className="p-1">
+          <div className="p-1 ">
             <AboutIconMenu onClick={onClick} />
           </div>
           <span
@@ -73,4 +73,4 @@ const Header = ({ onClick, onResize }: MenuBarProps) => {
   );
 };
 
-export default Header;
+export default EditorToolBar;

@@ -1,80 +1,25 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Counter from "../Counter";
 import { useEffect, useState } from "react";
-import Cursor from "./Cursor";
 import {
   commentsToolBarItems,
   debugToolBarItems,
   outputToolBarItems,
   terminalToolBarItems,
 } from "./CodeEditorHelper";
+import {
+  renderCommentsContent,
+  renderDebugContent,
+  renderOutputContent,
+  renderTerminalContent,
+} from "./ConsolePanelRenderers";
 const menuItems = ["OUTPUT", "TERMINAL", "COMMENTS", "DEBUG"];
-
-const renderTerminalContent = () => (
-  <div className="text-[12px] md:text-[14px]">
-    <p>
-      PS c:\projects\jpothanc &gt;{" "}
-      <span className="text-yellow-400">visitor --count</span>
-    </p>
-    <p className="mt-2">
-      <Counter />
-    </p>
-    <p className="text-zinc-400 pt-2">
-      Thanks for visiting my profile. <Cursor />
-    </p>
-  </div>
-);
-
-const renderCommentsContent = () => (
-  <div className="text-[12px] md:text-[14px] leading-5">
-    <p className="text-green-500">
-      This site was developed using React(TS), Tailwind, Framer motion and
-      Azure.
-    </p>
-    <p className="text-blue-400">
-      Remember: Always code as if the person who ends up maintaining your code
-      is a violent psychopath who knows where you live.
-    </p>
-    <p className="animate-pulse text-teal-400">Loading more comments...</p>
-  </div>
-);
-
-const renderOutputContent = () => (
-  <div className="text-[12px] md:text-[14px] leading-5">
-    <p className="text-yellow-400">[INFO] Building project...</p>
-    <p className="text-blue-400">[LOG] Optimizing assets</p>
-    <p className="text-green-400">
-      [SUCCESS] Build completed in 3.14159 seconds
-    </p>
-    <p className="text-purple-400">[FUN] Taking a coffee break...</p>
-    <p className="animate-pulse text-cyan-400">
-      [STATUS] System ready for awesome ideas
-    </p>
-  </div>
-);
-
-const renderDebugContent = () => (
-  <div className="text-[12px] md:text-[14px] leading-5">
-    <p className="text-yellow-400">[DEBUG] Initializing debug mode...</p>
-    <p className="text-purple-400">
-      [WARN] Detected infinite loop of great ideas
-    </p>
-    <p className="text-red-400">
-      [ERROR] Exception caught: TooMuchAwesomenessError
-    </p>
-    <p className="text-orange-400">[ASSERT] User's mind = blown</p>
-    <p className="animate-pulse text-green-400">
-      [STATUS] Debugging complete. Ready to code!
-    </p>
-  </div>
-);
 
 const filterInputs = {
   COMMENTS: "Filter (e.g, text,author)",
   DEBUG: "Filter (e.g, text,!exclude,\\escape)",
 };
 
-const Terminal = () => {
+const ConsolePanel = () => {
   const [activeMenu, setActiveMenu] = useState(menuItems[1]);
   const [toolBarItems, setToolBarItems] = useState(terminalToolBarItems);
 
@@ -87,6 +32,7 @@ const Terminal = () => {
   return (
     <>
       <div className="w-full border-t border-white/10 h-[140px]">
+        {/* toolbar menu */}
         <header className="flex h-[30px] justify-between flex-wrap gap-1 md:gap-0">
           <div className="flex justify-start gap-1 items-center ">
             {menuItems.map((item, index) => (
@@ -130,7 +76,7 @@ const Terminal = () => {
           </div>
         </header>
         {/* terminal content */}
-        <div className="h-full bg-black/50 text-white text-xs md:text-md text-zinc-400 pt-3 md:pt-2 font-light">
+        <div className="h-full bg-black/50 text-white text-xs md:text-md text-zinc-400 pt-3 md:pt-2 font-light pl-2">
           {activeMenu === "TERMINAL" && renderTerminalContent()}
           {activeMenu === "COMMENTS" && renderCommentsContent()}
           {activeMenu === "OUTPUT" && renderOutputContent()}
@@ -141,4 +87,4 @@ const Terminal = () => {
   );
 };
 
-export default Terminal;
+export default ConsolePanel;
