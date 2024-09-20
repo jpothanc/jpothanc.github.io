@@ -26,13 +26,13 @@ const CodeContent = () => {
               {item.text}
             </p>
           ))}
-          <div className="self-start pl-22 md:pl-24 lg:pl-32 xl:pl-60">
-            <span className="text-center text-red-400 text-xs md:text-lg">
+          <div className="self-start ">
+            <span className="pl-40 md:pl-48 lg:pl-60 xl:pl-72 text-red-400 text-xs md:text-lg">
               &#125;)
             </span>
             <span className="text-white ">;</span>
             <br></br>
-            <div className="animate-pulse text-sm md:text-[15px]">
+            <div className="animate-pulse text-sm md:text-[15px] pl-6 md:pl-30 lg:pl-40 xl:pl-48">
               <span className="text-blue-400">jessishPothancheri</span>
               <span className="text-yellow-100 ">.Run</span>
               <span className="text-red-400 ">()</span>
