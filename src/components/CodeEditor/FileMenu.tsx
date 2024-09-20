@@ -3,8 +3,10 @@ import { fileMenuItems } from "./CodeEditorHelper";
 
 const FileMenu = () => {
   return (
-    <div className="absolute left-0 mt-1 w-40 bg-zinc-800 border border-white/10 rounded shadow-lg
-     text-[9px] md:text-[12px] z-[99]">
+    <div
+      className="absolute left-0 mt-1 w-40 bg-zinc-800 border border-white/10 rounded shadow-lg
+     text-[11px] md:text-[12px] z-[99]"
+    >
       <ul className="py-1">
         {fileMenuItems.map((item, index) => (
           <li
