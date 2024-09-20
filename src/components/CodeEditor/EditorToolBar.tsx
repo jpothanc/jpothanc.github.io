@@ -40,8 +40,8 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
         <div
           className="border border-white/10 bg-white/10  rounded-md 
                     text-xs md:text-sm text-white/35 w-[60%]
-                    hover:bg-white/60 hover:text-black  transition-all duration-300
-                    flex flex-r2ow gap-1 items-center justify-center align-middle ml-10 animate-pulse"
+                   hover:text-white/80 ransition-all duration-300
+                    flex flex-r2ow gap-1 items-center justify-center align-middle ml-10"
         >
           <span className="px-1">
             <Icon icon="quill:search" style={{ fontSize: "1.1rem" }} />

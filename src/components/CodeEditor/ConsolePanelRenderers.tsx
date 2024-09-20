@@ -5,16 +5,32 @@ import { codeEditorVariants } from "./CodeEditorHelper";
 
 export const renderTerminalContent = () => (
   <div className="text-[12px] md:text-[14px]">
-    <p>
-      PS c:\projects\jpothanc &gt;{" "}
-      <span className="text-yellow-400">visitor --count</span>
-    </p>
-    <p className="mt-2">
-      <Counter />
-    </p>
-    <p className="text-zinc-400 pt-2">
-      Thanks for visiting my profile. <Cursor />
-    </p>
+    {[
+      <p key="command">
+        PS c:\projects\jpothanc &gt;{" "}
+        <span className="text-yellow-400">visitor --count</span>
+      </p>,
+      <p key="counter" className="mt-2">
+        <Counter />
+      </p>,
+      <p key="thanks" className="text-zinc-400 pt-2">
+        Thanks for visiting my profile. <Cursor />
+      </p>,
+    ].map((item, index) => (
+      <motion.div
+        key={index}
+        variants={codeEditorVariants}
+        initial="initial"
+        whileInView="animate"
+        custom={index}
+        transition={{ duration: 5.5 }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {item}
+      </motion.div>
+    ))}
   </div>
 );
 
