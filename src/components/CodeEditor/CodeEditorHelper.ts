@@ -95,3 +95,19 @@ export const toolBarItems = [
     icon: "mdi:close",
   },
 ];
+
+export const codeEditorVariants = {
+  initial: {
+    opacity: 0,
+    y: 0,
+  },
+  animate: (index: number) => ({
+    opacity: 10,
+    y: 0,
+    transition: {
+      delay: 0.3 * index,
+      duration: 0.3,
+    },
+  }),
+  exit: { opacity: 0 },
+};
