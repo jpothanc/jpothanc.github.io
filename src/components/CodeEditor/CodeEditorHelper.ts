@@ -1,3 +1,4 @@
+import config from "../../config/config.json";
 export const codeContent = [
   {
     text: "Dreams.Create( i => {",
@@ -111,3 +112,38 @@ export const codeEditorVariants = {
   }),
   exit: { opacity: 0 },
 };
+
+export const fileMenuItems = [
+  {
+    name: "Work Experience",
+    page: "/contents",
+  },
+  {
+    name: "Personal Projects",
+    page: "/projects",
+  },
+  {
+    name: "Developer Notes",
+    page: "/devnotes",
+  },
+  {
+    name: "Github",
+    page: "",
+    url: config.portfolio.github,
+  },
+  {
+    name: "LinkedIn",
+    page: "",
+    url: config.portfolio.linkedin,
+  },
+  {
+    name: "Resume",
+    page: "",
+    url: config.portfolio.resumeFileName,
+  },
+  {
+    name: "Email",
+    page: "",
+    url: `mailto:${config.portfolio.email}`,
+  },
+];

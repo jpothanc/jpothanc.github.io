@@ -1,9 +1,9 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { ThemeConstants } from "../../constants";
-import Menu from "../ToolBar";
 import AboutIconMenu from "../About/AboutIconMenu";
 import { motion } from "framer-motion";
 import { toolBarItems } from "./CodeEditorHelper";
+import { useState, useEffect, useRef } from "react";
+import FileMenu from "./FileMenu";
 
 type MenuBarProps = {
   onClick: () => void;
@@ -11,6 +11,24 @@ type MenuBarProps = {
 };
 
 const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
+  const [showFileMenu, setShowFileMenu] = useState(false);
+  const fileMenuRef = useRef<HTMLDivElement>(null);
+
+  const toggleFileMenu = () => setShowFileMenu(!showFileMenu);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (fileMenuRef.current && !fileMenuRef.current.contains(event.target as Node)) {
+        setShowFileMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <div
@@ -22,19 +40,25 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
           <div className="p-1 ">
             <AboutIconMenu onClick={onClick} />
           </div>
-          <span
-            className="text-zinc-300 text-xs hover:text-white  p-1
+          <div className="relative" ref={fileMenuRef}>
+            <span
+              className="text-zinc-300 text-xs hover:text-white p-1
+                   hover:bg-white/20 cursor-pointer "
+              onClick={toggleFileMenu}
+            >
+              File
+            </span>
+            {showFileMenu && <FileMenu />}
+          </div>
+          <div className="relative">
+            <span
+              className="text-zinc-300 text-xs hover:text-white cursor-pointer p-1
                  hover:bg-white/20"
-          >
-            File
-          </span>
-          <span
-            className="text-zinc-300 text-xs hover:text-white cursor-pointer p-1
-                 hover:bg-white/20"
-            onClick={onClick}
-          >
-            About
-          </span>
+              onClick={onClick}
+            >
+              About
+            </span>
+          </div>
         </div>
         {/* search bar */}
         <div
@@ -62,12 +86,6 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
             </motion.span>
           ))}
         </div>
-      </div>
-      <div
-        className="flex justify-center items-center  border border-white/10
-                 bg-white/5 pt-2"
-      >
-        <Menu color={ThemeConstants.aboutMenuColor} size="24px" />
       </div>
     </>
   );

@@ -14,7 +14,10 @@ export const renderTerminalContent = () => (
         <Counter />
       </p>,
       <p key="thanks" className="text-zinc-400 pt-2">
-        Thanks for visiting my profile. <Cursor />
+        Thanks for visiting my profile.
+      </p>,
+      <p className="text-cyan-400 pt-2 animate-bounce">
+        Select File Menu to explore... <Cursor />
       </p>,
     ].map((item, index) => (
       <motion.div

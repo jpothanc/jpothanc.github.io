@@ -4,7 +4,7 @@ import Cursor from "./Cursor";
 const CodeContent = () => {
   return (
     <>
-      <div className="flex flex-col m-5">
+      <div className="flex flex-col m-10">
         <div className="ml-5 md:ml-32 lg:ml-40 xl:ml-48">
           <span className="text-blue-700 text-sm md:text-lg font-bold">
             var
