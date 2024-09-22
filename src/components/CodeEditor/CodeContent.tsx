@@ -5,7 +5,7 @@ const CodeContent = () => {
   return (
     <>
       <div className="flex flex-col m-10">
-        <div className="ml-5 md:ml-32 lg:ml-40 xl:ml-48">
+        <div className="ml-5 sm:ml-6 md:ml-32 lg:ml-40 xl:ml-48">
           <span className="text-blue-700 text-sm md:text-lg font-bold">
             var
           </span>
@@ -32,7 +32,7 @@ const CodeContent = () => {
             </span>
             <span className="text-white ">;</span>
             <br></br>
-            <div className="animate-pulse text-sm md:text-[15px] pl-6 md:pl-30 lg:pl-40 xl:pl-48">
+            <div className="animate-pulse text-sm md:text-[15px] pl-6 sm:pl-32 md:pl-32 lg:pl-40 xl:pl-48">
               <span className="text-blue-400">jessishPothancheri</span>
               <span className="text-yellow-100 ">.Run</span>
               <span className="text-red-400 ">()</span>

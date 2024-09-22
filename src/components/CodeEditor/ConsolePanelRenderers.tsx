@@ -13,11 +13,14 @@ export const renderTerminalContent = () => (
       <p key="counter" className="mt-2">
         <Counter />
       </p>,
-      <p key="thanks" className="text-zinc-400 pt-2">
-        Thanks for visiting my profile.
-      </p>,
-      <p className="text-cyan-400 pt-2 animate-bounce">
-        Select File Menu to explore... <Cursor />
+
+      <p key="fileMenu" className="text-zinc-400 pt-2">
+        PS c:\projects\jpothanc &gt;
+        <span className="pt-2 text-yellow-400">what --next</span>
+        <p className="text-teal-400 pt-2 animate-pulse">
+          Select File Menu to explore...
+        </p>{" "}
+        <Cursor />
       </p>,
     ].map((item, index) => (
       <motion.div

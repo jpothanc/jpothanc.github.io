@@ -43,7 +43,7 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
             return (
               <div>
                 <h4
-                  className="mt-5 mb-2 font-bold  text-white/80 
+                  className="mt-5 mb-2 font-bold  text-theme-dark-textcolor
                 hover:text-amber-500 transition-all duration-300 xl:text-md"
                 >
                   {project.name}
@@ -59,7 +59,7 @@ const ProjectsWork = ({ title, content, icon, items }: Props) => {
                 >
                   {project.timeline}
                 </p>
-                <p className="basic-text pt-5  xl:text-md">
+                <p className="basic-text pt-5 xl:text-md text-theme-dark-textcolor">
                   {project.description}
                 </p>
                 <p

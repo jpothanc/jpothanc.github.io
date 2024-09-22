@@ -35,7 +35,7 @@ const Experiance = ({ timeline }: timelineProps) => {
           <section className="intro">
             <motion.section
               id="experience"
-              className="basic-text xl:text-md"
+              className="basic-text text-theme-dark-textcolor xl:text-md"
               variants={fmOpacity}
               whileInView="animate"
             >

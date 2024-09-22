@@ -19,7 +19,7 @@ const Intro = ({ text }: Props) => {
             ),
           }}
         >
-          <span className="u-bold">
+          <span className="u-bold text-theme-dark-textcolor">
             I'm{" "}
             <motion.span
               className="u-yellow"
@@ -30,7 +30,7 @@ const Intro = ({ text }: Props) => {
               Jessish,{" "}
             </motion.span>
           </span>
-          <span className="basic_text">{text}</span>
+          <span className="basic_text text-theme-dark-textcolor">{text}</span>
         </section>
       </header>
     </>

@@ -22,7 +22,7 @@ type Props = {
   size: string;
 };
 
-const Menu = ({ color, size }: Props) => {
+const ToolBar = ({ color, size }: Props) => {
   return (
     <>
       {" "}
@@ -102,4 +102,4 @@ const Menu = ({ color, size }: Props) => {
   );
 };
 
-export default Menu;
+export default ToolBar;

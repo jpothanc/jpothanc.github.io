@@ -1,3 +1,5 @@
+import { color } from "framer-motion";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
@@ -15,6 +17,7 @@ export default {
             hover: "text-amber-500",
             background: "#09090b",
             contentbg: "#0a0a0a",
+            textcolor: "rgb(194 194 203)",
           },
           backgroundImage: {
             "dark-content-gradient":

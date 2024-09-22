@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import config from "../config/config.json";
-import Menu from "./ToolBar";
+import ToolBar from "./ToolBar";
 import { ThemeConstants, fmScale } from "../constants";
 
 const NavBar = () => {
@@ -24,7 +24,7 @@ const NavBar = () => {
           </div>
 
           <div className="justify-self-end   px-1 pt-1 ">
-            <Menu color={ThemeConstants.barMenuColor} size="22px" />
+            <ToolBar color={ThemeConstants.barMenuColor} size="22px" />
           </div>
         </div>
       </nav>
@@ -71,7 +71,7 @@ const NavBar = () => {
          bg-theme-dark-contentbg border-b border-theme-dark-primary mx-auto"
         >
           <div className="flex justify-end items-center px-1 pt-1 ">
-            <Menu color={ThemeConstants.barMenuColor} size="28px" />
+            <ToolBar color={ThemeConstants.barMenuColor} size="28px" />
           </div>
         </div>
       </nav>

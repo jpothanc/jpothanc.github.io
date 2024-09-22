@@ -228,7 +228,8 @@
         "description": "Lately, I've found myself enchanted by the sleek and powerful capabilities of Svelte and Tailwind CSS. This newfound inspiration has propelled me to create a  portfolio using these cutting-edge technologies.",
         "readme": "https://api.github.com/repos/jpothanc/portfolio-go/readme",
         "repo": "https://github.com/jpothanc/portfolio-go",
-        "technology": "https://skillicons.dev/icons?i=svelte,tailwind,vscode,vite,vercel&perline=5"
+        "technology": "https://skillicons.dev/icons?i=svelte,tailwind,vscode,vite,vercel&perline=5",
+        "tech": ["svelte", "tailwind", "vscode", "vite", "vercel"]
       },
       {
         "name": "data store",
@@ -236,7 +237,8 @@
         "description": "A robust read-through caching app designed to cache configured queries, accelerating performance by swiftly accessing frequently requested data.",
         "readme": "https://api.github.com/repos/jpothanc/datastore/readme",
         "repo": "https://github.com/jpothanc/datastore",
-        "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
+        "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5",
+        "tech": ["java", "spring", "postgres", "azure", "intellij"]
       },
       {
         "name": "hero",
@@ -244,7 +246,8 @@
         "description": "Monitoring UI for production support. Delivers real-time insights on microservices, databases. Seamlessly integrates with Java-based healthcheck service via WebSockets for instant updates.",
         "readme": "https://api.github.com/repos/jpothanc/hero/readme",
         "repo": "https://github.com/jpothanc/hero",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10",
+        "tech": ["react", "vscode", "vite", "vercel"]
       },
       {
         "name": "dynamo",
@@ -252,7 +255,8 @@
         "description": "Dynamo is a web application that allows you to configure JSON endpoints and visualize the data in a grid format for easy reading and support.",
         "readme": "https://api.github.com/repos/jpothanc/dynamo/readme",
         "repo": "https://github.com/jpothanc/dynamo",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10",
+        "tech": ["react", "vscode", "vite", "vercel"]
       },
       {
         "name": "healthcheck",
@@ -260,7 +264,8 @@
         "description": "Service which monitors microservices, databases with regular pings, ensuring ongoing health assessment. Offers real-time updates via WebSockets to subscribed clients. Also provides REST APIs for detailed health check info.",
         "readme": "https://api.github.com/repos/jpothanc/healthcheck/readme",
         "repo": "https://github.com/jpothanc/healthcheck",
-        "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5"
+        "technology": "https://skillicons.dev/icons?i=java,spring,postgres,azure&perline=5",
+        "tech": ["java", "spring", "postgres", "azure", "intellij"]
       },
 
       {
@@ -269,7 +274,8 @@
         "description": "In the world of React projects, I wanted to make my life easier by reusing components. So, I took the leap to build my own library of common React components using Vite and shared it via npm.",
         "readme": "https://api.github.com/repos/jpothanc/react-jp-ui/readme",
         "repo": "https://github.com/jpothanc/react-jp-ui",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vite&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite&perline=10",
+        "tech": ["react", "vscode", "vite"]
       },
       {
         "name": "pulse",
@@ -277,7 +283,8 @@
         "description": "A simple tool for testing WebSocket connections. It provides an easy-to-use interface to send and receive WebSocket messages, making it convenient for developers and testers to validate WebSocket functionality",
         "readme": "https://api.github.com/repos/jpothanc/pulse/readme",
         "repo": "https://github.com/jpothanc/pulse",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vite&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite&perline=10",
+        "tech": ["react", "vscode", "vite"]
       },
       {
         "name": "equity-store",
@@ -285,7 +292,8 @@
         "description": "Eager to understand the essence of Python and how it contrasts with the familiar territories of .Net and Java, I embarked on a project that would not only allow me to peek into Python but also to apply it in a real-world scenario. ",
         "readme": "https://api.github.com/repos/jpothanc/equity-store/readme",
         "repo": "https://github.com/jpothanc/equity-store/tree/main",
-        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
+        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10",
+        "tech": ["python", "pycharm"]
       },
       {
         "name": "devnotes",
@@ -293,7 +301,8 @@
         "description": "devnotes remember everything so you don’t have to. A simple notes look up app which can read you git markdown documents.",
         "readme": "https://api.github.com/repos/jpothanc/devnotes/readme",
         "repo": "https://github.com/jpothanc/devnotes/tree/main",
-        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10"
+        "technology": "https://skillicons.dev/icons?i=react,vscode,vite,vercel&perline=10",
+        "tech": ["react", "vscode", "vite", "vercel"]
       },
       {
         "name": "omnijp",
@@ -301,7 +310,8 @@
         "description": "OmniJP is a Python library that provides tools for common tasks in software development.It now supports features for caching database results to disk and making HTTP requests with caching support.",
         "readme": "https://api.github.com/repos/jpothanc/omnijp/readme",
         "repo": "https://github.com/jpothanc/omnijp/tree/main",
-        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10"
+        "technology": "https://skillicons.dev/icons?i=python,pycharm&perline=10",
+        "tech": ["python", "pycharm"]
       },
       {
         "name": "webq",
@@ -309,7 +319,8 @@
         "description": "Lightweight class library aiding HTTP queries, caching results locally for resilience. Configure cached data duration, ensuring app resilience during REST endpoint downtime.",
         "readme": "https://api.github.com/repos/jpothanc/webq/readme",
         "repo": "https://github.com/jpothanc/webq",
-        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10",
+        "tech": ["c#", "visualstudio"]
       },
       {
         "name": "auth me",
@@ -317,7 +328,8 @@
         "description": "This .NET Standard class library which offers HTTP Basic Authentication capabilities. Features seamless integration into .NET applications, credential validation, and compatibility across various .NET projects.",
         "readme": "https://api.github.com/repos/jpothanc/authme/readme",
         "repo": "https://github.com/jpothanc/authme",
-        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10",
+        "tech": ["c#", "visualstudio"]
       },
       {
         "name": "simple skin",
@@ -325,7 +337,8 @@
         "description": "A lightweight class library enabling swift integration of custom skins into Windows Forms apps. Easily revamp your app's appearance without extensive control modification, offering a fresh, unique look effortlessly.",
         "readme": "https://api.github.com/repos/jpothanc/simpleskin/readme",
         "repo": "https://github.com/jpothanc/simpleskin",
-        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10"
+        "technology": "https://skillicons.dev/icons?i=dotnet,visualstudio&perline=10",
+        "tech": ["c#", "visualstudio"]
       }
     ],
 

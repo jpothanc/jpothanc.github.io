@@ -1,7 +1,31 @@
-$md-text-header-color: rgb(188, 185, 180);
+$md-text-header-color: rgb(170, 132, 70);
 $md-text-color: rgb(111, 140, 197);
+$md-background-color: #181c20;
+$md-border-color: #243a65;
+
+.jp_wmd_container {
+  padding: 0px;
+  .jp_wmd_content {
+    background-color: #181c20;
+    border: $md-border-color solid 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+/* Track (background area) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: rgb(17, 16, 16);
+}
+
+/* Thumb (scroll handle) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+  height: 20px;
+  border-radius: 20px;
+}
+
 // override the styles from react-jp-ui
 .markdown-content {
+  font-size: 14px;
   font-family: Arial, sans-serif;
   padding: 20px;
 }
@@ -19,8 +43,11 @@ $md-text-color: rgb(111, 140, 197);
 }
 .markdown-content h3 {
   margin-bottom: 10px;
+  color: $md-text-header-color;
 }
-
+.markdown-content h4 {
+  color: $md-text-header-color;
+}
 /* Style the rendered paragraphs within the container */
 .markdown-content p {
   line-height: 1.6;
@@ -32,9 +59,14 @@ $md-text-color: rgb(111, 140, 197);
   color: $md-text-color;
   margin-bottom: 10px;
 }
+.markdown-content li {
+  line-height: 1.6;
+  color: $md-text-color;
+  margin-bottom: 10px;
+}
 /* Style the rendered links within the container */
 .markdown-content a {
-  color: rgb(42, 120, 199);
+  color: rgb(199, 128, 42);
   text-decoration: underline;
 }
 .overlay.visible {
@@ -44,6 +76,11 @@ $md-text-color: rgb(111, 140, 197);
 //style the model markdown content
 .jp_wmd_content {
   font-size: 12px;
+  border-radius: 10px;
+  align-self: center;
+}
+.jp_vmd_content {
+  font-size: 19px;
   border-radius: 10px;
   align-self: center;
 }

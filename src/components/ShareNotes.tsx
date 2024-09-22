@@ -4,7 +4,7 @@ import { MdViewer } from "react-jp-ui";
 import config from "../config/config.json";
 import { useLocation } from "react-router-dom";
 import { mdContent, getContentUrl, getUrl } from "../utils/notes_helper";
-import Menu from "./ToolBar";
+import ToolBar from "./ToolBar";
 import { ThemeConstants } from "../constants";
 const height = 800;
 
@@ -32,7 +32,7 @@ const ShareNotes = () => {
   return (
     <>
       <div className="App">
-        <Menu color={ThemeConstants.aboutMenuColor} size="32px" />
+        <ToolBar color={ThemeConstants.aboutMenuColor} size="32px" />
         <MdViewer content={mdContent.content} height={height} />
       </div>
     </>

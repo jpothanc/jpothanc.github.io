@@ -12,7 +12,7 @@ type Prop = {
 const ListContent = ({ title, items, icon }: Prop) => {
   return (
     <>
-      <div className="card dark:bg-theme-dark-contentbg">
+      <div className="card dark:bg-theme-dark-contentbg ">
         <section
           className="list-text
           xl:text-md
@@ -44,7 +44,9 @@ const ListContent = ({ title, items, icon }: Prop) => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <p className="basic-text xl:text-md">{item}</p>
+                  <p className="basic-text text-theme-dark-textcolor xl:text-md">
+                    {item}
+                  </p>
                 </motion.li>
               );
             })}

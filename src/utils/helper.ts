@@ -46,8 +46,6 @@ export const badgeVariants = {
   exit: { opacity: 0 },
 };
 
-
-
 export function getIcon(icon: IconType): any | undefined {
   return React.createElement(icon, {
     style: {
@@ -100,6 +98,7 @@ export type projects = {
 };
 
 export type personalProject = {
+  tech: string[];
   name: string;
   link: string;
   description: string;
@@ -186,4 +185,54 @@ export async function fetchData(
   } catch (error) {
     console.log(error);
   }
+}
+
+interface TechSkill {
+  icon: string;
+  name: string;
+}
+const techSkills: TechSkill[] = [
+  { icon: "logos:c-sharp", name: "C#" },
+  { icon: "skill-icons:dotnet", name: ".NET 6.0" },
+  { icon: "devicon:java", name: "Java" },
+  { icon: "logos:spring-icon", name: "Spring" },
+  { icon: "skill-icons:javascript", name: "JavaScript" },
+  { icon: "vscode-icons:file-type-typescript", name: "TypeScript" },
+  { icon: "vscode-icons:file-type-python", name: "Python" },
+  { icon: "skill-icons:react-dark", name: "React" },
+  { icon: "teenyicons:nextjs-outline", name: "NextJs" },
+  { icon: "vscode-icons:file-type-svelte", name: "Svelte" },
+  { icon: "skill-icons:reactivex-light", name: "Reactive Programming" },
+  { icon: "devicon:tailwindcss", name: "Tailwind" },
+  { icon: "vscode-icons:file-type-graphql", name: "GraphQL" },
+  { icon: "logos:cucumber", name: "Cucumber" },
+  { icon: "devicon:oracle", name: "Oracle" },
+  { icon: "devicon:postgresql", name: "Postgres" },
+  { icon: "bi:database-add", name: "Sybase" },
+  { icon: "devicon:mongodb", name: "MongoDB" },
+  { icon: "devicon:redis", name: "Redis" },
+  { icon: "devicon:docker", name: "Docker" },
+  { icon: "devicon:kubernetes", name: "Kubernetes" },
+  { icon: "devicon:openshift", name: "OpenShift" },
+  { icon: "devicon:jenkins", name: "Jenkins" },
+  { icon: "devicon:sonarqube", name: "SonarQube" },
+  { icon: "devicon:bitbucket", name: "BitBucket" },
+  { icon: "fa6-brands:square-git", name: "GitHub" },
+  { icon: "devicon:vscode", name: "VSCode" },
+  { icon: "skill-icons:vite-dark", name: "Vite" },
+  { icon: "skill-icons:vercel-dark", name: "Vercel" },
+  { icon: "flowbite:link-outline", name: "Link" },
+  { icon: "solar:notification-unread-lines-outline", name: "ReadMe" },
+  { icon: "skill-icons:visualstudio-dark", name: "visualstudio" },
+  { icon: "skill-icons:pycharm-dark", name: "pycharm" },
+  { icon: "skill-icons:dotnet", name: "dotnet" },
+  { icon: "devicon:intellij", name: "intellij" },
+];
+
+const iconMap = new Map<string, string>(
+  techSkills.map((skill) => [skill.name.toLowerCase(), skill.icon])
+);
+
+export function getIconBySkill(name: string): string {
+  return iconMap.get(name.toLowerCase()) || "default-icon-here";
 }

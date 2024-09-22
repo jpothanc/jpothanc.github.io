@@ -9,7 +9,6 @@ import {
 import { IconType } from "react-icons";
 import { Icon } from "@iconify/react";
 
-
 type iconBadgeProps = {
   title: string;
   icon: IconType;
@@ -17,9 +16,15 @@ type iconBadgeProps = {
   badges: iconBadge[];
   badgeColor?: string;
 };
-const  defaultBadgeColor = "text-white/80"
+const defaultBadgeColor = "text-theme-dark-textcolor";
 
-const IconBadges = ({ title, icon, content, badges, badgeColor }: iconBadgeProps) => {
+const IconBadges = ({
+  title,
+  icon,
+  content,
+  badges,
+  badgeColor,
+}: iconBadgeProps) => {
   return (
     <>
       <div className="card dark:bg-theme-dark-contentbg ">
@@ -51,7 +56,7 @@ const IconBadges = ({ title, icon, content, badges, badgeColor }: iconBadgeProps
             {badges.map((skill, index) => {
               return (
                 <motion.div
-                  className={`xl:text-md rounded-md m-1 p-1
+                  className={`xl:text-md rounded-md m-1 p-1 
                   shadow-md hover:shadow-lg hover:shadow-theme-dark-primary transition-all duration-300
                   ${badgeColor ? badgeColor : defaultBadgeColor}`}
                   key={index}

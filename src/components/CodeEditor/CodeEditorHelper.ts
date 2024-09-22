@@ -97,22 +97,6 @@ export const toolBarItems = [
   },
 ];
 
-export const codeEditorVariants = {
-  initial: {
-    opacity: 0,
-    y: 0,
-  },
-  animate: (index: number) => ({
-    opacity: 10,
-    y: 0,
-    transition: {
-      delay: 0.3 * index,
-      duration: 0.3,
-    },
-  }),
-  exit: { opacity: 0 },
-};
-
 export const fileMenuItems = [
   {
     name: "Work Experience",
@@ -147,3 +131,19 @@ export const fileMenuItems = [
     url: `mailto:${config.portfolio.email}`,
   },
 ];
+
+export const codeEditorVariants = {
+  initial: {
+    opacity: 0,
+    y: 0,
+  },
+  animate: (index: number) => ({
+    opacity: 10,
+    y: 0,
+    transition: {
+      delay: 0.3 * index,
+      duration: 0.3,
+    },
+  }),
+  exit: { opacity: 0 },
+};
