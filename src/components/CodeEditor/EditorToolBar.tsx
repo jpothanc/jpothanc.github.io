@@ -18,7 +18,10 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (fileMenuRef.current && !fileMenuRef.current.contains(event.target as Node)) {
+      if (
+        fileMenuRef.current &&
+        !fileMenuRef.current.contains(event.target as Node)
+      ) {
         setShowFileMenu(false);
       }
     };
@@ -32,11 +35,11 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
   return (
     <>
       <div
-        className="flex flex-row bg-white/5 min-h-4 w-full  items-center pr-1
+        className="flex flex-row bg-white/5 min-h-4 w-full justify-around  items-center gap-3 pr-1
                   text-white/70 border border-white/10"
       >
         {/* menu bar */}
-        <div className="flex flex-row gap-1 items-center justify-start">
+        <div className="flex flex-row gap-1 items-center">
           <div className="p-1 ">
             <AboutIconMenu onClick={onClick} />
           </div>
@@ -64,15 +67,15 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
         <div
           className="border border-white/10 bg-white/10  rounded-md 
                     text-xs md:text-sm text-white/35 w-[60%]
-                   hover:text-white/80 ransition-all duration-300
-                    flex flex-r2ow gap-1 items-center justify-center align-middle ml-10"
+                   hover:text-white/80 transition-all duration-300
+                    flex  gap-1 items-center justify-center  "
         >
           <span className="px-1">
             <Icon icon="quill:search" style={{ fontSize: "1.1rem" }} />
           </span>
           portfolio
         </div>
-        <div className="pr-2 ml-auto flex ">
+        <div className="flex">
           {toolBarItems.map((item, index) => (
             <motion.span
               key={index}
