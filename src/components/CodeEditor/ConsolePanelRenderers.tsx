@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Counter from "../Counter";
 import Cursor from "./Cursor";
 import { codeEditorVariants } from "./CodeEditorHelper";
+import Typewriter from "../common/Typewriter";
 
 export const renderTerminalContent = () => (
   <div className="text-[12px] md:text-[14px]">
@@ -16,11 +17,18 @@ export const renderTerminalContent = () => (
 
       <p key="fileMenu" className="text-zinc-400 pt-2">
         PS c:\projects\jpothanc &gt;
-        <span className="pt-2 text-yellow-400">what --next</span>
+        <span className="pt-2 text-yellow-400">
+          <Typewriter style="" text="what --next"></Typewriter>
+        </span>
         <p className="text-teal-400 pt-2 animate-pulse">
-          Select File Menu to explore...
-        </p>{" "}
-        <Cursor />
+          <Typewriter
+            style=""
+            text="Select File Menu to explore..."
+            initialDelay={4000}
+          ></Typewriter>
+
+          <Cursor />
+        </p>
       </p>,
     ].map((item, index) => (
       <motion.div
