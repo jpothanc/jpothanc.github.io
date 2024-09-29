@@ -66,7 +66,7 @@ const ProjectsPersonal = ({ personalProject }: personalProjectsProps) => {
                 <div className="flex justify-end text-blue-500 text-[12px]">
                   Technologies
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 justify-end">
                   {project.tech?.map((tech) => {
                     return <IconLink skill={tech} />;
                   })}
