@@ -12,6 +12,7 @@ import {
   renderOutputContent,
   renderTerminalContent,
 } from "./ConsolePanelRenderers";
+import { motion } from "framer-motion";
 const menuItems = ["OUTPUT", "TERMINAL", "COMMENTS", "DEBUG"];
 
 const filterInputs = {
@@ -66,17 +67,18 @@ const ConsolePanel = () => {
               />
             )}
             {toolBarItems.map((item, index) => (
-              <span
+              <motion.span
+                whileTap={{ scale: 1.2 }}
                 key={index}
                 className="text-zinc-300 text-xs hover:bg-white/20 p-1 cursor-pointer"
               >
                 <Icon icon={item.icon} style={{ fontSize: "1.1rem" }} />
-              </span>
+              </motion.span>
             ))}
           </div>
         </header>
         {/* terminal content */}
-        <div className="h-full bg-black/50 text-white text-xs md:text-md text-zinc-400 pt-3 md:pt-2 font-light pl-2">
+        <div className="h-full bg-black/50 text-xs md:text-md text-zinc-400 pt-3 md:pt-2 font-light pl-2">
           {activeMenu === "TERMINAL" && renderTerminalContent()}
           {activeMenu === "COMMENTS" && renderCommentsContent()}
           {activeMenu === "OUTPUT" && renderOutputContent()}
