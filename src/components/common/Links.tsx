@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { ThemeConstants, shakeVariants } from "../../constants";
-import { badgeVariants, getIcon, getThemeColor, link } from "../../utils/helper";
+import {
+  badgeVariants,
+  getIcon,
+  getThemeColor,
+  link,
+} from "../../utils/helper";
 import { IconType } from "react-icons";
 import Tooltip from "./Tooltip";
 import Avatar from "react-avatar";
@@ -33,19 +38,19 @@ const Links = ({ title, content, icon, links }: Props) => {
             {getIcon(icon)}
             {title}
           </motion.h3>
-          <p className="basic-text">{content}</p>
-          <ul className="flex flex-col gap-2"
-          >
+          <p className="basic-text text-theme-dark-textcolor">{content}</p>
+          <ul className="flex flex-col gap-2">
             {links.map((link, index) => {
               return (
-                <motion.li key={index}
+                <motion.li
+                  key={index}
                   variants={badgeVariants}
-                initial="initial"
-                whileInView="animate"
-                custom={index}
-                viewport={{
-                  once: true,
-                }}
+                  initial="initial"
+                  whileInView="animate"
+                  custom={index}
+                  viewport={{
+                    once: true,
+                  }}
                 >
                   <div className="flex flex-row gap-1">
                     {link.icon ? (

@@ -202,7 +202,7 @@ const techSkills: TechSkill[] = [
   { icon: "skill-icons:react-dark", name: "React" },
   { icon: "teenyicons:nextjs-outline", name: "NextJs" },
   { icon: "vscode-icons:file-type-svelte", name: "Svelte" },
-  { icon: "skill-icons:reactivex-light", name: "Reactive Programming" },
+  { icon: "skill-icons:react-dark", name: "Reactive Programming" },
   { icon: "devicon:tailwindcss", name: "Tailwind" },
   { icon: "vscode-icons:file-type-graphql", name: "GraphQL" },
   { icon: "logos:cucumber", name: "Cucumber" },

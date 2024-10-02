@@ -64,6 +64,7 @@ const Contents = () => {
             content=""
             badges={config.portfolio.techSkills}
             icon={FaStackOverflow}
+            badgeColor="text-white-500"
           ></IconBadges>
 
           <IconBadges
@@ -71,6 +72,7 @@ const Contents = () => {
             content=""
             badges={config.portfolio.DevelopmentPractices}
             icon={FaHands}
+            badgeColor="text-white-500"
           ></IconBadges>
           <IconBadges
             title="Skills & Achievements"
@@ -81,6 +83,7 @@ const Contents = () => {
             //   ThemeConstants.badgeSkillsColor
             // )}
             icon={FaWrench}
+            badgeColor="text-white-500"
           ></IconBadges>
           <Links
             title="Education"
