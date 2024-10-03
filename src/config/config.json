@@ -489,6 +489,12 @@
         "description": "A attempt to promote Svelte, a modern web framework.",
         "icon": "devicon:svelte",
         "url": "https://medium.com/@kaljessy/svelt-felt-better-ff7ce0f81977"
+      },
+      {
+        "name": "Dependency Injection in Python",
+        "description": "Dependency Injection in Python with injector.",
+        "icon": "devicon:python",
+        "url": "https://medium.com/@kaljessy/dependency-injection-in-python-with-injector-63137790c482"
       }
     ],
     "git": [
