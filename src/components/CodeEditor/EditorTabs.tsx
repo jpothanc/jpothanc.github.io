@@ -4,8 +4,8 @@ import EditorTab from "./EditorTab";
 const tabs = [
   { title: "index.ts", icon: "typeScript", selected: true },
   { title: "Experience.tsx", icon: "react", selected: false },
-  { title: "Projects.tsx", icon: "react", selected: false },
-  { title: "README.md", icon: "readme", selected: false },
+  { title: "Projects.tsx", icon: "react", selected: false }
+//   { title: "README.md", icon: "readme", selected: false },
 ];
 
 const EditorTabs = () => {
