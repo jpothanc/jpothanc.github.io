@@ -78,7 +78,7 @@ const ConsolePanel = () => {
           </div>
         </header>
         {/* terminal content */}
-        <div className="h-full pt-3 pl-2 text-xs font-light bg-zinc-900 md:text-md text-zinc-400 md:pt-2">
+        <div className="h-full pt-1 pl-2 text-xs font-light bg-zinc-900 md:text-md text-zinc-400">
           {activeMenu === "TERMINAL" && renderTerminalContent()}
           {activeMenu === "COMMENTS" && renderCommentsContent()}
           {activeMenu === "OUTPUT" && renderOutputContent()}

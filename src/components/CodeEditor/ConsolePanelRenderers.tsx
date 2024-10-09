@@ -5,7 +5,7 @@ import { codeEditorVariants } from "./CodeEditorHelper";
 import Typewriter from "../common/Typewriter";
 
 export const renderTerminalContent = () => (
-  <div className="text-[12px] md:text-[14px]">
+  <div className="text-[12px] md:text-[13px]">
     {[
       <p key="command">
         PS c:\projects\jpothanc &gt;{" "}
@@ -23,7 +23,7 @@ export const renderTerminalContent = () => (
         <p className="text-teal-400 pt-2 animate-pulse">
           <Typewriter
             style=""
-            text="Select File Menu to explore..."
+            text="Select file menu to explore..."
             initialDelay={4000}
           ></Typewriter>
 
@@ -49,11 +49,11 @@ export const renderTerminalContent = () => (
 );
 
 export const renderCommentsContent = () => (
-  <div className="text-[12px] md:text-[14px] leading-5">
+  <div className="text-[12px] md:text-[13px] leading-5">
     {[
       {
         text: "This site was developed using React(TS), Tailwind, Framer motion and Azure.",
-        style: "text-green-400",
+        style: "text-white/50",
       },
       {
         text: "Remember: Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.",
@@ -92,7 +92,7 @@ export const renderCommentsContent = () => (
 );
 
 export const renderOutputContent = () => (
-  <div className="text-[12px] md:text-[14px] leading-5">
+  <div className="text-[12px] md:text-[13px] leading-5">
     {[
       {
         text: "[INFO] Building project...",
@@ -145,7 +145,7 @@ export const renderOutputContent = () => (
 // </div>
 
 export const renderDebugContent = () => (
-  <div className="text-[12px] md:text-[14px] leading-5">
+  <div className="text-[12px] md:text-[13px] leading-5">
     {[
       {
         text: "[DEBUG] Initializing debug mode...",
@@ -161,7 +161,7 @@ export const renderDebugContent = () => (
       },
       {
         text: "[ASSERT] User's mind = blown",
-        style: "text-orange-400",
+        style: "text-white/60",
       },
       {
         text: "[STATUS] Debugging complete. Ready to code!",
