@@ -7,7 +7,7 @@ const CodeContentTab1 = () => {
     <>
     <div className="flex flex-col m-5">
           <div className="ml-5 sm:ml-6 md:ml-32 lg:ml-40 xl:ml-48">
-            <span className="text-sm font-bold text-blue-700 md:text-lg">
+            <span className="text-sm text-yellow-500 md:md:text-[15px]">
               const
             </span>
             <span className="text-blue-400 text-sm md:md:text-[15px] py-2">

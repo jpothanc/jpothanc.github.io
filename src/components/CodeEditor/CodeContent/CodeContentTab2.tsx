@@ -1,8 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import config from "../../../config/config.json";
-import { Tooltip } from "react-jp-ui";
-import { FaPersonRunning } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 import ToolBar from "../../ToolBar";
 
 const CodeContentTab2 = () => {
