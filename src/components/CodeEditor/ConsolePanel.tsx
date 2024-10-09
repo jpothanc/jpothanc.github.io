@@ -32,10 +32,10 @@ const ConsolePanel = () => {
   }, [activeMenu]);
   return (
     <>
-      <div className="w-full border-t border-white/10 h-[140px]">
+      <div className="w-full border-t border-white/10 h-[140px] bg-zinc-900">
         {/* toolbar menu */}
         <header className="flex h-[30px] justify-between flex-wrap gap-1 md:gap-0">
-          <div className="flex justify-start gap-1 items-center ">
+          <div className="flex items-center justify-start gap-1 ">
             {menuItems.map((item, index) => (
               <span
                 key={index}
@@ -54,7 +54,7 @@ const ConsolePanel = () => {
           </div>
 
           {/* tool bar items */}
-          <div className="flex justify-end items-center gap-1 pr-1">
+          <div className="flex items-center justify-end gap-1 pr-1">
             {(activeMenu === "COMMENTS" || activeMenu === "DEBUG") && (
               <input
                 type="text"
@@ -70,7 +70,7 @@ const ConsolePanel = () => {
               <motion.span
                 whileTap={{ scale: 1.2 }}
                 key={index}
-                className="text-zinc-300 text-xs hover:bg-white/20 p-1 cursor-pointer"
+                className="p-1 text-xs cursor-pointer text-zinc-300 hover:bg-white/20"
               >
                 <Icon icon={item.icon} style={{ fontSize: "1.1rem" }} />
               </motion.span>
@@ -78,7 +78,7 @@ const ConsolePanel = () => {
           </div>
         </header>
         {/* terminal content */}
-        <div className="h-full bg-black/50 text-xs md:text-md text-zinc-400 pt-3 md:pt-2 font-light pl-2">
+        <div className="h-full pt-3 pl-2 text-xs font-light bg-zinc-900 md:text-md text-zinc-400 md:pt-2">
           {activeMenu === "TERMINAL" && renderTerminalContent()}
           {activeMenu === "COMMENTS" && renderCommentsContent()}
           {activeMenu === "OUTPUT" && renderOutputContent()}

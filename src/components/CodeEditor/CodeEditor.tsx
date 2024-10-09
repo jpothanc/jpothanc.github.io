@@ -14,7 +14,7 @@ const CodeEditor = ({ onClick, onResize }: AboutCodeEditorProps) => {
   return (
     <>
       <motion.div
-        className="mb-5 border border-white/10 m-1"
+        className="m-1 mb-5 border border-white/10"
         variants={shakeVariants}
         initial="initial"
         whileHover="animate"

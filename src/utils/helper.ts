@@ -227,6 +227,7 @@ const techSkills: TechSkill[] = [
   { icon: "skill-icons:pycharm-dark", name: "pycharm" },
   { icon: "skill-icons:dotnet", name: "dotnet" },
   { icon: "devicon:intellij", name: "intellij" },
+  { icon: "noto-v1:information", name: "readme" },
 ];
 
 const iconMap = new Map<string, string>(

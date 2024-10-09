@@ -11,7 +11,7 @@ const FileMenu = () => {
         {fileMenuItems.map((item, index) => (
           <li
             key={index}
-            className="px-4 py-2 hover:bg-blue-600 cursor-pointer"
+            className="px-4 py-2 cursor-pointer hover:bg-blue-600"
           >
             {item.url ? (
               <a href={item.url} target="_blank">

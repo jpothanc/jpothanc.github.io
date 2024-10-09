@@ -35,18 +35,16 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
   return (
     <>
       <div
-        className="flex flex-row bg-white/5 min-h-4 w-full justify-around  items-center gap-3 pr-1
-                  text-white/70 border border-white/10"
+        className="flex flex-row items-center justify-around w-full gap-3 pr-1 border bg-white/5 min-h-4 text-white/70 border-white/10 bg-zinc-800"
       >
         {/* menu bar */}
-        <div className="flex flex-row gap-1 items-center">
+        <div className="flex flex-row items-center gap-1">
           <div className="p-1 ">
             <AboutIconMenu onClick={onClick} />
           </div>
           <div className="relative" ref={fileMenuRef}>
             <span
-              className="text-zinc-300 text-xs hover:text-white p-1
-                   hover:bg-white/20 cursor-pointer "
+              className="p-1 text-xs cursor-pointer text-zinc-300 hover:text-white hover:bg-white/20 "
               onClick={toggleFileMenu}
             >
               File
@@ -55,8 +53,7 @@ const EditorToolBar = ({ onClick, onResize }: MenuBarProps) => {
           </div>
           <div className="relative">
             <span
-              className="text-zinc-300 text-xs hover:text-white cursor-pointer p-1
-                 hover:bg-white/20"
+              className="p-1 text-xs cursor-pointer text-zinc-300 hover:text-white hover:bg-white/20"
               onClick={onClick}
             >
               About
