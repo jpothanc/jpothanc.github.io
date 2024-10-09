@@ -99,7 +99,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                w-52 pr-2 focus:outline-none focus:ring-1 focus:ring-blue-500
               placeholder-zinc-400
              font-extralight
-              `}),n.map((a,i)=>S.jsx(Te.span,{whileTap:{scale:1.2},className:"p-1 text-xs cursor-pointer text-zinc-300 hover:bg-white/20",children:S.jsx(aa,{icon:a.icon,style:{fontSize:"1.1rem"}})},i))]})]}),S.jsxs("div",{className:"h-full pt-3 pl-2 text-xs font-light bg-zinc-900 md:text-md text-zinc-400 md:pt-2",children:[e==="TERMINAL"&&eye(),e==="COMMENTS"&&tye(),e==="OUTPUT"&&nye(),e==="DEBUG"&&rye()]})]})})},oye=({title:e,icon:t,selected:n})=>{const[r,a]=N.useState(!1);return S.jsx(S.Fragment,{children:S.jsxs("div",{className:`flex items-center justify-around h-8 gap-3 pl-1 pr-1 
+              `}),n.map((a,i)=>S.jsx(Te.span,{whileTap:{scale:1.2},className:"p-1 text-xs cursor-pointer text-zinc-300 hover:bg-white/20",children:S.jsx(aa,{icon:a.icon,style:{fontSize:"1.1rem"}})},i))]})]}),S.jsxs("div",{className:"h-full pt-3 pl-2 text-xs font-light bg-zinc-900 md:text-md text-zinc-400 md:pt-2",children:[e==="TERMINAL"&&eye(),e==="COMMENTS"&&tye(),e==="OUTPUT"&&nye(),e==="DEBUG"&&rye()]})]})})},oye=({title:e,icon:t,selected:n})=>{const[r,a]=N.useState(!1);return S.jsx(S.Fragment,{children:S.jsxs("div",{className:`flex items-center justify-around h-7 gap-2 pl-1 pr-1 
       text-xs border  border-zinc-700
       ${n?"bg-zinc-900 text-white":"bg-zinc-800 text-white/50"}
        `,onMouseEnter:()=>a(!0),onMouseLeave:()=>a(!1),children:[S.jsx("span",{className:"",children:S.jsx(aa,{icon:t,style:{fontSize:"0.9rem"}})}),e,S.jsx("span",{className:`w-4 h-4 flex items-center justify-center ${r?"":"invisible"}
