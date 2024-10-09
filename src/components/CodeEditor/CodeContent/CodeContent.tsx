@@ -17,9 +17,11 @@ const CodeContent = () => {
   const TabComponent = tabComponents[tabId as keyof typeof tabComponents] || CodeContentTab1;
 
   return (
-    <div className="flex flex-col mb-0 bg-zinc-900 h-60 overflow-y-auto">
+    <div className="flex flex-col mb-0 bg-zinc-900 h-60 ">
       <EditorTabs onTabChange={setTabId} />
+      <div className="overflow-y-auto">
       <TabComponent />
+      </div>
     </div>
   );
 };
