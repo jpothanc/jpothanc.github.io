@@ -600,5 +600,10 @@
       "bgcolor": "#00897B",
       "submenu": "web-styling/css/css_containers.md"
     }
+  },
+
+  "readme":{
+    "sveltePortofilePage": "https://jpothanc.vercel.app/",
+    "text":"This site was originally developed as a learning project to master React in 2023. It was initially built using React (TypeScript), Framer Motion, and Azure. As the project evolved, I discovered the elegance of Tailwind CSS, which quickly became a favorite in my toolkit. Every aspect of this site reflects my continuous learning journey. Whenever I need a creative spark or a break, I find myself returning here to tinker with new ideas.it’s something I genuinely enjoy and look forward to every time."
   }
 }

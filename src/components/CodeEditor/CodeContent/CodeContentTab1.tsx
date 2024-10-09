@@ -1,14 +1,11 @@
-import { codeContent } from "./CodeEditorHelper";
-import Cursor from "./Cursor";
-import EditorTabs from "./EditorTabs";
+import { codeContent } from "../CodeEditorHelper"
+import Cursor from "../Cursor"
 
-const CodeContent = () => {
+
+const CodeContentTab1 = () => {
   return (
     <>
-      <div className="flex flex-col m-0 bg-zinc-900">
-        <EditorTabs />
-
-        <div className="flex flex-col m-10">
+    <div className="flex flex-col m-5">
           <div className="ml-5 sm:ml-6 md:ml-32 lg:ml-40 xl:ml-48">
             <span className="text-sm font-bold text-blue-700 md:text-lg">
               const
@@ -46,9 +43,8 @@ const CodeContent = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
-  );
-};
+  )
+}
 
-export default CodeContent;
+export default CodeContentTab1
