@@ -11,7 +11,7 @@ const EditorTab = ({title, icon, selected }:EditorTabProps) => {
   const [showClose, setShowClose] = useState(false);
   return (
     <>
-      <div className={`flex items-center justify-around h-8 gap-3 pl-1 pr-1 
+      <div className={`flex items-center justify-around h-7 gap-2 pl-1 pr-1 
       text-xs border  border-zinc-700
       ${selected ? 'bg-zinc-900 text-white' : 'bg-zinc-800 text-white/50'}
        `}
