@@ -18,10 +18,13 @@ $md-border-color: #243a65;
 
 /* Thumb (scroll handle) of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: $primary-color;
+  background-color: rgb(109, 107, 107);
   height: 20px;
   border-radius: 20px;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
 
 // override the styles from react-jp-ui
 .markdown-content {
