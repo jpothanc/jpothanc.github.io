@@ -495,6 +495,12 @@
         "description": "Dependency Injection in Python with injector.",
         "icon": "devicon:python",
         "url": "https://medium.com/@kaljessy/dependency-injection-in-python-with-injector-63137790c482"
+      }, 
+      {
+        "name": "LLMS: The Essentials",
+        "description": "A brief description of the LLMS.",
+        "icon": "vscode-icons:file-type-ai",
+        "url": "https://medium.com/@kaljessy/llms-the-essentials-3c3ae4696d81"
       }
     ],
     "git": [
